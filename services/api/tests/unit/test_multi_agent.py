@@ -52,6 +52,8 @@ async def test_supervisor_delegates_then_writes_then_verifier_validates(
 
     agents = [e["agent"] for e in events]
     assert agents[0] == "superviseur" and "chercheur" in agents and "vérificateur" in agents
+    nodes = list(dict.fromkeys(e["node"] for e in events))  # ordre de première visite
+    assert nodes == ["supervisor", "researcher", "write", "verify", "finalize"]
     assert status["final"]["status"] == "answered"
     assert status["metrics"]["tool_calls"] == {"search_cases": 1, "read_case": 1}
     assert status["metrics"]["llm_calls"] == 7

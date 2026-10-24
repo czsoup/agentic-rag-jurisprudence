@@ -17,7 +17,7 @@ import re
 import time
 from typing import Any
 
-from langgraph.config import get_stream_writer
+from langgraph.config import get_config, get_stream_writer
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Command, interrupt
 from pydantic import BaseModel
@@ -97,6 +97,7 @@ class Recorder:
         self.metrics = RunMetrics.model_validate(state.get("metrics") or {})
         self.agent = agent
         self._write = get_stream_writer()
+        self.node = get_config().get("metadata", {}).get("langgraph_node")
 
     def emit(
         self,
@@ -112,6 +113,7 @@ class Recorder:
             step=self.step,
             type=type_,
             agent=agent or self.agent,
+            node=self.node,
             summary=summary,
             data=data or {},
             latency_ms=latency_ms,

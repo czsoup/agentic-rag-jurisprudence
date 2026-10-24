@@ -6,7 +6,7 @@ Statuts :
 - **Partiel** ;
 - **Non réalisé**.
 
-Les tests unitaires et d'intégration (`make test`, 72 tests) utilisent un LLM scripté. Les tests `make test-ollama` (4) et les traces de `docs/traces/` utilisent le vrai modèle et l'index réel.
+Les tests unitaires et d'intégration (`make test`, 81 tests) utilisent un LLM scripté. Les tests `make test-ollama` (4) et les traces de `docs/traces/` utilisent le vrai modèle et l'index réel.
 
 ## Socle RAG
 
@@ -28,7 +28,7 @@ Les tests unitaires et d'intégration (`make test`, 72 tests) utilisent un LLM s
 | B. Boucle avec routage conditionnel | Vérifié | `agent/graph.py` (`builder`, arêtes explicites) | `unit/test_agent_graph.py` (15) ; S2 (relance après CHECK) | — |
 | C. Vérification : preuves, cohérence, non-sourcé, relance | Vérifié | `agent/verifier.py`, `route_after_check` | `unit/test_verifier.py` ; S1 (relance), S2 (insufficient puis sufficient), S3a (contradiction) | — |
 | D. API externe, distinction des sources | Non réalisé (choix) | provenance `origin` dans les sources | DEC-015 | — |
-| E. Progression en direct dans l'interface | Implémenté | `routers/agent.py` (NDJSON), `ui/pages/agent.py` | Flux NDJSON vérifié (`integration/test_api.py`) ; rendu UI testé sans run réel | Run réel dans l'UI et capture (figure 5) |
+| E. Progression en direct dans l'interface | Vérifié | `routers/agent.py` (NDJSON), `ui/pages/agent.py`, `ui/livegraph.py` | Flux NDJSON vérifié (`integration/test_api.py`) ; `ui/tests/test_livegraph.py` (9) ; page Agent pilotée par AppTest contre l'API et l'index réels : question du scénario 2 puis question de suivi, mémoire reprise, validation humaine refusée (DEC-024) | Capture dans un navigateur (figure 5) |
 | Trace DECISION / TOOL / OBSERVATION / CHECK / FINAL | Vérifié | `domain/trace.py`, `Recorder` | `docs/traces/S*_single.md` | — |
 | Deux outils réels | Vérifié | `CaseTools` | `integration/test_ollama_live.py::test_real_index_search_and_read` | — |
 | Condition d'arrêt explicite | Vérifié | `budget_gate`, `abstain`, `StopReason` | `test_iteration_limit_is_enforced` ; S3b (5 itérations) | — |
@@ -54,6 +54,6 @@ Les tests unitaires et d'intégration (`make test`, 72 tests) utilisent un LLM s
 | Contrôle | Résultat |
 |---|---|
 | `make lint` (ruff + mypy strict) | OK, 40 fichiers |
-| `make test` | 72 réussis |
+| `make test` | 81 réussis |
 | `make test-ollama` | 4 réussis |
 | Secrets | Aucun ; aucune clé utilisée |

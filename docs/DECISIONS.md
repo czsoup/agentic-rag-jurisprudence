@@ -33,7 +33,7 @@ Chaque décision indique ce qui a été **réellement testé ou mesuré**, les o
 - **Principes** : « commencer simple, mesurer » ; indexation hors ligne / interrogation en ligne.
 - **Options** : monolithe modulaire ; clean architecture et 3 services ; microservices (recherche, agent, vérificateur, mémoire séparés, avec une base vectorielle dédiée).
 - **Décision** : trois services lancés séparément (UI Streamlit, API FastAPI, Ollama natif) et un job d'indexation hors ligne. Dans l'API, quatre couches : `domain` → `application` (cas d'usage, agent, **ports** `Protocol`) → `infrastructure` (adapters) → `interfaces` (HTTP, CLI). Une seule composition root (`bootstrap.py`, `interfaces/http/container.py`).
-- **Justification** : la règle de dépendance rend l'agent testable sans Ollama ni index : 70 tests utilisent des doublures (LLM scripté, retriever en mémoire). Les microservices ajouteraient du réseau et des déploiements sans besoin réel ici.
+- **Justification** : la règle de dépendance rend l'agent testable sans Ollama ni index : 81 tests utilisent des doublures (LLM scripté, retriever en mémoire). Les microservices ajouteraient du réseau et des déploiements sans besoin réel ici.
 - **Compromis** : Ollama reste natif. Sous macOS, Docker n'a pas accès au GPU Metal, ce qui rendrait le modèle très lent. Des Dockerfiles ne sont pas fournis tant que Docker n'est pas installé et que leur fonctionnement n'a pas été vérifié.
 
 ### DEC-004 — Corpus : un sous-ensemble cohérent de la Cour de cassation
@@ -315,3 +315,18 @@ Chaque décision indique ce qui a été **réellement testé ou mesuré**, les o
   2. **Arbitrage par le vérificateur** : une fois un dossier constitué, une nouvelle délégation sans aucun contrôle préalable est convertie en rédaction. Le vérificateur juge alors la suffisance des preuves, et c'est son rapport qui peut relancer le chercheur.
 - **Test** : `test_supervisor_cannot_keep_delegating_once_a_dossier_exists`.
 - **Mesure** : le mode multi est relancé sur les 8 questions avec la v2 (DEC-018). Les deux versions sont conservées dans `docs/results/`.
+
+### DEC-024 — Page Agent en conversation, avec graphe et parcours en direct
+
+- **Date** : 2026-10-24 · **Statut** : acceptée
+- **Problème** : la page Agent montrait une question à la fois. Le registre d'exécution était exact mais long à lire, et la mémoire de session restait invisible d'une question à l'autre. Pour une démonstration, il manquait une vue d'ensemble de ce que fait la boucle.
+- **Décision** :
+  - **Nœud émetteur dans chaque événement** : `TraceEvent.node` est rempli par le `Recorder` à partir de la config LangGraph (`langgraph_node`), sans toucher aux appels existants. L'interface n'a donc rien à deviner.
+  - **Graphe en direct** (`livegraph.graph_svg`) : schéma SVG de la boucle (agent unique ou multi-agents), dessiné côté Python. Le nœud en cours est surligné, les arêtes réellement parcourues sont tracées, et chaque nœud visité plusieurs fois affiche son nombre de passages. Une validation humaine en attente apparaît en pointillés.
+  - **Conversation** : chaque question et sa réponse forment une paire de bulles. La bulle de question indique ce que la session retenait au moment de l'envoi (échanges, affaire en cours).
+  - **Récapitulatif du parcours** (`livegraph.path_steps`) : « chercher → lire → vérifier ✗ → vérifier ✓ → répondre », mis à jour pendant le run puis conservé sous la réponse.
+  - **Run en deux passages** : la soumission ajoute le tour puis relance la page. Le passage suivant affiche la bulle et consomme le flux, afin que graphe, registre et parcours s'animent ensemble.
+- **Alternatives rejetées** : un rendu Mermaid côté navigateur (bibliothèque JS en plus, nœud courant difficile à styler) ; déduire le nœud du type d'événement (une `ERROR` ou une `HUMAN` peuvent venir de plusieurs nœuds).
+- **Tests** : `ui/tests/test_livegraph.py` (9) ; nœuds attendus dans `test_scenario_1_single_search_then_verified_answer` et `test_supervisor_delegates_then_writes_then_verifier_validates`.
+- **Vérification réelle** : page pilotée par `streamlit.testing.AppTest` contre l'API et l'index principal. La question du scénario 2 donne le parcours chercher → lire → vérifier ✗ → vérifier ✓ → répondre. La question de suivi « Et quelle est la solution de cette affaire ? » part avec la mémoire (1 échange, affaire n° 23-10.817), lit directement l'affaire, puis passe par le budget et la validation humaine (refusée) avant une réponse partielle.
+

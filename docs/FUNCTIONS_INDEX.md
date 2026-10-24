@@ -66,6 +66,7 @@ Chemins relatifs à `services/api/src/jurirag/`, sauf pour l'interface (`service
 | `run_agent`, `resume`, `_stream` | `api.py` | Lecture ligne à ligne du flux NDJSON |
 | `trace_html`, `answer_html`, `passage_html`, `stamp`, `figures_html` | `theme.py` | Composants de la direction « Greffe » ; tout texte est échappé |
 | `pages/search.render` | `pages/search.py` | Recherche → affaire → texte par zone → résumé → questions |
-| `pages/agent.render` | `pages/agent.py` | Question, trace en direct, validation humaine, réponse vérifiée, mémoire, export |
+| `graph_svg`, `visits`, `path_steps`, `path_html` | `livegraph.py` | Graphe de la boucle (nœud en cours surligné, arêtes parcourues, visites comptées) et récapitulatif du parcours, déduits du champ `node` des événements |
+| `pages/agent.render` | `pages/agent.py` | Conversation en bulles, graphe et trace en direct, parcours, validation humaine, réponse vérifiée, mémoire, export |
 | `pages/observability.render` | `pages/observability.py` | Métriques par mode, relecture d'une trace |
 | `pages/system.render` | `pages/system.py` | État du système et provenance de l'index |

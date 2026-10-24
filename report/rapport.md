@@ -127,7 +127,7 @@ flowchart LR
     JOB["jurirag-build (hors ligne)"] --> INF
 ```
 
-*Figure 1 — Architecture. L'UI ne parle qu'à l'API ; la couche application ne dépend que de ports, ce qui permet de tester toute la logique de l'agent avec des doublures (70 tests sans Ollama).*
+*Figure 1 — Architecture. L'UI ne parle qu'à l'API ; la couche application ne dépend que de ports, ce qui permet de tester toute la logique de l'agent avec des doublures (81 tests sans Ollama).*
 
 Pourquoi pas des microservices ? Ils ajouteraient du réseau et des déploiements sans besoin réel. Pourquoi Ollama en natif ? Sous macOS, Docker n'a pas accès au GPU Metal.
 
@@ -360,7 +360,7 @@ Les ordres de grandeur, coût ×3 à ×13 et contenu non vérifié affiché (7 c
 
 ## 17. Extensions
 
-Les quatre extensions sont implémentées et testées : 70 tests unitaires et d'intégration, plus 4 tests avec Ollama réel. Mémoire, multi-agents, validation humaine et observabilité sont décrits aux §10 et §11. La validation humaine a été exercée en conditions réelles dans les scénarios 1, 3a et 3b (événements `HUMAN` dans les traces).
+Les quatre extensions sont implémentées et testées : 81 tests unitaires et d'intégration, plus 4 tests avec Ollama réel. Mémoire, multi-agents, validation humaine et observabilité sont décrits aux §10 et §11. La validation humaine a été exercée en conditions réelles dans les scénarios 1, 3a et 3b (événements `HUMAN` dans les traces).
 
 ## 18. Échecs et limites
 
@@ -376,7 +376,7 @@ Résultat : une réponse partielle correcte, mais pour 7 appels LLM et 104 s, co
 - la règle R1 pénalise une reformulation pourtant fidèle ;
 - **le comportement varie d'un run à l'autre** malgré une graine fixe.
 
-**Échec observé 2 : variance du juge** (scénario 2). Une affirmation presque identique (« La cour d'appel de Toulouse avait statué… » [P6]) est jugée `not_enough_info`, puis `supports` à la tentative suivante. Le juge est un LLM, avec la variance que décrit S2 p.86.
+**Échec observé 2 : variance du juge** (scénario 2). Une affirmation presque identique (« La cour d'appel de Toulouse avait statué… » [P6]) est jugée `not_enough_info`, puis `supports` à la tentative suivante. Le juge est un LLM, avec la variance propre aux LLM juges.
 
 **Bugs révélés par les données réelles**, tous corrigés et couverts par un test :
 

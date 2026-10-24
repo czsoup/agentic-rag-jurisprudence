@@ -84,6 +84,8 @@ async def test_scenario_1_single_search_then_verified_answer(
     events, status = await collect(runner.run("s1", "Abandon de poste et faute grave ?"))
 
     assert types(events) == ["DECISION", "TOOL", "OBSERVATION", "DECISION", "CHECK", "FINAL"]
+    # Chaque événement indique le nœud qui l'a émis : l'interface s'en sert pour le graphe.
+    assert [e["node"] for e in events] == ["decide", "act", "act", "decide", "verify", "finalize"]
     final = status["final"]
     assert status["status"] == "done" and final["status"] == "answered"
     assert (

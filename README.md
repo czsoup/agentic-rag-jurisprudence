@@ -25,6 +25,7 @@ Rapport : [`report/rapport.md`](report/rapport.md) · décisions : [`docs/DECISI
 | Question-réponse sur l'affaire (RAG statique, point de comparaison de l'agent), avec les passages affichés | onglet *Questions* · `POST /api/v1/rag/ask` |
 | **Agentic RAG** : l'agent choisit `search_cases` ou `read_case`, ou bien répond ; la réponse passe par le vérificateur, qui la relance ou l'arrête | page *Agent* · `POST /api/v1/runs` |
 | Trace DECISION / TOOL / OBSERVATION / CHECK / FINAL (+ ERROR, HUMAN), en direct | page *Agent* |
+| **Vue conversation** : questions successives en bulles, mémoire de session affichée dans chaque question, graphe de la boucle avec le nœud en cours surligné, récapitulatif du parcours sous chaque réponse (« chercher → lire → vérifier ✗ → vérifier ✓ ») | page *Agent* |
 | **Extensions** : mémoire de session, multi-agents, validation humaine, observabilité | voir ci-dessous |
 
 ### Outils de l'agent
@@ -94,7 +95,7 @@ La configuration par défaut fonctionne telle quelle. Pour la modifier, copier `
 ## Tests
 
 ```bash
-make test           # 70 tests, sans Ollama : outils, vérificateur, boucle, mémoire, HITL, API (LLM scripté)
+make test           # 81 tests, sans Ollama : outils, vérificateur, boucle, mémoire, HITL, API, graphe de l'UI (LLM scripté)
 make test-ollama    # intégration avec le vrai modèle et l'index (Ollama démarré)
 make lint           # ruff + mypy --strict
 make eval           # évaluation du retrieval (Hit@k, MRR) : BM25 / dense / hybride

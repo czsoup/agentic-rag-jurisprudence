@@ -55,7 +55,7 @@ module = ["bm25s.*", "Stemmer.*", "pyarrow.*", "langgraph.*"]
 ignore_missing_imports = true
 
 [tool.pytest.ini_options]
-testpaths = ["services/api/tests"]
+testpaths = ["services/api/tests", "services/ui/tests"]
 asyncio_mode = "auto"
 markers = ["ollama: tests d'intégration qui appellent le vrai serveur Ollama (uv run pytest -m ollama)"]
 addopts = "-m 'not ollama'"

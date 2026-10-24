@@ -88,6 +88,42 @@ a.cite.ghost { background: transparent; color: var(--oxblood) !important; border
 .figures b { display: block; font: 600 1.15rem/1.2 "Newsreader", serif; }
 .figures span { font-size: .7rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: .08em; }
 
+/* Graphe de la boucle en direct */
+.livegraph { width: 100%; max-width: 420px; display: block; margin: .2rem auto .4rem; }
+.livegraph .lg-edge { stroke: var(--rule); stroke-width: 1; fill: none; }
+.livegraph .lg-edge.on { stroke: var(--ink); stroke-width: 1.8; }
+.livegraph .lg-head { fill: var(--rule); } .livegraph .lg-head-on { fill: var(--ink); }
+.livegraph .lg-node rect { fill: var(--paper); stroke: var(--rule); stroke-width: 1; }
+.livegraph .lg-node text { font: 500 10.5px "IBM Plex Mono", monospace; fill: var(--ink-2); }
+.livegraph .lg-node.seen rect { fill: var(--paper-2); stroke: var(--ink-2); }
+.livegraph .lg-node.seen text { fill: var(--ink); }
+.livegraph .lg-node.now rect { fill: var(--oxblood); stroke: var(--oxblood); }
+.livegraph .lg-node.now text { fill: var(--paper); font-weight: 600; }
+.livegraph .lg-node.wait rect { fill: var(--mark); stroke: var(--ochre); stroke-width: 2; stroke-dasharray: 4 3; }
+.livegraph .lg-count { font: 600 9px "IBM Plex Mono", monospace; fill: var(--oxblood); }
+.livegraph .lg-node.now .lg-count { fill: var(--paper); }
+.livegraph .pulse rect { animation: lg-pulse 1.1s ease-in-out infinite; }
+@keyframes lg-pulse { 50% { opacity: .55; } }
+.lg-legend { font-size: .72rem; color: var(--ink-2); text-align: center; }
+.lg-legend b { display: inline-block; width: .7rem; height: .7rem; vertical-align: -.08rem; margin: 0 .25rem 0 .6rem; border: 1px solid var(--ink-2); }
+
+/* Récapitulatif du parcours */
+.path { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem; margin: .1rem 0 .5rem; }
+.path-label { font: 500 .66rem/1 "IBM Plex Mono", monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); margin-right: .2rem; }
+.path .chip { font: 500 .74rem/1 "IBM Plex Mono", monospace; padding: .26rem .45rem; border: 1px solid var(--rule); background: var(--paper); }
+.path .chip.ok { color: var(--verdigris); border-color: var(--verdigris); }
+.path .chip.bad { color: var(--oxblood); border-color: var(--oxblood); }
+.path .chip.warn { color: var(--ochre); border-color: var(--ochre); }
+.path .chip.dots { border-style: dashed; color: var(--ink-2); }
+.path .arrow { color: var(--ink-2); font-size: .8rem; }
+.empty-path { color: var(--ink-2); font-style: italic; font-size: .85rem; }
+
+/* Conversation */
+[data-testid="stChatMessage"] { background: transparent; padding: .6rem 0; border-bottom: 1px solid var(--rule); border-radius: 0; }
+.turn-q { font: 500 1.02rem/1.5 "Newsreader", serif; }
+.turn-meta { font-size: .74rem; color: var(--ink-2); margin-top: .2rem; }
+.turn-meta .mem { color: var(--verdigris); }
+
 .memory { font-size: .84rem; border: 1px solid var(--rule); padding: .6rem .7rem; background: var(--paper-2); }
 .empty { color: var(--ink-2); font-style: italic; font-family: "Newsreader", serif; padding: .8rem 0; }
 .zone-label { font: 500 .72rem/1 "IBM Plex Mono", monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--oxblood); margin: 1.1rem 0 .3rem; }

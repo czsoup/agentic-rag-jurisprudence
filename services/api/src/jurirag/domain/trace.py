@@ -37,6 +37,7 @@ class TraceEvent(BaseModel):
     step: int
     type: EventType
     agent: str  # « agent », « superviseur », « chercheur », « vérificateur »
+    node: str | None = None  # nœud du graphe qui a émis l'événement (graphe en direct de l'UI)
     summary: str  # une ligne lisible : justification opérationnelle courte, pas de CoT
     data: dict[str, Any] = Field(default_factory=dict)
     latency_ms: float | None = None
