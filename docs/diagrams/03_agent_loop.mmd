@@ -1,0 +1,24 @@
+%% Boucle agentique à agent unique — application/agent/graph.py (AgentGraph.builder)
+flowchart TD
+    START((START)) --> start["start<br/>remise à zéro du run<br/>politique de mémoire"]
+    start --> decide["decide<br/>LLM + outils liés<br/>(compte une itération)"]
+    decide -- "appel d'outil" --> act["act<br/>validation, exécution,<br/>requête répétée refusée"]
+    act --> decide
+    act -- "erreur non récupérable" --> abstain
+    decide -- "réponse candidate" --> verify["verify<br/>règles R1-R3 + juge"]
+    decide -- "réponse vide" --> decide
+    decide -- "itérations ≥ limite" --> budget["budget_gate"]
+    decide -- "erreur Ollama" --> abstain
+    verify -- "sufficient" --> finalize["finalize<br/>réponse + sources + limites<br/>mise à jour de la mémoire"]
+    verify -- "insufficient (budget restant)" --> decide
+    verify -- "abstention motivée de l'agent" --> abstain["abstain<br/>abstention motivée"]
+    verify -- "insufficient (budget épuisé)" --> budget
+    verify -- "contradictory" --> human["human_gate<br/>interrupt() : run suspendu"]
+    budget -- "1re fois" --> human
+    budget -- "réponse partielle vérifiée" --> finalize
+    budget -- "rien de vérifié" --> abstain
+    human -- "prolonger : approuvé" --> decide
+    human -- "diffuser : approuvé" --> finalize
+    human -- "refusé / expiré" --> abstain
+    finalize --> END((END))
+    abstain --> END

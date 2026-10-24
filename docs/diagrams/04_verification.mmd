@@ -1,0 +1,24 @@
+%% Vérification et réorientation — application/agent/verifier.py
+flowchart TD
+    A["réponse candidate + registre des passages réellement montrés"] --> B{"au moins un passage ?"}
+    B -- non --> I1["insufficient → search_again"]
+    B -- oui --> C["découpage en affirmations<br/>(phrases + citations [Pn])"]
+    C --> D{"énoncé de limite ?<br/>« ne précise pas… »"}
+    D -- oui --> SKIP["ignoré (pas de citation exigée)"]
+    D -- non --> R1{"R1 : citation présente ?"}
+    R1 -- non --> F["échec de règle"]
+    R1 -- oui --> R2{"R2 : alias dans le registre ?"}
+    R2 -- non --> F
+    R2 -- oui --> R3{"R3 : dates, articles, montants<br/>présents dans le passage cité ?"}
+    R3 -- non --> F
+    R3 -- oui --> J["LLM juge (un appel, JSON contraint)<br/>supports / contradicts / not_enough_info<br/>+ la réponse traite-t-elle la question ?"]
+    J -- "juge indisponible / JSON invalide" --> NV["non validé"]
+    J --> AGG{"agrégat"}
+    F --> AGG
+    NV --> AGG
+    AGG -- "une contradiction" --> CO["contradictory → validation humaine"]
+    AGG -- "tout soutenu + pertinent" --> SU["sufficient → réponse"]
+    AGG -- "tout soutenu, hors sujet" --> I2["insufficient → search_again"]
+    AGG -- "échecs" --> I3{"décision trouvée mais jamais lue ?"}
+    I3 -- oui --> RC["insufficient → read_case"]
+    I3 -- non --> SA["insufficient → search_again<br/>(ou abstention à la limite)"]

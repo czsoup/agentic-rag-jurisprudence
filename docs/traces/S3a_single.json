@@ -1,0 +1,292 @@
+{
+ "question": {
+  "id": "S3a",
+  "title": "Scénario 3a — premier retrieval insuffisant (formulation profane)",
+  "kind": "insufficient-reformulate",
+  "question": "Après mon départ négocié avec mon patron, il veut m'interdire de travailler chez un concurrent alors qu'il ne m'a rien dit avant la fin de mon contrat : en a-t-il le droit ?",
+  "target_case": "61f0f2387743e3330ccf075f",
+  "selection": "La réponse existe dans le corpus (chambre sociale, 26 janvier 2022, n° 20-15.755 : en cas de rupture conventionnelle, la renonciation à la clause de non-concurrence doit intervenir au plus tard à la date de rupture), mais la question n'emploie aucun des termes juridiques (« rupture conventionnelle », « clause de non-concurrence », « renonciation »). Le premier retrieval risque de ne pas suffire.",
+  "expected": "Détection d'une insuffisance, reformulation en termes juridiques, réponse vérifiée ou partielle. Le modèle peut aussi traduire d'emblée la question en termes juridiques : la trace dira ce qui s'est réellement passé."
+ },
+ "mode": "single",
+ "session": "S3a-single-1792833155",
+ "run_id": "26d1933d0d35",
+ "events": [
+  {
+   "run_id": "26d1933d0d35",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Aucune preuve collectée : recherche documentaire nécessaire (« clause de non-concurrence contrepartie financière information préalable départ négocié »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 1
+   },
+   "latency_ms": 10181.863833975513,
+   "at": "2026-10-24T09:12:45.946+00:00"
+  },
+  {
+   "run_id": "26d1933d0d35",
+   "step": 2,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"clause de non-concurrence contrepartie financière information préalable départ négocié\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "clause de non-concurrence contrepartie financière information préalable départ négocié",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:12:45.949+00:00"
+  },
+  {
+   "run_id": "26d1933d0d35",
+   "step": 3,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+   "data": {
+    "query": "clause de non-concurrence contrepartie financière information préalable départ négocié",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "61f0f2387743e3330ccf075f",
+      "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+      "solution": "Cassation",
+      "score": 0.032018,
+      "alias": "P1",
+      "passage_id": "61f0f2387743e3330ccf075f#motivations-2",
+      "zone": "motivations",
+      "excerpt": "L'arrêt ajoute que dès lors, peu important que les délais stipulés au contrat pour la dénonciation de la clause par l'employeur n'aient pas été respectés, puisqu'il n'y a pas eu en l'occurrence de préavis, ni de licenciement, mais accord sur le principe et la date de la rupture, il est établi qu'à compter du 11 …"
+     },
+     {
+      "rank": 2,
+      "case_id": "65546f63a52b3483180982e4",
+      "title": "Cour de cassation · Chambre sociale · 2023-11-15 · n° 22-18.632",
+      "solution": "Cassation",
+      "score": 0.031054,
+      "alias": "P2",
+      "passage_id": "65546f63a52b3483180982e4#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article 1353 du code civil : 6. Aux termes de ce texte, celui qui réclame l'exécution d'une obligation doit la prouver. Réciproquement, celui qui se prétend libéré doit justifier le paiement ou le fait qui a produit l'extinction de l'obligation. 7. Pour limiter à la somme brute mensuelle de …"
+     },
+     {
+      "rank": 3,
+      "case_id": "64117335f6c989fb024356a7",
+      "title": "Cour de cassation · Chambre sociale · 2023-03-15 · n° 21-16.057",
+      "solution": "Cassation",
+      "score": 0.028778,
+      "alias": "P3",
+      "passage_id": "64117335f6c989fb024356a7#moyens-8",
+      "zone": "moyens",
+      "excerpt": "Et sur le septième moyen du pourvoi principal, pris en sa première branche Enoncé du moyen 21. Le salarié fait grief à l'arrêt de le débouter de sa demande au titre de la contrepartie de la clause de non-concurrence en ce que cette demande tendait au paiement d'une somme excédant 19 141,80 euros, alors « que la …"
+     },
+     {
+      "rank": 4,
+      "case_id": "6684e95fa0de54ff609f7aab",
+      "title": "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+      "solution": "Rejet",
+      "score": 0.02782,
+      "alias": "P4",
+      "passage_id": "6684e95fa0de54ff609f7aab#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 8. La cour d'appel, qui a constaté que la clause de non-concurrence prévoyait la possibilité pour l'employeur de renoncer à cette clause par lettre recommandée avec avis de réception dans un délai de quinze jours maximum après la notification de la rupture du contrat de travail, et que celui-ci y …"
+     },
+     {
+      "rank": 5,
+      "case_id": "620ca2d9c61f23729bcf6243",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2022-02-16 · n° 20-20.491",
+      "solution": "Cassation",
+      "score": 0.025747,
+      "alias": "P5",
+      "passage_id": "620ca2d9c61f23729bcf6243#moyens-1",
+      "zone": "moyens",
+      "excerpt": "2°) qu'un employeur ne peut être tenu pour complice de la violation, par son salarié, de la clause de non-concurrence qui le liait à son précédent employeur, sans constater qu'il a sciemment participé à sa violation ; qu'en se bornant à retenir, pour juger que la société AMS s'était rendue complice de la violation, …"
+     }
+    ]
+   },
+   "latency_ms": 38.0,
+   "at": "2026-10-24T09:12:45.987+00:00"
+  },
+  {
+   "run_id": "26d1933d0d35",
+   "step": 4,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.",
+   "data": {
+    "action": "answer",
+    "iteration": 2
+   },
+   "latency_ms": 33446.73208298627,
+   "at": "2026-10-24T09:13:19.437+00:00"
+  },
+  {
+   "run_id": "26d1933d0d35",
+   "step": 5,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves contradictory — 1 affirmation(s) contredite(s) par les passages cités.",
+   "data": {
+    "status": "contradictory",
+    "justification": "1 affirmation(s) contredite(s) par les passages cités.",
+    "unverified_claims": [
+     "Non, votre employeur n'a pas le droit de vous interdire de travailler chez un concurrent sans avoir informé le salarié avant la fin du contrat.",
+     "Une information tardive, comme après votre départ, ne suffit pas pour libérer le salarié de son obligation [P2]."
+    ],
+    "claims": [
+     {
+      "text": "Non, votre employeur n'a pas le droit de vous interdire de travailler chez un concurrent sans avoir informé le salarié avant la fin du contrat.",
+      "citations": [],
+      "verdict": "not_enough_info",
+      "rule_failures": [
+       "affirmation non sourcée (aucune citation)"
+      ],
+      "reason": ""
+     },
+     {
+      "text": "La Cour de cassation exige que l'employeur renonce à la clause de non-concurrence dans les délais prévus par le contrat [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P1 établit que la Cour exige que l'employeur renonce dans les délais prévus (15 jours après la rupture) et qu'une notification tardive (le 11 septembre alors que la rupture était fixée au 5 mai) invalide la renonciation pour la période postérieure."
+     },
+     {
+      "text": "Une information tardive, comme après votre départ, ne suffit pas pour libérer le salarié de son obligation [P2].",
+      "citations": [
+       "P2"
+      ],
+      "verdict": "contradicts",
+      "rule_failures": [],
+      "reason": "Le passage P2 indique explicitement que la dispense tardive « ne décharge pas l'employeur » de son obligation financière, ce qui contredit l'affirmation selon laquelle une information tardive suffirait à libérer le salarié."
+     },
+     {
+      "text": "Si l'employeur n'a pas respecté les délais de notification, il doit payer la contrepartie financière pendant toute la période où vous avez pu respecter la clause [P4].",
+      "citations": [
+       "P4"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P2 précise que la contrepartie financière est due « pendant la période durant laquelle il a respecté, ou du moins a été à même de respecter ladite clause », ce qui correspond à l'affirmation selon laquelle l'employeur doit payer pour toute la période où le salarié a pu respecter la clause."
+     },
+     {
+      "text": "Votre employeur doit prouver qu'il a valablement renoncé à la clause dans les temps requis [P2].",
+      "citations": [
+       "P2"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P2 cite l'article 1353 du code civil et précise qu'il « incombait à l'employeur [...] de rapporter la preuve de la violation de cette clause par le salarié », ce qui signifie que c'est à lui de prouver une renonciation valable."
+     }
+    ],
+    "next_action": "ask_human",
+    "llm_judge_used": true
+   },
+   "latency_ms": 20613.6,
+   "at": "2026-10-24T09:13:40.055+00:00"
+  },
+  {
+   "run_id": "26d1933d0d35",
+   "step": 6,
+   "type": "HUMAN",
+   "agent": "vérificateur",
+   "summary": "Validation humaine demandée : sources contradictoires.",
+   "data": {
+    "kind": "publish_contradictory",
+    "question": "Les passages cités contredisent la réponse candidate. Diffuser quand même la réponse, accompagnée d'un avertissement ?",
+    "details": {
+     "unverified_claims": [
+      "Non, votre employeur n'a pas le droit de vous interdire de travailler chez un concurrent sans avoir informé le salarié avant la fin du contrat.",
+      "Une information tardive, comme après votre départ, ne suffit pas pour libérer le salarié de son obligation [P2]."
+     ]
+    },
+    "requested_at": 1792833220.055899
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:13:40.055+00:00"
+  },
+  {
+   "run_id": "26d1933d0d35",
+   "step": 7,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Décision humaine : refusée.",
+   "data": {
+    "kind": "publish_contradictory",
+    "decision": "reject"
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:13:40.077+00:00"
+  },
+  {
+   "run_id": "26d1933d0d35",
+   "step": 8,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Abstention — la diffusion a été refusée par l'utilisateur.",
+   "data": {
+    "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : la diffusion a été refusée par l'utilisateur.",
+    "status": "abstained",
+    "verifier_status": "contradictory",
+    "sources": [],
+    "limits": [
+     "Non établi : Non, votre employeur n'a pas le droit de vous interdire de travailler chez un concurrent sans avoir informé le salarié avant la fin du contrat.",
+     "Non établi : Une information tardive, comme après votre départ, ne suffit pas pour libérer le salarié de son obligation [P2]."
+    ],
+    "stop_reason": "human_rejected",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+     "Cour de cassation · Chambre sociale · 2023-11-15 · n° 22-18.632",
+     "Cour de cassation · Chambre sociale · 2023-03-15 · n° 21-16.057",
+     "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+     "Cour de cassation · Chambre commerciale financière et économique · 2022-02-16 · n° 20-20.491"
+    ],
+    "errors": []
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:13:40.079+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : la diffusion a été refusée par l'utilisateur.",
+  "status": "abstained",
+  "verifier_status": "contradictory",
+  "sources": [],
+  "limits": [
+   "Non établi : Non, votre employeur n'a pas le droit de vous interdire de travailler chez un concurrent sans avoir informé le salarié avant la fin du contrat.",
+   "Non établi : Une information tardive, comme après votre départ, ne suffit pas pour libérer le salarié de son obligation [P2]."
+  ],
+  "stop_reason": "human_rejected",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+   "Cour de cassation · Chambre sociale · 2023-11-15 · n° 22-18.632",
+   "Cour de cassation · Chambre sociale · 2023-03-15 · n° 21-16.057",
+   "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+   "Cour de cassation · Chambre commerciale financière et économique · 2022-02-16 · n° 20-20.491"
+  ],
+  "errors": []
+ },
+ "metrics": {
+  "llm_calls": 3,
+  "prompt_tokens": 5237,
+  "completion_tokens": 1233,
+  "llm_latency_ms": 64240.65916694235,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 38.0,
+  "iterations": 2,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 64315.4,
+  "verifier_status": "contradictory",
+  "stop_reason": "human_rejected",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 64.3,
+ "hitl_answer": "reject"
+}

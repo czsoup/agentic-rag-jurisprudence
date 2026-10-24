@@ -1,0 +1,61 @@
+[project]
+name = "jurirag-workspace"
+version = "0.1.0"
+description = "Agentic RAG sur la jurisprudence (espace de travail : API + UI)."
+requires-python = ">=3.12"
+dependencies = ["jurirag", "jurirag-ui"]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["services/api", "services/ui"]
+
+[tool.uv.sources]
+jurirag = { workspace = true }
+jurirag-ui = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "pytest",
+    "pytest-asyncio",
+    "respx",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["services/api/src", "services/ui/src", "services/api/tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.pycodestyle]
+# Le formateur vise 100 colonnes ; le lint tolère 120 pour les chaînes longues
+# (prompts, gabarits HTML de l'interface) que le formateur ne coupe pas.
+max-line-length = 120
+
+[tool.ruff.lint.per-file-ignores]
+# Gabarits HTML/CSS de la direction artistique : lignes de style, pas de logique.
+"services/ui/src/jurirag_ui/theme.py" = ["E501"]
+# Scripts de mesure : sondes et observations recopiées telles quelles (les couper changerait la mesure).
+"scripts/*.py" = ["E501"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query", "typer.Option", "typer.Argument"]
+
+[tool.mypy]
+strict = true
+files = ["services/api/src"]
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["bm25s.*", "Stemmer.*", "pyarrow.*", "langgraph.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["services/api/tests"]
+asyncio_mode = "auto"
+markers = ["ollama: tests d'intégration qui appellent le vrai serveur Ollama (uv run pytest -m ollama)"]
+addopts = "-m 'not ollama'"

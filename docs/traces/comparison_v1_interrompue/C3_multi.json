@@ -1,0 +1,197 @@
+{
+ "question": {
+  "id": "C3",
+  "title": "Indemnité spécifique de rupture conventionnelle",
+  "kind": "simple",
+  "question": "L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?",
+  "target_case": "659e41095537980008846f77",
+  "selection": "Chambre sociale, 10 janvier 2024, n° 22-19.165 (publié).",
+  "expected": "réponse directe"
+ },
+ "mode": "multi",
+ "session": "C3-multi-1792835079",
+ "run_id": "841314198ad6",
+ "events": [
+  {
+   "run_id": "841314198ad6",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques prouvant la relation entre ces deux indemnités.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherche dans le corpus de la Cour de cassation des décisions traitant de la rupture conventionnelle et comparant l'indemnité spécifique (article L1237-5 du Code du travail) avec l'indemnité légale ou conventionnelle de licenciement, en identifiant les cas où l'indemnité spécifique est inférieure.",
+    "iteration": 1
+   },
+   "latency_ms": 7265.793374972418,
+   "at": "2026-10-24T09:44:46.999+00:00"
+  },
+  {
+   "run_id": "841314198ad6",
+   "step": 2,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« rupture conventionnelle indemnité spécifique L1237-5 inférieure indemnité licenciement conventionnel »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 9726.955291000195,
+   "at": "2026-10-24T09:44:56.728+00:00"
+  },
+  {
+   "run_id": "841314198ad6",
+   "step": 3,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"rupture conventionnelle indemnité spécifique L1237-5 inférieure indemnité licenciement conventionnel\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "rupture conventionnelle indemnité spécifique L1237-5 inférieure indemnité licenciement conventionnel",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:44:56.728+00:00"
+  },
+  {
+   "run_id": "841314198ad6",
+   "step": 4,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+   "data": {
+    "query": "rupture conventionnelle indemnité spécifique L1237-5 inférieure indemnité licenciement conventionnel",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "659e41095537980008846f77",
+      "title": "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+      "solution": "Cassation",
+      "score": 0.032787,
+      "alias": "P1",
+      "passage_id": "659e41095537980008846f77#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 6. Selon l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008, l'indemnité spécifique de rupture conventionnelle prévue par l'article L. 1237-13 du code du travail ne peut pas être d'un montant inférieur à celui de l'indemnité conventionnelle de licenciement, lorsque …"
+     },
+     {
+      "rank": 2,
+      "case_id": "673d85b81d67c8becde12d8f",
+      "title": "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-13.050",
+      "solution": "Rejet",
+      "score": 0.028083,
+      "alias": "P2",
+      "passage_id": "673d85b81d67c8becde12d8f#motivations-1",
+      "zone": "motivations",
+      "excerpt": "9. Aux termes de l'article 22.5, en tout état de cause, ces indemnités ne pourront être inférieures à celles prescrites en cas de rupture du contrat de travail par la législation en vigueur et ne pourront donc pas être inférieures à l'indemnité légale de licenciement. 10. Il résulte de l'article 22.5 que l'indemnité …"
+     },
+     {
+      "rank": 3,
+      "case_id": "6603c56f01e3cc0008b6f5a9",
+      "title": "Cour de cassation · Chambre sociale · 2024-03-27 · n° 22-23.298",
+      "solution": "Cassation",
+      "score": 0.027119,
+      "alias": "P3",
+      "passage_id": "6603c56f01e3cc0008b6f5a9#motivations-2",
+      "zone": "motivations",
+      "excerpt": "Il retient que l'article L. 1234-9 du code du travail, qui subordonne le versement de l'indemnité légale de licenciement à une ancienneté de services de huit mois ininterrompus, contient des dispositions moins restrictives que la convention collective sur cette condition. Il en conclut qu'il convient d'appliquer les …"
+     },
+     {
+      "rank": 4,
+      "case_id": "65e81553a743ca0008c68c23",
+      "title": "Cour de cassation · Chambre sociale · 2024-03-06 · n° 22-19.879",
+      "solution": "Cassation",
+      "score": 0.027013,
+      "alias": "P4",
+      "passage_id": "65e81553a743ca0008c68c23#motivations-2",
+      "zone": "motivations",
+      "excerpt": "L'arrêt en déduit que conformément aux stipulations contractuelles la rémunération de référence en France doit être retenue pour le calcul des diverses sommes dues au salarié au titre de la rupture. 10. En statuant ainsi, alors que l'indemnité compensatrice de préavis, l'indemnité conventionnelle de licenciement, les …"
+     },
+     {
+      "rank": 5,
+      "case_id": "66728100f7ab5c00087309df",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143",
+      "solution": "Cassation",
+      "score": 0.024706,
+      "alias": "P5",
+      "passage_id": "66728100f7ab5c00087309df#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 7. Selon l'article L. 1237-12 du code du travail, les parties au contrat conviennent du principe d'une rupture conventionnelle lors d'un ou plusieurs entretiens. 8. Aux termes de l'article L. 1237-13 du même code, la convention de rupture définit les conditions de celle-ci, notamment le montant de …"
+     }
+    ]
+   },
+   "latency_ms": 124.8,
+   "at": "2026-10-24T09:44:56.853+00:00"
+  },
+  {
+   "run_id": "841314198ad6",
+   "step": 5,
+   "type": "ERROR",
+   "agent": "chercheur",
+   "summary": "Chercheur : appel au modèle impossible (Ollama n'a pas répondu à temps (/api/chat)).",
+   "data": {},
+   "latency_ms": null,
+   "at": "2026-10-24T10:02:01.372+00:00"
+  },
+  {
+   "run_id": "841314198ad6",
+   "step": 6,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Abstention — une erreur non récupérable a interrompu la recherche.",
+   "data": {
+    "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : une erreur non récupérable a interrompu la recherche.",
+    "status": "error",
+    "verifier_status": null,
+    "sources": [],
+    "limits": [],
+    "stop_reason": "error",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+     "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-13.050",
+     "Cour de cassation · Chambre sociale · 2024-03-27 · n° 22-23.298",
+     "Cour de cassation · Chambre sociale · 2024-03-06 · n° 22-19.879",
+     "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143"
+    ],
+    "errors": []
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T10:02:01.606+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : une erreur non récupérable a interrompu la recherche.",
+  "status": "error",
+  "verifier_status": null,
+  "sources": [],
+  "limits": [],
+  "stop_reason": "error",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+   "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-13.050",
+   "Cour de cassation · Chambre sociale · 2024-03-27 · n° 22-23.298",
+   "Cour de cassation · Chambre sociale · 2024-03-06 · n° 22-19.879",
+   "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143"
+  ],
+  "errors": []
+ },
+ "metrics": {
+  "llm_calls": 2,
+  "prompt_tokens": 1027,
+  "completion_tokens": 301,
+  "llm_latency_ms": 16992.748665972613,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 124.8,
+  "iterations": 1,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 1041871.5,
+  "verifier_status": null,
+  "stop_reason": "error",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 47.4,
+ "hitl_answer": null
+}

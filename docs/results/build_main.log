@@ -1,0 +1,65 @@
+21:45:05 INFO     jurirag.infrastructure.index_builder | sélection des décisions dans ./data/raw/cour_de_cassation.parquet
+21:45:13 INFO     jurirag.infrastructure.index_builder | 1000 décisions, 6845 passages
+21:45:14 INFO     jurirag.infrastructure.index_builder | 2000 décisions, 13745 passages
+21:45:15 INFO     jurirag.infrastructure.index_builder | 3000 décisions, 20728 passages
+21:45:16 INFO     jurirag.infrastructure.index_builder | index BM25 sur 27249 passages
+21:45:23 INFO     jurirag.infrastructure.index_builder | embeddings 32/27249 (8 passages/s)
+21:49:25 INFO     jurirag.infrastructure.index_builder | embeddings 1632/27249 (9 passages/s)
+21:54:53 INFO     jurirag.infrastructure.index_builder | embeddings 3232/27249 (9 passages/s)
+00:48:48 INFO     jurirag.infrastructure.index_builder | embeddings 4832/27249 (9 passages/s)
+02:56:22 INFO     jurirag.infrastructure.index_builder | embeddings 6432/27249 (9 passages/s)
+07:44:23 INFO     jurirag.infrastructure.index_builder | embeddings 8032/27249 (9 passages/s)
+09:38:41 INFO     jurirag.infrastructure.index_builder | embeddings 9632/27249 (9 passages/s)
+09:40:43 INFO     jurirag.infrastructure.index_builder | embeddings 11232/27249 (9 passages/s)
+09:42:46 INFO     jurirag.infrastructure.index_builder | embeddings 12832/27249 (10 passages/s)
+09:44:36 INFO     jurirag.infrastructure.index_builder | embeddings 14432/27249 (10 passages/s)
+09:46:22 INFO     jurirag.infrastructure.index_builder | embeddings 16032/27249 (10 passages/s)
+09:48:09 INFO     jurirag.infrastructure.index_builder | embeddings 17632/27249 (11 passages/s)
+09:50:00 INFO     jurirag.infrastructure.index_builder | embeddings 19232/27249 (11 passages/s)
+09:51:48 INFO     jurirag.infrastructure.index_builder | embeddings 20832/27249 (11 passages/s)
+09:53:33 INFO     jurirag.infrastructure.index_builder | embeddings 22432/27249 (11 passages/s)
+09:55:24 INFO     jurirag.infrastructure.index_builder | embeddings 24032/27249 (11 passages/s)
+09:57:11 INFO     jurirag.infrastructure.index_builder | embeddings 25632/27249 (12 passages/s)
+09:58:59 INFO     jurirag.infrastructure.index_builder | embeddings 27232/27249 (12 passages/s)
+{
+  "built_at": "2026-10-24T07:59:01+00:00",
+  "dataset": "antoinejeannot/jurisprudence",
+  "revision": "8019db1080cf6dc8a34d73ee44d704a8e90b558e",
+  "split": "cour_de_cassation",
+  "license": "Etalab 2.0",
+  "criteria": {
+    "years": [
+      2022,
+      2024
+    ],
+    "chambers": [
+      "Chambre sociale",
+      "Première chambre civile",
+      "Deuxième chambre civile",
+      "Troisième chambre civile",
+      "Chambre commerciale financière et économique",
+      "Chambre criminelle"
+    ],
+    "n": 4000,
+    "published_share": 0.5,
+    "seed": 42
+  },
+  "rows_in_split": 553075,
+  "candidates": 37705,
+  "selected_rows": 4000,
+  "published_selected": 2000,
+  "rejected": {
+    "décision de procédure": 494,
+    "zonage absent ou incomplet": 313,
+    "chambre hors périmètre": 12811,
+    "doublon d'identifiant": 46
+  },
+  "cases": 3954,
+  "passages": 27249,
+  "chunk_tokens": 450,
+  "chunk_overlap": 0.15,
+  "embed_model": "qwen3-embedding:0.6b",
+  "dense_seconds": 2310.3,
+  "total_seconds": 2323.8
+}
+uv run jurirag-build --n 4000 --index-name main  17.76s user 3.66s system 0% cpu 12:13:56.27 total

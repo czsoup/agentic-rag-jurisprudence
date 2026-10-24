@@ -1,0 +1,86 @@
+{
+ "question": {
+  "id": "C6",
+  "title": "Formulation profane (non-concurrence)",
+  "kind": "insufficient-reformulate",
+  "question": "Après mon départ négocié avec mon patron, il veut m'interdire de travailler chez un concurrent alors qu'il ne m'a rien dit avant la fin de mon contrat : en a-t-il le droit ?",
+  "target_case": "61f0f2387743e3330ccf075f",
+  "selection": "= S3a",
+  "expected": "reformulation utile"
+ },
+ "mode": "static",
+ "final": {
+  "answer": "Les passages fournis ne permettent pas de répondre. Bien que les documents mentionnent des cas où une clause de non-concurrence ou une obligation de loyauté est analysée (P3, P4), aucun texte ne traite spécifiquement de la validité d'une interdiction postérieure à un départ négocié lorsque l'employeur n'a rien dit avant la fin du contrat. Le passage P4 évoque une réticence dolosive et le libre exercice d'une activité professionnelle dans le cadre d'une rupture conventionnelle, mais sans conclure sur la possibilité pour l'employeur d'imposer une interdiction a posteriori sans accord préalable.",
+  "verifier_status": "insufficient",
+  "sources": [],
+  "unverified": [
+   "Bien que les documents mentionnent des cas où une clause de non-concurrence ou une obligation de loyauté est analysée (P3, P4), aucun texte ne traite spécifiquement de la validité d'une interdiction postérieure à un départ négocié lorsque l'employeur n'a rien dit avant la fin du contrat.",
+   "Le passage P4 évoque une réticence dolosive et le libre exercice d'une activité professionnelle dans le cadre d'une rupture conventionnelle, mais sans conclure sur la possibilité pour l'employeur d'imposer une interdiction a posteriori sans accord préalable."
+  ]
+ },
+ "metrics": {
+  "llm_calls": 1,
+  "prompt_tokens": 2747,
+  "completion_tokens": 136,
+  "llm_latency_ms": 11363.549667003099,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 0.0,
+  "iterations": 0,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 11422.3,
+  "verifier_status": "insufficient",
+  "stop_reason": null,
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 11.4,
+ "passages": [
+  {
+   "alias": "P1",
+   "passage_id": "65a788f0c53a550008791530#moyens-3",
+   "case_id": "65a788f0c53a550008791530",
+   "title": "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-22.564",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "qu'en retenant que les démissions des salariés qui ''sont liées au contexte des négociations retardées du PSE et () résultent des manquements de l'employeur quant aux négociations du PSE et aux négociations tardives de l'accord de suspension des contrats de travail'' ''apparaissent contraintes en raison de manquements fautifs de la société'', la cour d'appel n'a pas caractérisé de vice du consentement, privant ainsi sa décision de base légale au regard des articles 1130, 1131 et 1140 du code civil ;\n\n 4°/ que le caractère équivoque d'une démission, qui suffit à la requalifier en licenciement sans cause réelle et sérieuse, doit porter sur la volonté du salarié de mettre fin au contrat ; qu'en se bornant à relever qu'en raison du contexte des négociations liées au PSE et des manquements de l'employeur quant aux négociations du PSE et de l'accord de suspension des contrats de travail, les démissions ne peuvent qu'être considérées comme équivoques, la cour d'appel n'a pas caractérisé l'absence de volonté claire et non-équivoque des salariés de mettre fin à leurs contrats de travail, privant ainsi sa décision de base légale au regard des articles L. 1231-1, L. 1237-1 et L. 1235-1 du code du travail. »"
+  },
+  {
+   "alias": "P2",
+   "passage_id": "6603c55701e3cc0008b6f581#moyens-1",
+   "case_id": "6603c55701e3cc0008b6f581",
+   "title": "Cour de cassation · Chambre sociale · 2024-03-27 · n° 22-22.835",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Sur le premier moyen\n\n Enoncé du moyen\n\n 5. L'employeur fait grief à l'arrêt de le condamner à verser au salarié des sommes à titre d'indemnité pour licenciement sans cause réelle et sérieuse, d'indemnité compensatrice de préavis et d'indemnité de congés payés sur préavis, d'indemnité de licenciement et de dommages-intérêts pour préjudice moral, alors « que lorsque, au moment où le juge statue sur une action du salarié tendant à la résiliation judiciaire de son contrat de travail aux torts de l'employeur, le contrat de travail a pris fin par la mise ou le départ à la retraite du salarié, sa demande de résiliation devient sans objet ; qu'en l'espèce, il était constant que le salarié, qui avait fait valoir ses droits à la retraite à compter du 1er janvier 2019, sollicitait néanmoins la résiliation judiciaire de son contrat de travail aux torts de l'employeur et demandait, en conséquence\", une indemnité de préavis et congés payés afférents, une indemnité conventionnelle de licenciement et une indemnité pour licenciement abusif ; qu'en affirmant que les manquements de l'employeur justifiaient le prononcé de la résiliation judiciaire du contrat de travail à la date du départ à la retraite du salarié, et la condamnation de l'employeur à une indemnité pour licenciement sans cause réelle et sérieuse, à une indemnité de préavis et congés payés y afférents, et à une indemnité de licenciement, quand, faute pour l'intéressé d'avoir, postérieurement à son départ en retraite en cours d'instance, sollicité la réparation du préjudice résultant des manquements de son employeur ou la requalification de son départ à la retraite en prise d'acte produisant les effets d'un licenciement sans cause réelle et sérieuse, sa demande de résiliation judiciaire et de condamnations subséquentes était devenue sans objet, la cour d'appel a violé l'article 1184 devenu 1224 du code civil, ensemble les articles L. 1231-1 et les articles L. 1235-1 et L. 1235-3 du code du code du travail. »"
+  },
+  {
+   "alias": "P3",
+   "passage_id": "63903c8a0f8a5205d45d7c91#moyens-0",
+   "case_id": "63903c8a0f8a5205d45d7c91",
+   "title": "Cour de cassation · Chambre commerciale financière et économique · 2022-12-07 · n° 21-19.860",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Examen des moyens\n\n Sur le premier moyen, pris en sa seconde branche\n\n Enoncé du moyen\n\n 2. La société Foncia Marne-la-Vallée fait grief à l'arrêt de rejeter ses demandes, alors « que la réalisation d'actes d'exploitation d'une société concurrente par un salarié avant la fin de son contrat de travail constitue une violation de son obligation de loyauté ; qu'en l'espèce, la société Foncia Marne-la-Vallée, anciennement Foncia GIEP, a fait valoir qu'il résultait notamment de deux courriers du 24 février 2017, produits en pièce n° 76, que la société Valhestia avait illicitement démarché sa clientèle avant la fin du contrat de travail de M. [I], salarié de la société Foncia GIEP qui avait contribué à la création et à l'activité de la société Valhestia, contrat se terminant le 24 février 2017 à minuit ; qu'en retenant que \"l'activité concurrente incriminée de la société Valhestia n'a effectivement démarré qu'après la fin de leurs contrats de travail\", sans s'expliquer, comme elle y avait pourtant été invitée par les conclusions de la société Foncia Marne-la-Vallée, sur le fait que la société Valhestia avait transmis une offre commerciale à l'un des membres d'une copropriété cliente de la société Foncia GIEP avant la fin du contrat de travail de M. [I], acte qui ne saurait compter parmi les \"actes préparatoires à la constitution de la société\" visés par ailleurs par l'arrêt attaqué, la cour d'appel a privé sa décision de base légale, au regard de l'article 1382, devenu 1240, du code civil. »"
+  },
+  {
+   "alias": "P4",
+   "passage_id": "66728101f7ab5c00087309e1#moyens-1",
+   "case_id": "66728101f7ab5c00087309e1",
+   "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "2°/ qu'il ne saurait être porté une atteinte disproportionnée au principe fondamental de libre exercice d'une activité professionnelle ; qu'en retenant, pour annuler la convention de rupture conclue, le 31 décembre 2018, entre la société Alientech et M. [P], que celui-ci avait commis une réticence dolosive ''du fait du défaut d'information volontaire [] sur le projet d'entreprise initié dans le même secteur d'activité auquel [étaient] associés deux anciens salariés'', l'employeur ne s'étant déterminé qu'au regard ''du seul souhait de reconversion professionnelle dans le management'', cependant qu'elle constatait elle-même que le salarié n'était ''soumis contractuellement à aucune clause de non-concurrence ni d'exclusivité'' et qu'il avait pris soin de faire part à son employeur de son ''souhait de reconversion'', la cour d'appel a porté une atteinte disproportionnée au principe fondamental de libre exercice d'une activité professionnelle et ainsi violé ce principe, ensemble l'article 1103 du code civil ; \n\n 3°/ que, dans le SMS de juin 2019 envoyé à M. [R] [T], président d'Alientech, M. [P] écrit : ''si j'ai aussi décidé de faire les choses seul, c'est parce que nos méthodes diffèrent également. On ne se serait très certainement pas entendu sur la façon de faire[] difficile d'accepter de revenir te demander quelque chose. Honnêtement je suis sûr que tu m'aurais fait la morale et que mon association avec [O] ne t'aurait pas convenue de toutes façons...'' ; qu'en déduisant le caractère déterminant, pour l'employeur, de l'information relative au projet de création d'une activité concurrente, de l'expression, ''honnêtement je suis sûr que tu m'aurais fait la morale et que mon association avec [O] ne t'aurait pas convenue de toutes façons'', quand il résultait des termes clairs et précis de ce message que cette précision ne concernait nullement les conditions de la rupture conventionnelle et se rapportait à l'éventualité, pour M. [P], de revenir collaborer avec son ancienne entreprise, postérieurement à la rupture, la cour d'appel a dénaturé les termes du SMS et a méconnu le principe selon lequel les juges ne doivent pas dénaturer les documents de la cause. »"
+  },
+  {
+   "alias": "P5",
+   "passage_id": "65a788f0c53a550008791530#moyens-2",
+   "case_id": "65a788f0c53a550008791530",
+   "title": "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-22.564",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "2°/ que la prise d'acte de la rupture du contrat n'est justifiée qu'en cas de manquement suffisamment grave de l'employeur qui empêche la poursuite du contrat de travail ; que les manquements commis par l'employeur dans l'élaboration du plan de sauvegarde de l'emploi, qui ont pour effet de retarder la validation ou l'homologation de ce plan par l'autorité administrative et l'ouverture du dispositif de départ volontaire prévu par ce plan, ne sont pas de nature à empêcher la poursuite de l'exécution du contrat des salariés potentiellement concernés par ce plan ; qu'en affirmant que les démissions, qui ''sont liées au contexte des négociations retardées du PSE et () résultent donc des manquements de l'employeur quant aux négociations du PSE et aux négociations tardives de l'accord de suspension des contrats de travail'', ''apparaissent contraintes en raison de manquements fautifs de la société dans le cadre des négociations du plan de sauvegarde de l'emploi'', pour en déduire ''qu'il y a lieu de les requalifier en prises d'acte qui produisent les effets de licenciements sans cause réelle et sérieuse'', sans expliquer en quoi les ''manquements fautifs'' dans l'élaboration du plan de sauvegarde de l'emploi et la conclusion d'un accord de suspension des contrats faisaient obstacle à la poursuite de l'exécution des contrats, la cour d'appel a privé sa décision de base légale au regard des articles L. 1231-1, L. 1232-1 et L. 1237-2 du code du travail ;\n\n 3°/ que ni la présentation d'un projet de licenciement collectif accompagné d'un plan de sauvegarde de l'emploi, ni les manquements éventuels commis par l'employeur dans la négociation du plan de sauvegarde de l'emploi ou de mesures de départ anticipé, ne constituent une violence susceptible de vicier le consentement des salariés qui choisissent de 2 démissionner avant l'adoption du plan de sauvegarde de l'emploi et sa validation ou son homologation afin de s'engager sans attendre au service d'un autre employeur ;"
+  }
+ ]
+}

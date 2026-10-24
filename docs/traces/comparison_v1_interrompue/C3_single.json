@@ -1,0 +1,436 @@
+{
+ "question": {
+  "id": "C3",
+  "title": "Indemnité spécifique de rupture conventionnelle",
+  "kind": "simple",
+  "question": "L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?",
+  "target_case": "659e41095537980008846f77",
+  "selection": "Chambre sociale, 10 janvier 2024, n° 22-19.165 (publié).",
+  "expected": "réponse directe"
+ },
+ "mode": "single",
+ "session": "C3-single-1792834006",
+ "run_id": "5b505ddfc4fd",
+ "events": [
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Aucune preuve collectée : recherche documentaire nécessaire (« indemnité rupture conventionnelle inférieure indemnité licenciement conventionnelle »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 1
+   },
+   "latency_ms": 7979.053666000254,
+   "at": "2026-10-24T09:26:54.074+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 2,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"indemnité rupture conventionnelle inférieure indemnité licenciement conventionnelle\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "indemnité rupture conventionnelle inférieure indemnité licenciement conventionnelle",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:26:54.077+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 3,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+   "data": {
+    "query": "indemnité rupture conventionnelle inférieure indemnité licenciement conventionnelle",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "659e41095537980008846f77",
+      "title": "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+      "solution": "Cassation",
+      "score": 0.032787,
+      "alias": "P1",
+      "passage_id": "659e41095537980008846f77#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 6. Selon l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008, l'indemnité spécifique de rupture conventionnelle prévue par l'article L. 1237-13 du code du travail ne peut pas être d'un montant inférieur à celui de l'indemnité conventionnelle de licenciement, lorsque …"
+     },
+     {
+      "rank": 2,
+      "case_id": "673d85b81d67c8becde12d8f",
+      "title": "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-13.050",
+      "solution": "Rejet",
+      "score": 0.030798,
+      "alias": "P2",
+      "passage_id": "673d85b81d67c8becde12d8f#motivations-1",
+      "zone": "motivations",
+      "excerpt": "9. Aux termes de l'article 22.5, en tout état de cause, ces indemnités ne pourront être inférieures à celles prescrites en cas de rupture du contrat de travail par la législation en vigueur et ne pourront donc pas être inférieures à l'indemnité légale de licenciement. 10. Il résulte de l'article 22.5 que l'indemnité …"
+     },
+     {
+      "rank": 3,
+      "case_id": "6603c56f01e3cc0008b6f5a9",
+      "title": "Cour de cassation · Chambre sociale · 2024-03-27 · n° 22-23.298",
+      "solution": "Cassation",
+      "score": 0.028446,
+      "alias": "P3",
+      "passage_id": "6603c56f01e3cc0008b6f5a9#motivations-2",
+      "zone": "motivations",
+      "excerpt": "Il retient que l'article L. 1234-9 du code du travail, qui subordonne le versement de l'indemnité légale de licenciement à une ancienneté de services de huit mois ininterrompus, contient des dispositions moins restrictives que la convention collective sur cette condition. Il en conclut qu'il convient d'appliquer les …"
+     },
+     {
+      "rank": 4,
+      "case_id": "65e81553a743ca0008c68c23",
+      "title": "Cour de cassation · Chambre sociale · 2024-03-06 · n° 22-19.879",
+      "solution": "Cassation",
+      "score": 0.028043,
+      "alias": "P4",
+      "passage_id": "65e81553a743ca0008c68c23#motivations-2",
+      "zone": "motivations",
+      "excerpt": "L'arrêt en déduit que conformément aux stipulations contractuelles la rémunération de référence en France doit être retenue pour le calcul des diverses sommes dues au salarié au titre de la rupture. 10. En statuant ainsi, alors que l'indemnité compensatrice de préavis, l'indemnité conventionnelle de licenciement, les …"
+     },
+     {
+      "rank": 5,
+      "case_id": "673d85681d67c8becde12d1b",
+      "title": "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-21.510",
+      "solution": "Cassation",
+      "score": 0.027651,
+      "alias": "P5",
+      "passage_id": "673d85681d67c8becde12d1b#motivations-1",
+      "zone": "motivations",
+      "excerpt": "9. Aux termes de l'article 22.5, en tout état de cause, ces indemnités ne pourront être inférieures à celles prescrites en cas de rupture du contrat de travail par la législation en vigueur et ne pourront donc pas être inférieures à l'indemnité légale de licenciement. 10. Il résulte de ce dernier texte que …"
+     }
+    ]
+   },
+   "latency_ms": 39.2,
+   "at": "2026-10-24T09:26:54.116+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 4,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.",
+   "data": {
+    "action": "answer",
+    "iteration": 2
+   },
+   "latency_ms": 21850.566292006988,
+   "at": "2026-10-24T09:27:15.970+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 5,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves insufficient — 2/4 affirmation(s) soutenue(s) ; 2 en échec sur les règles (citation absente, inventée ou incomplète).",
+   "data": {
+    "status": "insufficient",
+    "justification": "2/4 affirmation(s) soutenue(s) ; 2 en échec sur les règles (citation absente, inventée ou incomplète).",
+    "unverified_claims": [
+     "Cette règle découle de l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008.",
+     "La Cour de cassation a confirmé ce principe dans un arrêt publié au Bulletin en janvier 2024 [P1]."
+    ],
+    "claims": [
+     {
+      "text": "Non, l'indemnité spécifique de rupture conventionnelle ne peut pas être inférieure à l'indemnité conventionnelle de licenciement lorsque celle-ci est supérieure à l'indemnité légale de licenciement [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage stipule explicitement que l'indemnité spécifique ne peut pas être inférieure à l'indemnité conventionnelle lorsque celle-ci est supérieure à l'indemnité légale."
+     },
+     {
+      "text": "Cette règle découle de l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008.",
+      "citations": [],
+      "verdict": "not_enough_info",
+      "rule_failures": [
+       "affirmation non sourcée (aucune citation)",
+       "élément absent des passages cités : 18 mai 2009, 11 janvier 2008"
+      ],
+      "reason": ""
+     },
+     {
+      "text": "L'article L. 1237-13 du code du travail impose cette condition minimale pour l'indemnité spécifique de rupture conventionnelle [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage identifie que la règle énoncée s'applique à l'indemnité spécifique de rupture conventionnelle prévue par l'article L. 1237-13 du code du travail."
+     },
+     {
+      "text": "La Cour de cassation a confirmé ce principe dans un arrêt publié au Bulletin en janvier 2024 [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "not_enough_info",
+      "rule_failures": [
+       "élément absent des passages cités : 2024"
+      ],
+      "reason": "Le passage ne mentionne ni la date de publication de l'arrêt (janvier 2024), ni le fait qu'il ait été publié au Bulletin."
+     }
+    ],
+    "next_action": "read_case",
+    "llm_judge_used": true
+   },
+   "latency_ms": 14071.5,
+   "at": "2026-10-24T09:27:30.046+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 6,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Décision repérée (Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165) : lecture détaillée de ses passages.",
+   "data": {
+    "action": "read_case",
+    "iteration": 3
+   },
+   "latency_ms": 10275.242167001124,
+   "at": "2026-10-24T09:27:40.325+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 7,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"659e41095537980008846f77\", \"focus\": \"indemnité rupture conventionnelle indemnité licenciement\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "659e41095537980008846f77",
+     "focus": "indemnité rupture conventionnelle indemnité licenciement"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:27:40.331+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 8,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+   "data": {
+    "case_id": "659e41095537980008846f77",
+    "title": "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+    "passages": [
+     {
+      "alias": "P6",
+      "passage_id": "659e41095537980008846f77#introduction-0",
+      "zone": "introduction",
+      "text": "SOC.\n\n CH9\n\n COUR DE CASSATION\n ______________________\n\n Audience publique du 10 janvier 2024\n\n Cassation partielle\n\n M. SOMMER, président\n\n Arrêt n° 4 FS-B\n\n Pourvoi n° M 22-19.165 \n\n R É P U B L I Q U E F R A N Ç A I S E \n\n _________________________\n\n AU NOM DU PEUPLE FRANÇAIS\n _________________________\n\n ARRÊT DE LA COUR DE CASSATION, CHAMBRE SOCIALE, DU 10 JANVIER 2024\n\n La société Trimet France, société par actions simplifiée, dont le siège est [Adresse 2], a formé le pourvoi n° M 22-19.165 contre l'arrêt rendu le 2 juin 2022 par la cour d'appel de Grenoble (chambre sociale, section B), dans le litige l'opposant à M. [U] [W], domicilié [Adresse 1], défendeur à la cassation.\n\n La demanderesse invoque, à l'appui de son pourvoi, deux moyens de cassation.\n\n Le dossier a été communiqué au procureur général.\n\n Sur le rapport de Mme Salomon, conseiller, les observations de la SCP Célice, Texidor, Périer, avocat de la société Trimet France, de la SARL Thouvenin, Coudray et Grévy, avocat de M. [W], et l'avis de Mme Wurtz, avocat général, après débats en l'audience publique du 28 novembre 2023 où étaient présents M. Sommer, président, Mme Salomon, conseiller rapporteur, Mme Capitaine, conseiller doyen, MMes Lacquemant, Nirdé-Dorail, Palle, conseillers, Mmes Valéry, Pecqueur, Laplume, MM. Chiron, Leperchey, conseillers référendaires, Mme Wurtz, avocat général, et Mme Dumont, greffier de chambre,\n\n la chambre sociale de la Cour de cassation, composée, en application de l'article R. 431-5 du code de l'organisation judiciaire, des président et conseillers précités, après en avoir délibéré conformément à la loi, a rendu le présent arrêt."
+     },
+     {
+      "alias": "P7",
+      "passage_id": "659e41095537980008846f77#expose-0",
+      "zone": "expose",
+      "text": "Faits et procédure\n\n 1. Selon l'arrêt attaqué (Grenoble, 2 juin 2022), M. [W] a été engagé le 1er octobre 1999 par la société Aluminium Pechiney aux droits de laquelle vient la société Trimet France. Il exerçait en dernier lieu les fonctions de « ceinture noire d'amélioration continue ».\n\n 2. L'entreprise applique la convention collective des industries chimiques et connexes du 30 décembre 1952.\n\n 3. Le 12 octobre 2017, les parties ont signé une convention de rupture du contrat de travail et la rupture a pris effet le 19 novembre suivant."
+     },
+     {
+      "alias": "P8",
+      "passage_id": "659e41095537980008846f77#motivations-0",
+      "zone": "motivations",
+      "text": "4. En application de l'article 1014, alinéa 2, du code de procédure civile, il n'y a pas lieu de statuer par une décision spécialement motivée sur ce moyen qui n'est manifestement pas de nature à entraîner la cassation."
+     },
+     {
+      "alias": "P9",
+      "passage_id": "659e41095537980008846f77#moyens-1",
+      "zone": "moyens",
+      "text": "Sur le premier moyen, pris en sa première branche\n\n Enoncé du moyen\n\n 5. L'employeur fait grief à l'arrêt de le condamner à payer au salarié une somme à titre de complément d'indemnité de rupture conventionnelle, alors « que la convention de rupture conclue en application des articles L. 1237-11 et suivants du code du travail fixe la date de la rupture du contrat qui ne peut \n intervenir avant le lendemain du jour de l'homologation ; que selon l'article 14-3 de l'avenant n° 3 à la convention collective des industries chimiques, la base de calcul de l'indemnité de licenciement est la rémunération totale mensuelle gagnée par le cadre pendant le mois précédant le préavis de licenciement ; qu'il en résulte qu'en cas de rupture conventionnelle, la base de calcul de l'indemnité conventionnelle de licenciement est la rémunération du mois précédant la date de la rupture fixée par la convention de rupture ; qu'en l'espèce, la société Trimet soutenait que la convention de rupture du contrat conclue le 12 octobre 2017 fixait au 19 novembre 2017 la rupture du contrat, de sorte que le mois précédant la rupture était le mois d'octobre 2017 et non celui de septembre 2017 ; qu'en se bornant à affirmer, pour retenir le salaire du mois de septembre 2017 comme base de calcul de l'indemnité de licenciement, qu' ''en l'absence de préavis de congédiement, les parties prennent en compte le salaire du mois précédant le congédiement sans préavis'' et que le salaire de référence retenu par l'employeur n'inclut pas l'intéressement et la participation versés en septembre 2017, cependant qu'elle avait constaté que la rupture avait pris effet le 19 novembre 2017, la cour d'appel a violé les articles 14-3 de l'avenant n° 3 de la convention collective des industries chimiques du 30 décembre 1952 et l'article L. 1237-13 du code du travail. »"
+     },
+     {
+      "alias": "P1",
+      "passage_id": "659e41095537980008846f77#motivations-1",
+      "zone": "motivations",
+      "text": "Réponse de la Cour\n\n 6. Selon l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008, l'indemnité spécifique de rupture conventionnelle prévue par l'article L. 1237-13 du code du travail ne peut pas être d'un montant inférieur à celui de l'indemnité conventionnelle de licenciement, lorsque celle-ci est supérieure à l'indemnité légale de licenciement.\n\n 7. L'article 14-3 de l'avenant n° 3 du 16 juin 1955 à la convention collective nationale des industries chimiques et connexes du 30 décembre 1952, relatif aux ingénieurs et cadres, prévoit que la base de calcul de l'indemnité de licenciement est la rémunération totale mensuelle gagnée par le cadre pendant le mois précédant le préavis de congédiement et qu'elle ne saurait être inférieure à la moyenne des rémunérations mensuelles des douze mois précédant le congédiement.\n\n 8. La cour d'appel a exactement décidé qu'en l'absence de licenciement et d'exécution de préavis, il convenait de prendre en compte le salaire du mois précédant la signature de la convention de rupture."
+     },
+     {
+      "alias": "P10",
+      "passage_id": "659e41095537980008846f77#moyens-2",
+      "zone": "moyens",
+      "text": "Mais sur le premier moyen, pris en sa seconde branche\n\n Enoncé du moyen\n\n 9. L'employeur fait le même grief à l'arrêt, alors « que selon l'article 14 de l'avenant du 16 juin 1955 à la convention collective nationale des industries chimiques et connexes du 30 décembre 1952, la base de calcul de l'indemnité de licenciement est la rémunération totale mensuelle gagnée par le cadre pendant le mois précédant le préavis de licenciement, sans pouvoir être inférieure à la moyenne des rémunérations mensuelles des 12 mois précédant le préavis de congédiement, étant précisé que pour le calcul de cette rémunération entrent en ligne de compte, outre les appointements de base, les majorations relatives à la durée du travail, les avantages en nature, les primes de toute nature, y compris les primes à la productivité, les participations au chiffre d'affaires ou aux résultats, les indemnités n'ayant pas le caractère d'un remboursement de frais, les gratifications diverses ayant le caractère contractuel ou de fait d'un complément de rémunération annuelle, à l'exclusion des gratifications exceptionnelles ; qu'il en résulte qu'à défaut d'autre disposition de la convention collective, celles des primes, participations au chiffre d'affaires ou aux résultats et gratifications versées au cours du mois de référence, et dont la périodicité est supérieure à un mois, ne peuvent être prises en compte que pour la part venant en rémunération de ce mois ; qu'en retenant néanmoins, comme assiette de calcul de l'indemnité conventionnelle de congédiement, la rémunération totale perçue par le salarié au cours du mois de septembre 2017 incluant, sans proratisation, les primes annuelles d'intéressement et de participation versées au cours de ce mois pour l'année écoulée, la cour d'appel a violé le texte conventionnel précité. »"
+     },
+     {
+      "alias": "P11",
+      "passage_id": "659e41095537980008846f77#motivations-2",
+      "zone": "motivations",
+      "text": "Réponse de la Cour\n\n Vu l'article 14-3 de l'avenant n° 3 du 16 juin 1955 à la convention collective nationale des industries chimiques et connexes du 30 décembre 1952, relatif aux ingénieurs et cadres :\n\n 10. Selon ce texte, pour le calcul de l'indemnité de licenciement, entrent en ligne de compte, outre les appointements de base, les majorations relatives à la durée du travail, les avantages en nature, les primes de toute nature y compris les primes à la productivité, les participations au chiffre d'affaires ou aux résultats, les indemnités n'ayant pas le caractère d'un remboursement de frais, les gratifications diverses ayant le caractère contractuel ou de fait d'un complément de rémunération annuelle, à l'exclusion des gratifications exceptionnelles notamment celles résultant de l'application de l'article 17.\n\n 11. Il en résulte qu'à défaut d'autre disposition de la convention collective, celles des primes et gratifications versées au cours du mois de référence, et dont la périodicité est supérieure à un mois, ne peuvent être prises en compte que pour la part venant en rémunération de ce mois.\n\n 12. Pour condamner l'employeur au paiement d'une certaine somme à titre de complément d'indemnité de rupture conventionnelle, l'arrêt retient que les dispositions conventionnelles visent la rémunération totale gagnée pendant le mois précédant le préavis de congédiement sans qu'aucune disposition ne stipule expressément une proratisation des primes ni une moyenne de rémunération mensuelle.\n\n 13. La cour d'appel en a déduit que le salarié était fondé à solliciter un complément d'indemnité calculé sur la base de la rémunération totale perçue en septembre 2017.\n\n 14. En statuant ainsi, la cour d'appel a violé le texte précité.\n\n Portée et conséquences de la cassation.\n\n 15. La cassation du chef de dispositif condamnant la société à verser au salarié une certaine somme à titre de complément d'indemnité de rupture conventionnelle n'emporte pas cassation des chefs de dispositif condamnant la société aux dépens ainsi qu'au paiement d'une somme au titre de l'article 700 du code de procédure civile, justifiés par d'autres condamnations prononcées à l'encontre de celle-ci et non remises en cause."
+     },
+     {
+      "alias": "P12",
+      "passage_id": "659e41095537980008846f77#dispositif-0",
+      "zone": "dispositif",
+      "text": "PAR CES MOTIFS, la Cour :\n\n CASSE ET ANNULE, mais seulement en ce qu'il condamne la société Trimet France à payer à M. [W] la somme de 64 243,28 euros à titre de complément d'indemnité de rupture conventionnelle, l'arrêt rendu le 2 juin 2022, entre les parties, par la cour d'appel de Grenoble ;\n\n Remet, sur ce point l'affaire et les parties dans l'état où elles se trouvaient avant cet arrêt et les renvoie devant la cour d'appel de Chambéry ;\n\n Condamne M. [W] aux dépens ;\n\n En application de l'article 700 du code de procédure civile, rejette les demandes ;\n\n Dit que sur les diligences du procureur général près la Cour de cassation, le présent arrêt sera transmis pour être transcrit en marge ou à la suite de l'arrêt partiellement cassé ;\n\n Ainsi fait et jugé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du dix janvier deux mille vingt-quatre."
+     }
+    ]
+   },
+   "latency_ms": 37.6,
+   "at": "2026-10-24T09:27:40.369+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 9,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.",
+   "data": {
+    "action": "answer",
+    "iteration": 4
+   },
+   "latency_ms": 36289.32329197414,
+   "at": "2026-10-24T09:28:16.660+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 10,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves insufficient — 2/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète) ; 1 non établie(s) par le juge.",
+   "data": {
+    "status": "insufficient",
+    "justification": "2/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète) ; 1 non établie(s) par le juge.",
+    "unverified_claims": [
+     "L'article L. 1237-13 du code du travail prévoit cette condition minimale pour l'indemnité spécifique de rupture conventionnelle [P1].",
+     "La Cour de cassation a confirmé ce principe dans un arrêt publié au Bulletin en janvier 2024 [P1]."
+    ],
+    "claims": [
+     {
+      "text": "Non, l'indemnité spécifique de rupture conventionnelle ne peut pas être inférieure à l'indemnité conventionnelle de licenciement lorsque celle-ci est supérieure à l'indemnité légale de licenciement [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage stipule explicitement que l'indemnité spécifique de rupture conventionnelle ne peut pas être inférieure à l'indemnité conventionnelle de licenciement lorsque celle-ci est supérieure à l'indemnité légale."
+     },
+     {
+      "text": "Cette règle découle de l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008 [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage identifie clairement l'avenant du 18 mai 2009 comme la source de cette règle."
+     },
+     {
+      "text": "L'article L. 1237-13 du code du travail prévoit cette condition minimale pour l'indemnité spécifique de rupture conventionnelle [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "not_enough_info",
+      "rule_failures": [],
+      "reason": "Bien que le texte mentionne que l'indemnité est prévue par l'article L. 1237-13, il ne précise pas que cet article lui-même contient la condition minimale ; c'est l'avenant de 2009 qui est cité comme source directe."
+     },
+     {
+      "text": "La Cour de cassation a confirmé ce principe dans un arrêt publié au Bulletin en janvier 2024 [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "not_enough_info",
+      "rule_failures": [
+       "élément absent des passages cités : 2024"
+      ],
+      "reason": "Le passage ne mentionne ni la date de publication au Bulletin (janvier 2024) ni le fait que cet arrêt ait été publié dans ce recueil."
+     }
+    ],
+    "next_action": "search_again",
+    "llm_judge_used": true
+   },
+   "latency_ms": 15884.9,
+   "at": "2026-10-24T09:28:32.553+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 11,
+   "type": "ERROR",
+   "agent": "agent",
+   "summary": "Appel au modèle impossible : Ollama n'a pas répondu à temps (/api/chat)",
+   "data": {
+    "error": "Ollama n'a pas répondu à temps (/api/chat)"
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:44:39.368+00:00"
+  },
+  {
+   "run_id": "5b505ddfc4fd",
+   "step": 12,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Abstention — une erreur non récupérable a interrompu la recherche.",
+   "data": {
+    "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : une erreur non récupérable a interrompu la recherche.",
+    "status": "error",
+    "verifier_status": "insufficient",
+    "sources": [],
+    "limits": [
+     "Non établi : L'article L. 1237-13 du code du travail prévoit cette condition minimale pour l'indemnité spécifique de rupture conventionnelle [P1].",
+     "Non établi : La Cour de cassation a confirmé ce principe dans un arrêt publié au Bulletin en janvier 2024 [P1]."
+    ],
+    "stop_reason": "error",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+     "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-13.050",
+     "Cour de cassation · Chambre sociale · 2024-03-27 · n° 22-23.298",
+     "Cour de cassation · Chambre sociale · 2024-03-06 · n° 22-19.879",
+     "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-21.510"
+    ],
+    "errors": [
+     "LLM : Ollama n'a pas répondu à temps (/api/chat)"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:44:39.549+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : une erreur non récupérable a interrompu la recherche.",
+  "status": "error",
+  "verifier_status": "insufficient",
+  "sources": [],
+  "limits": [
+   "Non établi : L'article L. 1237-13 du code du travail prévoit cette condition minimale pour l'indemnité spécifique de rupture conventionnelle [P1].",
+   "Non établi : La Cour de cassation a confirmé ce principe dans un arrêt publié au Bulletin en janvier 2024 [P1]."
+  ],
+  "stop_reason": "error",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+   "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-13.050",
+   "Cour de cassation · Chambre sociale · 2024-03-27 · n° 22-23.298",
+   "Cour de cassation · Chambre sociale · 2024-03-06 · n° 22-19.879",
+   "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-21.510"
+  ],
+  "errors": [
+   "LLM : Ollama n'a pas répondu à temps (/api/chat)"
+  ]
+ },
+ "metrics": {
+  "llm_calls": 6,
+  "prompt_tokens": 15522,
+  "completion_tokens": 1927,
+  "llm_latency_ms": 106347.40937594324,
+  "tool_calls": {
+   "search_cases": 1,
+   "read_case": 1
+  },
+  "tool_latency_ms": 76.80000000000001,
+  "iterations": 4,
+  "searches": 1,
+  "errors": [
+   "LLM : Ollama n'a pas répondu à temps (/api/chat)"
+  ],
+  "total_latency_ms": 1073455.4,
+  "verifier_status": "insufficient",
+  "stop_reason": "error",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 108.2,
+ "hitl_answer": null
+}

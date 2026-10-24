@@ -1,0 +1,452 @@
+{
+ "question": {
+  "id": "C4",
+  "title": "Rupture annulée pour dol du salarié",
+  "kind": "multi-step",
+  "question": "Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?",
+  "target_case": "66728101f7ab5c00087309e1",
+  "selection": "= S2",
+  "expected": "lecture de l'affaire nécessaire"
+ },
+ "mode": "multi",
+ "session": "C4-multi-1792852775",
+ "run_id": "0c66e3c6f34d",
+ "events": [
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le dossier est vide ; il faut trouver les éléments factuels et juridiques demandés dans le corpus.",
+   "data": {
+    "action": "researcher",
+    "brief": "Chercheur, recherche dans le corpus de la Cour de cassation une décision où une rupture conventionnelle a été annulée pour vice du consentement de l'employeur. Fournis les passages précis indiquant : 1) le reproche fait au salarié (ex: dolosité, mensonge), 2) la cour d'appel ayant statué en premier ressort, et 3) les effets de cette rupture selon la Cour de cassation (nullité, maintien des liens sociaux, etc.).",
+    "iteration": 1
+   },
+   "latency_ms": 7126.884625002276,
+   "at": "2026-10-24T14:39:42.847+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 2,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« rupture conventionnelle annulée vice du consentement employeur dolosité mensonge reproche salarié cour d'appel effets nullité »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 10110.940915998071,
+   "at": "2026-10-24T14:39:52.961+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 3,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"rupture conventionnelle annulée vice du consentement employeur dolosité mensonge reproche salarié cour d'appel effets nullité\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "rupture conventionnelle annulée vice du consentement employeur dolosité mensonge reproche salarié cour d'appel effets nullité",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:39:52.961+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 4,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "data": {
+    "query": "rupture conventionnelle annulée vice du consentement employeur dolosité mensonge reproche salarié cour d'appel effets nullité",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "66728101f7ab5c00087309e1",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+      "solution": "Rejet",
+      "score": 0.032522,
+      "alias": "P1",
+      "passage_id": "66728101f7ab5c00087309e1#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen des moyens Sur le premier moyen Enoncé du moyen 3. Le salarié fait grief à l'arrêt de dire qu'il a vicié la rupture conventionnelle par des manoeuvres dolosives, de prononcer la nullité de cette rupture et de le condamner au paiement de diverses sommes au titre de l'indemnité spécifique perçue à tort et de …"
+     },
+     {
+      "rank": 2,
+      "case_id": "637dcb4414982305d4c204ca",
+      "title": "Cour de cassation · Chambre sociale · 2022-11-23 · n° 21-16.162",
+      "solution": "Rejet",
+      "score": 0.029412,
+      "alias": "P2",
+      "passage_id": "637dcb4414982305d4c204ca#moyens-4",
+      "zone": "moyens",
+      "excerpt": "1233-57-2 du code du travail entraînait l'annulation d'une modification de contrat de travail intervenue par application de l'article L. 1222-6 dans le cadre du même projet de réorganisation ; qu'en statuant par de tels motifs alors qu'il ressortait de ses propres constatations que l'avenant à son contrat de travail …"
+     },
+     {
+      "rank": 3,
+      "case_id": "6243f34c78ea42400452b5ec",
+      "title": "Cour de cassation · Chambre sociale · 2022-03-30 · n° 20-23.375",
+      "solution": "Rejet",
+      "score": 0.025342,
+      "alias": "P3",
+      "passage_id": "6243f34c78ea42400452b5ec#dispositif-0",
+      "zone": "dispositif",
+      "excerpt": "EN CONSÉQUENCE, la Cour : REJETTE le pourvoi ; Condamne M. [R] aux dépens ; En application de l'article 700 du code de procédure civile, rejette les demandes ; Ainsi décidé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du trente mars deux mille vingt-deux. MOYEN …"
+     },
+     {
+      "rank": 4,
+      "case_id": "667baf1deee23a0a3f11d252",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-26 · n° 23-15.498",
+      "solution": "Cassation",
+      "score": 0.024971,
+      "alias": "P4",
+      "passage_id": "667baf1deee23a0a3f11d252#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Mais sur le premier moyen, pris en sa première branche Enoncé du moyen 8. L'employeur fait grief aux arrêts de déclarer les salariés recevables en leurs contestations du protocole de rupture amiable, de les déclarer recevables à contester les motifs du licenciement et de le condamner à payer à chacun des salariés des …"
+     },
+     {
+      "rank": 5,
+      "case_id": "65a788f0c53a550008791530",
+      "title": "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-22.564",
+      "solution": "Rejet",
+      "score": 0.024729,
+      "alias": "P5",
+      "passage_id": "65a788f0c53a550008791530#moyens-3",
+      "zone": "moyens",
+      "excerpt": "qu'en retenant que les démissions des salariés qui ''sont liées au contexte des négociations retardées du PSE et ( ) résultent des manquements de l'employeur quant aux négociations du PSE et aux négociations tardives de l'accord de suspension des contrats de travail'' ''apparaissent contraintes en raison de …"
+     }
+    ]
+   },
+   "latency_ms": 45.9,
+   "at": "2026-10-24T14:39:53.007+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 5,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Lecture détaillée de la décision 66728101f7ab5c00087309e1.",
+   "data": {
+    "action": "read_case"
+   },
+   "latency_ms": 20048.48908400163,
+   "at": "2026-10-24T14:40:13.056+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 6,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"66728101f7ab5c00087309e1\", \"focus\": \"vice du consentement, reproche salarié, cour d'appel, effets rupture\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "66728101f7ab5c00087309e1",
+     "focus": "vice du consentement, reproche salarié, cour d'appel, effets rupture"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:40:13.056+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 7,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "data": {
+    "case_id": "66728101f7ab5c00087309e1",
+    "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+    "passages": [
+     {
+      "alias": "P6",
+      "passage_id": "66728101f7ab5c00087309e1#introduction-0",
+      "zone": "introduction",
+      "text": "SOC.\n\n CZ\n\n COUR DE CASSATION\n ______________________\n\n Audience publique du 19 juin 2024\n\n Rejet\n\n M. SOMMER, président\n\n Arrêt n° 644 FS-B\n\n Pourvoi n° G 23-10.817 \n\n R É P U B L I Q U E F R A N Ç A I S E \n _________________________\n\n AU NOM DU PEUPLE FRANÇAIS\n _________________________\n\n ARRÊT DE LA COUR DE CASSATION, CHAMBRE SOCIALE, DU 19 JUIN 2024\n\n M. [W] [P], domicilié [Adresse 1], a formé le pourvoi n° G 23-10.817 contre l'arrêt rendu le 18 novembre 2022 par la cour d'appel de Toulouse (4e chambre, section 1), dans le litige l'opposant à la société Alientech France, société par actions simplifiée, dont le siège est [Adresse 2], défenderesse à la cassation.\n\n Le demandeur invoque, à l'appui de son pourvoi, deux moyens de cassation.\n\n Le dossier a été communiqué au procureur général.\n\n Sur le rapport de Mme Salomon, conseiller, les observations de la SARL Boré, Salve de Bruneton et Mégret, avocat de M. [P], de la SCP Le Bret-Desaché, avocat de la société Alientech France, et l'avis de M. Juan, avocat général, après débats en l'audience publique du 21 mai 2024 où étaient présents M. Sommer, président, Mme Salomon, conseiller rapporteur, Mme Capitaine, conseiller doyen, Mmes Lacquemant, Nirdé-Dorail, Palle, conseillers, Mmes Valéry, Pecqueur, Laplume, MM. Chiron, Leperchey, conseillers référendaires, M. Juan, avocat général, et Mme Pontonnier, greffier de chambre,\n\n la chambre sociale de la Cour de cassation, composée, en application de l'article R. 431-5 du code de l'organisation judiciaire, des président et conseillers précités, après en avoir délibéré conformément à la loi, a rendu le présent arrêt."
+     },
+     {
+      "alias": "P7",
+      "passage_id": "66728101f7ab5c00087309e1#expose-0",
+      "zone": "expose",
+      "text": "Faits et procédure \n\n 1. Selon l'arrêt attaqué (Toulouse, 18 novembre 2022), M. [P] a été engagé en qualité de technicien commercial par la société Arm Engineering le 31 mai 2010. Son contrat de travail a été transféré à la société Alientech France le 16 mai 2011. Le salarié exerçait en dernier lieu les fonctions de responsable commercial.\n\n 2. Le salarié et l'employeur ont signé une convention de rupture le 20 novembre 2018 et la relation de travail a pris fin le 31 décembre suivant."
+     },
+     {
+      "alias": "P1",
+      "passage_id": "66728101f7ab5c00087309e1#moyens-0",
+      "zone": "moyens",
+      "text": "Examen des moyens\n\n Sur le premier moyen \n\n Enoncé du moyen\n\n 3. Le salarié fait grief à l'arrêt de dire qu'il a vicié la rupture conventionnelle par des manoeuvres dolosives, de prononcer la nullité de cette rupture et de le condamner au paiement de diverses sommes au titre de l'indemnité spécifique perçue à tort et de l'indemnité compensatrice de préavis, alors :\n\n « 1°/ qu'aucune réticence dolosive ne peut être imputée à une partie sur laquelle ne pesait aucune obligation d'informer son cocontractant ; qu'en retenant, pour annuler la convention de rupture conclue, le 31 décembre 2018, entre la société Alientech et M. [P], que ce dernier avait commis une réticence dolosive ''du fait du défaut d'information volontaire [] sur le projet d'entreprise initié dans le même secteur d'activité auquel [étaient] associés deux anciens salariés'', l'employeur ne s'étant déterminé qu'au regard ''du seul souhait de reconversion professionnelle dans le management'', quand, en l'absence de clause de non-concurrence, le salarié n'était pas tenu de révéler spontanément à son employeur son projet de création d'activité concurrente et les actes préparatoires qu'il avait effectués de sorte qu'aucune réticence dolosive ne pouvait lui être imputée, la cour d'appel a violé l'article 1137 du code civil ; \n\n 2°/ qu'il ne saurait être porté une atteinte disproportionnée au principe fondamental de libre exercice d'une activité professionnelle ; qu'en retenant, pour annuler la convention de rupture conclue, le 31 décembre 2018, entre la société Alientech et M."
+     },
+     {
+      "alias": "P8",
+      "passage_id": "66728101f7ab5c00087309e1#moyens-1",
+      "zone": "moyens",
+      "text": "2°/ qu'il ne saurait être porté une atteinte disproportionnée au principe fondamental de libre exercice d'une activité professionnelle ; qu'en retenant, pour annuler la convention de rupture conclue, le 31 décembre 2018, entre la société Alientech et M. [P], que celui-ci avait commis une réticence dolosive ''du fait du défaut d'information volontaire [] sur le projet d'entreprise initié dans le même secteur d'activité auquel [étaient] associés deux anciens salariés'', l'employeur ne s'étant déterminé qu'au regard ''du seul souhait de reconversion professionnelle dans le management'', cependant qu'elle constatait elle-même que le salarié n'était ''soumis contractuellement à aucune clause de non-concurrence ni d'exclusivité'' et qu'il avait pris soin de faire part à son employeur de son ''souhait de reconversion'', la cour d'appel a porté une atteinte disproportionnée au principe fondamental de libre exercice d'une activité professionnelle et ainsi violé ce principe, ensemble l'article 1103 du code civil ; \n\n 3°/ que, dans le SMS de juin 2019 envoyé à M. [R] [T], président d'Alientech, M. [P] écrit : ''si j'ai aussi décidé de faire les choses seul, c'est parce que nos méthodes diffèrent également. On ne se serait très certainement pas entendu sur la façon de faire[] difficile d'accepter de revenir te demander quelque chose. Honnêtement je suis sûr que tu m'aurais fait la morale et que mon association avec [O] ne t'aurait pas convenue de toutes façons...'' ; qu'en déduisant le caractère déterminant, pour l'employeur, de l'information relative au projet de création d'une activité concurrente, de l'expression, ''honnêtement je suis sûr que tu m'aurais fait la morale et que mon association avec [O] ne t'aurait pas convenue de toutes façons'', quand il résultait des termes clairs et précis de ce message que cette précision ne concernait nullement les conditions de la rupture conventionnelle et se rapportait à l'éventualité, pour M. [P], de revenir collaborer avec son ancienne entreprise, postérieurement à la rupture, la cour d'appel a dénaturé les termes du SMS et a méconnu le principe selon lequel les juges ne doivent pas dénaturer les documents de la cause. »"
+     },
+     {
+      "alias": "P9",
+      "passage_id": "66728101f7ab5c00087309e1#motivations-0",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n 4. Selon l'article 1137 du code civil, dans sa rédaction issue de la loi n° 2018-287 du 20 avril 2018, constitue un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie.\n\n 5. La cour d'appel a relevé que l'employeur s'est déterminé au regard du seul souhait de reconversion professionnelle dans le management invoqué par le salarié.\n\n 6. Par une interprétation souveraine, exclusive de dénaturation, de la portée des éléments de preuve produits, la cour d'appel a constaté que le salarié avait volontairement dissimulé des éléments dont il connaissait le caractère déterminant pour l'employeur afin d'obtenir le consentement de ce dernier à la rupture conventionnelle.\n\n 7. Elle a ainsi estimé, sans faire peser sur le salarié une obligation d'information contractuelle, ni porter atteinte à sa liberté d'entreprendre, que le consentement de l'employeur avait été vicié. \n\n 8. Le moyen n'est donc pas fondé."
+     },
+     {
+      "alias": "P10",
+      "passage_id": "66728101f7ab5c00087309e1#moyens-2",
+      "zone": "moyens",
+      "text": "Sur le second moyen \n\n Enoncé du moyen \n\n 9. Le salarié fait grief à l'arrêt de juger que la rupture conventionnelle annulée doit produire les effets d'une démission et de le condamner à payer une somme au titre de l'indemnité compensatrice de préavis, alors « que toute démission doit résulter d'une manifestation de volonté claire et non équivoque ; qu'en retenant, pour condamner M. [P] à verser la somme de 20 334 euros au titre de l'indemnité compensatrice de préavis, que la nullité de la rupture conventionnelle, imputable au salarié, ''emport[ait] les effets d'une démission'', sans caractériser la volonté claire et non équivoque du salarié de mettre fin à son contrat, même en l'absence de rupture conventionnelle, la cour d'appel a violé les articles L. 1231-1 et L. 1237-1 du code du travail. »"
+     },
+     {
+      "alias": "P11",
+      "passage_id": "66728101f7ab5c00087309e1#motivations-1",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n 10. Lorsque le contrat de travail est rompu en exécution d'une convention de rupture ensuite annulée en raison d'un vice du consentement de l'employeur, la rupture produit les effets d'une démission.\n\n 11. Ayant retenu que la dissimulation intentionnelle du salarié caractérisait un dol et que la convention de rupture était nulle, la cour d'appel a exactement décidé que la nullité produisait les effets d'une démission.\n\n 12. Le moyen n'est donc pas fondé."
+     },
+     {
+      "alias": "P12",
+      "passage_id": "66728101f7ab5c00087309e1#dispositif-0",
+      "zone": "dispositif",
+      "text": "PAR CES MOTIFS, la Cour :\n\n REJETTE le pourvoi ;\n\n Condamne M. [P] aux dépens ;\n\n En application de l'article 700 du code de procédure civile, rejette les demandes ;\n\n Ainsi fait et jugé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du dix-neuf juin deux mille vingt-quatre."
+     }
+    ]
+   },
+   "latency_ms": 33.6,
+   "at": "2026-10-24T14:40:13.090+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 8,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 12 passage(s) au dossier. Décision pertinente : case_id=66728101f7ab5c00087309e1 (arrêt de la Cour de cassation du 19/06/2024).\n\nPassages utiles : [P1] et [P8] pour le reproche fait au salarié (réticence dolosive par dissimulation volontaire d'informations sur son p",
+   "data": {
+    "report": "Décision pertinente : case_id=66728101f7ab5c00087309e1 (arrêt de la Cour de cassation du 19/06/2024).\n\nPassages utiles : [P1] et [P8] pour le reproche fait au salarié (réticence dolosive par dissimulation volontaire d'informations sur son projet concurrentiel) ; [P7] pour la cour d'appel ayant statué en premier ressort (Toulouse, 18/11/2022) ; [P11] pour les effets de cette rupture selon la Cour de cassation (nullité produisant les effets d'une démission).",
+    "passages": 12,
+    "cases": [
+     "66728101f7ab5c00087309e1",
+     "637dcb4414982305d4c204ca",
+     "6243f34c78ea42400452b5ec",
+     "667baf1deee23a0a3f11d252",
+     "65a788f0c53a550008791530"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:40:25.263+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 9,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Rédaction de la synthèse — Les passages [P1], [P7] et [P11] répondent intégralement aux trois sous-questions de l'affaire.",
+   "data": {
+    "action": "write",
+    "brief": "Le dossier contient tous les éléments nécessaires : le reproche au salarié (réticence dolosive, dissimulation d'informations sur un projet concurrentiel), la cour d'appel ayant statué (Toulouse) et les effets de la nullité (produisant ceux d'une démission).",
+    "iteration": 2
+   },
+   "latency_ms": 9094.805417000316,
+   "at": "2026-10-24T14:40:34.362+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 10,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Synthèse rédigée à partir de 10 passage(s) : soumise au vérificateur.",
+   "data": {
+    "action": "answer"
+   },
+   "latency_ms": 12639.5,
+   "at": "2026-10-24T14:40:47.008+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 11,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves sufficient — 3 affirmation(s), toutes soutenues par les passages cités.",
+   "data": {
+    "status": "sufficient",
+    "justification": "3 affirmation(s), toutes soutenues par les passages cités.",
+    "unverified_claims": [],
+    "claims": [
+     {
+      "text": "Dans l'affaire où la rupture conventionnelle a été annulée pour vice du consentement de l'employeur, c'est la cour d'appel de Toulouse qui a statué le 18 novembre 2022 [P7].",
+      "citations": [
+       "P7"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P7 confirme que l'arrêt attaqué est celui de la cour d'appel de Toulouse en date du 18 novembre 2022."
+     },
+     {
+      "text": "La Cour de cassation reproche au salarié d'avoir volontairement dissimulé des éléments dont il connaissait le caractère déterminant pour l'employeur afin d'obtenir son consentement à la rupture, ce qui constitue un dol [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P9 explique que le salarié a volontairement dissimulé des éléments déterminants pour obtenir le consentement de l'employeur, ce qui constitue un dol."
+     },
+     {
+      "text": "Par conséquent, la Cour de cassation considère que la nullité de cette convention de rupture produit les effets d'une démission [P11].",
+      "citations": [
+       "P11"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P11 stipule explicitement que lorsque la rupture conventionnelle est annulée pour vice du consentement, elle produit les effets d'une démission."
+     }
+    ],
+    "next_action": "answer",
+    "llm_judge_used": true
+   },
+   "latency_ms": 11482.8,
+   "at": "2026-10-24T14:40:58.495+00:00"
+  },
+  {
+   "run_id": "0c66e3c6f34d",
+   "step": 12,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Réponse vérifiée — 3 passage(s) cité(s).",
+   "data": {
+    "answer": "Dans l'affaire où la rupture conventionnelle a été annulée pour vice du consentement de l'employeur, c'est la cour d'appel de Toulouse qui a statué le 18 novembre 2022 [P7]. La Cour de cassation reproche au salarié d'avoir volontairement dissimulé des éléments dont il connaissait le caractère déterminant pour l'employeur afin d'obtenir son consentement à la rupture, ce qui constitue un dol [P9]. Par conséquent, la Cour de cassation considère que la nullité de cette convention de rupture produit les effets d'une démission [P11].",
+    "status": "answered",
+    "verifier_status": "sufficient",
+    "sources": [
+     {
+      "alias": "P7",
+      "passage_id": "66728101f7ab5c00087309e1#expose-0",
+      "case_id": "66728101f7ab5c00087309e1",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+      "zone": "expose",
+      "zone_label": "Exposé du litige",
+      "text": "Faits et procédure \n\n 1. Selon l'arrêt attaqué (Toulouse, 18 novembre 2022), M. [P] a été engagé en qualité de technicien commercial par la société Arm Engineering le 31 mai 2010. Son contrat de travail a été transféré à la société Alientech France le 16 mai 2011. Le salarié exerçait en dernier lieu les fonctions de responsable commercial.\n\n 2. Le salarié et l'employeur ont signé une convention de rupture le 20 novembre 2018 et la relation de travail a pris fin le 31 décembre suivant.",
+      "start": 1636,
+      "end": 2125,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/66728101f7ab5c00087309e1"
+     },
+     {
+      "alias": "P9",
+      "passage_id": "66728101f7ab5c00087309e1#motivations-0",
+      "case_id": "66728101f7ab5c00087309e1",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+      "zone": "motivations",
+      "zone_label": "Motivations",
+      "text": "Réponse de la Cour \n\n 4. Selon l'article 1137 du code civil, dans sa rédaction issue de la loi n° 2018-287 du 20 avril 2018, constitue un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie.\n\n 5. La cour d'appel a relevé que l'employeur s'est déterminé au regard du seul souhait de reconversion professionnelle dans le management invoqué par le salarié.\n\n 6. Par une interprétation souveraine, exclusive de dénaturation, de la portée des éléments de preuve produits, la cour d'appel a constaté que le salarié avait volontairement dissimulé des éléments dont il connaissait le caractère déterminant pour l'employeur afin d'obtenir le consentement de ce dernier à la rupture conventionnelle.\n\n 7. Elle a ainsi estimé, sans faire peser sur le salarié une obligation d'information contractuelle, ni porter atteinte à sa liberté d'entreprendre, que le consentement de l'employeur avait été vicié. \n\n 8. Le moyen n'est donc pas fondé.",
+      "start": 5630,
+      "end": 6644,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/66728101f7ab5c00087309e1"
+     },
+     {
+      "alias": "P11",
+      "passage_id": "66728101f7ab5c00087309e1#motivations-1",
+      "case_id": "66728101f7ab5c00087309e1",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+      "zone": "motivations",
+      "zone_label": "Motivations",
+      "text": "Réponse de la Cour \n\n 10. Lorsque le contrat de travail est rompu en exécution d'une convention de rupture ensuite annulée en raison d'un vice du consentement de l'employeur, la rupture produit les effets d'une démission.\n\n 11. Ayant retenu que la dissimulation intentionnelle du salarié caractérisait un dol et que la convention de rupture était nulle, la cour d'appel a exactement décidé que la nullité produisait les effets d'une démission.\n\n 12. Le moyen n'est donc pas fondé.",
+      "start": 7454,
+      "end": 7934,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/66728101f7ab5c00087309e1"
+     }
+    ],
+    "limits": [
+     "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+    ],
+    "stop_reason": "answered",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+     "Cour de cassation · Chambre sociale · 2022-11-23 · n° 21-16.162",
+     "Cour de cassation · Chambre sociale · 2022-03-30 · n° 20-23.375",
+     "Cour de cassation · Chambre sociale · 2024-06-26 · n° 23-15.498",
+     "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-22.564"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:40:58.499+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Dans l'affaire où la rupture conventionnelle a été annulée pour vice du consentement de l'employeur, c'est la cour d'appel de Toulouse qui a statué le 18 novembre 2022 [P7]. La Cour de cassation reproche au salarié d'avoir volontairement dissimulé des éléments dont il connaissait le caractère déterminant pour l'employeur afin d'obtenir son consentement à la rupture, ce qui constitue un dol [P9]. Par conséquent, la Cour de cassation considère que la nullité de cette convention de rupture produit les effets d'une démission [P11].",
+  "status": "answered",
+  "verifier_status": "sufficient",
+  "sources": [
+   {
+    "alias": "P7",
+    "passage_id": "66728101f7ab5c00087309e1#expose-0",
+    "case_id": "66728101f7ab5c00087309e1",
+    "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+    "zone": "expose",
+    "zone_label": "Exposé du litige",
+    "text": "Faits et procédure \n\n 1. Selon l'arrêt attaqué (Toulouse, 18 novembre 2022), M. [P] a été engagé en qualité de technicien commercial par la société Arm Engineering le 31 mai 2010. Son contrat de travail a été transféré à la société Alientech France le 16 mai 2011. Le salarié exerçait en dernier lieu les fonctions de responsable commercial.\n\n 2. Le salarié et l'employeur ont signé une convention de rupture le 20 novembre 2018 et la relation de travail a pris fin le 31 décembre suivant.",
+    "start": 1636,
+    "end": 2125,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/66728101f7ab5c00087309e1"
+   },
+   {
+    "alias": "P9",
+    "passage_id": "66728101f7ab5c00087309e1#motivations-0",
+    "case_id": "66728101f7ab5c00087309e1",
+    "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour \n\n 4. Selon l'article 1137 du code civil, dans sa rédaction issue de la loi n° 2018-287 du 20 avril 2018, constitue un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie.\n\n 5. La cour d'appel a relevé que l'employeur s'est déterminé au regard du seul souhait de reconversion professionnelle dans le management invoqué par le salarié.\n\n 6. Par une interprétation souveraine, exclusive de dénaturation, de la portée des éléments de preuve produits, la cour d'appel a constaté que le salarié avait volontairement dissimulé des éléments dont il connaissait le caractère déterminant pour l'employeur afin d'obtenir le consentement de ce dernier à la rupture conventionnelle.\n\n 7. Elle a ainsi estimé, sans faire peser sur le salarié une obligation d'information contractuelle, ni porter atteinte à sa liberté d'entreprendre, que le consentement de l'employeur avait été vicié. \n\n 8. Le moyen n'est donc pas fondé.",
+    "start": 5630,
+    "end": 6644,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/66728101f7ab5c00087309e1"
+   },
+   {
+    "alias": "P11",
+    "passage_id": "66728101f7ab5c00087309e1#motivations-1",
+    "case_id": "66728101f7ab5c00087309e1",
+    "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour \n\n 10. Lorsque le contrat de travail est rompu en exécution d'une convention de rupture ensuite annulée en raison d'un vice du consentement de l'employeur, la rupture produit les effets d'une démission.\n\n 11. Ayant retenu que la dissimulation intentionnelle du salarié caractérisait un dol et que la convention de rupture était nulle, la cour d'appel a exactement décidé que la nullité produisait les effets d'une démission.\n\n 12. Le moyen n'est donc pas fondé.",
+    "start": 7454,
+    "end": 7934,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/66728101f7ab5c00087309e1"
+   }
+  ],
+  "limits": [
+   "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+  ],
+  "stop_reason": "answered",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "Cour de cassation · Chambre sociale · 2022-11-23 · n° 21-16.162",
+   "Cour de cassation · Chambre sociale · 2022-03-30 · n° 20-23.375",
+   "Cour de cassation · Chambre sociale · 2024-06-26 · n° 23-15.498",
+   "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-22.564"
+  ]
+ },
+ "metrics": {
+  "llm_calls": 7,
+  "prompt_tokens": 16739,
+  "completion_tokens": 1315,
+  "llm_latency_ms": 82674.0553349955,
+  "tool_calls": {
+   "search_cases": 1,
+   "read_case": 1
+  },
+  "tool_latency_ms": 79.5,
+  "iterations": 2,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 82779.3,
+  "verifier_status": "sufficient",
+  "stop_reason": "answered",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 82.8,
+ "hitl_answer": null
+}

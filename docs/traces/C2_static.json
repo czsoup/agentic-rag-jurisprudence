@@ -1,0 +1,111 @@
+{
+ "question": {
+  "id": "C2",
+  "title": "Congés payés pendant l'éviction",
+  "kind": "simple",
+  "question": "Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?",
+  "target_case": "63fefc07002ac605de15b29e",
+  "selection": "Chambre sociale, 1er mars 2023, n° 21-16.008 (publié) : oui, sauf s'il a occupé un autre emploi pendant cette période.",
+  "expected": "réponse directe, nuance « sauf autre emploi »"
+ },
+ "mode": "static",
+ "final": {
+  "answer": "Oui, un salarié dont le licenciement est nul et qui demande sa réintégration a droit au paiement de ses droits à congés payés pour la période d'éviction comprise entre la date du licenciement et celle de la réintégration [P1]. La Cour précise que ce droit s'applique en application des articles L. 3141-3 et L. 3141-9 du code du travail, sauf si le salarié a occupé un autre emploi durant cette période [P2]. Le texte juridique indique également que la salariée peut prétendre à ses droits à congés payés au titre de cette période d'éviction [P4]. Cependant, l'indemnité d'éviction elle-même n'ouvre pas droit à des congés payés effectifs ou à une indemnité compensatrice de congés payés [P1]. Par conséquent, le salarié ne peut prétendre aux 10 % au titre des congés payés mentionnés dans son calcul si l'on exclut les sommes réclamées au titre des congés payés du montant de l'indemnité d'éviction [P1]. La Cour a ainsi cassé un arrêt qui avait débouté la salariée de sa demande en paiement d'indemnité de congé payé pour cette période [P4].",
+  "verifier_status": "sufficient",
+  "sources": [
+   {
+    "alias": "P1",
+    "passage_id": "63fefc07002ac605de15b29e#motivations-1",
+    "case_id": "63fefc07002ac605de15b29e",
+    "title": "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour\n\n Vu les articles L. 1132-1 et L. 1132-4, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, du code du travail :\n\n 8. Il résulte de ces textes que tout licenciement prononcé à l'égard d'un salarié en raison de son état de santé est nul et que le salarié qui demande sa réintégration a droit au paiement d'une somme correspondant à la réparation de la totalité du préjudice subi au cours de la période qui s'est écoulée entre son licenciement et sa réintégration, dans la limite du montant des salaires dont il a été privé.\n\n 9. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 10. Pour exclure du montant de l'indemnité d'éviction les sommes réclamées au titre des congés payés et ainsi la limiter à une certaine somme, l'arrêt retient que l'indemnité d'éviction n'ouvrant pas droit à congés payés effectifs ou à indemnité compensatrice de congés payés, le salarié ne peut prétendre aux 10 % au titre des congés payés mentionnés dans son calcul.\n\n 11. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 12. En application de l'article 624 du code de procédure civile, la cassation des dispositions de l'arrêt condamnant l'employeur à payer au salarié une somme au titre de l'indemnité d'éviction entraîne la cassation du chef de dispositif ordonnant la remise d'un bulletin de salaire récapitulatif conforme à la décision, qui s'y rattache par un lien dépendance nécessaire."
+   },
+   {
+    "alias": "P2",
+    "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "zone": "moyens",
+    "zone_label": "Moyens",
+    "text": "Et sur le troisième moyen du pourvoi n° B 22-11.106\n\n Enoncé du moyen\n\n 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail ; qu'en retenant, pour rejeter la demande en paiement des indemnités pour la période de référence courant du 1er juin 2018 à la date de sa réintégration effective, que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvrait pas droit à congés payés, la cour d'appel a violé les articles L. 1226-9 et L. 1226-13 du code du travail. »"
+   },
+   {
+    "alias": "P4",
+    "passage_id": "65015d56ee1a2205e6581652#motivations-5",
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour \n\n Vu les articles L. 1152-1, L. 1152-2, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, et L. 1152-3 du code du travail :\n\n 24. Aux termes du premier de ces textes, aucun salarié ne doit subir les agissements répétés de harcèlement moral qui ont pour objet ou pour effet une dégradation de ses conditions de travail susceptible de porter atteinte à ses droits et à sa dignité, d'altérer sa santé physique ou mentale ou de compromettre son avenir professionnel.\n\n 25. Aux termes du deuxième de ces textes, aucun salarié, aucune personne en formation ou en stage ne peut être sanctionné, licencié ou faire l'objet d'une mesure discriminatoire, directe ou indirecte, notamment en matière de rémunération, de formation professionnelle, de mutation ou de renouvellement de contrat pour avoir subi ou refusé de subir de tels agissements ou les avoir relatés.\n\n 26. Aux termes du dernier, toute rupture du contrat de travail intervenue en méconnaissance des dispositions des articles L. 1152-1 et L. 1152-2, toute disposition ou tout acte contraire est nul.\n\n 27. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 28. Pour débouter la salariée de sa demande en paiement d'indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, l'arrêt, après avoir jugé que le licenciement était nul en application de l'article L. 1152-3 du code du travail, retient que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvre pas droit à congé payé.\n\n 29. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 30."
+   }
+  ],
+  "unverified": []
+ },
+ "metrics": {
+  "llm_calls": 2,
+  "prompt_tokens": 2285,
+  "completion_tokens": 278,
+  "llm_latency_ms": 42013.41812504688,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 0.0,
+  "iterations": 0,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 42049.2,
+  "verifier_status": "sufficient",
+  "stop_reason": null,
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 42.1,
+ "passages": [
+  {
+   "alias": "P1",
+   "passage_id": "63fefc07002ac605de15b29e#motivations-1",
+   "case_id": "63fefc07002ac605de15b29e",
+   "title": "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour\n\n Vu les articles L. 1132-1 et L. 1132-4, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, du code du travail :\n\n 8. Il résulte de ces textes que tout licenciement prononcé à l'égard d'un salarié en raison de son état de santé est nul et que le salarié qui demande sa réintégration a droit au paiement d'une somme correspondant à la réparation de la totalité du préjudice subi au cours de la période qui s'est écoulée entre son licenciement et sa réintégration, dans la limite du montant des salaires dont il a été privé.\n\n 9. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 10. Pour exclure du montant de l'indemnité d'éviction les sommes réclamées au titre des congés payés et ainsi la limiter à une certaine somme, l'arrêt retient que l'indemnité d'éviction n'ouvrant pas droit à congés payés effectifs ou à indemnité compensatrice de congés payés, le salarié ne peut prétendre aux 10 % au titre des congés payés mentionnés dans son calcul.\n\n 11. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 12. En application de l'article 624 du code de procédure civile, la cassation des dispositions de l'arrêt condamnant l'employeur à payer au salarié une somme au titre de l'indemnité d'éviction entraîne la cassation du chef de dispositif ordonnant la remise d'un bulletin de salaire récapitulatif conforme à la décision, qui s'y rattache par un lien dépendance nécessaire."
+  },
+  {
+   "alias": "P2",
+   "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+   "case_id": "65015d56ee1a2205e6581652",
+   "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Et sur le troisième moyen du pourvoi n° B 22-11.106\n\n Enoncé du moyen\n\n 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail ; qu'en retenant, pour rejeter la demande en paiement des indemnités pour la période de référence courant du 1er juin 2018 à la date de sa réintégration effective, que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvrait pas droit à congés payés, la cour d'appel a violé les articles L. 1226-9 et L. 1226-13 du code du travail. »"
+  },
+  {
+   "alias": "P3",
+   "passage_id": "63fefc07002ac605de15b29e#moyens-1",
+   "case_id": "63fefc07002ac605de15b29e",
+   "title": "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Mais sur le moyen en ce qu'il fait grief à l'arrêt d'exclure du montant de l'indemnité d'éviction les sommes réclamées au titre des congés payés\n\n Enoncé du moyen\n\n 7. Le salarié fait grief à l'arrêt de limiter la condamnation de l'employeur à lui payer une certaine arrêtée au 31 décembre 2020, somme à parfaire à la date de réintégration effective à titre d'indemnité d'éviction, alors « que le salarié dont le licenciement est nul et qui demande sa réintégration a droit au paiement d'une indemnisation correspondant à la réparation de la totalité du préjudice subi au cours de la période écoulée entre son licenciement et sa réintégration ; que le salarié a donc droit au paiement d'une indemnité correspondant à l'ensemble des sommes qu'il aurait dû percevoir, notamment aux congés payés qu'il aurait perçus s'il avait travaillé ; qu'en statuant comme elle l'a fait, en excluant diverses sommes sollicitées par le salarié, dont il aurait pourtant bénéficié s'il n'avait pas été licencié, motif pris qu'elles n'avaient pas la nature de salaire et n'étaient pas assujetties au paiement de cotisations sociales, la cour d'appel a violé le principe de la réparation intégrale du préjudice, ensemble les articles L. 1226-9 et L. 1226-13 du code du travail et par fausse application l'article L. 242-1 du code de la sécurité sociale. »"
+  },
+  {
+   "alias": "P4",
+   "passage_id": "65015d56ee1a2205e6581652#motivations-5",
+   "case_id": "65015d56ee1a2205e6581652",
+   "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour \n\n Vu les articles L. 1152-1, L. 1152-2, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, et L. 1152-3 du code du travail :\n\n 24. Aux termes du premier de ces textes, aucun salarié ne doit subir les agissements répétés de harcèlement moral qui ont pour objet ou pour effet une dégradation de ses conditions de travail susceptible de porter atteinte à ses droits et à sa dignité, d'altérer sa santé physique ou mentale ou de compromettre son avenir professionnel.\n\n 25. Aux termes du deuxième de ces textes, aucun salarié, aucune personne en formation ou en stage ne peut être sanctionné, licencié ou faire l'objet d'une mesure discriminatoire, directe ou indirecte, notamment en matière de rémunération, de formation professionnelle, de mutation ou de renouvellement de contrat pour avoir subi ou refusé de subir de tels agissements ou les avoir relatés.\n\n 26. Aux termes du dernier, toute rupture du contrat de travail intervenue en méconnaissance des dispositions des articles L. 1152-1 et L. 1152-2, toute disposition ou tout acte contraire est nul.\n\n 27. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 28. Pour débouter la salariée de sa demande en paiement d'indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, l'arrêt, après avoir jugé que le licenciement était nul en application de l'article L. 1152-3 du code du travail, retient que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvre pas droit à congé payé.\n\n 29. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 30."
+  },
+  {
+   "alias": "P5",
+   "passage_id": "6718920bd8ceca1cd7018c8e#motivations-1",
+   "case_id": "6718920bd8ceca1cd7018c8e",
+   "title": "Cour de cassation · Chambre sociale · 2024-10-23 · n° 23-16.479",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour \n\n 5. Il résulte de l'alinéa premier du préambule de la Constitution du 27 octobre 1946 et de l'article 11 de la Déclaration des droits de l'homme et du citoyen du 26 août 1789 qu'est nul, comme portant atteinte à une liberté fondamentale constitutionnellement garantie, le licenciement intervenu en raison de l'exercice par le salarié de sa liberté d'expression. Le salarié qui demande sa réintégration a droit au paiement d'une indemnité égale au montant de la rémunération qu'il aurait dû percevoir entre son éviction de l'entreprise et sa réintégration, sans déduction des éventuels revenus de remplacement dont il a pu bénéficier pendant cette période.\n\n 6. Le moyen qui soutient le contraire n'est donc pas fondé."
+  }
+ ]
+}

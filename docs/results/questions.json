@@ -1,0 +1,114 @@
+{
+  "scenarios": [
+    {
+      "id": "S1",
+      "title": "Scénario 1 — RAG simple",
+      "kind": "simple",
+      "question": "Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?",
+      "target_case": "65f1500528057200093c3e89",
+      "selection": "Arrêt de la chambre sociale du 13 mars 2024 (n° 22-10.551, publié au Bulletin), présent dans l'index. Son sommaire énonce directement la règle : l'article L. 1237-12 n'instaure pas de délai. Une seule recherche devrait remonter le passage décisif.",
+      "expected": "Une recherche, une réponse citée et vérifiée, sans read_case ni relance inutile."
+    },
+    {
+      "id": "S2",
+      "title": "Scénario 2 — recherche multi-étapes",
+      "kind": "multi-step",
+      "question": "Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?",
+      "target_case": "66728101f7ab5c00087309e1",
+      "selection": "Arrêt de la chambre sociale du 19 juin 2024 (n° 23-10.817, rejet, cour d'appel de Toulouse). Le passage le mieux classé (motivations ou sommaire) donne l'effet (une démission), mais le reproche fait au salarié (réticence dolosive sur un projet d'entreprise concurrente) et la juridiction d'appel se trouvent dans l'exposé et les moyens : il faut trouver l'affaire, puis la lire.",
+      "expected": "search_cases puis read_case sur 23-10.817 ; réponse citant l'exposé et les motivations."
+    },
+    {
+      "id": "S3a",
+      "title": "Scénario 3a — premier retrieval insuffisant (formulation profane)",
+      "kind": "insufficient-reformulate",
+      "question": "Après mon départ négocié avec mon patron, il veut m'interdire de travailler chez un concurrent alors qu'il ne m'a rien dit avant la fin de mon contrat : en a-t-il le droit ?",
+      "target_case": "61f0f2387743e3330ccf075f",
+      "selection": "La réponse existe dans le corpus (chambre sociale, 26 janvier 2022, n° 20-15.755 : en cas de rupture conventionnelle, la renonciation à la clause de non-concurrence doit intervenir au plus tard à la date de rupture), mais la question n'emploie aucun des termes juridiques (« rupture conventionnelle », « clause de non-concurrence », « renonciation »). Le premier retrieval risque de ne pas suffire.",
+      "expected": "Détection d'une insuffisance, reformulation en termes juridiques, réponse vérifiée ou partielle. Le modèle peut aussi traduire d'emblée la question en termes juridiques : la trace dira ce qui s'est réellement passé."
+    },
+    {
+      "id": "S3b",
+      "title": "Scénario 3b — information absente du corpus",
+      "kind": "insufficient-absent",
+      "question": "Un employeur peut-il licencier un salarié sur la seule base d'une évaluation produite par un algorithme d'intelligence artificielle ?",
+      "target_case": null,
+      "selection": "Aucun passage de l'index ne contient « intelligence artificielle » ni « algorithme » (vérifié par requête SQL sur les 27 249 passages), alors que l'index contient de nombreuses décisions de licenciement, donc des quasi-réponses trompeuses.",
+      "expected": "Recherches reformulées, vérification insuffisante, limite d'itérations, demande de prolongation (refusée par le script), puis abstention motivée, sans affirmation non sourcée."
+    }
+  ],
+  "comparison": [
+    {
+      "id": "C1",
+      "title": "Délai de la rupture conventionnelle",
+      "kind": "simple",
+      "question": "Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?",
+      "target_case": "65f1500528057200093c3e89",
+      "selection": "= S1",
+      "expected": "réponse directe"
+    },
+    {
+      "id": "C2",
+      "title": "Congés payés pendant l'éviction",
+      "kind": "simple",
+      "question": "Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?",
+      "target_case": "63fefc07002ac605de15b29e",
+      "selection": "Chambre sociale, 1er mars 2023, n° 21-16.008 (publié) : oui, sauf s'il a occupé un autre emploi pendant cette période.",
+      "expected": "réponse directe, nuance « sauf autre emploi »"
+    },
+    {
+      "id": "C3",
+      "title": "Indemnité spécifique de rupture conventionnelle",
+      "kind": "simple",
+      "question": "L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?",
+      "target_case": "659e41095537980008846f77",
+      "selection": "Chambre sociale, 10 janvier 2024, n° 22-19.165 (publié).",
+      "expected": "réponse directe"
+    },
+    {
+      "id": "C4",
+      "title": "Rupture annulée pour dol du salarié",
+      "kind": "multi-step",
+      "question": "Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?",
+      "target_case": "66728101f7ab5c00087309e1",
+      "selection": "= S2",
+      "expected": "lecture de l'affaire nécessaire"
+    },
+    {
+      "id": "C5",
+      "title": "Indemnité de congé payé d'un enseignant",
+      "kind": "multi-step",
+      "question": "Dans l'arrêt du 13 septembre 2023 sur l'indemnité de congé payé d'un enseignant rémunéré pour des corrections de copies, quelle cour d'appel avait été censurée et pourquoi ?",
+      "target_case": "65015d56ee1a2205e6581652",
+      "selection": "Chambre sociale, 13 septembre 2023, n° 22-10.529, cassation d'un arrêt de la cour d'appel d'Aix-en-Provence ; le motif est dans le sommaire, la juridiction dans l'introduction et l'exposé.",
+      "expected": "lecture de l'affaire nécessaire"
+    },
+    {
+      "id": "C6",
+      "title": "Formulation profane (non-concurrence)",
+      "kind": "insufficient-reformulate",
+      "question": "Après mon départ négocié avec mon patron, il veut m'interdire de travailler chez un concurrent alors qu'il ne m'a rien dit avant la fin de mon contrat : en a-t-il le droit ?",
+      "target_case": "61f0f2387743e3330ccf075f",
+      "selection": "= S3a",
+      "expected": "reformulation utile"
+    },
+    {
+      "id": "C7",
+      "title": "Hors corpus (IA)",
+      "kind": "insufficient-absent",
+      "question": "Un employeur peut-il licencier un salarié sur la seule base d'une évaluation produite par un algorithme d'intelligence artificielle ?",
+      "target_case": null,
+      "selection": "= S3b",
+      "expected": "abstention"
+    },
+    {
+      "id": "C8",
+      "title": "Renonciation à la non-concurrence (termes juridiques)",
+      "kind": "simple",
+      "question": "En cas de rupture conventionnelle, jusqu'à quand l'employeur peut-il renoncer à la clause de non-concurrence ?",
+      "target_case": "61f0f2387743e3330ccf075f",
+      "selection": "Même arrêt que C6, formulé en termes juridiques : isole l'effet de la formulation.",
+      "expected": "réponse directe"
+    }
+  ]
+}

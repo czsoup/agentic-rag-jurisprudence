@@ -1,0 +1,338 @@
+[
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 0,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 6.0,
+  "completion_tokens": 43,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 1,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 1.9,
+  "completion_tokens": 43,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 2,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 1.9,
+  "completion_tokens": 43,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 0,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 6.2,
+  "completion_tokens": 78,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement dans l'extrait fourni [P1]. Pour obtenir ces informations, il faudrait consulter la décision complète en utilisant son identifiant case_id=664451ddb94eb60008b3d1fd.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 1,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 1.7,
+  "completion_tokens": 38,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement dans l'extrait fourni [P1].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 2,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 2.4,
+  "completion_tokens": 55,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement dans l'extrait fourni [P1]. Pour obtenir ces informations, il faudrait consulter la décision complète en utilisant son identifiant.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 0,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 4.3,
+  "completion_tokens": 55,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 1,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.4,
+  "completion_tokens": 55,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 2,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.4,
+  "completion_tokens": 55,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 0,
+  "ok": true,
+  "detail": "abstention",
+  "latency_s": 2.9,
+  "completion_tokens": 32,
+  "content": "Le corpus ne contient aucune décision de la Cour de cassation sur la brevetabilité des logiciels d'intelligence artificielle ni sur celle des logiciels en général.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 1,
+  "ok": true,
+  "detail": "abstention",
+  "latency_s": 1.6,
+  "completion_tokens": 36,
+  "content": "Le corpus ne contient aucune décision de la Cour de cassation traitant de la brevetabilité des logiciels d'intelligence artificielle ou des programmes d'ordinateur en général.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 2,
+  "ok": true,
+  "detail": "abstention",
+  "latency_s": 1.4,
+  "completion_tokens": 32,
+  "content": "Le corpus ne contient aucune décision de la Cour de cassation traitant de la brevetabilité des logiciels d'intelligence artificielle ni des logiciels en général.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 0,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 1.5,
+  "completion_tokens": 35,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "k": 5,
+     "query": "abandon de poste licenciement faute grave"
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 1,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 1.4,
+  "completion_tokens": 35,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "k": 5,
+     "query": "abandon de poste licenciement faute grave"
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 2,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 1.4,
+  "completion_tokens": 35,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 0,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 2.1,
+  "completion_tokens": 38,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement du salarié [P1].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 1,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 1.6,
+  "completion_tokens": 38,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement du salarié [P1].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 2,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 1.5,
+  "completion_tokens": 38,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement du salarié [P1].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 0,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.9,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié le 2 avril 2019 [P3]. La Cour de cassation a annulé l'arrêt de la cour d'appel de Lyon rendu le 12 mai 2022 [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 1,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.3,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié le 2 avril 2019 [P3]. La Cour de cassation a annulé l'arrêt de la cour d'appel de Lyon rendu le 12 mai 2022 [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 2,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.3,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié le 2 avril 2019 [P3]. La Cour de cassation a annulé l'arrêt de la cour d'appel de Lyon rendu le 12 mai 2022 [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 0,
+  "ok": false,
+  "detail": "abstention",
+  "latency_s": 2.3,
+  "completion_tokens": 48,
+  "content": "La question de la brevetabilité des logiciels d'intelligence artificielle ne semble pas être abordée dans le corpus disponible. Il n'y a pas de décision trouvée avec les termes essayés.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 1,
+  "ok": false,
+  "detail": "abstention",
+  "latency_s": 1.4,
+  "completion_tokens": 35,
+  "content": "La question de la brevetabilité des logiciels d'intelligence artificielle ne semble pas être couverte par le corpus de la Cour de cassation.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 2,
+  "ok": false,
+  "detail": "abstention",
+  "latency_s": 1.4,
+  "completion_tokens": 35,
+  "content": "La question de la brevetabilité des logiciels d'intelligence artificielle ne semble pas être couverte par le corpus de la Cour de cassation.",
+  "tool_calls": []
+ }
+]

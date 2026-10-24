@@ -1,0 +1,29 @@
+[project]
+name = "jurirag"
+version = "0.1.0"
+description = "API de l'Agentic RAG jurisprudence : index, outils, agent LangGraph, vérificateur."
+requires-python = ">=3.12"
+dependencies = [
+    "bm25s",
+    "fastapi",
+    "httpx",
+    "huggingface-hub",
+    "langgraph",
+    "langgraph-checkpoint-sqlite",
+    "numpy",
+    "pyarrow",
+    "pydantic",
+    "pydantic-settings",
+    "PyStemmer",
+    "typer",
+    "uvicorn[standard]",
+]
+
+[project.scripts]
+jurirag-api = "jurirag.interfaces.http.app:main"
+jurirag-build = "jurirag.interfaces.cli:build"
+jurirag-eval = "jurirag.interfaces.cli:evaluate"
+
+[build-system]
+requires = ["uv_build>=0.11,<0.14"]
+build-backend = "uv_build"

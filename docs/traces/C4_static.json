@@ -1,0 +1,122 @@
+{
+ "question": {
+  "id": "C4",
+  "title": "Rupture annulée pour dol du salarié",
+  "kind": "multi-step",
+  "question": "Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?",
+  "target_case": "66728101f7ab5c00087309e1",
+  "selection": "= S2",
+  "expected": "lecture de l'affaire nécessaire"
+ },
+ "mode": "static",
+ "final": {
+  "answer": "Dans l'affaire où la rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, c'est la cour d'appel qui a constaté que le salarié avait volontairement dissimulé des éléments déterminants pour obtenir le consentement de l'employeur [P5]. La Cour de cassation rejette le moyen du salarié qui reprochait à cette décision de ne pas caractériser une volonté claire et non équivoque de démission [P3]. En réalité, la Cour confirme que la nullité produite par ce dol emporte les effets d'une démission [P1]. Cette qualification juridique s'applique lorsque le salarié a caché des informations essentielles lors de la négociation de la rupture [P5]. La décision finale rejette donc le pourvoi et condamne le salarié aux dépens [P2].",
+  "verifier_status": "insufficient",
+  "sources": [
+   {
+    "alias": "P1",
+    "passage_id": "66728101f7ab5c00087309e1#motivations-1",
+    "case_id": "66728101f7ab5c00087309e1",
+    "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour \n\n 10. Lorsque le contrat de travail est rompu en exécution d'une convention de rupture ensuite annulée en raison d'un vice du consentement de l'employeur, la rupture produit les effets d'une démission.\n\n 11. Ayant retenu que la dissimulation intentionnelle du salarié caractérisait un dol et que la convention de rupture était nulle, la cour d'appel a exactement décidé que la nullité produisait les effets d'une démission.\n\n 12. Le moyen n'est donc pas fondé."
+   },
+   {
+    "alias": "P2",
+    "passage_id": "6243f34c78ea42400452b5ec#dispositif-0",
+    "case_id": "6243f34c78ea42400452b5ec",
+    "title": "Cour de cassation · Chambre sociale · 2022-03-30 · n° 20-23.375",
+    "zone": "dispositif",
+    "zone_label": "Dispositif",
+    "text": "EN CONSÉQUENCE, la Cour :\n\n REJETTE le pourvoi ;\n\n Condamne M. [R] aux dépens ;\n\n En application de l'article 700 du code de procédure civile, rejette les demandes ;\n\n Ainsi décidé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du trente mars deux mille vingt-deux.\n\n MOYEN ANNEXE à la présente décision\n\n Moyen produit par la SCP Lyon-Caen et Thiriez, avocat aux Conseils, pour M. [R]\n\n Monsieur [R] fait grief à l'arrêt attaqué d'avoir confirmé le jugement entrepris en ce qu'il a jugé que la démission était claire et non équivoque et de l'avoir ainsi débouté de ses demandes relatives à la rupture de son contrat de travail ;\n\n ALORS, D'UNE PART, QUE lorsque le salarié, sans invoquer un vice du consentement de nature à entraîner l'annulation de sa démission, remet en cause celle-ci en raison de faits ou de manquements imputables à son employeur, le juge doit, s'il résulte de circonstances antérieures ou contemporaines de la démission qu'à la date à laquelle elle a été donnée celle-ci était équivoque, l'analyser en une prise d'acte de la rupture qui produit les effets d'un licenciement sans cause réelle et sérieuse si les faits invoqués la justifiaient ou, dans le cas contraire, d'une démission ;"
+   },
+   {
+    "alias": "P3",
+    "passage_id": "66728101f7ab5c00087309e1#moyens-2",
+    "case_id": "66728101f7ab5c00087309e1",
+    "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+    "zone": "moyens",
+    "zone_label": "Moyens",
+    "text": "Sur le second moyen \n\n Enoncé du moyen \n\n 9. Le salarié fait grief à l'arrêt de juger que la rupture conventionnelle annulée doit produire les effets d'une démission et de le condamner à payer une somme au titre de l'indemnité compensatrice de préavis, alors « que toute démission doit résulter d'une manifestation de volonté claire et non équivoque ; qu'en retenant, pour condamner M. [P] à verser la somme de 20 334 euros au titre de l'indemnité compensatrice de préavis, que la nullité de la rupture conventionnelle, imputable au salarié, ''emport[ait] les effets d'une démission'', sans caractériser la volonté claire et non équivoque du salarié de mettre fin à son contrat, même en l'absence de rupture conventionnelle, la cour d'appel a violé les articles L. 1231-1 et L. 1237-1 du code du travail. »"
+   },
+   {
+    "alias": "P5",
+    "passage_id": "66728101f7ab5c00087309e1#motivations-0",
+    "case_id": "66728101f7ab5c00087309e1",
+    "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour \n\n 4. Selon l'article 1137 du code civil, dans sa rédaction issue de la loi n° 2018-287 du 20 avril 2018, constitue un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie.\n\n 5. La cour d'appel a relevé que l'employeur s'est déterminé au regard du seul souhait de reconversion professionnelle dans le management invoqué par le salarié.\n\n 6. Par une interprétation souveraine, exclusive de dénaturation, de la portée des éléments de preuve produits, la cour d'appel a constaté que le salarié avait volontairement dissimulé des éléments dont il connaissait le caractère déterminant pour l'employeur afin d'obtenir le consentement de ce dernier à la rupture conventionnelle.\n\n 7. Elle a ainsi estimé, sans faire peser sur le salarié une obligation d'information contractuelle, ni porter atteinte à sa liberté d'entreprendre, que le consentement de l'employeur avait été vicié. \n\n 8. Le moyen n'est donc pas fondé."
+   }
+  ],
+  "unverified": [
+   "La Cour de cassation rejette le moyen du salarié qui reprochait à cette décision de ne pas caractériser une volonté claire et non équivoque de démission [P3]."
+  ]
+ },
+ "metrics": {
+  "llm_calls": 2,
+  "prompt_tokens": 1548,
+  "completion_tokens": 178,
+  "llm_latency_ms": 32429.083542025182,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 0.0,
+  "iterations": 0,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 32495.4,
+  "verifier_status": "insufficient",
+  "stop_reason": null,
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 32.5,
+ "passages": [
+  {
+   "alias": "P1",
+   "passage_id": "66728101f7ab5c00087309e1#motivations-1",
+   "case_id": "66728101f7ab5c00087309e1",
+   "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour \n\n 10. Lorsque le contrat de travail est rompu en exécution d'une convention de rupture ensuite annulée en raison d'un vice du consentement de l'employeur, la rupture produit les effets d'une démission.\n\n 11. Ayant retenu que la dissimulation intentionnelle du salarié caractérisait un dol et que la convention de rupture était nulle, la cour d'appel a exactement décidé que la nullité produisait les effets d'une démission.\n\n 12. Le moyen n'est donc pas fondé."
+  },
+  {
+   "alias": "P2",
+   "passage_id": "6243f34c78ea42400452b5ec#dispositif-0",
+   "case_id": "6243f34c78ea42400452b5ec",
+   "title": "Cour de cassation · Chambre sociale · 2022-03-30 · n° 20-23.375",
+   "zone": "dispositif",
+   "zone_label": "Dispositif",
+   "text": "EN CONSÉQUENCE, la Cour :\n\n REJETTE le pourvoi ;\n\n Condamne M. [R] aux dépens ;\n\n En application de l'article 700 du code de procédure civile, rejette les demandes ;\n\n Ainsi décidé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du trente mars deux mille vingt-deux.\n\n MOYEN ANNEXE à la présente décision\n\n Moyen produit par la SCP Lyon-Caen et Thiriez, avocat aux Conseils, pour M. [R]\n\n Monsieur [R] fait grief à l'arrêt attaqué d'avoir confirmé le jugement entrepris en ce qu'il a jugé que la démission était claire et non équivoque et de l'avoir ainsi débouté de ses demandes relatives à la rupture de son contrat de travail ;\n\n ALORS, D'UNE PART, QUE lorsque le salarié, sans invoquer un vice du consentement de nature à entraîner l'annulation de sa démission, remet en cause celle-ci en raison de faits ou de manquements imputables à son employeur, le juge doit, s'il résulte de circonstances antérieures ou contemporaines de la démission qu'à la date à laquelle elle a été donnée celle-ci était équivoque, l'analyser en une prise d'acte de la rupture qui produit les effets d'un licenciement sans cause réelle et sérieuse si les faits invoqués la justifiaient ou, dans le cas contraire, d'une démission ;"
+  },
+  {
+   "alias": "P3",
+   "passage_id": "66728101f7ab5c00087309e1#moyens-2",
+   "case_id": "66728101f7ab5c00087309e1",
+   "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Sur le second moyen \n\n Enoncé du moyen \n\n 9. Le salarié fait grief à l'arrêt de juger que la rupture conventionnelle annulée doit produire les effets d'une démission et de le condamner à payer une somme au titre de l'indemnité compensatrice de préavis, alors « que toute démission doit résulter d'une manifestation de volonté claire et non équivoque ; qu'en retenant, pour condamner M. [P] à verser la somme de 20 334 euros au titre de l'indemnité compensatrice de préavis, que la nullité de la rupture conventionnelle, imputable au salarié, ''emport[ait] les effets d'une démission'', sans caractériser la volonté claire et non équivoque du salarié de mettre fin à son contrat, même en l'absence de rupture conventionnelle, la cour d'appel a violé les articles L. 1231-1 et L. 1237-1 du code du travail. »"
+  },
+  {
+   "alias": "P4",
+   "passage_id": "65f1500528057200093c3e89#motivations-1",
+   "case_id": "65f1500528057200093c3e89",
+   "title": "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour\n\n 5. L'article L. 1237-12 du code du travail n'instaure pas de délai entre, d'une part l'entretien au cours duquel les parties au contrat de travail conviennent de la rupture du contrat, d'autre part la signature de la convention de rupture prévue à l'article L. 1237-11 du code du travail.\n\n 6. La cour d'appel, qui a constaté que l'entretien avait eu lieu avant la signature de la convention de rupture et écarté tout vice du consentement, a légalement justifié sa décision."
+  },
+  {
+   "alias": "P5",
+   "passage_id": "66728101f7ab5c00087309e1#motivations-0",
+   "case_id": "66728101f7ab5c00087309e1",
+   "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour \n\n 4. Selon l'article 1137 du code civil, dans sa rédaction issue de la loi n° 2018-287 du 20 avril 2018, constitue un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie.\n\n 5. La cour d'appel a relevé que l'employeur s'est déterminé au regard du seul souhait de reconversion professionnelle dans le management invoqué par le salarié.\n\n 6. Par une interprétation souveraine, exclusive de dénaturation, de la portée des éléments de preuve produits, la cour d'appel a constaté que le salarié avait volontairement dissimulé des éléments dont il connaissait le caractère déterminant pour l'employeur afin d'obtenir le consentement de ce dernier à la rupture conventionnelle.\n\n 7. Elle a ainsi estimé, sans faire peser sur le salarié une obligation d'information contractuelle, ni porter atteinte à sa liberté d'entreprendre, que le consentement de l'employeur avait été vicié. \n\n 8. Le moyen n'est donc pas fondé."
+  }
+ ]
+}

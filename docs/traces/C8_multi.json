@@ -1,0 +1,494 @@
+{
+ "question": {
+  "id": "C8",
+  "title": "Renonciation à la non-concurrence (termes juridiques)",
+  "kind": "simple",
+  "question": "En cas de rupture conventionnelle, jusqu'à quand l'employeur peut-il renoncer à la clause de non-concurrence ?",
+  "target_case": "61f0f2387743e3330ccf075f",
+  "selection": "Même arrêt que C6, formulé en termes juridiques : isole l'effet de la formulation.",
+  "expected": "réponse directe"
+ },
+ "mode": "multi",
+ "session": "C8-multi-1792854125",
+ "run_id": "6180060ee3e0",
+ "events": [
+  {
+   "run_id": "6180060ee3e0",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pour répondre.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus de la Cour de cassation des décisions traitant de la rupture conventionnelle et spécifiquement de la durée ou du délai pendant lequel l'employeur peut renoncer à la clause de non-concurrence (notamment les arrêts récents sur la validité de cette renonciation postérieure).",
+    "iteration": 1
+   },
+   "latency_ms": 5190.585582982749,
+   "at": "2026-10-24T15:02:11.074+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 2,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« rupture conventionnelle clause non-concurrence renonciation délai postérieur validité »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 8178.273916011676,
+   "at": "2026-10-24T15:02:19.258+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 3,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"rupture conventionnelle clause non-concurrence renonciation délai postérieur validité\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "rupture conventionnelle clause non-concurrence renonciation délai postérieur validité",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T15:02:19.258+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 4,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+   "data": {
+    "query": "rupture conventionnelle clause non-concurrence renonciation délai postérieur validité",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "61f0f2387743e3330ccf075f",
+      "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+      "solution": "Cassation",
+      "score": 0.032522,
+      "alias": "P1",
+      "passage_id": "61f0f2387743e3330ccf075f#motivations-2",
+      "zone": "motivations",
+      "excerpt": "L'arrêt ajoute que dès lors, peu important que les délais stipulés au contrat pour la dénonciation de la clause par l'employeur n'aient pas été respectés, puisqu'il n'y a pas eu en l'occurrence de préavis, ni de licenciement, mais accord sur le principe et la date de la rupture, il est établi qu'à compter du 11 …"
+     },
+     {
+      "rank": 2,
+      "case_id": "6684e95fa0de54ff609f7aab",
+      "title": "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+      "solution": "Rejet",
+      "score": 0.031754,
+      "alias": "P2",
+      "passage_id": "6684e95fa0de54ff609f7aab#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 8. La cour d'appel, qui a constaté que la clause de non-concurrence prévoyait la possibilité pour l'employeur de renoncer à cette clause par lettre recommandée avec avis de réception dans un délai de quinze jours maximum après la notification de la rupture du contrat de travail, et que celui-ci y …"
+     },
+     {
+      "rank": 3,
+      "case_id": "65546f63a52b3483180982e4",
+      "title": "Cour de cassation · Chambre sociale · 2023-11-15 · n° 22-18.632",
+      "solution": "Cassation",
+      "score": 0.029199,
+      "alias": "P3",
+      "passage_id": "65546f63a52b3483180982e4#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen du moyen Sur le moyen, pris en sa deuxième branche Enoncé du moyen 5. Le salarié fait grief à l'arrêt de condamner l'employeur à lui verser une somme au titre de la clause de non-concurrence, pour la période allant du 18 janvier 2020 au 28 mai 2020, et au titre des congés payés afférents, avec intérêts au taux …"
+     },
+     {
+      "rank": 4,
+      "case_id": "665fffb92bde7b00080c313a",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2024-06-05 · n° 23-15.741",
+      "solution": "Rejet",
+      "score": 0.028169,
+      "alias": "P4",
+      "passage_id": "665fffb92bde7b00080c313a#moyens-3",
+      "zone": "moyens",
+      "excerpt": "Sur le troisième moyen Enoncé du moyen 22. La société Century 21 fait grief à l'arrêt de dire que l'article 17 « Non affiliation » tel que rédigé dans chacun des contrats de franchise conclus avec la société Fortis immo doit être déclaré nul et réputé non écrit, car contrevenant aux dispositions d'ordre public de …"
+     },
+     {
+      "rank": 5,
+      "case_id": "64117335f6c989fb024356a7",
+      "title": "Cour de cassation · Chambre sociale · 2023-03-15 · n° 21-16.057",
+      "solution": "Cassation",
+      "score": 0.026235,
+      "alias": "P5",
+      "passage_id": "64117335f6c989fb024356a7#motivations-6",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article 1134 du code civil, dans sa rédaction antérieure à l'ordonnance n° 2016-131 du 10 février 2016 : 22. Selon ce texte, les conventions légalement formées tiennent lieu de loi à ceux qui les ont faites. 23. Pour fixer la contrepartie financière due au salarié au titre de la clause de …"
+     }
+    ]
+   },
+   "latency_ms": 38.8,
+   "at": "2026-10-24T15:02:19.297+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 5,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Lecture détaillée de la décision 61f0f2387743e3330ccf075f.",
+   "data": {
+    "action": "read_case"
+   },
+   "latency_ms": 36755.52766700275,
+   "at": "2026-10-24T15:02:56.053+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 6,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Lecture détaillée de la décision 6684e95fa0de54ff609f7aab.",
+   "data": {
+    "action": "read_case"
+   },
+   "latency_ms": 36755.52766700275,
+   "at": "2026-10-24T15:02:56.053+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 7,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"61f0f2387743e3330ccf075f\", \"focus\": \"renonciation clause non-concurrence délai rupture conventionnelle\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "61f0f2387743e3330ccf075f",
+     "focus": "renonciation clause non-concurrence délai rupture conventionnelle"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T15:02:56.053+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 8,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "8 passage(s) lus dans Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+   "data": {
+    "case_id": "61f0f2387743e3330ccf075f",
+    "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+    "passages": [
+     {
+      "alias": "P6",
+      "passage_id": "61f0f2387743e3330ccf075f#introduction-0",
+      "zone": "introduction",
+      "text": "SOC.\n\n CDS\n\n COUR DE CASSATION\n ______________________\n\n Audience publique du 26 janvier 2022\n\n Cassation partielle\n\n M. CATHALA, président\n\n Arrêt n° 112 FS-B \n\n Pourvoi n° P 20-15.755 \n\n R É P U B L I Q U E F R A N Ç A I S E \n\n _________________________\n\n AU NOM DU PEUPLE FRANÇAIS\n _________________________\n\n ARRÊT DE LA COUR DE CASSATION, CHAMBRE SOCIALE, DU 26 JANVIER 2022\n\n Mme [B] [W], domiciliée [Adresse 1], a formé le pourvoi n° P 20-15.755 contre l'arrêt rendu le 19 février 2020 par la cour d'appel de Lyon (chambre sociale A), dans le litige l'opposant à la société Altares D&B, société par actions simplifiée, dont le siège est [Adresse 2], défenderesse à la cassation.\n\n La société Altares D&B a formé un pourvoi incident contre le même arrêt.\n\n La demanderesse au pourvoi principal invoque, à l'appui de son recours, les deux moyens de cassation annexés au présent arrêt.\n\n La demanderesse au pourvoi incident invoque, à l'appui de son recours, le moyen unique de cassation annexé au présent arrêt.\n\n Le dossier a été communiqué au procureur général.\n\n Sur le rapport de Mme Valéry, conseiller référendaire, les observations de la SCP Thouvenin, Coudray et Grévy, avocat de Mme [W], de la SCP Gatineau, Fattaccini et Rebeyrol, avocat de la société Altares D&B, et l'avis de M. Desplan, avocat général, après débats en l'audience publique du 30 novembre 2021 où étaient présents M. Cathala, président, Mme Valéry, conseiller référendaire rapporteur, Mme Farthouat-Danon, conseilller doyen, MM. Pion, Ricour, Mmes Van Ruymbeke, Capitaine, Gilibert, Lacquemant, conseillers, M. Silhol, Mmes Pecqueur, Laplume, conseillers référendaires, M. Desplan, avocat général, et Mme Pontonnier, greffier de chambre,\n\n la chambre sociale de la Cour de cassation, composée, en application de l'article R. 431-5 du code de l'organisation judiciaire, des président et conseillers précités, après en avoir délibéré conformément à la loi, a rendu le présent arrêt."
+     },
+     {
+      "alias": "P7",
+      "passage_id": "61f0f2387743e3330ccf075f#expose-0",
+      "zone": "expose",
+      "text": "Faits et procédure\n\n 1. Selon l'arrêt attaqué (Lyon,19 février 2020), Mme [W] a été engagée le 11 septembre 1995 par la société S&W, aux droits de laquelle se trouve la société Altares D&B, et occupait en dernier lieu les fonctions de directrice des ventes.\n\n 2. La clause de non-concurrence insérée dans le contrat de travail a prévu, d'une part, qu'elle s'appliquerait pour une durée d'une année à compter de la rupture effective du contrat de travail, et d'autre part, que l'employeur aurait la faculté de se libérer de la contrepartie financière de cette clause en renonçant au bénéfice de cette dernière, par décision notifiée au salarié à tout moment durant le préavis ou dans un délai maximum d'un mois à compter de la fin du préavis (ou en l'absence de préavis, de la notification du licenciement).\n\n 3. Les parties ont signé une convention de rupture du contrat de travail le 27 mars 2015, avec effet au 5 mai 2015.\n\n 4. La salariée a demandé le paiement de la contrepartie financière de la clause de non-concurrence."
+     },
+     {
+      "alias": "P8",
+      "passage_id": "61f0f2387743e3330ccf075f#motivations-0",
+      "zone": "motivations",
+      "text": "5. En application de l'article 1014, alinéa 2, du code de procédure civile, il n'y a pas lieu de statuer par une décision spécialement motivée sur ce moyen qui n'est manifestement pas de nature à entraîner la cassation.\n\n Mais sur le moyen relevé d'office\n\n 6. Après avis donné aux parties, conformément à l'article 1015 du code de procédure civile, il est fait application de l'article 620, alinéa 2, du même code.\n\n Vu l'article L. 1237-13 du code du travail et l'article 1134 du code civil dans sa rédaction antérieure à l'ordonnance n° 2016-131 du 10 février 2016 :\n\n 7. La Cour de cassation juge qu'aux termes de l'article L. 1237-13 du code du travail, la convention de rupture conclue entre un employeur et un salarié fixe la date de rupture du contrat de travail, qui ne peut intervenir avant le lendemain du jour de l'homologation par l'autorité administrative. Elle en a déduit que le délai de quinze jours au plus tard suivant la première présentation de la notification de la rupture dont dispose contractuellement l'employeur pour dispenser le salarié de l'exécution de l'obligation de non-concurrence a pour point de départ la date de la rupture fixée par la convention de rupture. (Soc., 29 janvier 2014, pourvoi n° 12-22.116, Bull. 2014, V, n° 35).\n\n 8. Elle décide également qu'en cas de rupture du contrat de travail avec dispense d'exécution du préavis par le salarié, la date à partir de laquelle celui-ci est tenu de respecter l'obligation de non-concurrence, la date d'exigibilité de la contrepartie financière de la clause de non-concurrence et la date à compter de laquelle doit être déterminée la période de référence pour le calcul de cette indemnité sont celles du départ effectif de l'entreprise, nonobstant stipulations ou dispositions contraires. (Soc., 13 mars 2013, pourvoi n° 11-21.150, Bull. 2013, V, n° 72)."
+     },
+     {
+      "alias": "P9",
+      "passage_id": "61f0f2387743e3330ccf075f#motivations-1",
+      "zone": "motivations",
+      "text": "(Soc., 13 mars 2013, pourvoi n° 11-21.150, Bull. 2013, V, n° 72). Elle en déduit que l'employeur qui dispense le salarié de l'exécution de son préavis doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 21 janvier 2015, pourvoi n° 13-24.471, Bull. 2015, V, n° 3). Elle décide de même qu'en cas de rupture du contrat de travail résultant de l'adhésion du salarié au contrat de sécurisation professionnelle, l'employeur doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 2 mars 2017, pourvoi n° 15-15.405).\n\n 9. Ces solutions se justifient par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler.\n\n 10. Il en résulte qu'en matière de rupture conventionnelle, l'employeur, s'il entend renoncer à l'exécution de la clause de non-concurrence, doit le faire au plus tard à la date de rupture fixée par la convention, nonobstant toutes stipulations ou dispositions contraires.\n\n 11. Pour limiter à une certaine somme la contrepartie financière de la clause de non-concurrence allouée à la salariée, l'arrêt retient que la convention de rupture n'a pas réglé le sort de la clause de non-concurrence, de sorte que celle-ci demeurait applicable pendant une durée d'une année à compter de la rupture du contrat de travail intervenue le 5 mai 2015, que toutefois lorsque la salariée a demandé à l'employeur le versement de la contrepartie financière prévue au contrat de travail, au motif qu'elle ne l'avait pas déliée expressément de la clause, la société lui a répondu le 11 septembre 2015 qu'elle avait été relevée de son obligation de non-concurrence à son égard depuis son départ."
+     },
+     {
+      "alias": "P1",
+      "passage_id": "61f0f2387743e3330ccf075f#motivations-2",
+      "zone": "motivations",
+      "text": "L'arrêt ajoute que dès lors, peu important que les délais stipulés au contrat pour la dénonciation de la clause par l'employeur n'aient pas été respectés, puisqu'il n'y a pas eu en l'occurrence de préavis, ni de licenciement, mais accord sur le principe et la date de la rupture, il est établi qu'à compter du 11 septembre 2015, la salariée a été informée de la volonté de l'employeur de renoncer au bénéfice de cette clause. L'arrêt en déduit que dans ces conditions, celle-ci n'est fondée à solliciter la contrepartie financière de son obligation de respecter la clause de non-concurrence que pour la période du 5 mai au 11 septembre 2015.\n\n 12. En statuant ainsi, alors qu'elle avait constaté que la date de rupture fixée par les parties dans la convention de rupture était le 5 mai 2015, ce dont il résultait que la renonciation par l'employeur au bénéfice de la clause de non-concurrence intervenue le 11 septembre 2015 était tardive, la cour d'appel a violé les textes susvisés."
+     },
+     {
+      "alias": "P10",
+      "passage_id": "61f0f2387743e3330ccf075f#moyens-1",
+      "zone": "moyens",
+      "text": "Et sur le second moyen du pourvoi principal\n\n Enoncé du moyen\n\n 13. La salariée fait grief à l'arrêt de la débouter de sa demande d'indemnité de congés payés afférente à la contrepartie financière de la clause de non-concurrence, alors « que la contrepartie financière de l'obligation de non-concurrence ayant la nature d'une indemnité compensatrice de salaire, elle ouvre droit à congés payés ; qu'en jugeant le contraire aux motifs que l'indemnité est payable postérieurement à la rupture du contrat de travail, la cour d'appel a violé l'article L. 3141-22 du code du travail dans sa version alors applicable. »"
+     },
+     {
+      "alias": "P11",
+      "passage_id": "61f0f2387743e3330ccf075f#motivations-3",
+      "zone": "motivations",
+      "text": "Réponse de la Cour\n\n Vu les articles L. 3141-1, L. 3141-22 et L. 3141-26 du code du travail :\n\n 14. Il résulte de ces dispositions que la contrepartie financière de l'obligation de non-concurrence ayant la nature d'une indemnité compensatrice de salaires, elle ouvre droit à congés payés.\n\n 15. Pour débouter la salariée de sa demande d'indemnité compensatrice de congés payés, l'arrêt retient que la contrepartie financière de la clause de non-concurrence, certes calculée sur la base du salaire, mais payable postérieurement à la rupture du contrat de travail, n'ouvre pas droit à des congés payés.\n\n 16. En statuant ainsi, la cour d'appel a violé les textes susvisés."
+     },
+     {
+      "alias": "P12",
+      "passage_id": "61f0f2387743e3330ccf075f#dispositif-0",
+      "zone": "dispositif",
+      "text": "PAR CES MOTIFS, et sans qu'il y ait lieu de statuer sur les autres griefs, la Cour :\n\n REJETTE le pourvoi incident formé par la société Altares D&B ;\n\n CASSE ET ANNULE, mais seulement en ce qu'il condamne la société Altares D&B à payer à Mme [W] la somme de 10 434,60 euros à titre de contrepartie financière de la clause de non-concurrence, et en ce qu'il rejette le surplus de la demande de contrepartie financière et la demande d'indemnité de congés payés afférents, l'arrêt rendu le 19 février 2020, entre les parties, par la cour d'appel de Lyon ;\n\n Remet, sur ces points, l'affaire et les parties dans l'état où elles se trouvaient avant cet arrêt et les renvoie devant la cour d'appel de Lyon autrement composée ;\n\n Condamne la société Altares D&B aux dépens ;\n\n En application de l'article 700 du code de procédure civile, rejette la demande formée par la société Altares D&B et la condamne à payer à Mme [W] la somme de 3 000 euros ;\n\n Dit que sur les diligences du procureur général près la Cour de cassation, le présent arrêt sera transmis pour être transcrit en marge ou à la suite de l'arrêt partiellement cassé ;\n\n Ainsi fait et jugé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du vingt-six janvier deux mille vingt-deux."
+     }
+    ]
+   },
+   "latency_ms": 32.3,
+   "at": "2026-10-24T15:02:56.085+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 9,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"6684e95fa0de54ff609f7aab\", \"focus\": \"renonciation clause non-concurrence délai rupture conventionnelle\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "6684e95fa0de54ff609f7aab",
+     "focus": "renonciation clause non-concurrence délai rupture conventionnelle"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T15:02:56.085+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 10,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "7 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+   "data": {
+    "case_id": "6684e95fa0de54ff609f7aab",
+    "title": "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+    "passages": [
+     {
+      "alias": "P13",
+      "passage_id": "6684e95fa0de54ff609f7aab#introduction-0",
+      "zone": "introduction",
+      "text": "SOC.\n\n CL6\n\n COUR DE CASSATION\n ______________________\n\n Audience publique du 3 juillet 2024\n\n Rejet\n\n Mme CAPITAINE, conseiller doyen \n faisant fonction de président\n\n Arrêt n° 713 F-B\n\n Pourvoi n° Z 22-17.452 \n\n R É P U B L I Q U E F R A N Ç A I S E \n\n _________________________\n\n AU NOM DU PEUPLE FRANÇAIS\n _________________________\n\n ARRÊT DE LA COUR DE CASSATION, CHAMBRE SOCIALE, DU 3 JUILLET 2024\n\n La société Holding financière Belland, dont le siège est M.I.N de [Localité 2], [Adresse 3], a formé le pourvoi n° Z 22-17.452 contre l'arrêt rendu le 13 avril 2022 par la cour d'appel de Paris (pôle 6, chambre 9), dans le litige l'opposant à M. [B] [O], domicilié [Adresse 1], défendeur à la cassation.\n\n La demanderesse invoque, à l'appui de son pourvoi, deux moyens de cassation.\n\n Le dossier a été communiqué au procureur général.\n\n Sur le rapport de Mme Valéry, conseiller référendaire, les observations de la SCP Piwnica et Molinié, avocat de la société Holding financière Belland, de la SCP Gatineau, Fattaccini et Rebeyrol, avocat de M. [O], après débats en l'audience publique du 4 juin 2024 où étaient présents Mme Capitaine, conseiller doyen faisant fonction de président, Mme Valéry, conseiller référendaire rapporteur, Mme Lacquemant, conseiller, et Mme Dumont, greffier de chambre,\n\n la chambre sociale de la Cour de cassation, composée des président et conseillers précités, après en avoir délibéré conformément à la loi, a rendu le présent arrêt."
+     },
+     {
+      "alias": "P14",
+      "passage_id": "6684e95fa0de54ff609f7aab#expose-0",
+      "zone": "expose",
+      "text": "Faits et procédure\n\n 1. Selon l'arrêt attaqué (Paris, 13 avril 2022), M. [O] a été engagé en qualité de directeur commercial par la société Holding financière Belland le 6 janvier 2015, avec une période d'essai de six mois renouvelable une fois.\n\n 2. L'employeur a mis fin à la période d'essai le 24 juillet 2015.\n\n 3. Le contrat de travail comportait une clause de non-concurrence."
+     },
+     {
+      "alias": "P15",
+      "passage_id": "6684e95fa0de54ff609f7aab#moyens-0",
+      "zone": "moyens",
+      "text": "Examen des moyens\n\n Sur le premier moyen\n\n Énoncé du moyen\n\n 4. L'employeur fait grief à l'arrêt de dire le licenciement non fondé sur une cause réelle et sérieuse et de le condamner à payer au salarié des dommages-intérêts à ce titre et des sommes à titre d'indemnité compensatrice de préavis et congés payés afférents, de rappel de salaires outre congés payés et de contrepartie financière de la clause de non-concurrence, alors « que la rupture du contrat de travail qui intervient postérieurement à l'échéance de la période d'essai et à l'initiative de l'employeur doit être qualifiée de licenciement ; qu'elle impose l'examen par les juges du fond des motifs de la rupture notifiée au salarié ; que la cour d'appel a retenu que la rupture notifiée le 24 juillet 2015 était intervenue postérieurement à l'expiration de la période d'essai et s'analysait donc en un licenciement ; qu'en considérant que la lettre de rupture était présentée par l'employeur comme une rupture de la période d'essai pour décider qu'elle ne pouvait s'analyser en une lettre de licenciement et refuser d'en examiner le contenu, la cour d'appel n'a pas tiré les conséquences légales de ses constatations et a violé les articles L. 1231-1, L. 1232-1, L. 1232-6, L. 1233-2, L. 1235-3 du code du travail. »"
+     },
+     {
+      "alias": "P16",
+      "passage_id": "6684e95fa0de54ff609f7aab#motivations-0",
+      "zone": "motivations",
+      "text": "Réponse de la Cour\n\n 5. La cour d'appel, qui a constaté que l'employeur avait rompu la période d'essai après l'expiration de celle-ci, a exactement retenu, sans être tenue d'examiner les motifs énoncés par l'employeur dans la lettre de rupture, que la rupture du contrat de travail s'analysait en un licenciement sans cause réelle et sérieuse.\n\n 6. Le moyen n'est donc pas fondé."
+     },
+     {
+      "alias": "P17",
+      "passage_id": "6684e95fa0de54ff609f7aab#moyens-1",
+      "zone": "moyens",
+      "text": "Sur le second moyen\n\n Énoncé du moyen\n\n 7. L'employeur fait grief à l'arrêt de dire le licenciement non fondé sur une cause réelle et sérieuse et de le condamner à payer au salarié une somme à titre de contrepartie financière de la clause de non-concurrence, outre congés payés, alors « que la renonciation de l'employeur à la mise en uvre de la clause de non-concurrence doit être claire et non équivoque ; que les modalités contractuelles de renonciation n'en conditionnent la validité qu'au regard du délai de prévenance qui y est mentionné et non des modalités formelles de cette renonciation, dont le salarié peut être informé par tout moyen ; que la cour d'appel a constaté que le contrat de travail prévoyait la possibilité pour la société de renoncer à la clause de non-concurrence ''sous réserve de vous en avoir notifié l'intention par lettre recommandée avec avis de réception dans un délai de 15 jours maximum après la notification de la rupture du contrat de travail'' et qu'il résultait des éléments produits que l'employeur avait renoncé à cette clause par courriels des 4 et 6 août 2015 ; qu'en considérant que la renonciation effectuée par courriels ne pouvait suppléer la formalité de la lettre recommandée, sans constater que le non-respect de cette formalité avait causé un grief au salarié dûment informé par voie de courriel que la Holding Financière Belland avait levé la clause de non-concurrence, la cour d'appel a violé l'article L. 1221-1 du code du travail. »"
+     },
+     {
+      "alias": "P2",
+      "passage_id": "6684e95fa0de54ff609f7aab#motivations-1",
+      "zone": "motivations",
+      "text": "Réponse de la Cour\n\n 8. La cour d'appel, qui a constaté que la clause de non-concurrence prévoyait la possibilité pour l'employeur de renoncer à cette clause par lettre recommandée avec avis de réception dans un délai de quinze jours maximum après la notification de la rupture du contrat de travail, et que celui-ci y avait renoncé par l'envoi d'un courriel, a exactement retenu que l'employeur n'avait pas valablement renoncé à la clause de non-concurrence.\n\n 9. Le moyen n'est donc pas fondé."
+     },
+     {
+      "alias": "P18",
+      "passage_id": "6684e95fa0de54ff609f7aab#dispositif-0",
+      "zone": "dispositif",
+      "text": "PAR CES MOTIFS, la Cour :\n\n REJETTE le pourvoi ;\n\n Condamne la société Holding financière Belland aux dépens ;\n\n En application de l'article 700 du code de procédure civile, rejette la demande formée par la société Holding financière Belland et la condamne à payer à M. [O] la somme de 3 000 euros ;\n\n Ainsi fait et jugé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du trois juillet deux mille vingt-quatre."
+     }
+    ]
+   },
+   "latency_ms": 12.4,
+   "at": "2026-10-24T15:02:56.098+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 11,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 18 passage(s) au dossier. Décisions pertinentes : case_id=61f0f2387743e3330ccf075f [P9, P1] et case_id=6684e95fa0de54ff609f7aab [P2].",
+   "data": {
+    "report": "Décisions pertinentes : case_id=61f0f2387743e3330ccf075f [P9, P1] et case_id=6684e95fa0de54ff609f7aab [P2].",
+    "passages": 18,
+    "cases": [
+     "61f0f2387743e3330ccf075f",
+     "6684e95fa0de54ff609f7aab",
+     "65546f63a52b3483180982e4",
+     "665fffb92bde7b00080c313a",
+     "64117335f6c989fb024356a7"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T15:03:08.854+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 12,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Rédaction de la synthèse — Les décisions analysées établissent que le délai de renonciation s'étend jusqu'au jour où le salarié quitte l'entreprise, indépendamment des stipulations contractuelles ou de l'absence de préavis.",
+   "data": {
+    "action": "write",
+    "brief": "Le dossier contient les passages nécessaires (notamment P9, P1 et P2) pour répondre à la question : l'employeur peut renoncer à la clause de non-concurrence jusqu'à la date du départ effectif du salarié en cas de rupture conventionnelle.",
+    "iteration": 2
+   },
+   "latency_ms": 9229.388333042152,
+   "at": "2026-10-24T15:03:18.089+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 13,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Synthèse rédigée à partir de 10 passage(s) : soumise au vérificateur.",
+   "data": {
+    "action": "answer"
+   },
+   "latency_ms": 13754.1,
+   "at": "2026-10-24T15:03:31.846+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 14,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves sufficient — 4 affirmation(s), toutes soutenues par les passages cités.",
+   "data": {
+    "status": "sufficient",
+    "justification": "4 affirmation(s), toutes soutenues par les passages cités.",
+    "unverified_claims": [],
+    "claims": [
+     {
+      "text": "En matière de rupture conventionnelle, l'employeur qui entend renoncer à l'exécution de la clause de non-concurrence doit le faire au plus tard à la date de rupture fixée par la convention [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage stipule explicitement qu'en matière de rupture conventionnelle, l'employeur doit renoncer à la clause au plus tard à la date de rupture fixée par la convention."
+     },
+     {
+      "text": "Cette obligation s'impose nonobstant toutes stipulations ou dispositions contraires contenues dans le contrat ou les accords applicables [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage précise que cette obligation s'impose nonobstant toutes stipulations ou dispositions contraires contenues dans le contrat ou les accords applicables."
+     },
+     {
+      "text": "La Cour justifie cette solution par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler après son départ effectif [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le texte justifie la solution par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler."
+     },
+     {
+      "text": "Cette règle s'applique également lorsque la rupture résulte d'une adhésion au contrat de sécurisation professionnelle, où le délai limite est la date du départ effectif de l'intéressé [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage indique que la règle s'applique également en cas d'adhésion au contrat de sécurisation professionnelle, avec un délai limite correspondant à la date du départ effectif."
+     }
+    ],
+    "next_action": "answer",
+    "llm_judge_used": true
+   },
+   "latency_ms": 19645.7,
+   "at": "2026-10-24T15:03:51.495+00:00"
+  },
+  {
+   "run_id": "6180060ee3e0",
+   "step": 15,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Réponse vérifiée — 1 passage(s) cité(s).",
+   "data": {
+    "answer": "En matière de rupture conventionnelle, l'employeur qui entend renoncer à l'exécution de la clause de non-concurrence doit le faire au plus tard à la date de rupture fixée par la convention [P9]. Cette obligation s'impose nonobstant toutes stipulations ou dispositions contraires contenues dans le contrat ou les accords applicables [P9]. La Cour justifie cette solution par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler après son départ effectif [P9]. Cette règle s'applique également lorsque la rupture résulte d'une adhésion au contrat de sécurisation professionnelle, où le délai limite est la date du départ effectif de l'intéressé [P9].",
+    "status": "answered",
+    "verifier_status": "sufficient",
+    "sources": [
+     {
+      "alias": "P9",
+      "passage_id": "61f0f2387743e3330ccf075f#motivations-1",
+      "case_id": "61f0f2387743e3330ccf075f",
+      "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+      "zone": "motivations",
+      "zone_label": "Motivations",
+      "text": "(Soc., 13 mars 2013, pourvoi n° 11-21.150, Bull. 2013, V, n° 72). Elle en déduit que l'employeur qui dispense le salarié de l'exécution de son préavis doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 21 janvier 2015, pourvoi n° 13-24.471, Bull. 2015, V, n° 3). Elle décide de même qu'en cas de rupture du contrat de travail résultant de l'adhésion du salarié au contrat de sécurisation professionnelle, l'employeur doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 2 mars 2017, pourvoi n° 15-15.405).\n\n 9. Ces solutions se justifient par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler.\n\n 10. Il en résulte qu'en matière de rupture conventionnelle, l'employeur, s'il entend renoncer à l'exécution de la clause de non-concurrence, doit le faire au plus tard à la date de rupture fixée par la convention, nonobstant toutes stipulations ou dispositions contraires.\n\n 11. Pour limiter à une certaine somme la contrepartie financière de la clause de non-concurrence allouée à la salariée, l'arrêt retient que la convention de rupture n'a pas réglé le sort de la clause de non-concurrence, de sorte que celle-ci demeurait applicable pendant une durée d'une année à compter de la rupture du contrat de travail intervenue le 5 mai 2015, que toutefois lorsque la salariée a demandé à l'employeur le versement de la contrepartie financière prévue au contrat de travail, au motif qu'elle ne l'avait pas déliée expressément de la clause, la société lui a répondu le 11 septembre 2015 qu'elle avait été relevée de son obligation de non-concurrence à son égard depuis son départ.",
+      "start": 4849,
+      "end": 6805,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/61f0f2387743e3330ccf075f"
+     }
+    ],
+    "limits": [
+     "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+    ],
+    "stop_reason": "answered",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+     "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+     "Cour de cassation · Chambre sociale · 2023-11-15 · n° 22-18.632",
+     "Cour de cassation · Chambre commerciale financière et économique · 2024-06-05 · n° 23-15.741",
+     "Cour de cassation · Chambre sociale · 2023-03-15 · n° 21-16.057"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T15:03:51.498+00:00"
+  }
+ ],
+ "final": {
+  "answer": "En matière de rupture conventionnelle, l'employeur qui entend renoncer à l'exécution de la clause de non-concurrence doit le faire au plus tard à la date de rupture fixée par la convention [P9]. Cette obligation s'impose nonobstant toutes stipulations ou dispositions contraires contenues dans le contrat ou les accords applicables [P9]. La Cour justifie cette solution par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler après son départ effectif [P9]. Cette règle s'applique également lorsque la rupture résulte d'une adhésion au contrat de sécurisation professionnelle, où le délai limite est la date du départ effectif de l'intéressé [P9].",
+  "status": "answered",
+  "verifier_status": "sufficient",
+  "sources": [
+   {
+    "alias": "P9",
+    "passage_id": "61f0f2387743e3330ccf075f#motivations-1",
+    "case_id": "61f0f2387743e3330ccf075f",
+    "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "(Soc., 13 mars 2013, pourvoi n° 11-21.150, Bull. 2013, V, n° 72). Elle en déduit que l'employeur qui dispense le salarié de l'exécution de son préavis doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 21 janvier 2015, pourvoi n° 13-24.471, Bull. 2015, V, n° 3). Elle décide de même qu'en cas de rupture du contrat de travail résultant de l'adhésion du salarié au contrat de sécurisation professionnelle, l'employeur doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 2 mars 2017, pourvoi n° 15-15.405).\n\n 9. Ces solutions se justifient par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler.\n\n 10. Il en résulte qu'en matière de rupture conventionnelle, l'employeur, s'il entend renoncer à l'exécution de la clause de non-concurrence, doit le faire au plus tard à la date de rupture fixée par la convention, nonobstant toutes stipulations ou dispositions contraires.\n\n 11. Pour limiter à une certaine somme la contrepartie financière de la clause de non-concurrence allouée à la salariée, l'arrêt retient que la convention de rupture n'a pas réglé le sort de la clause de non-concurrence, de sorte que celle-ci demeurait applicable pendant une durée d'une année à compter de la rupture du contrat de travail intervenue le 5 mai 2015, que toutefois lorsque la salariée a demandé à l'employeur le versement de la contrepartie financière prévue au contrat de travail, au motif qu'elle ne l'avait pas déliée expressément de la clause, la société lui a répondu le 11 septembre 2015 qu'elle avait été relevée de son obligation de non-concurrence à son égard depuis son départ.",
+    "start": 4849,
+    "end": 6805,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/61f0f2387743e3330ccf075f"
+   }
+  ],
+  "limits": [
+   "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+  ],
+  "stop_reason": "answered",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+   "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+   "Cour de cassation · Chambre sociale · 2023-11-15 · n° 22-18.632",
+   "Cour de cassation · Chambre commerciale financière et économique · 2024-06-05 · n° 23-15.741",
+   "Cour de cassation · Chambre sociale · 2023-03-15 · n° 21-16.057"
+  ]
+ },
+ "metrics": {
+  "llm_calls": 7,
+  "prompt_tokens": 19520,
+  "completion_tokens": 1682,
+  "llm_latency_ms": 105506.34433410596,
+  "tool_calls": {
+   "search_cases": 1,
+   "read_case": 2
+  },
+  "tool_latency_ms": 83.5,
+  "iterations": 2,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 105614.6,
+  "verifier_status": "sufficient",
+  "stop_reason": "answered",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 105.6,
+ "hitl_answer": null
+}

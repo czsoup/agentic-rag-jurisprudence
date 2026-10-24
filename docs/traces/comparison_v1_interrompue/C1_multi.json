@@ -1,0 +1,430 @@
+{
+ "question": {
+  "id": "C1",
+  "title": "Délai de la rupture conventionnelle",
+  "kind": "simple",
+  "question": "Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?",
+  "target_case": "65f1500528057200093c3e89",
+  "selection": "= S1",
+  "expected": "réponse directe"
+ },
+ "mode": "multi",
+ "session": "C1-multi-1792833472",
+ "run_id": "26e07e34d178",
+ "events": [
+  {
+   "run_id": "26e07e34d178",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pour répondre à la question sur le délai minimal.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus de la Cour de cassation des décisions traitant de la rupture conventionnelle, en particulier celles qui mentionnent un délai minimal entre l'entretien préalable et la signature du contrat (notions clés : 'délai', 'entretien préalable', 'rupture conventionnelle', 'signature'). Vérifiez si la jurisprudence impose ou non une durée spécifique.",
+    "iteration": 1
+   },
+   "latency_ms": 6244.6846250095405,
+   "at": "2026-10-24T09:17:58.669+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 2,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« rupture conventionnelle délai entretien préalable signature »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 7346.626708982512,
+   "at": "2026-10-24T09:18:06.019+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 3,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"rupture conventionnelle délai entretien préalable signature\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "rupture conventionnelle délai entretien préalable signature",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:18:06.019+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 4,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+   "data": {
+    "query": "rupture conventionnelle délai entretien préalable signature",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "65f1500528057200093c3e89",
+      "title": "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+      "solution": "Rejet",
+      "score": 0.032258,
+      "alias": "P1",
+      "passage_id": "65f1500528057200093c3e89#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 5. L'article L. 1237-12 du code du travail n'instaure pas de délai entre, d'une part l'entretien au cours duquel les parties au contrat de travail conviennent de la rupture du contrat, d'autre part la signature de la convention de rupture prévue à l'article L. 1237-11 du code du travail. 6. La cour …"
+     },
+     {
+      "rank": 2,
+      "case_id": "66728100f7ab5c00087309df",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143",
+      "solution": "Cassation",
+      "score": 0.031545,
+      "alias": "P2",
+      "passage_id": "66728100f7ab5c00087309df#moyens-1",
+      "zone": "moyens",
+      "excerpt": "1237-13 du code du travail ; 3°/ qu'en vertu de l'article 954 du code de procédure civile, la partie qui demande la confirmation du jugement est réputée s'en approprier les motifs et les juges d'appel sont dès lors tenus de s'expliquer sur les motifs du jugement entrepris ; que le conseil de prud'hommes avait retenu …"
+     },
+     {
+      "rank": 3,
+      "case_id": "675931b4db845b438efc6d4a",
+      "title": "Cour de cassation · Chambre sociale · 2024-12-11 · n° 22-20.109",
+      "solution": "Cassation",
+      "score": 0.026547,
+      "alias": "P3",
+      "passage_id": "675931b4db845b438efc6d4a#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Sur le premier moyen, pris en ses première et deuxième branches Enoncé du moyen 6. Le salarié fait grief à l'arrêt de juger que son licenciement prononcé pour faute grave est fondé et de le débouter de l'ensemble de ses demandes fondées sur un licenciement dépourvu de cause réelle et sérieuse, alors : « 1°/ que …"
+     },
+     {
+      "rank": 4,
+      "case_id": "64f822c9da737fd9691e64db",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-06 · n° 22-11.661",
+      "solution": "Cassation",
+      "score": 0.026133,
+      "alias": "P4",
+      "passage_id": "64f822c9da737fd9691e64db#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Mais sur le second moyen Enoncé du moyen 5. L'employeur fait grief à l'arrêt de le condamner à payer à la salariée une somme à titre de dommages-intérêts pour licenciement nul, alors « que le délai de cinq jours ouvrables qui doit séparer la convocation du salarié à un entretien préalable à un éventuel licenciement …"
+     },
+     {
+      "rank": 5,
+      "case_id": "63183e95f75a164f13450852",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2022-09-07 · n° 20-21.222",
+      "solution": "Cassation",
+      "score": 0.015873,
+      "alias": "P5",
+      "passage_id": "63183e95f75a164f13450852#moyens-1",
+      "zone": "moyens",
+      "excerpt": "2°/ que, s'agissant des marchés passés selon une procédure formalisée, un délai minimal de onze jours doit être respecté entre la date d'envoi de la notification prévue aux articles R. 2181-1 et R. 2181-3, transmise par voie électronique, et la date de signature du marché par l'acheteur ; qu'en cas de manquement aux …"
+     }
+    ]
+   },
+   "latency_ms": 71.1,
+   "at": "2026-10-24T09:18:06.091+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 5,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : case_id=65f1500528057200093c3e89 [P1] et case_id=66728100f7ab5c00087309df [P2]. La jurisprudence de la Cour de cassation (arrêt du 13 mars 2024, n° 22-10.551) précise que l'article L. 1237-12 du code du travail n'ins",
+   "data": {
+    "report": "Décisions pertinentes : case_id=65f1500528057200093c3e89 [P1] et case_id=66728100f7ab5c00087309df [P2]. La jurisprudence de la Cour de cassation (arrêt du 13 mars 2024, n° 22-10.551) précise que l'article L. 1237-12 du code du travail n'instaure aucun délai entre l'entretien préalable et la signature de la convention de rupture.",
+    "passages": 5,
+    "cases": [
+     "65f1500528057200093c3e89",
+     "66728100f7ab5c00087309df",
+     "675931b4db845b438efc6d4a",
+     "64f822c9da737fd9691e64db",
+     "63183e95f75a164f13450852"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:18:36.724+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 6,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le passage [P1] mentionne une absence de délai mais semble incomplet dans le résumé fourni ; il faut confirmer cette jurisprudence ou trouver un contre-exemple précis avec les motifs complets.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus une décision de la Chambre sociale de la Cour de cassation traitant spécifiquement d'un litige sur la rupture conventionnelle, où soit la Cour confirme l'absence de délai légal (citant l'article L. 1237-12), soit elle annule un jugement pour défaut de respect d'un délai minimal entre l'entretien préalable et la signature.",
+    "iteration": 2
+   },
+   "latency_ms": 8205.59308398515,
+   "at": "2026-10-24T09:18:44.936+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 7,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« rupture conventionnelle délai minimal entretien préalable signature article L. 1237-12 »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 10879.503292031586,
+   "at": "2026-10-24T09:18:55.819+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 8,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"rupture conventionnelle délai minimal entretien préalable signature article L. 1237-12\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "rupture conventionnelle délai minimal entretien préalable signature article L. 1237-12",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:18:55.819+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 9,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+   "data": {
+    "query": "rupture conventionnelle délai minimal entretien préalable signature article L. 1237-12",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "65f1500528057200093c3e89",
+      "title": "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+      "solution": "Rejet",
+      "score": 0.032522,
+      "alias": "P1",
+      "passage_id": "65f1500528057200093c3e89#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 5. L'article L. 1237-12 du code du travail n'instaure pas de délai entre, d'une part l'entretien au cours duquel les parties au contrat de travail conviennent de la rupture du contrat, d'autre part la signature de la convention de rupture prévue à l'article L. 1237-11 du code du travail. 6. La cour …"
+     },
+     {
+      "rank": 2,
+      "case_id": "66728100f7ab5c00087309df",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143",
+      "solution": "Cassation",
+      "score": 0.031281,
+      "alias": "P2",
+      "passage_id": "66728100f7ab5c00087309df#moyens-1",
+      "zone": "moyens",
+      "excerpt": "1237-13 du code du travail ; 3°/ qu'en vertu de l'article 954 du code de procédure civile, la partie qui demande la confirmation du jugement est réputée s'en approprier les motifs et les juges d'appel sont dès lors tenus de s'expliquer sur les motifs du jugement entrepris ; que le conseil de prud'hommes avait retenu …"
+     },
+     {
+      "rank": 3,
+      "case_id": "675931b4db845b438efc6d4a",
+      "title": "Cour de cassation · Chambre sociale · 2024-12-11 · n° 22-20.109",
+      "solution": "Cassation",
+      "score": 0.027047,
+      "alias": "P3",
+      "passage_id": "675931b4db845b438efc6d4a#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Sur le premier moyen, pris en ses première et deuxième branches Enoncé du moyen 6. Le salarié fait grief à l'arrêt de juger que son licenciement prononcé pour faute grave est fondé et de le débouter de l'ensemble de ses demandes fondées sur un licenciement dépourvu de cause réelle et sérieuse, alors : « 1°/ que …"
+     },
+     {
+      "rank": 4,
+      "case_id": "64f822c9da737fd9691e64db",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-06 · n° 22-11.661",
+      "solution": "Cassation",
+      "score": 0.026786,
+      "alias": "P4",
+      "passage_id": "64f822c9da737fd9691e64db#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Mais sur le second moyen Enoncé du moyen 5. L'employeur fait grief à l'arrêt de le condamner à payer à la salariée une somme à titre de dommages-intérêts pour licenciement nul, alors « que le délai de cinq jours ouvrables qui doit séparer la convocation du salarié à un entretien préalable à un éventuel licenciement …"
+     },
+     {
+      "rank": 5,
+      "case_id": "63183e95f75a164f13450852",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2022-09-07 · n° 20-21.222",
+      "solution": "Cassation",
+      "score": 0.026743,
+      "alias": "P5",
+      "passage_id": "63183e95f75a164f13450852#moyens-1",
+      "zone": "moyens",
+      "excerpt": "2°/ que, s'agissant des marchés passés selon une procédure formalisée, un délai minimal de onze jours doit être respecté entre la date d'envoi de la notification prévue aux articles R. 2181-1 et R. 2181-3, transmise par voie électronique, et la date de signature du marché par l'acheteur ; qu'en cas de manquement aux …"
+     }
+    ]
+   },
+   "latency_ms": 39.5,
+   "at": "2026-10-24T09:18:55.859+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 10,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : 65f1500528057200093c3e89 [P1], 66728100f7ab5c00087309df [P2].",
+   "data": {
+    "report": "Décisions pertinentes : 65f1500528057200093c3e89 [P1], 66728100f7ab5c00087309df [P2].",
+    "passages": 5,
+    "cases": [
+     "65f1500528057200093c3e89",
+     "66728100f7ab5c00087309df",
+     "675931b4db845b438efc6d4a",
+     "64f822c9da737fd9691e64db",
+     "63183e95f75a164f13450852"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:19:24.940+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 11,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Rédaction de la synthèse — La décision P1 répond directement à la question en précisant l'absence de délai légal.",
+   "data": {
+    "action": "write",
+    "brief": "Le dossier contient la réponse directe dans le passage [P1] qui cite l'article L. 1237-12 du code du travail et indique qu'il n'est pas instauré de délai entre l'entretien préalable et la signature.",
+    "iteration": 3
+   },
+   "latency_ms": 5516.899542009924,
+   "at": "2026-10-24T09:19:30.460+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 12,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Synthèse rédigée à partir de 5 passage(s) : soumise au vérificateur.",
+   "data": {
+    "action": "answer"
+   },
+   "latency_ms": 9440.3,
+   "at": "2026-10-24T09:19:39.904+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 13,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves sufficient — 2 affirmation(s), toutes soutenues par les passages cités.",
+   "data": {
+    "status": "sufficient",
+    "justification": "2 affirmation(s), toutes soutenues par les passages cités.",
+    "unverified_claims": [],
+    "claims": [
+     {
+      "text": "Non, l'article L. 1237-12 du code du travail n'instaure pas de délai obligatoire entre l'entretien préalable et la signature de la convention de rupture [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P1 stipule explicitement que l'article L. 1237-12 n'instaure pas de délai entre l'entretien et la signature."
+     },
+     {
+      "text": "La Cour de cassation a jugé que la cour d'appel qui constate simplement que l'entretien a eu lieu avant la signature légitime sa décision en écartant tout vice du consentement [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P1 confirme que la cour d'appel qui constate l'entretien avant la signature et écarte tout vice du consentement a légalement justifié sa décision."
+     }
+    ],
+    "next_action": "answer",
+    "llm_judge_used": true
+   },
+   "latency_ms": 7041.2,
+   "at": "2026-10-24T09:19:46.949+00:00"
+  },
+  {
+   "run_id": "26e07e34d178",
+   "step": 14,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Réponse vérifiée — 1 passage(s) cité(s).",
+   "data": {
+    "answer": "Non, l'article L. 1237-12 du code du travail n'instaure pas de délai obligatoire entre l'entretien préalable et la signature de la convention de rupture [P1]. La Cour de cassation a jugé que la cour d'appel qui constate simplement que l'entretien a eu lieu avant la signature légitime sa décision en écartant tout vice du consentement [P1]. Les passages fournis ne permettent pas de répondre à la question concernant les délais entre la convocation et l'entretien préalable ou les marchés publics.",
+    "status": "answered",
+    "verifier_status": "sufficient",
+    "sources": [
+     {
+      "alias": "P1",
+      "passage_id": "65f1500528057200093c3e89#motivations-1",
+      "case_id": "65f1500528057200093c3e89",
+      "title": "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+      "zone": "motivations",
+      "zone_label": "Motivations",
+      "text": "Réponse de la Cour\n\n 5. L'article L. 1237-12 du code du travail n'instaure pas de délai entre, d'une part l'entretien au cours duquel les parties au contrat de travail conviennent de la rupture du contrat, d'autre part la signature de la convention de rupture prévue à l'article L. 1237-11 du code du travail.\n\n 6. La cour d'appel, qui a constaté que l'entretien avait eu lieu avant la signature de la convention de rupture et écarté tout vice du consentement, a légalement justifié sa décision.",
+      "start": 2698,
+      "end": 3193,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/65f1500528057200093c3e89"
+     }
+    ],
+    "limits": [
+     "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+    ],
+    "stop_reason": "answered",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+     "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143",
+     "Cour de cassation · Chambre sociale · 2024-12-11 · n° 22-20.109",
+     "Cour de cassation · Chambre sociale · 2023-09-06 · n° 22-11.661",
+     "Cour de cassation · Chambre commerciale financière et économique · 2022-09-07 · n° 20-21.222"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:19:46.953+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Non, l'article L. 1237-12 du code du travail n'instaure pas de délai obligatoire entre l'entretien préalable et la signature de la convention de rupture [P1]. La Cour de cassation a jugé que la cour d'appel qui constate simplement que l'entretien a eu lieu avant la signature légitime sa décision en écartant tout vice du consentement [P1]. Les passages fournis ne permettent pas de répondre à la question concernant les délais entre la convocation et l'entretien préalable ou les marchés publics.",
+  "status": "answered",
+  "verifier_status": "sufficient",
+  "sources": [
+   {
+    "alias": "P1",
+    "passage_id": "65f1500528057200093c3e89#motivations-1",
+    "case_id": "65f1500528057200093c3e89",
+    "title": "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour\n\n 5. L'article L. 1237-12 du code du travail n'instaure pas de délai entre, d'une part l'entretien au cours duquel les parties au contrat de travail conviennent de la rupture du contrat, d'autre part la signature de la convention de rupture prévue à l'article L. 1237-11 du code du travail.\n\n 6. La cour d'appel, qui a constaté que l'entretien avait eu lieu avant la signature de la convention de rupture et écarté tout vice du consentement, a légalement justifié sa décision.",
+    "start": 2698,
+    "end": 3193,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/65f1500528057200093c3e89"
+   }
+  ],
+  "limits": [
+   "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+  ],
+  "stop_reason": "answered",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+   "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143",
+   "Cour de cassation · Chambre sociale · 2024-12-11 · n° 22-20.109",
+   "Cour de cassation · Chambre sociale · 2023-09-06 · n° 22-11.661",
+   "Cour de cassation · Chambre commerciale financière et économique · 2022-09-07 · n° 20-21.222"
+  ]
+ },
+ "metrics": {
+  "llm_calls": 9,
+  "prompt_tokens": 12397,
+  "completion_tokens": 2111,
+  "llm_latency_ms": 114387.86175299902,
+  "tool_calls": {
+   "search_cases": 2
+  },
+  "tool_latency_ms": 110.6,
+  "iterations": 3,
+  "searches": 2,
+  "errors": [],
+  "total_latency_ms": 114528.5,
+  "verifier_status": "sufficient",
+  "stop_reason": "answered",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 114.5,
+ "hitl_answer": null
+}

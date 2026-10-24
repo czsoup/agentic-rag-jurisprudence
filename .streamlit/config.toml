@@ -1,0 +1,32 @@
+# Direction artistique « Greffe » : papier, encre, sang-de-bœuf, vert-de-gris.
+[theme]
+base = "light"
+primaryColor = "#7A2020"
+backgroundColor = "#F4F0E6"
+secondaryBackgroundColor = "#EAE3D3"
+textColor = "#1C1B19"
+linkColor = "#7A2020"
+linkUnderline = false
+borderColor = "#D6CDB8"
+showWidgetBorder = true
+baseRadius = "2px"
+font = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+headingFont = "Newsreader:https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap"
+codeFont = "IBM Plex Mono:https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+codeBackgroundColor = "#EAE3D3"
+greenColor = "#4F6B5A"
+redColor = "#7A2020"
+orangeColor = "#A0642A"
+baseFontSize = 15
+
+[theme.sidebar]
+backgroundColor = "#1C1B19"
+textColor = "#EDE6D6"
+secondaryBackgroundColor = "#2A2825"
+borderColor = "#3A3732"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

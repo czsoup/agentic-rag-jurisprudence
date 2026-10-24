@@ -1,0 +1,1070 @@
+{
+ "question": {
+  "id": "C7",
+  "title": "Hors corpus (IA)",
+  "kind": "insufficient-absent",
+  "question": "Un employeur peut-il licencier un salarié sur la seule base d'une évaluation produite par un algorithme d'intelligence artificielle ?",
+  "target_case": null,
+  "selection": "= S3b",
+  "expected": "abstention"
+ },
+ "mode": "multi",
+ "session": "C7-multi-1792853766",
+ "run_id": "d05025065f36",
+ "events": [
+  {
+   "run_id": "d05025065f36",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le dossier est vide ; il faut trouver des preuves juridiques pour répondre à la question.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus des décisions de la Cour de cassation (ou de juridictions inférieures citées) concernant les licenciements fondés sur une évaluation par algorithme ou intelligence artificielle. Cherchez spécifiquement des passages traitant de la validité juridique d'un tel motif, de l'obligation de transparence ou de preuve du lien causal entre l'algorithme et le licenciement.",
+    "iteration": 1
+   },
+   "latency_ms": 6321.156624995638,
+   "at": "2026-10-24T14:56:12.551+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 2,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« licenciement algorithme intelligence artificielle évaluation automatique »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 12043.276000011247,
+   "at": "2026-10-24T14:56:24.596+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 3,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"licenciement algorithme intelligence artificielle évaluation automatique\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "licenciement algorithme intelligence artificielle évaluation automatique",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:56:24.596+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 4,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925",
+   "data": {
+    "query": "licenciement algorithme intelligence artificielle évaluation automatique",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "6437a1d49477fe04f5cc68d2",
+      "title": "Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P1",
+      "passage_id": "6437a1d49477fe04f5cc68d2#moyens-1",
+      "zone": "moyens",
+      "excerpt": "L'évaluation de la compétence est formalisée à l'occasion de l'entretien annuel, tel que prévu à l'article 7'' ; que l'absence d'entretien annuel d'évaluation ou le retard dans la tenue de celui-ci ne peuvent être sanctionnés par l'attribution automatique, pour chaque année concernée, d'un pas de compétence ; qu'en …"
+     },
+     {
+      "rank": 2,
+      "case_id": "654b350a56298f83183878a3",
+      "title": "Cour de cassation · Chambre sociale · 2023-11-08 · n° 22-17.919",
+      "solution": "Rejet",
+      "score": 0.016393,
+      "alias": "P2",
+      "passage_id": "654b350a56298f83183878a3#motivations-2",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 14. Par arrêt du 17 mars 2021, la Cour de cassation a jugé que le chef de dispositif de l'arrêt de la cour d'appel du 17 mai 2019 condamnant l'employeur à payer à la salariée une certaine somme à titre de dommages-intérêts pour licenciement dépourvu de cause réelle et sérieuse était relatif au …"
+     },
+     {
+      "rank": 3,
+      "case_id": "64085c5d66b1bafb02f12052",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2023-03-08 · n° 21-22.196",
+      "solution": "Rejet",
+      "score": 0.016129,
+      "alias": "P3",
+      "passage_id": "64085c5d66b1bafb02f12052#dispositif-0",
+      "zone": "dispositif",
+      "excerpt": "EN CONSÉQUENCE, la Cour : REJETTE le pourvoi ; Condamne la société JSA, en qualité de liquidateur judiciaire de la Société d'exploitation azuréenne de magasins automatiques de convenance (SEAMAC), aux dépens ; En application de l'article 700 du code de procédure civile, rejette les demandes ; Ainsi décidé par la Cour …"
+     },
+     {
+      "rank": 4,
+      "case_id": "627b537f4d359c057dd01cf4",
+      "title": "Cour de cassation · Chambre sociale · 2022-05-11 · n° 21-14.490",
+      "solution": "Cassation",
+      "score": 0.016129,
+      "alias": "P4",
+      "passage_id": "627b537f4d359c057dd01cf4#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article 6 de la Déclaration des droits de l'homme et du citoyen de 1789, les articles L. 1235-3, L. 1235-3-1 et L. 1235-4 du code du travail, dans leur rédaction issue de l'ordonnance n° 2017-1387 du 22 septembre 2017, et l'article 10 de la Convention internationale du travail n° 158 …"
+     },
+     {
+      "rank": 5,
+      "case_id": "651d01d7fe8d588318c1ac5c",
+      "title": "Cour de cassation · Chambre sociale · 2023-10-04 · n° 22-15.269",
+      "solution": "Cassation",
+      "score": 0.015873,
+      "alias": "P5",
+      "passage_id": "651d01d7fe8d588318c1ac5c#moyens-2",
+      "zone": "moyens",
+      "excerpt": "Et sur le troisième moyen, pris en sa deuxième et sa troisième branches Enoncé du moyen 11. Le salarié fait grief à l'arrêt de le débouter de sa demande de dommages-intérêts pour licenciement nul ou à tout le moins sans cause réelle et sérieuse, alors : « 2°/ qu'en ne répondant pas au moyen des conclusions d'appel du …"
+     }
+    ]
+   },
+   "latency_ms": 38.9,
+   "at": "2026-10-24T14:56:24.635+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 5,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« licenciement IA algorithme décision automatisée transparence preuve causalité »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 15285.159165970981,
+   "at": "2026-10-24T14:56:39.921+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 6,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"licenciement IA algorithme décision automatisée transparence preuve causalité\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "licenciement IA algorithme décision automatisée transparence preuve causalité",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:56:39.921+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 7,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+   "data": {
+    "query": "licenciement IA algorithme décision automatisée transparence preuve causalité",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "63da1185b78bc005de6ccd13",
+      "title": "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+      "solution": "Cassation",
+      "score": 0.032522,
+      "alias": "P6",
+      "passage_id": "63da1185b78bc005de6ccd13#moyens-3",
+      "zone": "moyens",
+      "excerpt": "1132-3-3 du code du travail et R. 1455-6 du code du travail ; 4°/ qu'en application de l'article L. 1132-3-3 du code du travail, en cas de litige relatif à un salarié qui a lancé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la …"
+     },
+     {
+      "rank": 2,
+      "case_id": "638702d2bf732905d49c5137",
+      "title": "Cour de cassation · Chambre sociale · 2022-11-30 · n° 21-15.473",
+      "solution": "Rejet",
+      "score": 0.028006,
+      "alias": "P7",
+      "passage_id": "638702d2bf732905d49c5137#dispositif-0",
+      "zone": "dispositif",
+      "excerpt": "EN CONSÉQUENCE, la Cour : REJETTE le pourvoi ; Condamne la société Faure-Vercors aux dépens ; En application de l'article 700 du code de procédure civile, rejette la demande formée par la société Faure-Vercors et la condamne à payer à M. [T] la somme de 3 000 euros ; Ainsi décidé par la Cour de cassation, chambre …"
+     },
+     {
+      "rank": 3,
+      "case_id": "64085c8866b1bafb02f12088",
+      "title": "Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797",
+      "solution": "Cassation",
+      "score": 0.026667,
+      "alias": "P8",
+      "passage_id": "64085c8866b1bafb02f12088#motivations-3",
+      "zone": "motivations",
+      "excerpt": "12. Il conclut qu'en l'absence d'autres preuves établissant la fraude reprochée, le licenciement est dépourvu de cause réelle et sérieuse. 13. En statuant ainsi alors qu'il lui appartenait de vérifier si la preuve litigieuse n'était pas indispensable à l'exercice du droit à la preuve de l'employeur et si l'atteinte …"
+     },
+     {
+      "rank": 4,
+      "case_id": "641aaa4b0c73d704f5348206",
+      "title": "Cour de cassation · Première chambre civile · 2023-03-22 · n° 21-25.336",
+      "solution": "Rejet",
+      "score": 0.025817,
+      "alias": "P9",
+      "passage_id": "641aaa4b0c73d704f5348206#moyens-1",
+      "zone": "moyens",
+      "excerpt": "qu'en jugeant qu'il existait un lien de causalité entre la faute imputée à la société Ajilex et le préjudice allégué par la société Bank Tejarat, aux motifs que, d'une part, la Cour de cassation avait, par arrêt du 30 janvier 2013, cassé et annulé l'arrêt du 3 mars 2011 confirmant la décision du greffier du 18 mars …"
+     },
+     {
+      "rank": 5,
+      "case_id": "6582bbc7747015f3f52007d1",
+      "title": "Cour de cassation · Chambre sociale · 2023-12-20 · n° 21-20.904",
+      "solution": "Cassation",
+      "score": 0.024225,
+      "alias": "P10",
+      "passage_id": "6582bbc7747015f3f52007d1#moyens-2",
+      "zone": "moyens",
+      "excerpt": "qu'en disant, dès lors, légitime le licenciement pour faute grave de la salariée, sans rechercher, ainsi qu'elle y avait été invitée par elle, si, en réalité, la société n'avait pas prononcé son licenciement en raison des revendications salariales de la salariée et de la procédure prud'homale qu'elle avait introduite …"
+     }
+    ]
+   },
+   "latency_ms": 43.9,
+   "at": "2026-10-24T14:56:39.965+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 8,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 10 passage(s) au dossier. Aucune décision de la Cour de cassation ou de juridictions inférieures citées dans le corpus ne traite spécifiquement de la validité juridique d'un licenciement fondé sur une évaluation produite par un algorithme d'intelligence artificielle",
+   "data": {
+    "report": "Aucune décision de la Cour de cassation ou de juridictions inférieures citées dans le corpus ne traite spécifiquement de la validité juridique d'un licenciement fondé sur une évaluation produite par un algorithme d'intelligence artificielle, ni des obligations de transparence ou de preuve du lien causal spécifiques à ce contexte. Les passages trouvés concernent soit des évaluations manuelles (P1), soit des principes généraux de preuve et de causalité dans le licenciement (P2, P4, P6, P7, P8, P10) sans mention d'IA ou d'algorithme.",
+    "passages": 10,
+    "cases": [
+     "6437a1d49477fe04f5cc68d2",
+     "654b350a56298f83183878a3",
+     "64085c5d66b1bafb02f12052",
+     "627b537f4d359c057dd01cf4",
+     "651d01d7fe8d588318c1ac5c",
+     "63da1185b78bc005de6ccd13",
+     "638702d2bf732905d49c5137",
+     "64085c8866b1bafb02f12088",
+     "641aaa4b0c73d704f5348206",
+     "6582bbc7747015f3f52007d1"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:56:50.669+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 9,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Rédaction de la synthèse — dossier constitué : la suffisance des preuves est soumise au vérificateur",
+   "data": {
+    "action": "write",
+    "brief": "Recherchez des décisions de la Cour de cassation (Chambre sociale) traitant du licenciement fondé sur une évaluation automatisée, un algorithme ou une IA, en vérifiant si elles imposent des obligations de transparence ou de preuve du lien causal spécifique à ces outils.",
+    "iteration": 2
+   },
+   "latency_ms": 8548.63391595427,
+   "at": "2026-10-24T14:56:59.225+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 10,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Synthèse rédigée à partir de 10 passage(s) : soumise au vérificateur.",
+   "data": {
+    "action": "answer"
+   },
+   "latency_ms": 12764.6,
+   "at": "2026-10-24T14:57:11.992+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 11,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves insufficient — 0/2 affirmation(s) soutenue(s) ; 2 en échec sur les règles (citation absente, inventée ou incomplète).",
+   "data": {
+    "status": "insufficient",
+    "justification": "0/2 affirmation(s) soutenue(s) ; 2 en échec sur les règles (citation absente, inventée ou incomplète).",
+    "unverified_claims": [
+     "Aucun texte ne mentionne l'utilisation d'algorithmes d'intelligence artificielle pour évaluer les salariés ou justifier un licenciement.",
+     "Les décisions citées traitent uniquement d'évaluations annuelles formelles, de harcèlement moral, de lanceurs d'alerte ou d'inaptitude physique sans faire référence à des outils automatisés."
+    ],
+    "claims": [
+     {
+      "text": "Aucun texte ne mentionne l'utilisation d'algorithmes d'intelligence artificielle pour évaluer les salariés ou justifier un licenciement.",
+      "citations": [],
+      "verdict": "not_enough_info",
+      "rule_failures": [
+       "affirmation non sourcée (aucune citation)"
+      ],
+      "reason": ""
+     },
+     {
+      "text": "Les décisions citées traitent uniquement d'évaluations annuelles formelles, de harcèlement moral, de lanceurs d'alerte ou d'inaptitude physique sans faire référence à des outils automatisés.",
+      "citations": [],
+      "verdict": "not_enough_info",
+      "rule_failures": [
+       "affirmation non sourcée (aucune citation)"
+      ],
+      "reason": ""
+     }
+    ],
+    "next_action": "read_case",
+    "llm_judge_used": false
+   },
+   "latency_ms": 0.5,
+   "at": "2026-10-24T14:57:11.995+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 12,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le corpus actuel ne contient aucune décision traitant explicitement du licenciement basé sur une évaluation par IA ; il faut élargir la recherche aux termes techniques spécifiques pour confirmer l'absence totale de jurisprudence ou trouver un précédent inédit.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus local des décisions de la Cour de cassation (Chambre sociale) contenant les mots-clés 'intelligence artificielle', 'algorithme', 'automatique' ou 'IA' associés aux notions de 'licenciement', 'évaluation' ou 'décision'. Vérifiez spécifiquement si ces passages mentionnent la validité juridique, l'obligation de transparence ou le lien de causalité entre une évaluation automatisée et un licenciement.",
+    "iteration": 3
+   },
+   "latency_ms": 10975.025959021877,
+   "at": "2026-10-24T14:57:22.972+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 13,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« intelligence artificielle algorithme automatique licenciement évaluation décision »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 8984.796374978032,
+   "at": "2026-10-24T14:57:31.963+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 14,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"intelligence artificielle algorithme automatique licenciement évaluation décision\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "intelligence artificielle algorithme automatique licenciement évaluation décision",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:57:31.964+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 15,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-09-21 · n° 19-12.568",
+   "data": {
+    "query": "intelligence artificielle algorithme automatique licenciement évaluation décision",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "632bfce16ed81805da0b0153",
+      "title": "Cour de cassation · Chambre sociale · 2022-09-21 · n° 19-12.568",
+      "solution": "Rejet",
+      "score": 0.026294,
+      "alias": "P11",
+      "passage_id": "632bfce16ed81805da0b0153#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 5. Le juge judiciaire ne peut, sans violer le principe de séparation des pouvoirs, en l'état d'une autorisation administrative de licenciement devenue définitive, apprécier le caractère réel et sérieux du motif de licenciement au regard de la cause économique ou du respect par l'employeur de son …"
+     },
+     {
+      "rank": 2,
+      "case_id": "64783b09bf7113d0f86f7255",
+      "title": "Cour de cassation · Chambre sociale · 2023-06-01 · n° 21-19.064",
+      "solution": "Cassation",
+      "score": 0.025653,
+      "alias": "P12",
+      "passage_id": "64783b09bf7113d0f86f7255#moyens-1",
+      "zone": "moyens",
+      "excerpt": "1235-3 du code du travail, s'il est établi que le licenciement était sans cause réelle et sérieuse au moment où il a été prononcé ; qu'en l'espèce, il résulte des constatations de l'arrêt attaqué que la société Howden Solyvent Ventec a prononcé le licenciement pour motif économique de M. [F] le 12 juillet 2006 sur le …"
+     },
+     {
+      "rank": 3,
+      "case_id": "654b34f056298f831838788d",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2023-11-08 · n° 22-11.766",
+      "solution": "Cassation",
+      "score": 0.022074,
+      "alias": "P13",
+      "passage_id": "654b34f056298f831838788d#moyens-1",
+      "zone": "moyens",
+      "excerpt": "3°/ qu'en outre, l'évaluation des droits sociaux par l'expert désigné en application de l'article 1843-4 du code civil doit pouvoir faire l'objet d'un recours effectif, devant un organe doté d'une plénitude de juridiction ; qu'en énonçant, pour refuser d'annuler les rapports d'expertise de M. [Z], qu'à défaut …"
+     },
+     {
+      "rank": 4,
+      "case_id": "6437a1d49477fe04f5cc68d2",
+      "title": "Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P1",
+      "passage_id": "6437a1d49477fe04f5cc68d2#moyens-1",
+      "zone": "moyens",
+      "excerpt": "L'évaluation de la compétence est formalisée à l'occasion de l'entretien annuel, tel que prévu à l'article 7'' ; que l'absence d'entretien annuel d'évaluation ou le retard dans la tenue de celui-ci ne peuvent être sanctionnés par l'attribution automatique, pour chaque année concernée, d'un pas de compétence ; qu'en …"
+     },
+     {
+      "rank": 5,
+      "case_id": "64085c5d66b1bafb02f12052",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2023-03-08 · n° 21-22.196",
+      "solution": "Rejet",
+      "score": 0.016129,
+      "alias": "P3",
+      "passage_id": "64085c5d66b1bafb02f12052#dispositif-0",
+      "zone": "dispositif",
+      "excerpt": "EN CONSÉQUENCE, la Cour : REJETTE le pourvoi ; Condamne la société JSA, en qualité de liquidateur judiciaire de la Société d'exploitation azuréenne de magasins automatiques de convenance (SEAMAC), aux dépens ; En application de l'article 700 du code de procédure civile, rejette les demandes ; Ainsi décidé par la Cour …"
+     }
+    ]
+   },
+   "latency_ms": 40.7,
+   "at": "2026-10-24T14:57:32.005+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 16,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 13 passage(s) au dossier. Aucune décision de la Cour de cassation (Chambre sociale) ne contient les mots-clés 'intelligence artificielle', 'algorithme', 'automatique' ou 'IA' associés aux notions de 'licenciement', 'évaluation' ou 'décision'. Les résultats retournés",
+   "data": {
+    "report": "Aucune décision de la Cour de cassation (Chambre sociale) ne contient les mots-clés 'intelligence artificielle', 'algorithme', 'automatique' ou 'IA' associés aux notions de 'licenciement', 'évaluation' ou 'décision'. Les résultats retournés concernent d'autres sujets (licenciement économique, évaluation des compétences, magasins automatiques) sans lien avec l'IA.",
+    "passages": 13,
+    "cases": [
+     "6437a1d49477fe04f5cc68d2",
+     "654b350a56298f83183878a3",
+     "64085c5d66b1bafb02f12052",
+     "627b537f4d359c057dd01cf4",
+     "651d01d7fe8d588318c1ac5c",
+     "63da1185b78bc005de6ccd13",
+     "638702d2bf732905d49c5137",
+     "64085c8866b1bafb02f12088",
+     "641aaa4b0c73d704f5348206",
+     "6582bbc7747015f3f52007d1",
+     "632bfce16ed81805da0b0153",
+     "64783b09bf7113d0f86f7255",
+     "654b34f056298f831838788d"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:57:47.211+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 17,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le corpus actuel ne contient aucune décision traitant explicitement du lien entre IA/algorithme et licenciement ; il faut élargir ou approfondir la recherche pour trouver des passages pertinents ou confirmer l'absence totale de jurisprudence sur ce sujet spécifique.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus local les décisions de la Chambre sociale de la Cour de cassation contenant les termes 'intelligence artificielle', 'algorithme' ou 'IA' associés aux mots-clés 'licenciement', 'évaluation', 'décision automatisée' ou 'transparence'. Vérifiez spécifiquement si des jugements récents (post-2018) abordent la validité d'un licenciement basé sur une évaluation algorithmique.",
+    "iteration": 4
+   },
+   "latency_ms": 10961.631958023645,
+   "at": "2026-10-24T14:57:58.177+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 18,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« intelligence artificielle algorithme licenciement évaluation décision automatisée transparence »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 10132.786208007019,
+   "at": "2026-10-24T14:58:08.315+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 19,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"intelligence artificielle algorithme licenciement évaluation décision automatisée transparence\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "intelligence artificielle algorithme licenciement évaluation décision automatisée transparence",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:58:08.316+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 20,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+   "data": {
+    "query": "intelligence artificielle algorithme licenciement évaluation décision automatisée transparence",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "63da1185b78bc005de6ccd13",
+      "title": "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+      "solution": "Cassation",
+      "score": 0.032002,
+      "alias": "P6",
+      "passage_id": "63da1185b78bc005de6ccd13#moyens-3",
+      "zone": "moyens",
+      "excerpt": "1132-3-3 du code du travail et R. 1455-6 du code du travail ; 4°/ qu'en application de l'article L. 1132-3-3 du code du travail, en cas de litige relatif à un salarié qui a lancé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la …"
+     },
+     {
+      "rank": 2,
+      "case_id": "62c678b2ca9bf263790303cb",
+      "title": "Cour de cassation · Deuxième chambre civile · 2022-07-07 · n° 20-21.365",
+      "solution": "Cassation",
+      "score": 0.026496,
+      "alias": "P14",
+      "passage_id": "62c678b2ca9bf263790303cb#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen des moyens Sur le premier moyen, pris en ses deux premières branches, et le deuxième moyen, pris en ses première, deuxième et quatrième branches Enoncé des moyens 3. La caisse fait grief à l'arrêt de dire irrégulier le contrôle de l'activité de la professionnelle de santé et de rejeter sa demande en …"
+     },
+     {
+      "rank": 3,
+      "case_id": "63982486a1b60505d4701ff3",
+      "title": "Cour de cassation · Chambre criminelle · 2022-12-13 · n° 22-81.851",
+      "solution": "Rejet",
+      "score": 0.026145,
+      "alias": "P15",
+      "passage_id": "63982486a1b60505d4701ff3#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 5. C'est à tort que les juges ont rejeté la demande de nullité de la consultation du système de lecture automatisé des plaques d'immatriculation de véhicules (LAPI) au motif que M. [H] n'avait pas présenté de demande d'acte tendant à voir verser aux débats les pièces justifiant de sa régularité. 6. …"
+     },
+     {
+      "rank": 4,
+      "case_id": "649be063a10c4805db86fa99",
+      "title": "Cour de cassation · Première chambre civile · 2023-06-28 · n° 22-13.969",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P16",
+      "passage_id": "649be063a10c4805db86fa99#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen des moyens Sur le premier moyen du pourvoi principal Enoncé du moyen 3. La SCI fait grief à l'arrêt de rejeter sa demande tendant à dire abusives et réputées non écrites les clauses d'indexation, alors : « 1°/ qu'une clause définissant la prestation essentielle du contrat peut être regardée comme abusive …"
+     },
+     {
+      "rank": 5,
+      "case_id": "657805d5ba3a458318c813a1",
+      "title": "Cour de cassation · Chambre criminelle · 2023-12-12 · n° 23-82.185",
+      "solution": "Cassation",
+      "score": 0.016129,
+      "alias": "P17",
+      "passage_id": "657805d5ba3a458318c813a1#moyens-2",
+      "zone": "moyens",
+      "excerpt": "qu'en retenant, pour refuser d'annuler ces autorisations, les actes d'exécutions de celles-ci et l'ensemble des actes et pièces qui y trouvent leur support nécessaire, qu'il résulte de l'arrêt du 16 février 2023 de la Cour de Justice de l'Union Européenne que « l'article 15, paragraphe 1, de la directive 2002/58/CE …"
+     }
+    ]
+   },
+   "latency_ms": 39.9,
+   "at": "2026-10-24T14:58:08.356+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 21,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« licenciement algorithme évaluation performance salarié »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 16031.521666969638,
+   "at": "2026-10-24T14:58:24.388+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 22,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"licenciement algorithme évaluation performance salarié\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "licenciement algorithme évaluation performance salarié",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:58:24.389+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 23,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-16.171",
+   "data": {
+    "query": "licenciement algorithme évaluation performance salarié",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "620ca2d5c61f23729bcf61e7",
+      "title": "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-16.171",
+      "solution": "Cassation",
+      "score": 0.02388,
+      "alias": "P18",
+      "passage_id": "620ca2d5c61f23729bcf61e7#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article L. 2411-10 du code du travail dans sa rédaction antérieure à l'ordonnance n° 2017-1386 du 22 septembre 2017 : 4. Est irrégulier le licenciement du salarié au terme de la période de protection prononcé en raison de faits commis pendant cette période et qui auraient dû être soumis à …"
+     },
+     {
+      "rank": 2,
+      "case_id": "66fce2ba8d6ea26f688da3ed",
+      "title": "Cour de cassation · Chambre sociale · 2024-10-02 · n° 23-19.326",
+      "solution": "Cassation",
+      "score": 0.021437,
+      "alias": "P19",
+      "passage_id": "66fce2ba8d6ea26f688da3ed#motivations-3",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu la loi des 16-24 août 1790, l'article L. 2411-5 du code du travail, dans sa rédaction antérieure à l'ordonnance n° 2017-1386 du 22 septembre 2017, et les articles L. 1132-1 à L. 1132-3-3 et L. 1152-1 à L. 1152-3 du même code : 14. Il résulte de ces textes que, dans le cas où une demande …"
+     },
+     {
+      "rank": 3,
+      "case_id": "638702b3bf732905d49c5117",
+      "title": "Cour de cassation · Chambre sociale · 2022-11-30 · n° 21-19.140",
+      "solution": "Rejet",
+      "score": 0.020162,
+      "alias": "P20",
+      "passage_id": "638702b3bf732905d49c5117#dispositif-0",
+      "zone": "dispositif",
+      "excerpt": "EN CONSÉQUENCE, la Cour : REJETTE le pourvoi ; Condamne M. [V] aux dépens ; En application de l'article 700 du code de procédure civile, rejette les demandes ; Ainsi décidé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du trente novembre deux mille vingt-deux. MOYEN …"
+     },
+     {
+      "rank": 4,
+      "case_id": "65a788d7c53a55000879150e",
+      "title": "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-20.778",
+      "solution": "Cassation",
+      "score": 0.018706,
+      "alias": "P21",
+      "passage_id": "65a788d7c53a55000879150e#moyens-2",
+      "zone": "moyens",
+      "excerpt": "Mais sur le moyen, pris en sa première branche, en ce qu'il fait grief à l'arrêt de dire que le licenciement est nul et de condamner la société à payer au salarié une indemnité à ce titre Enoncé du moyen 9. La société fait grief à l'arrêt de dire que le licenciement est nul et de la condamner à payer au salarié une …"
+     },
+     {
+      "rank": 5,
+      "case_id": "651d01d7fe8d588318c1ac5c",
+      "title": "Cour de cassation · Chambre sociale · 2023-10-04 · n° 22-15.269",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P5",
+      "passage_id": "651d01d7fe8d588318c1ac5c#moyens-2",
+      "zone": "moyens",
+      "excerpt": "Et sur le troisième moyen, pris en sa deuxième et sa troisième branches Enoncé du moyen 11. Le salarié fait grief à l'arrêt de le débouter de sa demande de dommages-intérêts pour licenciement nul ou à tout le moins sans cause réelle et sérieuse, alors : « 2°/ qu'en ne répondant pas au moyen des conclusions d'appel du …"
+     }
+    ]
+   },
+   "latency_ms": 38.3,
+   "at": "2026-10-24T14:58:24.427+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 24,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 21 passage(s) au dossier. Aucune décision de la Chambre sociale de la Cour de cassation postérieure à 2018 ne contient les termes 'intelligence artificielle', 'algorithme' ou 'IA' associés aux mots-clés 'licenciement', 'évaluation', 'décision automatisée' ou 'transp",
+   "data": {
+    "report": "Aucune décision de la Chambre sociale de la Cour de cassation postérieure à 2018 ne contient les termes 'intelligence artificielle', 'algorithme' ou 'IA' associés aux mots-clés 'licenciement', 'évaluation', 'décision automatisée' ou 'transparence'. Les résultats retournés concernent des litiges classiques (lanceur d'alerte, licenciement de salarié protégé, harcèlement) sans mention de l'IA.",
+    "passages": 21,
+    "cases": [
+     "6437a1d49477fe04f5cc68d2",
+     "654b350a56298f83183878a3",
+     "64085c5d66b1bafb02f12052",
+     "627b537f4d359c057dd01cf4",
+     "651d01d7fe8d588318c1ac5c",
+     "63da1185b78bc005de6ccd13",
+     "638702d2bf732905d49c5137",
+     "64085c8866b1bafb02f12088",
+     "641aaa4b0c73d704f5348206",
+     "6582bbc7747015f3f52007d1",
+     "632bfce16ed81805da0b0153",
+     "64783b09bf7113d0f86f7255",
+     "654b34f056298f831838788d",
+     "62c678b2ca9bf263790303cb",
+     "63982486a1b60505d4701ff3",
+     "649be063a10c4805db86fa99",
+     "657805d5ba3a458318c813a1",
+     "620ca2d5c61f23729bcf61e7",
+     "66fce2ba8d6ea26f688da3ed",
+     "638702b3bf732905d49c5117",
+     "65a788d7c53a55000879150e"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:58:34.439+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 25,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le chercheur doit élargir sa recherche au-delà des résultats négatifs actuels pour confirmer l'absence totale de jurisprudence spécifique sur ce sujet dans la base de données disponible.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus local les décisions de la Chambre sociale de la Cour de cassation (postérieures à 2018) contenant les termes 'intelligence artificielle', 'algorithme' ou 'IA' associés aux mots-clés 'licenciement', 'évaluation', 'décision automatisée' ou 'transparence'. Vérifiez spécifiquement si des jugements abordent la validité d'un licenciement basé sur une évaluation automatique ou l'obligation de transparence envers le salarié concernant ces outils.",
+    "iteration": 5
+   },
+   "latency_ms": 11573.212165967561,
+   "at": "2026-10-24T14:58:46.020+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 26,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« intelligence artificielle algorithme licenciement évaluation transparence »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 9537.368416029494,
+   "at": "2026-10-24T14:58:55.561+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 27,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"intelligence artificielle algorithme licenciement évaluation transparence\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "intelligence artificielle algorithme licenciement évaluation transparence",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:58:55.562+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 28,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+   "data": {
+    "query": "intelligence artificielle algorithme licenciement évaluation transparence",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "63da1185b78bc005de6ccd13",
+      "title": "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+      "solution": "Cassation",
+      "score": 0.032522,
+      "alias": "P6",
+      "passage_id": "63da1185b78bc005de6ccd13#moyens-3",
+      "zone": "moyens",
+      "excerpt": "1132-3-3 du code du travail et R. 1455-6 du code du travail ; 4°/ qu'en application de l'article L. 1132-3-3 du code du travail, en cas de litige relatif à un salarié qui a lancé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la …"
+     },
+     {
+      "rank": 2,
+      "case_id": "654b34f056298f831838788d",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2023-11-08 · n° 22-11.766",
+      "solution": "Cassation",
+      "score": 0.019844,
+      "alias": "P22",
+      "passage_id": "654b34f056298f831838788d#motivations-1",
+      "zone": "motivations",
+      "excerpt": "D'autre part, l'évaluation des droits sociaux à laquelle procède l'expert désigné, si elle s'impose aux parties et au juge, s'effectue néanmoins sous le contrôle de ce dernier, le juge disposant du pouvoir d'annuler le rapport d'expertise, notamment en cas de manquement de l'expert aux exigences d'indépendance et …"
+     },
+     {
+      "rank": 3,
+      "case_id": "649be063a10c4805db86fa99",
+      "title": "Cour de cassation · Première chambre civile · 2023-06-28 · n° 22-13.969",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P16",
+      "passage_id": "649be063a10c4805db86fa99#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen des moyens Sur le premier moyen du pourvoi principal Enoncé du moyen 3. La SCI fait grief à l'arrêt de rejeter sa demande tendant à dire abusives et réputées non écrites les clauses d'indexation, alors : « 1°/ qu'une clause définissant la prestation essentielle du contrat peut être regardée comme abusive …"
+     },
+     {
+      "rank": 4,
+      "case_id": "625fa3298361df277dc59708",
+      "title": "Cour de cassation · Première chambre civile · 2022-04-20 · n° 20-16.316",
+      "solution": "Cassation",
+      "score": 0.015873,
+      "alias": "P23",
+      "passage_id": "625fa3298361df277dc59708#motivations-1",
+      "zone": "motivations",
+      "excerpt": "- l'article 3, paragraphe 1, de la directive 93/13 doit être interprété en ce sens que les clauses d'un contrat de prêt qui prévoient que la devise étrangère est la monnaie de compte et que l'euro est la monnaie de paiement et qui ont pour effet de faire porter le risque de change, sans qu'il soit plafonné, sur …"
+     },
+     {
+      "rank": 5,
+      "case_id": "629702177c2a1fa9d4442265",
+      "title": "Cour de cassation · Chambre commerciale financière et économique · 2022-06-01 · n° 19-20.999",
+      "solution": "Rejet",
+      "score": 0.015873,
+      "alias": "P24",
+      "passage_id": "629702177c2a1fa9d4442265#moyens-7",
+      "zone": "moyens",
+      "excerpt": "qu'en opposant les appréciations de caractère juridique, pour lesquelles l'Autorité disposerait d'une plénitude de compétence, et les appréciations de caractère scientifique, quand une telle distinction n'était pas de nature à justifier la compétence prétendue de l'Autorité de substituer sa propre appréciation du …"
+     }
+    ]
+   },
+   "latency_ms": 38.8,
+   "at": "2026-10-24T14:58:55.601+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 29,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Lecture détaillée de la décision 63da1185b78bc005de6ccd13.",
+   "data": {
+    "action": "read_case"
+   },
+   "latency_ms": 26300.904707983136,
+   "at": "2026-10-24T14:59:21.902+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 30,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"63da1185b78bc005de6ccd13\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "63da1185b78bc005de6ccd13"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:59:21.903+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 31,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+   "data": {
+    "case_id": "63da1185b78bc005de6ccd13",
+    "title": "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+    "passages": [
+     {
+      "alias": "P25",
+      "passage_id": "63da1185b78bc005de6ccd13#expose-0",
+      "zone": "expose",
+      "text": "Faits et procédure\n\n 1. Selon l'arrêt attaqué (Versailles, 16 septembre 2021), rendu en matière de référé, Mme [E] a été engagée, le 1er septembre 2014, par la société Thales en qualité de responsable de la transformation des infrastructures centrales. Dans le cadre d'une mobilité interne, elle a été engagée, à compter du 1er juillet 2017, par la société Thales six GTS France en qualité de responsable du département offres et projets export.\n\n 2. Le 24 mars 2019, la salariée a saisi le comité d'éthique du groupe pour signaler des faits susceptibles d'être qualifiés de corruption, mettant en cause l'un de ses anciens collaborateurs et son employeur. Le 7 octobre 2019, elle a informé le comité d'éthique de la situation de harcèlement dont elle estimait faire l'objet à la suite de cette alerte.\n\n 3. Le 20 février 2020, le comité d'éthique a conclu à l'absence de situation contraire aux règles et principes éthiques.\n\n 4. Par courrier du 13 mars 2020, l'employeur a convoqué la salariée à un entretien préalable puis, par courrier du 27 mai 2020, lui a notifié son licenciement.\n\n 5. Le 30 juillet 2020, la salariée a saisi la formation des référés de la juridiction prud'homale afin principalement que soit constatée la nullité de son licenciement, intervenu en violation des dispositions protectrices des lanceurs d'alerte.\n\n 6. Le syndicat SPIC UNSA (le syndicat) puis l'association Maison des lanceurs d'alerte (l'association) sont intervenus volontairement à l'instance.\n\n 7. Le Défenseur des droits a déposé des observations devant la Cour de cassation."
+     },
+     {
+      "alias": "P26",
+      "passage_id": "63da1185b78bc005de6ccd13#moyens-0",
+      "zone": "moyens",
+      "text": "Examen des moyens\n\n Sur le premier moyen, pris en ses première à quatrième branches\n\n Enoncé du moyen\n\n 8. La salariée, l'association et le syndicat font grief à l'arrêt de confirmer l'ordonnance en ce qu'elle « a dit que les pièces et moyens de droit fournis par la salariée n'ont pas permis d'établir et de démontrer un lien évident et non équivoque de cause à effet entre le fait d'avoir lancé une alerte et le licenciement pour cause réelle et sérieuse, que les représailles envers la salariée n'étaient pas davantage établies [en sorte] qu'il n'y avait pas eu violation du statut protecteur prévu par les dispositions de l'article L. 1132-3-3 du code du travail », de dire que « l'appréciation du motif de licenciement de la salariée relevait exclusivement des juges du fond » et, en conséquence, de les débouter de leurs demandes tendant, pour la salariée, à ce qu'il soit jugé que son licenciement était nul en application de l'article L. 1132-4 du code du travail, que sa réintégration soit ordonnée et que la société Thales soit condamnée au paiement des salaires qui auraient dû lui être versés entre la fin de son préavis et sa réintégration, au paiement de la prime sur l'exercice 2019 et à une somme à titre de provision sur dommages-intérêts résultant du préjudice moral lié au licenciement discriminatoire, pour le syndicat, de sa demande tendant à ce que la société Thales soit condamnée à lui verser une somme à titre de dommages-intérêts provisionnels sur le fondement de l'article L. 2132-3 du code du travail et pour l'association, de ses demandes similaires à celle de la salariée et de sa demande tendant à ce que la société Thales soit condamnée à lui verser une somme sur le fondement de l'article 700 du code de procédure civile, alors :"
+     },
+     {
+      "alias": "P27",
+      "passage_id": "63da1185b78bc005de6ccd13#moyens-1",
+      "zone": "moyens",
+      "text": "2132-3 du code du travail et pour l'association, de ses demandes similaires à celle de la salariée et de sa demande tendant à ce que la société Thales soit condamnée à lui verser une somme sur le fondement de l'article 700 du code de procédure civile, alors :\n\n « 1°/ que le juge des référés auquel il appartient, même en présence d'une contestation sérieuse, de mettre fin au trouble manifestement illicite que constitue le licenciement d'un salarié en raison de son statut de lanceur d'alerte, doit apprécier si les éléments qui lui sont soumis permettent de présumer qu'il a signalé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 précitée, et dans l'affirmative, rechercher si l'employeur apporte des éléments objectifs de nature à justifier que sa décision est justifiée par des éléments objectifs étrangers à l'alerte de l'intéressé ; qu'en affirmant, pour débouter la salariée de sa demande tendant à ce que son licenciement soit jugé nul comme résultant de l'alerte qu'elle avait émise, que l'examen de la cause réelle et sérieuse du licenciement relevait des juges du fond, après avoir pourtant considéré que la salariée avait le statut de lanceur d'alerte au sens de la loi n° 2016-1691 du 9 décembre 2016, de sorte qu'il lui appartenait de rechercher si le licenciement était justifié par des éléments objectifs étrangers à cette alerte et ce faisant, reposait sur une cause réelle et sérieuse, la cour d'appel a violé l'article R. 1455-6 du code du travail, ensemble les articles L. 1132-3-3 et L. 1132-4 du code du travail ;"
+     },
+     {
+      "alias": "P28",
+      "passage_id": "63da1185b78bc005de6ccd13#moyens-2",
+      "zone": "moyens",
+      "text": "1455-6 du code du travail, ensemble les articles L. 1132-3-3 et L. 1132-4 du code du travail ;\n\n 2°/ qu'en retenant, pour débouter la salariée de sa demande tendant à ce que son licenciement soit annulé comme résultant de son statut de lanceur d'alerte, que l'appréciation de la cause réelle et sérieuse de son licenciement relevait de la compétence exclusive des juges du fond, la cour d'appel, qui l'a privée d'une protection effective contre les discriminations, a violé les articles 6§1, 10 et 14 de la Convention européenne de sauvegarde des droits de l'homme et des libertés fondamentales, ensemble l'article R. 1455-6 du code du travail ;\n\n 3°/ qu'en application de l'article L. 1132-3-3 du code du travail, en cas de litige relatif à un salarié qui a lancé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dès lors que la personne présente des éléments de fait qui permettent de présumer qu'elle a signalé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 précitée, il incombe à la partie défenderesse, au vu de ces éléments, de prouver que sa décision est justifiée par des éléments objectifs étrangers à la déclaration de l'intéressé ; qu'en l'espèce, en affirmant que ''si le conseil de prud'hommes ne pouvait s'appuyer exclusivement sur les pièces produites par la salariée pour exclure l'existence d'un lien manifeste entre la qualité de lanceur d'alerte et le licenciement, la cour, sur la base des éléments objectifs produits par l'employeur, aboutit à la même conclusion'', après avoir pourtant affirmé que l'examen de la cause réelle et sérieuse du licenciement relevait des juges du fond et s'être bornée à examiner les mesures de représailles antérieures au licenciement, la cour d'appel, qui n'a pas tiré les conséquences légales de ses propres constatations, a derechef violé les articles L. 1132-3-3 du code du travail et R."
+     },
+     {
+      "alias": "P29",
+      "passage_id": "63da1185b78bc005de6ccd13#motivations-0",
+      "zone": "motivations",
+      "text": "Réponse de la Cour\n\n Vu les articles L. 1132-3-3 du code du travail, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, L. 1132-4 et R. 1455-6 du même code :\n\n 9. Selon le premier de ces textes, aucun salarié ne peut être sanctionné, licencié ou faire l'objet d'une mesure discriminatoire, directe ou indirecte, pour avoir relaté ou témoigné, de bonne foi, de faits constitutifs d'un délit ou d'un crime dont il aurait eu connaissance dans l'exercice de ses fonctions ou pour avoir signalé une alerte dans le respect des articles 6 à 8 de la loi du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique. En cas de litige relatif à l'application de ces dispositions, dès lors que le salarié présente des éléments de fait qui permettent de présumer qu'il a relaté ou témoigné de bonne foi de faits constitutifs d'un délit ou d'un crime, ou qu'il a signalé une alerte dans le respect des articles 6 à 8 de la loi n° 2016-1691 du 9 décembre 2016 précitée, il incombe à l'employeur, au vu des éléments, de prouver que sa décision est justifiée par des éléments objectifs étrangers à la déclaration ou au témoignage de l'intéressé.\n\n 10. Aux termes du deuxième de ces textes, toute disposition ou tout acte pris à l'égard d'un salarié en méconnaissance de ces dispositions est nul.\n\n 11."
+     },
+     {
+      "alias": "P30",
+      "passage_id": "63da1185b78bc005de6ccd13#motivations-1",
+      "zone": "motivations",
+      "text": "10. Aux termes du deuxième de ces textes, toute disposition ou tout acte pris à l'égard d'un salarié en méconnaissance de ces dispositions est nul.\n\n 11. Il résulte du dernier de ces textes que le juge des référés, auquel il appartient, même en présence d'une contestation sérieuse, de mettre fin au trouble manifestement illicite que constitue la rupture d'un contrat de travail consécutive au signalement d'une alerte, doit apprécier si les éléments qui lui sont soumis permettent de présumer que le salarié a relaté ou témoigné de bonne foi de faits constitutifs d'un délit ou d'un crime, ou qu'il a signalé une alerte dans le respect des articles 6 à 8 de la loi n° 2016-1691 du 9 décembre 2016 précitée et, dans l'affirmative, de rechercher si l'employeur rapporte la preuve que sa décision de licencier est justifiée par des éléments objectifs étrangers à la déclaration ou au témoignage de ce salarié.\n\n 12. Pour dire n'y avoir lieu à référé, l'arrêt relève qu'aucun élément ne permet de remettre en cause la bonne foi de la salariée à l'occasion des alertes données successivement à sa hiérarchie puis au comité d'éthique du groupe et en déduit, sur le fondement des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016, la qualité de lanceur d'alerte de l'intéressée.\n\n 13. L'arrêt retient, d'abord, que le lien entre la réelle détérioration de la relation de travail et l'alerte donnée par la salariée ne ressort pas, de façon manifeste, des évaluations professionnelles de celle-ci et que l'employeur, qui n'a pas eu la volonté d'éluder les termes de l'alerte, apporte un certain nombre d'éléments objectifs afin d'expliciter les faits présentés par la salariée comme étant constitutifs de représailles.\n\n 14. Il énonce, ensuite, après avoir constaté que la lettre de licenciement déclinait des griefs portant exclusivement sur le travail de la salariée, que l'examen du caractère réel et sérieux de tels griefs relève du juge du fond.\n\n 15."
+     },
+     {
+      "alias": "P31",
+      "passage_id": "63da1185b78bc005de6ccd13#motivations-2",
+      "zone": "motivations",
+      "text": "14. Il énonce, ensuite, après avoir constaté que la lettre de licenciement déclinait des griefs portant exclusivement sur le travail de la salariée, que l'examen du caractère réel et sérieux de tels griefs relève du juge du fond.\n\n 15. En statuant ainsi, alors qu'elle avait constaté que la salariée présentait des éléments permettant de présumer qu'elle avait signalé une alerte dans le respect des articles 6 à 8 de la loi n° 2016-1691 du 9 décembre 2016, en sorte qu'il lui appartenait de rechercher si l'employeur rapportait la preuve que sa décision de licencier était justifiée par des éléments objectifs étrangers à la déclaration ou au témoignage de l'intéressée, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 16. La cassation prononcée sur le premier moyen rend sans objet le second moyen, le grief de harcèlement moral ne venant à l'appui d'aucune demande distincte mais ayant été présenté comme le second fondement des demandes au titre de la nullité du licenciement."
+     },
+     {
+      "alias": "P32",
+      "passage_id": "63da1185b78bc005de6ccd13#dispositif-0",
+      "zone": "dispositif",
+      "text": "PAR CES MOTIFS, et sans qu'il y ait lieu de statuer sur les autres griefs, la Cour :\n\n CASSE ET ANNULE, sauf en ce qu'il rejette la demande de nullité de l'ordonnance et la fin de non recevoir, l'arrêt rendu le 16 septembre 2021, entre les parties, par la cour d'appel de Versailles ;\n\n Remet, sauf sur ces points, l'affaire et les parties dans l'état où elles se trouvaient avant cet arrêt et les renvoie devant la cour d'appel de Versailles autrement composée ;\n\n Condamne la société Thales six GTS France aux dépens ;\n\n En application de l'article 700 du code de procédure civile, rejette la demande formée par la société Thales six GTS France et la condamne à payer à Mme [E], au syndicat SPIC UNSA et à l'association Maison des lanceurs d'alerte la somme globale de 3 000 euros ;\n\n Dit que sur les diligences du procureur général près la Cour de cassation, le présent arrêt sera transmis pour être transcrit en marge ou à la suite de l'arrêt partiellement cassé ;\n\n Ainsi fait et jugé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du premier février deux mille vingt-trois."
+     }
+    ]
+   },
+   "latency_ms": 6.0,
+   "at": "2026-10-24T14:59:21.909+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 32,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 32 passage(s) au dossier. Aucune décision pertinente n'a été trouvée dans le corpus local postérieure à 2018 traitant spécifiquement de la validité d'un licenciement basé sur une évaluation automatique ou l'obligation de transparence envers un algorithme d'intellige",
+   "data": {
+    "report": "Aucune décision pertinente n'a été trouvée dans le corpus local postérieure à 2018 traitant spécifiquement de la validité d'un licenciement basé sur une évaluation automatique ou l'obligation de transparence envers un algorithme d'intelligence artificielle. La seule décision retournée (case_id=63da1185b78bc005de6ccd13) concerne le statut de lanceur d'alerte et non l'IA ou les algorithmes d'évaluation automatisée dans le contexte du licenciement.",
+    "passages": 32,
+    "cases": [
+     "6437a1d49477fe04f5cc68d2",
+     "654b350a56298f83183878a3",
+     "64085c5d66b1bafb02f12052",
+     "627b537f4d359c057dd01cf4",
+     "651d01d7fe8d588318c1ac5c",
+     "63da1185b78bc005de6ccd13",
+     "638702d2bf732905d49c5137",
+     "64085c8866b1bafb02f12088",
+     "641aaa4b0c73d704f5348206",
+     "6582bbc7747015f3f52007d1",
+     "632bfce16ed81805da0b0153",
+     "64783b09bf7113d0f86f7255",
+     "654b34f056298f831838788d",
+     "62c678b2ca9bf263790303cb",
+     "63982486a1b60505d4701ff3",
+     "649be063a10c4805db86fa99",
+     "657805d5ba3a458318c813a1",
+     "620ca2d5c61f23729bcf61e7",
+     "66fce2ba8d6ea26f688da3ed",
+     "638702b3bf732905d49c5117",
+     "65a788d7c53a55000879150e",
+     "625fa3298361df277dc59708",
+     "629702177c2a1fa9d4442265"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:59:34.317+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 33,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Validation humaine demandée : prolonger le budget.",
+   "data": {
+    "kind": "extend_budget",
+    "question": "Limite de 5 itérations atteinte sans preuve suffisante. Autoriser 2 itérations de plus ?",
+    "details": {
+     "searches": 6,
+     "verifier_status": "insufficient"
+    },
+    "requested_at": 1792853974.324838
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:59:34.324+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 34,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Décision humaine : refusée.",
+   "data": {
+    "kind": "extend_budget",
+    "decision": "reject"
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:59:34.345+00:00"
+  },
+  {
+   "run_id": "d05025065f36",
+   "step": 35,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Abstention — le budget d'itérations est épuisé sans preuve suffisante.",
+   "data": {
+    "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : le budget d'itérations est épuisé sans preuve suffisante.",
+    "status": "abstained",
+    "verifier_status": "insufficient",
+    "sources": [],
+    "limits": [
+     "Non établi : Aucun texte ne mentionne l'utilisation d'algorithmes d'intelligence artificielle pour évaluer les salariés ou justifier un licenciement.",
+     "Non établi : Les décisions citées traitent uniquement d'évaluations annuelles formelles, de harcèlement moral, de lanceurs d'alerte ou d'inaptitude physique sans faire référence à des outils automatisés."
+    ],
+    "stop_reason": "max_iterations",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925",
+     "Cour de cassation · Chambre sociale · 2023-11-08 · n° 22-17.919",
+     "Cour de cassation · Chambre commerciale financière et économique · 2023-03-08 · n° 21-22.196",
+     "Cour de cassation · Chambre sociale · 2022-05-11 · n° 21-14.490",
+     "Cour de cassation · Chambre sociale · 2023-10-04 · n° 22-15.269",
+     "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+     "Cour de cassation · Chambre sociale · 2022-11-30 · n° 21-15.473",
+     "Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797",
+     "Cour de cassation · Première chambre civile · 2023-03-22 · n° 21-25.336",
+     "Cour de cassation · Chambre sociale · 2023-12-20 · n° 21-20.904",
+     "Cour de cassation · Chambre sociale · 2022-09-21 · n° 19-12.568",
+     "Cour de cassation · Chambre sociale · 2023-06-01 · n° 21-19.064",
+     "Cour de cassation · Chambre commerciale financière et économique · 2023-11-08 · n° 22-11.766",
+     "Cour de cassation · Deuxième chambre civile · 2022-07-07 · n° 20-21.365",
+     "Cour de cassation · Chambre criminelle · 2022-12-13 · n° 22-81.851",
+     "Cour de cassation · Première chambre civile · 2023-06-28 · n° 22-13.969",
+     "Cour de cassation · Chambre criminelle · 2023-12-12 · n° 23-82.185",
+     "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-16.171",
+     "Cour de cassation · Chambre sociale · 2024-10-02 · n° 23-19.326",
+     "Cour de cassation · Chambre sociale · 2022-11-30 · n° 21-19.140",
+     "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-20.778",
+     "Cour de cassation · Première chambre civile · 2022-04-20 · n° 20-16.316",
+     "Cour de cassation · Chambre commerciale financière et économique · 2022-06-01 · n° 19-20.999"
+    ],
+    "errors": []
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:59:34.346+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : le budget d'itérations est épuisé sans preuve suffisante.",
+  "status": "abstained",
+  "verifier_status": "insufficient",
+  "sources": [],
+  "limits": [
+   "Non établi : Aucun texte ne mentionne l'utilisation d'algorithmes d'intelligence artificielle pour évaluer les salariés ou justifier un licenciement.",
+   "Non établi : Les décisions citées traitent uniquement d'évaluations annuelles formelles, de harcèlement moral, de lanceurs d'alerte ou d'inaptitude physique sans faire référence à des outils automatisés."
+  ],
+  "stop_reason": "max_iterations",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925",
+   "Cour de cassation · Chambre sociale · 2023-11-08 · n° 22-17.919",
+   "Cour de cassation · Chambre commerciale financière et économique · 2023-03-08 · n° 21-22.196",
+   "Cour de cassation · Chambre sociale · 2022-05-11 · n° 21-14.490",
+   "Cour de cassation · Chambre sociale · 2023-10-04 · n° 22-15.269",
+   "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+   "Cour de cassation · Chambre sociale · 2022-11-30 · n° 21-15.473",
+   "Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797",
+   "Cour de cassation · Première chambre civile · 2023-03-22 · n° 21-25.336",
+   "Cour de cassation · Chambre sociale · 2023-12-20 · n° 21-20.904",
+   "Cour de cassation · Chambre sociale · 2022-09-21 · n° 19-12.568",
+   "Cour de cassation · Chambre sociale · 2023-06-01 · n° 21-19.064",
+   "Cour de cassation · Chambre commerciale financière et économique · 2023-11-08 · n° 22-11.766",
+   "Cour de cassation · Deuxième chambre civile · 2022-07-07 · n° 20-21.365",
+   "Cour de cassation · Chambre criminelle · 2022-12-13 · n° 22-81.851",
+   "Cour de cassation · Première chambre civile · 2023-06-28 · n° 22-13.969",
+   "Cour de cassation · Chambre criminelle · 2023-12-12 · n° 23-82.185",
+   "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-16.171",
+   "Cour de cassation · Chambre sociale · 2024-10-02 · n° 23-19.326",
+   "Cour de cassation · Chambre sociale · 2022-11-30 · n° 21-19.140",
+   "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-20.778",
+   "Cour de cassation · Première chambre civile · 2022-04-20 · n° 20-16.316",
+   "Cour de cassation · Chambre commerciale financière et économique · 2022-06-01 · n° 19-20.999"
+  ],
+  "errors": []
+ },
+ "metrics": {
+  "llm_calls": 17,
+  "prompt_tokens": 45404,
+  "completion_tokens": 3238,
+  "llm_latency_ms": 207787.31970489025,
+  "tool_calls": {
+   "search_cases": 6,
+   "read_case": 1
+  },
+  "tool_latency_ms": 246.5,
+  "iterations": 5,
+  "searches": 6,
+  "errors": [],
+  "total_latency_ms": 208117.4,
+  "verifier_status": "insufficient",
+  "stop_reason": "max_iterations",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 208.1,
+ "hitl_answer": "reject"
+}

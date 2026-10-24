@@ -1,0 +1,858 @@
+{
+ "question": {
+  "id": "C2",
+  "title": "Congés payés pendant l'éviction",
+  "kind": "simple",
+  "question": "Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?",
+  "target_case": "63fefc07002ac605de15b29e",
+  "selection": "Chambre sociale, 1er mars 2023, n° 21-16.008 (publié) : oui, sauf s'il a occupé un autre emploi pendant cette période.",
+  "expected": "réponse directe, nuance « sauf autre emploi »"
+ },
+ "mode": "multi",
+ "session": "C2-multi-1792851927",
+ "run_id": "349512ee4462",
+ "events": [
+  {
+   "run_id": "349512ee4462",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pertinents dans la base de données.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus de la Cour de cassation des décisions traitant du droit aux congés payés pour une période d'éviction suite à un licenciement nul et réintégration, en particulier les arrêts de principe ou ceux précisant si cette période est assimilée au temps de travail effectif.",
+    "iteration": 1
+   },
+   "latency_ms": 5563.009459001478,
+   "at": "2026-10-24T14:25:32.683+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 2,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« congés payés période éviction licenciement nul réintégration assimilation temps de travail effectif »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 7679.409792006481,
+   "at": "2026-10-24T14:25:40.364+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 3,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"congés payés période éviction licenciement nul réintégration assimilation temps de travail effectif\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "congés payés période éviction licenciement nul réintégration assimilation temps de travail effectif",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:25:40.365+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 4,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+   "data": {
+    "query": "congés payés période éviction licenciement nul réintégration assimilation temps de travail effectif",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "63fefc07002ac605de15b29e",
+      "title": "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+      "solution": "Cassation",
+      "score": 0.032522,
+      "alias": "P1",
+      "passage_id": "63fefc07002ac605de15b29e#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu les articles L. 1132-1 et L. 1132-4, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, du code du travail : 8. Il résulte de ces textes que tout licenciement prononcé à l'égard d'un salarié en raison de son état de santé est nul et que le salarié qui demande sa réintégration a …"
+     },
+     {
+      "rank": 2,
+      "case_id": "65015d56ee1a2205e6581652",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+      "solution": "Cassation",
+      "score": 0.032266,
+      "alias": "P2",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+      "zone": "moyens",
+      "excerpt": "Et sur le troisième moyen du pourvoi n° B 22-11.106 Enoncé du moyen 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses …"
+     },
+     {
+      "rank": 3,
+      "case_id": "654b350a56298f83183878a3",
+      "title": "Cour de cassation · Chambre sociale · 2023-11-08 · n° 22-17.919",
+      "solution": "Rejet",
+      "score": 0.030077,
+      "alias": "P3",
+      "passage_id": "654b350a56298f83183878a3#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Sur le premier moyen, pris en ses première et troisième branches Enoncé du moyen 9. L'employeur fait grief à l'arrêt de le condamner à payer à la salariée la somme de 234 831 euros à titre d'indemnité pour violation du statut protecteur, alors : « 1°/ que le salarié protégé dont le licenciement est nul en raison de …"
+     },
+     {
+      "rank": 4,
+      "case_id": "6718920bd8ceca1cd7018c8e",
+      "title": "Cour de cassation · Chambre sociale · 2024-10-23 · n° 23-16.479",
+      "solution": "Rejet",
+      "score": 0.028718,
+      "alias": "P4",
+      "passage_id": "6718920bd8ceca1cd7018c8e#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 5. Il résulte de l'alinéa premier du préambule de la Constitution du 27 octobre 1946 et de l'article 11 de la Déclaration des droits de l'homme et du citoyen du 26 août 1789 qu'est nul, comme portant atteinte à une liberté fondamentale constitutionnellement garantie, le licenciement intervenu en …"
+     },
+     {
+      "rank": 5,
+      "case_id": "66f3a7db5c2cfc5a084ac60d",
+      "title": "Cour de cassation · Chambre sociale · 2024-09-25 · n° 22-20.672",
+      "solution": "Cassation",
+      "score": 0.028577,
+      "alias": "P5",
+      "passage_id": "66f3a7db5c2cfc5a084ac60d#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Sur le premier moyen 4. En application de l'article 1014, alinéa 2, du code de procédure civile, il n'y a pas lieu de statuer par une décision spécialement motivée sur ce moyen qui n'est manifestement pas de nature à entraîner la cassation. Mais sur le second moyen Enoncé du moyen 5. L'employeur fait grief à l'arrêt …"
+     }
+    ]
+   },
+   "latency_ms": 41.0,
+   "at": "2026-10-24T14:25:40.406+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 5,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : case_id=63fefc07002ac605de15b29e [P1] et case_id=65015d56ee1a2205e6581652 [P2]. Ces passages précisent que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la dat",
+   "data": {
+    "report": "Décisions pertinentes : case_id=63fefc07002ac605de15b29e [P1] et case_id=65015d56ee1a2205e6581652 [P2]. Ces passages précisent que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration, sauf s'il a occupé un autre emploi durant cette période.",
+    "passages": 5,
+    "cases": [
+     "63fefc07002ac605de15b29e",
+     "65015d56ee1a2205e6581652",
+     "654b350a56298f83183878a3",
+     "6718920bd8ceca1cd7018c8e",
+     "66f3a7db5c2cfc5a084ac60d"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:26:20.046+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 6,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Rédaction de la synthèse — Les décisions P1 et P2 confirment que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction entre le licenciement nul et la réintégration.",
+   "data": {
+    "action": "write",
+    "brief": "Le dossier contient les passages nécessaires (P1 et P2) pour répondre à la question : le salarié a droit aux congés payés pour la période d'éviction, sauf s'il a occupé un autre emploi.",
+    "iteration": 2
+   },
+   "latency_ms": 7087.112625013106,
+   "at": "2026-10-24T14:26:27.139+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 7,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Synthèse rédigée à partir de 5 passage(s) : soumise au vérificateur.",
+   "data": {
+    "action": "answer"
+   },
+   "latency_ms": 11628.5,
+   "at": "2026-10-24T14:26:38.773+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 8,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves insufficient — 3/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).",
+   "data": {
+    "status": "insufficient",
+    "justification": "3/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).",
+    "unverified_claims": [
+     "Par conséquent, le salarié conserve son droit aux congés payés pour cette période spécifique."
+    ],
+    "claims": [
+     {
+      "text": "Oui, un salarié dont le licenciement est nul peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement et celle de sa réintégration [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P1, paragraphe 9, confirme explicitement que le salarié peut prétendre à ses droits à congés payés pour la période d'éviction entre le licenciement nul et la réintégration."
+     },
+     {
+      "text": "La Cour précise que ce droit s'applique en application des articles L. 3141-3 et L. 3141-9 du code du travail, sauf si le salarié a occupé un autre emploi durant cette période [P1].",
+      "citations": [
+       "P1"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P1, paragraphe 9, mentionne l'application des articles L. 3141-3 et L. 3141-9 du code du travail, avec l'exception si le salarié a occupé un autre emploi durant cette période."
+     },
+     {
+      "text": "Un moyen soutenant que l'indemnité d'éviction n'ouvrirait pas droit à congés payés car elle serait une réparation et non une remise en état a été rejeté par la Cour de cassation [P2].",
+      "citations": [
+       "P2"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P2 montre que la Cour rejette l'argument selon lequel l'indemnité d'éviction ne serait pas ouvrant droit à congés payés car elle est une réparation et non une remise en état."
+     },
+     {
+      "text": "Par conséquent, le salarié conserve son droit aux congés payés pour cette période spécifique.",
+      "citations": [],
+      "verdict": "not_enough_info",
+      "rule_failures": [
+       "affirmation non sourcée (aucune citation)"
+      ],
+      "reason": ""
+     }
+    ],
+    "next_action": "read_case",
+    "llm_judge_used": true
+   },
+   "latency_ms": 15023.2,
+   "at": "2026-10-24T14:26:53.800+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 9,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le dernier contrôle indique qu'une affirmation n'est pas prouvée (citation absente ou incomplète) ; il manque donc la preuve textuelle définitive dans le dossier actuel.",
+   "data": {
+    "action": "researcher",
+    "brief": "Recherchez dans le corpus une décision de la Cour de cassation (Chambre sociale) postérieure à 2023 qui confirme explicitement que le salarié a droit aux congés payés pour la période d'éviction, en citant l'article L. 1225-4 du code du travail ou une jurisprudence récente précisant que cette période est assimilée au temps de travail effectif pour le calcul des congés.",
+    "iteration": 3
+   },
+   "latency_ms": 8969.812457973603,
+   "at": "2026-10-24T14:27:02.773+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 10,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Recherche dans le corpus (« licenciement nul réintégration congés payés période éviction Chambre sociale 2023 »).",
+   "data": {
+    "action": "search_cases"
+   },
+   "latency_ms": 10636.992332991213,
+   "at": "2026-10-24T14:27:13.414+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 11,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"licenciement nul réintégration congés payés période éviction Chambre sociale 2023\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "licenciement nul réintégration congés payés période éviction Chambre sociale 2023",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:27:13.414+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 12,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "data": {
+    "query": "licenciement nul réintégration congés payés période éviction Chambre sociale 2023",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "65015d56ee1a2205e6581652",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+      "solution": "Cassation",
+      "score": 0.032522,
+      "alias": "P2",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+      "zone": "moyens",
+      "excerpt": "Et sur le troisième moyen du pourvoi n° B 22-11.106 Enoncé du moyen 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses …"
+     },
+     {
+      "rank": 2,
+      "case_id": "63fefc07002ac605de15b29e",
+      "title": "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+      "solution": "Cassation",
+      "score": 0.032522,
+      "alias": "P1",
+      "passage_id": "63fefc07002ac605de15b29e#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu les articles L. 1132-1 et L. 1132-4, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, du code du travail : 8. Il résulte de ces textes que tout licenciement prononcé à l'égard d'un salarié en raison de son état de santé est nul et que le salarié qui demande sa réintégration a …"
+     },
+     {
+      "rank": 3,
+      "case_id": "6718920bd8ceca1cd7018c8e",
+      "title": "Cour de cassation · Chambre sociale · 2024-10-23 · n° 23-16.479",
+      "solution": "Rejet",
+      "score": 0.03031,
+      "alias": "P4",
+      "passage_id": "6718920bd8ceca1cd7018c8e#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 5. Il résulte de l'alinéa premier du préambule de la Constitution du 27 octobre 1946 et de l'article 11 de la Déclaration des droits de l'homme et du citoyen du 26 août 1789 qu'est nul, comme portant atteinte à une liberté fondamentale constitutionnellement garantie, le licenciement intervenu en …"
+     },
+     {
+      "rank": 4,
+      "case_id": "654b350a56298f83183878a3",
+      "title": "Cour de cassation · Chambre sociale · 2023-11-08 · n° 22-17.919",
+      "solution": "Rejet",
+      "score": 0.029644,
+      "alias": "P6",
+      "passage_id": "654b350a56298f83183878a3#moyens-2",
+      "zone": "moyens",
+      "excerpt": "2411-22 du code du travail et l'article 1184, devenu 1227, du code civil ; 3°/ que le salarié protégé dont le licenciement est nul en raison de l'annulation de l'autorisation administrative doit être réintégré dans son emploi ou dans un emploi équivalent ; qu'un salarié protégé, dont la demande de résiliation …"
+     },
+     {
+      "rank": 5,
+      "case_id": "62848dad498a54057d102b6e",
+      "title": "Cour de cassation · Chambre sociale · 2022-05-18 · n° 21-10.118",
+      "solution": "Cassation",
+      "score": 0.027397,
+      "alias": "P7",
+      "passage_id": "62848dad498a54057d102b6e#motivations-2",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article L. 2411-1 du code du travail dans sa rédaction alors applicable : 10. Lorsque le salarié protégé licencié sans autorisation administrative de licenciement demande sa réintégration pendant la période de protection, il a droit, au titre de la méconnaissance du statut protecteur, à une …"
+     }
+    ]
+   },
+   "latency_ms": 54.1,
+   "at": "2026-10-24T14:27:13.468+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 13,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Lecture détaillée de la décision 65015d56ee1a2205e6581652.",
+   "data": {
+    "action": "read_case"
+   },
+   "latency_ms": 34804.897458001506,
+   "at": "2026-10-24T14:27:48.273+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 14,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"65015d56ee1a2205e6581652\", \"focus\": \"congés payés période éviction\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "65015d56ee1a2205e6581652",
+     "focus": "congés payés période éviction"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:27:48.273+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 15,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "data": {
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "passages": [
+     {
+      "alias": "P8",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-1",
+      "zone": "moyens",
+      "text": "Mais sur le premier moyen du pourvoi n° B 22-11.106 \n\n Enoncé du moyen \n\n 6. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017, alors « que le congé annuel prévu à l'article L. 3141-3 du code du travail ouvre droit à une indemnité égale au dixième de la rémunération brute totale perçue par le salarié au cours de la période de référence et, pour la détermination de la rémunération brute totale, il est tenu compte de l'indemnité de congé de l'année précédente ; que les corrections des copies d'examen, des mémoires et des rapports de stage des étudiants de la licence professionnelle et leur soutenance constituent des tâches occasionnelles nécessitant, pour l'enseignant désigné, un travail effectif accompli sur un temps de travail supplémentaire qui a pour contrepartie un salaire brut supplémentaire, mentionnée dans les bulletins de salaire des mois concernés, en sus du salaire brut de base auquel il s'additionne pour le calcul du salaire brut mensuel ; qu'en retenant que les corrections de copies et \"soutenances LP\" ne devaient pas être intégrées dans le calcul de l'indemnité de congés payés, cependant que ces tâches occasionnelles rétribuaient un travail effectif accompli sur un temps de travail supplémentaire justifiant qu'elles soient intégrées dans le calcul de l'indemnité de congés payés, la cour d'appel a violé l'article L. 3141-24 du code du travail. »"
+     },
+     {
+      "alias": "P9",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-2",
+      "zone": "moyens",
+      "text": "Sur le deuxième moyen, pris en sa première branche, du pourvoi n° B 22-11.106 \n\n Enoncé du moyen\n\n 10. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017 et de la débouter de ses demandes en paiement des indemnités de congés payés pour les périodes de référence 2005-2006 à 2014-2015, alors « que le salarié tire son droit aux congés payés directement de l'article 31 paragraphe 2 de la Charte des droits fondamentaux de l'Union Européenne et de l'article 7 de la Directive 2003/88 de l'Union Européenne et que la CJUE a dit pour droit que ces dispositions s'opposent à ce que puisse être opposé au salarié l'extinction de son droit aux congés payés dès lors que l'employeur n'établit pas avoir tout mis en oeuvre pour mettre le salarié en mesure d'exercer ses droits aux congés payés, que dans le cas où la relation de travail a pris fin, le droit aux congés payés acquis par le salarié mais non pris du fait de l'employeur prend la forme d'une indemnité financière de congés payés ; que la cour d'appel s'est bornée à énoncer, pour débouter Mme [G] de sa demande en paiement de l'indemnité financière correspondant aux congés payés pour les périodes de référence 2005-2006 à 2014-2015 inclus, introduite après que l'employeur ait mis fin à leur relation, que l'action en paiement de l'indemnité de congés payés était soumise à la prescription triennale, applicable aux salaires ;"
+     },
+     {
+      "alias": "P10",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-2",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 143-14, devenu L. 3245-1 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007, L. 3245-1 du code du travail, dans sa rédaction issue de la loi n° 2008-561 du 17 juin 2008, L. 3245-1 du code du travail dans sa rédaction issue de la loi n° 2013-501 du 14 juin 2013, 21-V de cette même loi, L. 223-11, devenu L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 11. Selon le premier de ces textes, l'action en paiement du salaire se prescrivait par cinq ans conformément à l'article 2277 du code civil.\n\n 12. Selon le deuxième, l'action en paiement ou en répétition du salaire se prescrivait par cinq ans conformément à l'article 2244 du code civil.\n\n 13. Aux termes du troisième, l'action en paiement ou en répétition du salaire se prescrit par trois ans à compter du jour où celui qui l'exerce a connu ou aurait dû connaître les faits lui permettant de l'exercer. La demande peut porter sur les sommes dues au titre des trois dernières années à compter de ce jour ou, lorsque le contrat de travail est rompu, sur les sommes dues au titre des trois années précédant la rupture du contrat.\n\n 14. Selon le quatrième, les dispositions de l'article L. 3245-1 du code du travail s'appliquent aux prescriptions en cours à compter du 16 juin 2013, sans que la durée totale de la prescription puisse excéder la durée prévue par la loi antérieure, soit cinq ans.\n\n 15. Selon la jurisprudence de la Cour de cassation le point de départ du délai de prescription de l'indemnité de congé payé, qui est de nature salariale, doit être fixé à l'expiration de la période légale ou conventionnelle au cours de laquelle les congés payés auraient pu être pris (Soc., 14 novembre 2013, n° 12-17.409, Bull. 2013, V, n° 271). \n\n 16."
+     },
+     {
+      "alias": "P11",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-3",
+      "zone": "motivations",
+      "text": "2013, V, n° 271). \n\n 16. Toutefois, le droit au congé annuel payé constitue un principe essentiel du droit social de l'Union (CJUE 6 novembre 2018, Stadt Wuppertal c/ Bauer, C 569/16 et Willmeroth c/ Broßonn, C-570/16, point 80). \n\n 17. La Cour de justice de l'Union européenne juge que la perte du droit au congé annuel payé à la fin d'une période de référence ou d'une période de report ne peut intervenir qu'à la condition que le travailleur concerné ait effectivement eu la possibilité d'exercer ce droit en temps utile. Elle ajoute qu'il ne saurait être admis, sous prétexte de garantir la sécurité juridique, que l'employeur puisse invoquer sa propre défaillance, à savoir avoir omis de mettre le travailleur en mesure d'exercer effectivement son droit au congé annuel payé, pour en tirer bénéfice dans le cadre du recours de ce travailleur au titre de ce même droit, en excipant de la prescription de ce dernier (CJUE 22 septembre 2022, LB c/ TO, C- 120/21, points 45 et 48).\n\n 18. Dès lors, la Cour de justice de l'Union européenne a dit pour droit que l'article 7 de la directive 2003/88/CE du Parlement européen et du Conseil, du 4 novembre 2003, concernant certains aspects de l'aménagement du temps de travail, et l'article 31, paragraphe 2, de la Charte des droits fondamentaux de l'Union européenne, doivent être interprétés en ce sens qu'ils s'opposent à une réglementation nationale en vertu de laquelle le droit au congé annuel payé acquis par un travailleur au titre d'une période de référence est prescrit à l'issue d'un délai de trois ans qui commence à courir à la fin de l'année au cours de laquelle ce droit est né, lorsque l'employeur n'a pas effectivement mis le travailleur en mesure d'exercer ce droit (même arrêt). \n\n 19."
+     },
+     {
+      "alias": "P12",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-4",
+      "zone": "motivations",
+      "text": "19. Par ailleurs, la Cour de cassation juge qu'il appartient à l'employeur de prendre les mesures propres à assurer au salarié la possibilité d'exercer effectivement son droit à congé, et, en cas de contestation, de justifier qu'il a accompli à cette fin les diligences qui lui incombaient légalement (Soc., 13 juin 2012, n° 11-10.929, Bull. V, n° 187 ; Soc. 21 septembre 2017, n° 16-18.898, Bull. V, n° 159).\n\n 20. Il y a donc lieu de juger désormais que, lorsque l'employeur oppose la fin de non-recevoir tirée de la prescription, le point de départ du délai de prescription de l'indemnité de congés payés doit être fixé à l'expiration de la période légale ou conventionnelle au cours de laquelle les congés payés auraient pu être pris dès lors que l'employeur justifie avoir accompli les diligences qui lui incombent légalement afin d'assurer au salarié la possibilité d'exercer effectivement son droit à congé. \n\n 21. Pour rejeter la demande en paiement d'indemnité de congé payé pour les périodes de référence 2005-2006 à 2014-2015, l'arrêt retient que l'action en paiement de l'indemnité de congé payé est soumise à la prescription triennale, applicable aux salaires et que, dès lors, la demande en paiement de la salariée n'est recevable que pour partie.\n\n 22. En statuant ainsi, sans constater que l'employeur justifiait avoir accompli les diligences qui lui incombent légalement afin d'assurer à la salariée la possibilité d'exercer effectivement son droit à congé, la cour d'appel a violé les textes susvisés."
+     },
+     {
+      "alias": "P2",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+      "zone": "moyens",
+      "text": "Et sur le troisième moyen du pourvoi n° B 22-11.106\n\n Enoncé du moyen\n\n 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail ; qu'en retenant, pour rejeter la demande en paiement des indemnités pour la période de référence courant du 1er juin 2018 à la date de sa réintégration effective, que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvrait pas droit à congés payés, la cour d'appel a violé les articles L. 1226-9 et L. 1226-13 du code du travail. »"
+     },
+     {
+      "alias": "P13",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-5",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 1152-1, L. 1152-2, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, et L. 1152-3 du code du travail :\n\n 24. Aux termes du premier de ces textes, aucun salarié ne doit subir les agissements répétés de harcèlement moral qui ont pour objet ou pour effet une dégradation de ses conditions de travail susceptible de porter atteinte à ses droits et à sa dignité, d'altérer sa santé physique ou mentale ou de compromettre son avenir professionnel.\n\n 25. Aux termes du deuxième de ces textes, aucun salarié, aucune personne en formation ou en stage ne peut être sanctionné, licencié ou faire l'objet d'une mesure discriminatoire, directe ou indirecte, notamment en matière de rémunération, de formation professionnelle, de mutation ou de renouvellement de contrat pour avoir subi ou refusé de subir de tels agissements ou les avoir relatés.\n\n 26. Aux termes du dernier, toute rupture du contrat de travail intervenue en méconnaissance des dispositions des articles L. 1152-1 et L. 1152-2, toute disposition ou tout acte contraire est nul.\n\n 27. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 28. Pour débouter la salariée de sa demande en paiement d'indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, l'arrêt, après avoir jugé que le licenciement était nul en application de l'article L. 1152-3 du code du travail, retient que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvre pas droit à congé payé.\n\n 29. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 30."
+     },
+     {
+      "alias": "P14",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-6",
+      "zone": "motivations",
+      "text": "1152-3 du code du travail, retient que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvre pas droit à congé payé.\n\n 29. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 30. La cassation des chefs de dispositif relatifs aux demandes en paiement de rappels d'indemnité de congé payé n'emporte pas celle des chefs de dispositif de l'arrêt condamnant l'Institut national des formations notariales aux dépens ainsi qu'au paiement d'une somme en application de l'article 700 du code de procédure civile, justifiés par d'autres condamnations prononcées à l'encontre de celui-ci."
+     }
+    ]
+   },
+   "latency_ms": 25.0,
+   "at": "2026-10-24T14:27:48.298+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 16,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 14 passage(s) au dossier. Décisions pertinentes (case_id) : 65015d56ee1a2205e6581652, 63fefc07002ac605de15b29e. Alias des passages utiles [P2], [P1].",
+   "data": {
+    "report": "Décisions pertinentes (case_id) : 65015d56ee1a2205e6581652, 63fefc07002ac605de15b29e. Alias des passages utiles [P2], [P1].",
+    "passages": 14,
+    "cases": [
+     "63fefc07002ac605de15b29e",
+     "65015d56ee1a2205e6581652",
+     "654b350a56298f83183878a3",
+     "6718920bd8ceca1cd7018c8e",
+     "66f3a7db5c2cfc5a084ac60d",
+     "62848dad498a54057d102b6e"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:27:59.474+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 17,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le dernier contrôle a relevé une affirmation non établie concernant le maintien du droit aux congés payés ; il manque la citation exacte de la décision qui tranche cette question pour confirmer ou infirmer l'existence de ce droit.",
+   "data": {
+    "action": "researcher",
+    "brief": "Trouver dans la décision n° 22-10.529 (case_id 65015d56ee1a2205e6581652) le passage précis où la Cour de cassation statue sur l'existence ou non du droit aux congés payés pour la période d'éviction, en citant correctement les articles du code du travail invoqués (notamment L. 1152-3) et la conclusion de la Cour sur ce point spécifique.",
+    "iteration": 4
+   },
+   "latency_ms": 11829.19345900882,
+   "at": "2026-10-24T14:28:11.306+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 18,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Lecture détaillée de la décision 65015d56ee1a2205e6581652.",
+   "data": {
+    "action": "read_case"
+   },
+   "latency_ms": 12987.93216701597,
+   "at": "2026-10-24T14:28:24.298+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 19,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"65015d56ee1a2205e6581652\", \"focus\": \"congés payés période d'éviction\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "65015d56ee1a2205e6581652",
+     "focus": "congés payés période d'éviction"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:28:24.298+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 20,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "data": {
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "passages": [
+     {
+      "alias": "P8",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-1",
+      "zone": "moyens",
+      "text": "Mais sur le premier moyen du pourvoi n° B 22-11.106 \n\n Enoncé du moyen \n\n 6. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017, alors « que le congé annuel prévu à l'article L. 3141-3 du code du travail ouvre droit à une indemnité égale au dixième de la rémunération brute totale perçue par le salarié au cours de la période de référence et, pour la détermination de la rémunération brute totale, il est tenu compte de l'indemnité de congé de l'année précédente ; que les corrections des copies d'examen, des mémoires et des rapports de stage des étudiants de la licence professionnelle et leur soutenance constituent des tâches occasionnelles nécessitant, pour l'enseignant désigné, un travail effectif accompli sur un temps de travail supplémentaire qui a pour contrepartie un salaire brut supplémentaire, mentionnée dans les bulletins de salaire des mois concernés, en sus du salaire brut de base auquel il s'additionne pour le calcul du salaire brut mensuel ; qu'en retenant que les corrections de copies et \"soutenances LP\" ne devaient pas être intégrées dans le calcul de l'indemnité de congés payés, cependant que ces tâches occasionnelles rétribuaient un travail effectif accompli sur un temps de travail supplémentaire justifiant qu'elles soient intégrées dans le calcul de l'indemnité de congés payés, la cour d'appel a violé l'article L. 3141-24 du code du travail. »"
+     },
+     {
+      "alias": "P9",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-2",
+      "zone": "moyens",
+      "text": "Sur le deuxième moyen, pris en sa première branche, du pourvoi n° B 22-11.106 \n\n Enoncé du moyen\n\n 10. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017 et de la débouter de ses demandes en paiement des indemnités de congés payés pour les périodes de référence 2005-2006 à 2014-2015, alors « que le salarié tire son droit aux congés payés directement de l'article 31 paragraphe 2 de la Charte des droits fondamentaux de l'Union Européenne et de l'article 7 de la Directive 2003/88 de l'Union Européenne et que la CJUE a dit pour droit que ces dispositions s'opposent à ce que puisse être opposé au salarié l'extinction de son droit aux congés payés dès lors que l'employeur n'établit pas avoir tout mis en oeuvre pour mettre le salarié en mesure d'exercer ses droits aux congés payés, que dans le cas où la relation de travail a pris fin, le droit aux congés payés acquis par le salarié mais non pris du fait de l'employeur prend la forme d'une indemnité financière de congés payés ; que la cour d'appel s'est bornée à énoncer, pour débouter Mme [G] de sa demande en paiement de l'indemnité financière correspondant aux congés payés pour les périodes de référence 2005-2006 à 2014-2015 inclus, introduite après que l'employeur ait mis fin à leur relation, que l'action en paiement de l'indemnité de congés payés était soumise à la prescription triennale, applicable aux salaires ;"
+     },
+     {
+      "alias": "P10",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-2",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 143-14, devenu L. 3245-1 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007, L. 3245-1 du code du travail, dans sa rédaction issue de la loi n° 2008-561 du 17 juin 2008, L. 3245-1 du code du travail dans sa rédaction issue de la loi n° 2013-501 du 14 juin 2013, 21-V de cette même loi, L. 223-11, devenu L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 11. Selon le premier de ces textes, l'action en paiement du salaire se prescrivait par cinq ans conformément à l'article 2277 du code civil.\n\n 12. Selon le deuxième, l'action en paiement ou en répétition du salaire se prescrivait par cinq ans conformément à l'article 2244 du code civil.\n\n 13. Aux termes du troisième, l'action en paiement ou en répétition du salaire se prescrit par trois ans à compter du jour où celui qui l'exerce a connu ou aurait dû connaître les faits lui permettant de l'exercer. La demande peut porter sur les sommes dues au titre des trois dernières années à compter de ce jour ou, lorsque le contrat de travail est rompu, sur les sommes dues au titre des trois années précédant la rupture du contrat.\n\n 14. Selon le quatrième, les dispositions de l'article L. 3245-1 du code du travail s'appliquent aux prescriptions en cours à compter du 16 juin 2013, sans que la durée totale de la prescription puisse excéder la durée prévue par la loi antérieure, soit cinq ans.\n\n 15. Selon la jurisprudence de la Cour de cassation le point de départ du délai de prescription de l'indemnité de congé payé, qui est de nature salariale, doit être fixé à l'expiration de la période légale ou conventionnelle au cours de laquelle les congés payés auraient pu être pris (Soc., 14 novembre 2013, n° 12-17.409, Bull. 2013, V, n° 271). \n\n 16."
+     },
+     {
+      "alias": "P11",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-3",
+      "zone": "motivations",
+      "text": "2013, V, n° 271). \n\n 16. Toutefois, le droit au congé annuel payé constitue un principe essentiel du droit social de l'Union (CJUE 6 novembre 2018, Stadt Wuppertal c/ Bauer, C 569/16 et Willmeroth c/ Broßonn, C-570/16, point 80). \n\n 17. La Cour de justice de l'Union européenne juge que la perte du droit au congé annuel payé à la fin d'une période de référence ou d'une période de report ne peut intervenir qu'à la condition que le travailleur concerné ait effectivement eu la possibilité d'exercer ce droit en temps utile. Elle ajoute qu'il ne saurait être admis, sous prétexte de garantir la sécurité juridique, que l'employeur puisse invoquer sa propre défaillance, à savoir avoir omis de mettre le travailleur en mesure d'exercer effectivement son droit au congé annuel payé, pour en tirer bénéfice dans le cadre du recours de ce travailleur au titre de ce même droit, en excipant de la prescription de ce dernier (CJUE 22 septembre 2022, LB c/ TO, C- 120/21, points 45 et 48).\n\n 18. Dès lors, la Cour de justice de l'Union européenne a dit pour droit que l'article 7 de la directive 2003/88/CE du Parlement européen et du Conseil, du 4 novembre 2003, concernant certains aspects de l'aménagement du temps de travail, et l'article 31, paragraphe 2, de la Charte des droits fondamentaux de l'Union européenne, doivent être interprétés en ce sens qu'ils s'opposent à une réglementation nationale en vertu de laquelle le droit au congé annuel payé acquis par un travailleur au titre d'une période de référence est prescrit à l'issue d'un délai de trois ans qui commence à courir à la fin de l'année au cours de laquelle ce droit est né, lorsque l'employeur n'a pas effectivement mis le travailleur en mesure d'exercer ce droit (même arrêt). \n\n 19."
+     },
+     {
+      "alias": "P12",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-4",
+      "zone": "motivations",
+      "text": "19. Par ailleurs, la Cour de cassation juge qu'il appartient à l'employeur de prendre les mesures propres à assurer au salarié la possibilité d'exercer effectivement son droit à congé, et, en cas de contestation, de justifier qu'il a accompli à cette fin les diligences qui lui incombaient légalement (Soc., 13 juin 2012, n° 11-10.929, Bull. V, n° 187 ; Soc. 21 septembre 2017, n° 16-18.898, Bull. V, n° 159).\n\n 20. Il y a donc lieu de juger désormais que, lorsque l'employeur oppose la fin de non-recevoir tirée de la prescription, le point de départ du délai de prescription de l'indemnité de congés payés doit être fixé à l'expiration de la période légale ou conventionnelle au cours de laquelle les congés payés auraient pu être pris dès lors que l'employeur justifie avoir accompli les diligences qui lui incombent légalement afin d'assurer au salarié la possibilité d'exercer effectivement son droit à congé. \n\n 21. Pour rejeter la demande en paiement d'indemnité de congé payé pour les périodes de référence 2005-2006 à 2014-2015, l'arrêt retient que l'action en paiement de l'indemnité de congé payé est soumise à la prescription triennale, applicable aux salaires et que, dès lors, la demande en paiement de la salariée n'est recevable que pour partie.\n\n 22. En statuant ainsi, sans constater que l'employeur justifiait avoir accompli les diligences qui lui incombent légalement afin d'assurer à la salariée la possibilité d'exercer effectivement son droit à congé, la cour d'appel a violé les textes susvisés."
+     },
+     {
+      "alias": "P2",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+      "zone": "moyens",
+      "text": "Et sur le troisième moyen du pourvoi n° B 22-11.106\n\n Enoncé du moyen\n\n 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail ; qu'en retenant, pour rejeter la demande en paiement des indemnités pour la période de référence courant du 1er juin 2018 à la date de sa réintégration effective, que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvrait pas droit à congés payés, la cour d'appel a violé les articles L. 1226-9 et L. 1226-13 du code du travail. »"
+     },
+     {
+      "alias": "P13",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-5",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 1152-1, L. 1152-2, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, et L. 1152-3 du code du travail :\n\n 24. Aux termes du premier de ces textes, aucun salarié ne doit subir les agissements répétés de harcèlement moral qui ont pour objet ou pour effet une dégradation de ses conditions de travail susceptible de porter atteinte à ses droits et à sa dignité, d'altérer sa santé physique ou mentale ou de compromettre son avenir professionnel.\n\n 25. Aux termes du deuxième de ces textes, aucun salarié, aucune personne en formation ou en stage ne peut être sanctionné, licencié ou faire l'objet d'une mesure discriminatoire, directe ou indirecte, notamment en matière de rémunération, de formation professionnelle, de mutation ou de renouvellement de contrat pour avoir subi ou refusé de subir de tels agissements ou les avoir relatés.\n\n 26. Aux termes du dernier, toute rupture du contrat de travail intervenue en méconnaissance des dispositions des articles L. 1152-1 et L. 1152-2, toute disposition ou tout acte contraire est nul.\n\n 27. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 28. Pour débouter la salariée de sa demande en paiement d'indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, l'arrêt, après avoir jugé que le licenciement était nul en application de l'article L. 1152-3 du code du travail, retient que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvre pas droit à congé payé.\n\n 29. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 30."
+     },
+     {
+      "alias": "P14",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-6",
+      "zone": "motivations",
+      "text": "1152-3 du code du travail, retient que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvre pas droit à congé payé.\n\n 29. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 30. La cassation des chefs de dispositif relatifs aux demandes en paiement de rappels d'indemnité de congé payé n'emporte pas celle des chefs de dispositif de l'arrêt condamnant l'Institut national des formations notariales aux dépens ainsi qu'au paiement d'une somme en application de l'article 700 du code de procédure civile, justifiés par d'autres condamnations prononcées à l'encontre de celui-ci."
+     }
+    ]
+   },
+   "latency_ms": 24.0,
+   "at": "2026-10-24T14:28:24.322+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 21,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 14 passage(s) au dossier. Décision n° 22-10.529 (case_id 65015d56ee1a2205e6581652) : la Cour de cassation statue en faveur du droit aux congés payés pour la période d'éviction entre le licenciement nul et la réintégration, conformément aux articles L. 3141-3 et L. 3",
+   "data": {
+    "report": "Décision n° 22-10.529 (case_id 65015d56ee1a2205e6581652) : la Cour de cassation statue en faveur du droit aux congés payés pour la période d'éviction entre le licenciement nul et la réintégration, conformément aux articles L. 3141-3 et L. 3141-9 du code du travail (alias [P2], [P13]).",
+    "passages": 14,
+    "cases": [
+     "63fefc07002ac605de15b29e",
+     "65015d56ee1a2205e6581652",
+     "654b350a56298f83183878a3",
+     "6718920bd8ceca1cd7018c8e",
+     "66f3a7db5c2cfc5a084ac60d",
+     "62848dad498a54057d102b6e"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:28:55.878+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 22,
+   "type": "DECISION",
+   "agent": "superviseur",
+   "summary": "Délégation au chercheur — Le contrôle a révélé une erreur sur les articles du code du travail cités pour fonder la décision ; il faut retrouver la citation exacte dans le corpus.",
+   "data": {
+    "action": "researcher",
+    "brief": "Rechercher dans la décision n° 22-10.529 (case_id 65015d56ee1a2205e6581652) le texte exact de l'article du code du travail invoqué par la Cour pour justifier que la période d'éviction ouvre droit à congé payé, afin de corriger les références erronées (L. 3141-3 et L. 3141-9) signalées dans le rapport précédent.",
+    "iteration": 5
+   },
+   "latency_ms": 11806.19116598973,
+   "at": "2026-10-24T14:29:07.694+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 23,
+   "type": "DECISION",
+   "agent": "chercheur",
+   "summary": "Lecture détaillée de la décision 65015d56ee1a2205e6581652.",
+   "data": {
+    "action": "read_case"
+   },
+   "latency_ms": 12108.970000001136,
+   "at": "2026-10-24T14:29:19.807+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 24,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"65015d56ee1a2205e6581652\", \"focus\": \"congés payés période d'éviction\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "65015d56ee1a2205e6581652",
+     "focus": "congés payés période d'éviction"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:29:19.807+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 25,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "data": {
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "passages": [
+     {
+      "alias": "P8",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-1",
+      "zone": "moyens",
+      "text": "Mais sur le premier moyen du pourvoi n° B 22-11.106 \n\n Enoncé du moyen \n\n 6. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017, alors « que le congé annuel prévu à l'article L. 3141-3 du code du travail ouvre droit à une indemnité égale au dixième de la rémunération brute totale perçue par le salarié au cours de la période de référence et, pour la détermination de la rémunération brute totale, il est tenu compte de l'indemnité de congé de l'année précédente ; que les corrections des copies d'examen, des mémoires et des rapports de stage des étudiants de la licence professionnelle et leur soutenance constituent des tâches occasionnelles nécessitant, pour l'enseignant désigné, un travail effectif accompli sur un temps de travail supplémentaire qui a pour contrepartie un salaire brut supplémentaire, mentionnée dans les bulletins de salaire des mois concernés, en sus du salaire brut de base auquel il s'additionne pour le calcul du salaire brut mensuel ; qu'en retenant que les corrections de copies et \"soutenances LP\" ne devaient pas être intégrées dans le calcul de l'indemnité de congés payés, cependant que ces tâches occasionnelles rétribuaient un travail effectif accompli sur un temps de travail supplémentaire justifiant qu'elles soient intégrées dans le calcul de l'indemnité de congés payés, la cour d'appel a violé l'article L. 3141-24 du code du travail. »"
+     },
+     {
+      "alias": "P9",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-2",
+      "zone": "moyens",
+      "text": "Sur le deuxième moyen, pris en sa première branche, du pourvoi n° B 22-11.106 \n\n Enoncé du moyen\n\n 10. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017 et de la débouter de ses demandes en paiement des indemnités de congés payés pour les périodes de référence 2005-2006 à 2014-2015, alors « que le salarié tire son droit aux congés payés directement de l'article 31 paragraphe 2 de la Charte des droits fondamentaux de l'Union Européenne et de l'article 7 de la Directive 2003/88 de l'Union Européenne et que la CJUE a dit pour droit que ces dispositions s'opposent à ce que puisse être opposé au salarié l'extinction de son droit aux congés payés dès lors que l'employeur n'établit pas avoir tout mis en oeuvre pour mettre le salarié en mesure d'exercer ses droits aux congés payés, que dans le cas où la relation de travail a pris fin, le droit aux congés payés acquis par le salarié mais non pris du fait de l'employeur prend la forme d'une indemnité financière de congés payés ; que la cour d'appel s'est bornée à énoncer, pour débouter Mme [G] de sa demande en paiement de l'indemnité financière correspondant aux congés payés pour les périodes de référence 2005-2006 à 2014-2015 inclus, introduite après que l'employeur ait mis fin à leur relation, que l'action en paiement de l'indemnité de congés payés était soumise à la prescription triennale, applicable aux salaires ;"
+     },
+     {
+      "alias": "P10",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-2",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 143-14, devenu L. 3245-1 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007, L. 3245-1 du code du travail, dans sa rédaction issue de la loi n° 2008-561 du 17 juin 2008, L. 3245-1 du code du travail dans sa rédaction issue de la loi n° 2013-501 du 14 juin 2013, 21-V de cette même loi, L. 223-11, devenu L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 11. Selon le premier de ces textes, l'action en paiement du salaire se prescrivait par cinq ans conformément à l'article 2277 du code civil.\n\n 12. Selon le deuxième, l'action en paiement ou en répétition du salaire se prescrivait par cinq ans conformément à l'article 2244 du code civil.\n\n 13. Aux termes du troisième, l'action en paiement ou en répétition du salaire se prescrit par trois ans à compter du jour où celui qui l'exerce a connu ou aurait dû connaître les faits lui permettant de l'exercer. La demande peut porter sur les sommes dues au titre des trois dernières années à compter de ce jour ou, lorsque le contrat de travail est rompu, sur les sommes dues au titre des trois années précédant la rupture du contrat.\n\n 14. Selon le quatrième, les dispositions de l'article L. 3245-1 du code du travail s'appliquent aux prescriptions en cours à compter du 16 juin 2013, sans que la durée totale de la prescription puisse excéder la durée prévue par la loi antérieure, soit cinq ans.\n\n 15. Selon la jurisprudence de la Cour de cassation le point de départ du délai de prescription de l'indemnité de congé payé, qui est de nature salariale, doit être fixé à l'expiration de la période légale ou conventionnelle au cours de laquelle les congés payés auraient pu être pris (Soc., 14 novembre 2013, n° 12-17.409, Bull. 2013, V, n° 271). \n\n 16."
+     },
+     {
+      "alias": "P11",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-3",
+      "zone": "motivations",
+      "text": "2013, V, n° 271). \n\n 16. Toutefois, le droit au congé annuel payé constitue un principe essentiel du droit social de l'Union (CJUE 6 novembre 2018, Stadt Wuppertal c/ Bauer, C 569/16 et Willmeroth c/ Broßonn, C-570/16, point 80). \n\n 17. La Cour de justice de l'Union européenne juge que la perte du droit au congé annuel payé à la fin d'une période de référence ou d'une période de report ne peut intervenir qu'à la condition que le travailleur concerné ait effectivement eu la possibilité d'exercer ce droit en temps utile. Elle ajoute qu'il ne saurait être admis, sous prétexte de garantir la sécurité juridique, que l'employeur puisse invoquer sa propre défaillance, à savoir avoir omis de mettre le travailleur en mesure d'exercer effectivement son droit au congé annuel payé, pour en tirer bénéfice dans le cadre du recours de ce travailleur au titre de ce même droit, en excipant de la prescription de ce dernier (CJUE 22 septembre 2022, LB c/ TO, C- 120/21, points 45 et 48).\n\n 18. Dès lors, la Cour de justice de l'Union européenne a dit pour droit que l'article 7 de la directive 2003/88/CE du Parlement européen et du Conseil, du 4 novembre 2003, concernant certains aspects de l'aménagement du temps de travail, et l'article 31, paragraphe 2, de la Charte des droits fondamentaux de l'Union européenne, doivent être interprétés en ce sens qu'ils s'opposent à une réglementation nationale en vertu de laquelle le droit au congé annuel payé acquis par un travailleur au titre d'une période de référence est prescrit à l'issue d'un délai de trois ans qui commence à courir à la fin de l'année au cours de laquelle ce droit est né, lorsque l'employeur n'a pas effectivement mis le travailleur en mesure d'exercer ce droit (même arrêt). \n\n 19."
+     },
+     {
+      "alias": "P12",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-4",
+      "zone": "motivations",
+      "text": "19. Par ailleurs, la Cour de cassation juge qu'il appartient à l'employeur de prendre les mesures propres à assurer au salarié la possibilité d'exercer effectivement son droit à congé, et, en cas de contestation, de justifier qu'il a accompli à cette fin les diligences qui lui incombaient légalement (Soc., 13 juin 2012, n° 11-10.929, Bull. V, n° 187 ; Soc. 21 septembre 2017, n° 16-18.898, Bull. V, n° 159).\n\n 20. Il y a donc lieu de juger désormais que, lorsque l'employeur oppose la fin de non-recevoir tirée de la prescription, le point de départ du délai de prescription de l'indemnité de congés payés doit être fixé à l'expiration de la période légale ou conventionnelle au cours de laquelle les congés payés auraient pu être pris dès lors que l'employeur justifie avoir accompli les diligences qui lui incombent légalement afin d'assurer au salarié la possibilité d'exercer effectivement son droit à congé. \n\n 21. Pour rejeter la demande en paiement d'indemnité de congé payé pour les périodes de référence 2005-2006 à 2014-2015, l'arrêt retient que l'action en paiement de l'indemnité de congé payé est soumise à la prescription triennale, applicable aux salaires et que, dès lors, la demande en paiement de la salariée n'est recevable que pour partie.\n\n 22. En statuant ainsi, sans constater que l'employeur justifiait avoir accompli les diligences qui lui incombent légalement afin d'assurer à la salariée la possibilité d'exercer effectivement son droit à congé, la cour d'appel a violé les textes susvisés."
+     },
+     {
+      "alias": "P2",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+      "zone": "moyens",
+      "text": "Et sur le troisième moyen du pourvoi n° B 22-11.106\n\n Enoncé du moyen\n\n 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail ; qu'en retenant, pour rejeter la demande en paiement des indemnités pour la période de référence courant du 1er juin 2018 à la date de sa réintégration effective, que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvrait pas droit à congés payés, la cour d'appel a violé les articles L. 1226-9 et L. 1226-13 du code du travail. »"
+     },
+     {
+      "alias": "P13",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-5",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 1152-1, L. 1152-2, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, et L. 1152-3 du code du travail :\n\n 24. Aux termes du premier de ces textes, aucun salarié ne doit subir les agissements répétés de harcèlement moral qui ont pour objet ou pour effet une dégradation de ses conditions de travail susceptible de porter atteinte à ses droits et à sa dignité, d'altérer sa santé physique ou mentale ou de compromettre son avenir professionnel.\n\n 25. Aux termes du deuxième de ces textes, aucun salarié, aucune personne en formation ou en stage ne peut être sanctionné, licencié ou faire l'objet d'une mesure discriminatoire, directe ou indirecte, notamment en matière de rémunération, de formation professionnelle, de mutation ou de renouvellement de contrat pour avoir subi ou refusé de subir de tels agissements ou les avoir relatés.\n\n 26. Aux termes du dernier, toute rupture du contrat de travail intervenue en méconnaissance des dispositions des articles L. 1152-1 et L. 1152-2, toute disposition ou tout acte contraire est nul.\n\n 27. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 28. Pour débouter la salariée de sa demande en paiement d'indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, l'arrêt, après avoir jugé que le licenciement était nul en application de l'article L. 1152-3 du code du travail, retient que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvre pas droit à congé payé.\n\n 29. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 30."
+     },
+     {
+      "alias": "P14",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-6",
+      "zone": "motivations",
+      "text": "1152-3 du code du travail, retient que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvre pas droit à congé payé.\n\n 29. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 30. La cassation des chefs de dispositif relatifs aux demandes en paiement de rappels d'indemnité de congé payé n'emporte pas celle des chefs de dispositif de l'arrêt condamnant l'Institut national des formations notariales aux dépens ainsi qu'au paiement d'une somme en application de l'article 700 du code de procédure civile, justifiés par d'autres condamnations prononcées à l'encontre de celui-ci."
+     }
+    ]
+   },
+   "latency_ms": 22.8,
+   "at": "2026-10-24T14:29:19.830+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 26,
+   "type": "OBSERVATION",
+   "agent": "chercheur",
+   "summary": "Compte rendu du chercheur : 14 passage(s) au dossier.",
+   "data": {
+    "report": "",
+    "passages": 14,
+    "cases": [
+     "63fefc07002ac605de15b29e",
+     "65015d56ee1a2205e6581652",
+     "654b350a56298f83183878a3",
+     "6718920bd8ceca1cd7018c8e",
+     "66f3a7db5c2cfc5a084ac60d",
+     "62848dad498a54057d102b6e"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:30:13.552+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 27,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Validation humaine demandée : prolonger le budget.",
+   "data": {
+    "kind": "extend_budget",
+    "question": "Limite de 5 itérations atteinte sans preuve suffisante. Autoriser 2 itérations de plus ?",
+    "details": {
+     "searches": 2,
+     "verifier_status": "insufficient"
+    },
+    "requested_at": 1792852213.557557
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:30:13.557+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 28,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Décision humaine : refusée.",
+   "data": {
+    "kind": "extend_budget",
+    "decision": "reject"
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:30:13.576+00:00"
+  },
+  {
+   "run_id": "349512ee4462",
+   "step": 29,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Réponse partielle — 2 passage(s) cité(s).",
+   "data": {
+    "answer": "Oui, un salarié dont le licenciement est nul peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement et celle de sa réintégration [P1]. La Cour précise que ce droit s'applique en application des articles L. 3141-3 et L. 3141-9 du code du travail, sauf si le salarié a occupé un autre emploi durant cette période [P1]. Un moyen soutenant que l'indemnité d'éviction n'ouvrirait pas droit à congés payés car elle serait une réparation et non une remise en état a été rejeté par la Cour de cassation [P2].",
+    "status": "partial",
+    "verifier_status": "insufficient",
+    "sources": [
+     {
+      "alias": "P1",
+      "passage_id": "63fefc07002ac605de15b29e#motivations-1",
+      "case_id": "63fefc07002ac605de15b29e",
+      "title": "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+      "zone": "motivations",
+      "zone_label": "Motivations",
+      "text": "Réponse de la Cour\n\n Vu les articles L. 1132-1 et L. 1132-4, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, du code du travail :\n\n 8. Il résulte de ces textes que tout licenciement prononcé à l'égard d'un salarié en raison de son état de santé est nul et que le salarié qui demande sa réintégration a droit au paiement d'une somme correspondant à la réparation de la totalité du préjudice subi au cours de la période qui s'est écoulée entre son licenciement et sa réintégration, dans la limite du montant des salaires dont il a été privé.\n\n 9. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 10. Pour exclure du montant de l'indemnité d'éviction les sommes réclamées au titre des congés payés et ainsi la limiter à une certaine somme, l'arrêt retient que l'indemnité d'éviction n'ouvrant pas droit à congés payés effectifs ou à indemnité compensatrice de congés payés, le salarié ne peut prétendre aux 10 % au titre des congés payés mentionnés dans son calcul.\n\n 11. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 12. En application de l'article 624 du code de procédure civile, la cassation des dispositions de l'arrêt condamnant l'employeur à payer au salarié une somme au titre de l'indemnité d'éviction entraîne la cassation du chef de dispositif ordonnant la remise d'un bulletin de salaire récapitulatif conforme à la décision, qui s'y rattache par un lien dépendance nécessaire.",
+      "start": 5067,
+      "end": 6812,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/63fefc07002ac605de15b29e"
+     },
+     {
+      "alias": "P2",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+      "case_id": "65015d56ee1a2205e6581652",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+      "zone": "moyens",
+      "zone_label": "Moyens",
+      "text": "Et sur le troisième moyen du pourvoi n° B 22-11.106\n\n Enoncé du moyen\n\n 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail ; qu'en retenant, pour rejeter la demande en paiement des indemnités pour la période de référence courant du 1er juin 2018 à la date de sa réintégration effective, que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvrait pas droit à congés payés, la cour d'appel a violé les articles L. 1226-9 et L. 1226-13 du code du travail. »",
+      "start": 13375,
+      "end": 14320,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/65015d56ee1a2205e6581652"
+     }
+    ],
+    "limits": [
+     "Réponse partielle : seules les affirmations vérifiées sont conservées.",
+     "Non établi : Par conséquent, le salarié conserve son droit aux congés payés pour cette période spécifique.",
+     "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+    ],
+    "stop_reason": "max_iterations",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+     "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+     "Cour de cassation · Chambre sociale · 2023-11-08 · n° 22-17.919",
+     "Cour de cassation · Chambre sociale · 2024-10-23 · n° 23-16.479",
+     "Cour de cassation · Chambre sociale · 2024-09-25 · n° 22-20.672",
+     "Cour de cassation · Chambre sociale · 2022-05-18 · n° 21-10.118"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:30:13.578+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Oui, un salarié dont le licenciement est nul peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement et celle de sa réintégration [P1]. La Cour précise que ce droit s'applique en application des articles L. 3141-3 et L. 3141-9 du code du travail, sauf si le salarié a occupé un autre emploi durant cette période [P1]. Un moyen soutenant que l'indemnité d'éviction n'ouvrirait pas droit à congés payés car elle serait une réparation et non une remise en état a été rejeté par la Cour de cassation [P2].",
+  "status": "partial",
+  "verifier_status": "insufficient",
+  "sources": [
+   {
+    "alias": "P1",
+    "passage_id": "63fefc07002ac605de15b29e#motivations-1",
+    "case_id": "63fefc07002ac605de15b29e",
+    "title": "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour\n\n Vu les articles L. 1132-1 et L. 1132-4, dans sa rédaction antérieure à la loi n° 2022-401 du 21 mars 2022, du code du travail :\n\n 8. Il résulte de ces textes que tout licenciement prononcé à l'égard d'un salarié en raison de son état de santé est nul et que le salarié qui demande sa réintégration a droit au paiement d'une somme correspondant à la réparation de la totalité du préjudice subi au cours de la période qui s'est écoulée entre son licenciement et sa réintégration, dans la limite du montant des salaires dont il a été privé.\n\n 9. Le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail, sauf lorsqu'il a occupé un autre emploi durant cette période.\n\n 10. Pour exclure du montant de l'indemnité d'éviction les sommes réclamées au titre des congés payés et ainsi la limiter à une certaine somme, l'arrêt retient que l'indemnité d'éviction n'ouvrant pas droit à congés payés effectifs ou à indemnité compensatrice de congés payés, le salarié ne peut prétendre aux 10 % au titre des congés payés mentionnés dans son calcul.\n\n 11. En statuant ainsi, la cour d'appel a violé les textes susvisés.\n\n Portée et conséquences de la cassation\n\n 12. En application de l'article 624 du code de procédure civile, la cassation des dispositions de l'arrêt condamnant l'employeur à payer au salarié une somme au titre de l'indemnité d'éviction entraîne la cassation du chef de dispositif ordonnant la remise d'un bulletin de salaire récapitulatif conforme à la décision, qui s'y rattache par un lien dépendance nécessaire.",
+    "start": 5067,
+    "end": 6812,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/63fefc07002ac605de15b29e"
+   },
+   {
+    "alias": "P2",
+    "passage_id": "65015d56ee1a2205e6581652#moyens-4",
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "zone": "moyens",
+    "zone_label": "Moyens",
+    "text": "Et sur le troisième moyen du pourvoi n° B 22-11.106\n\n Enoncé du moyen\n\n 23. La salariée fait grief à l'arrêt de la débouter de sa demande en paiement d'une indemnité de congé payé pour les périodes de référence courant du 1er juin 2018 à la date de sa réintégration effective, alors « que le salarié peut prétendre à ses droits à congés payés au titre de la période d'éviction comprise entre la date du licenciement nul et celle de la réintégration dans son emploi en application des dispositions des articles L. 3141-3 et L. 3141-9 du code du travail ; qu'en retenant, pour rejeter la demande en paiement des indemnités pour la période de référence courant du 1er juin 2018 à la date de sa réintégration effective, que l'indemnité d'éviction ayant la nature d'une réparation et non d'une remise en état, la période d'éviction n'ouvrait pas droit à congés payés, la cour d'appel a violé les articles L. 1226-9 et L. 1226-13 du code du travail. »",
+    "start": 13375,
+    "end": 14320,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/65015d56ee1a2205e6581652"
+   }
+  ],
+  "limits": [
+   "Réponse partielle : seules les affirmations vérifiées sont conservées.",
+   "Non établi : Par conséquent, le salarié conserve son droit aux congés payés pour cette période spécifique.",
+   "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+  ],
+  "stop_reason": "max_iterations",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008",
+   "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "Cour de cassation · Chambre sociale · 2023-11-08 · n° 22-17.919",
+   "Cour de cassation · Chambre sociale · 2024-10-23 · n° 23-16.479",
+   "Cour de cassation · Chambre sociale · 2024-09-25 · n° 22-20.672",
+   "Cour de cassation · Chambre sociale · 2022-05-18 · n° 21-10.118"
+  ]
+ },
+ "metrics": {
+  "llm_calls": 16,
+  "prompt_tokens": 36100,
+  "completion_tokens": 5069,
+  "llm_latency_ms": 286212.5300419866,
+  "tool_calls": {
+   "search_cases": 2,
+   "read_case": 3
+  },
+  "tool_latency_ms": 166.9,
+  "iterations": 5,
+  "searches": 2,
+  "errors": [],
+  "total_latency_ms": 286458.0,
+  "verifier_status": "insufficient",
+  "stop_reason": "max_iterations",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 286.5,
+ "hitl_answer": "reject"
+}

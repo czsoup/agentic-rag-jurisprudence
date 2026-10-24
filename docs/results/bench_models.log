@@ -1,0 +1,36 @@
+qwen3.5:9b     1. chercher d'abord                        #0 OK    3.4s  search_cases('abandon de poste licenciement faute grave')
+qwen3.5:9b     1. chercher d'abord                        #1 OK    1.9s  search_cases('abandon de poste licenciement faute grave')
+qwen3.5:9b     1. chercher d'abord                        #2 OK    1.9s  search_cases('abandon de poste licenciement faute grave')
+qwen3.5:9b     2. lire l'affaire pertinente               #0 KO    5.2s  attendu read_case, obtenu texte
+qwen3.5:9b     2. lire l'affaire pertinente               #1 KO    1.7s  attendu read_case, obtenu texte
+qwen3.5:9b     2. lire l'affaire pertinente               #2 KO    2.4s  attendu read_case, obtenu texte
+qwen3.5:9b     3. répondre (preuves suffisantes)          #0 OK    4.5s  citations ['P3', 'P4'] ; texte
+qwen3.5:9b     3. répondre (preuves suffisantes)          #1 OK    2.4s  citations ['P3', 'P4'] ; texte
+qwen3.5:9b     3. répondre (preuves suffisantes)          #2 OK    2.4s  citations ['P3', 'P4'] ; texte
+qwen3.5:9b     4. s'abstenir ou reformuler (rien trouvé)  #0 OK    3.0s  abstention
+qwen3.5:9b     4. s'abstenir ou reformuler (rien trouvé)  #1 OK    1.6s  abstention
+qwen3.5:9b     4. s'abstenir ou reformuler (rien trouvé)  #2 OK    1.4s  abstention
+qwen3:8b       1. chercher d'abord                        #0 OK    1.9s  search_cases('abandon de poste licenciement faute grave')
+qwen3:8b       1. chercher d'abord                        #1 OK    1.4s  search_cases('abandon de poste licenciement faute grave')
+qwen3:8b       1. chercher d'abord                        #2 OK    1.4s  search_cases('abandon de poste licenciement faute grave')
+qwen3:8b       2. lire l'affaire pertinente               #0 KO    2.1s  attendu read_case, obtenu texte
+qwen3:8b       2. lire l'affaire pertinente               #1 KO    1.5s  attendu read_case, obtenu texte
+qwen3:8b       2. lire l'affaire pertinente               #2 KO    1.5s  attendu read_case, obtenu texte
+qwen3:8b       3. répondre (preuves suffisantes)          #0 OK    2.9s  citations ['P3', 'P4'] ; texte
+qwen3:8b       3. répondre (preuves suffisantes)          #1 OK    2.3s  citations ['P3', 'P4'] ; texte
+qwen3:8b       3. répondre (preuves suffisantes)          #2 OK    2.3s  citations ['P3', 'P4'] ; texte
+qwen3:8b       4. s'abstenir ou reformuler (rien trouvé)  #0 OK    2.3s  abstention
+qwen3:8b       4. s'abstenir ou reformuler (rien trouvé)  #1 OK    1.4s  abstention
+qwen3:8b       4. s'abstenir ou reformuler (rien trouvé)  #2 OK    1.4s  abstention
+| modèle | sonde | réussites | latence médiane (s) |
+|---|---|---|---|
+| qwen3.5:9b | 1. chercher d'abord | 3/3 | 1.9 |
+| qwen3.5:9b | 2. lire l'affaire pertinente | 0/3 | 2.4 |
+| qwen3.5:9b | 3. répondre (preuves suffisantes) | 3/3 | 2.4 |
+| qwen3.5:9b | 4. s'abstenir ou reformuler (rien trouvé) | 3/3 | 1.6 |
+| **qwen3.5:9b** | **total** | **9/12** | **2.4** |
+| qwen3:8b | 1. chercher d'abord | 3/3 | 1.4 |
+| qwen3:8b | 2. lire l'affaire pertinente | 0/3 | 1.5 |
+| qwen3:8b | 3. répondre (preuves suffisantes) | 3/3 | 2.3 |
+| qwen3:8b | 4. s'abstenir ou reformuler (rien trouvé) | 3/3 | 1.4 |
+| **qwen3:8b** | **total** | **9/12** | **1.7** |

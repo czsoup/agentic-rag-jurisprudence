@@ -1,0 +1,623 @@
+{
+ "question": {
+  "id": "S3b",
+  "title": "Scénario 3b — information absente du corpus",
+  "kind": "insufficient-absent",
+  "question": "Un employeur peut-il licencier un salarié sur la seule base d'une évaluation produite par un algorithme d'intelligence artificielle ?",
+  "target_case": null,
+  "selection": "Aucun passage de l'index ne contient « intelligence artificielle » ni « algorithme » (vérifié par requête SQL sur les 27 249 passages), alors que l'index contient de nombreuses décisions de licenciement, donc des quasi-réponses trompeuses.",
+  "expected": "Recherches reformulées, vérification insuffisante, limite d'itérations, demande de prolongation (refusée par le script), puis abstention motivée, sans affirmation non sourcée."
+ },
+ "mode": "single",
+ "session": "S3b-single-1792833220",
+ "run_id": "523decbef152",
+ "events": [
+  {
+   "run_id": "523decbef152",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Aucune preuve collectée : recherche documentaire nécessaire (« licenciement intelligence artificielle algorithme évaluation salarié »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 1
+   },
+   "latency_ms": 9454.321208992042,
+   "at": "2026-10-24T09:13:49.546+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 2,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"licenciement intelligence artificielle algorithme évaluation salarié\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "licenciement intelligence artificielle algorithme évaluation salarié",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:13:49.550+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 3,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-14.969",
+   "data": {
+    "query": "licenciement intelligence artificielle algorithme évaluation salarié",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "620ca2d5c61f23729bcf61e5",
+      "title": "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-14.969",
+      "solution": "Cassation",
+      "score": 0.024878,
+      "alias": "P1",
+      "passage_id": "620ca2d5c61f23729bcf61e5#motivations-3",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article L. 1233-58, II, du code du travail, dans sa rédaction applicable au litige, en vigueur du 1er juillet 2013 au 1er juillet 2014 : 17. Il résulte de ce texte que la perte injustifiée de son emploi par le salarié licencié en l'absence de toute décision relative à la validation ou à …"
+     },
+     {
+      "rank": 2,
+      "case_id": "66fce2ba8d6ea26f688da3ed",
+      "title": "Cour de cassation · Chambre sociale · 2024-10-02 · n° 23-19.326",
+      "solution": "Cassation",
+      "score": 0.0225,
+      "alias": "P2",
+      "passage_id": "66fce2ba8d6ea26f688da3ed#motivations-3",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu la loi des 16-24 août 1790, l'article L. 2411-5 du code du travail, dans sa rédaction antérieure à l'ordonnance n° 2017-1386 du 22 septembre 2017, et les articles L. 1132-1 à L. 1132-3-3 et L. 1152-1 à L. 1152-3 du même code : 14. Il résulte de ces textes que, dans le cas où une demande …"
+     },
+     {
+      "rank": 3,
+      "case_id": "6582bbc7747015f3f52007d1",
+      "title": "Cour de cassation · Chambre sociale · 2023-12-20 · n° 21-20.904",
+      "solution": "Cassation",
+      "score": 0.021364,
+      "alias": "P3",
+      "passage_id": "6582bbc7747015f3f52007d1#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Sur le second moyen du pourvoi principal Enoncé du moyen 5. La salariée fait grief à l'arrêt de juger légitime son licenciement pour faute grave par la société et de la débouter de ses demandes d'indemnité compensatrice de préavis, de congés payés afférents, d'indemnité de licenciement, de dommages-intérêts pour …"
+     },
+     {
+      "rank": 4,
+      "case_id": "620ca2d5c61f23729bcf61e7",
+      "title": "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-16.171",
+      "solution": "Cassation",
+      "score": 0.020971,
+      "alias": "P4",
+      "passage_id": "620ca2d5c61f23729bcf61e7#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article L. 2411-10 du code du travail dans sa rédaction antérieure à l'ordonnance n° 2017-1386 du 22 septembre 2017 : 4. Est irrégulier le licenciement du salarié au terme de la période de protection prononcé en raison de faits commis pendant cette période et qui auraient dû être soumis à …"
+     },
+     {
+      "rank": 5,
+      "case_id": "651d01d7fe8d588318c1ac5c",
+      "title": "Cour de cassation · Chambre sociale · 2023-10-04 · n° 22-15.269",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P5",
+      "passage_id": "651d01d7fe8d588318c1ac5c#moyens-2",
+      "zone": "moyens",
+      "excerpt": "Et sur le troisième moyen, pris en sa deuxième et sa troisième branches Enoncé du moyen 11. Le salarié fait grief à l'arrêt de le débouter de sa demande de dommages-intérêts pour licenciement nul ou à tout le moins sans cause réelle et sérieuse, alors : « 2°/ qu'en ne répondant pas au moyen des conclusions d'appel du …"
+     }
+    ]
+   },
+   "latency_ms": 41.7,
+   "at": "2026-10-24T09:13:49.591+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 4,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Résultats précédents insuffisants : requête reformulée (« intelligence artificielle algorithme licenciement cause réelle sérieuse »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 2
+   },
+   "latency_ms": 13526.938458962832,
+   "at": "2026-10-24T09:14:03.121+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 5,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"intelligence artificielle algorithme licenciement cause réelle sérieuse\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "intelligence artificielle algorithme licenciement cause réelle sérieuse",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:14:03.124+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 6,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-10-18 · n° 22-18.852",
+   "data": {
+    "query": "intelligence artificielle algorithme licenciement cause réelle sérieuse",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "652f769db0532083189957ec",
+      "title": "Cour de cassation · Chambre sociale · 2023-10-18 · n° 22-18.852",
+      "solution": "Cassation",
+      "score": 0.024315,
+      "alias": "P6",
+      "passage_id": "652f769db0532083189957ec#motivations-1",
+      "zone": "motivations",
+      "excerpt": "8. En se déterminant ainsi, par des motifs insuffisants à caractériser le caractère sérieux et durable des pertes d'exploitation dans le secteur d'activité considéré, sans rechercher si l'évolution de l'indicateur économique retenu était significative, la cour d'appel a privé sa décision de base légale. Portée et …"
+     },
+     {
+      "rank": 2,
+      "case_id": "66eab95049e2d93736d98b05",
+      "title": "Cour de cassation · Chambre sociale · 2024-09-18 · n° 22-24.363",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P7",
+      "passage_id": "66eab95049e2d93736d98b05#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen des moyens Sur le moyen du pourvoi M 22-24.363 Enoncé du moyen 4. La salariée fait grief à l'arrêt de dire que son licenciement repose sur une cause réelle et sérieuse et de la débouter de ses demandes, alors « que l'employeur qui prend l'initiative de rompre le contrat de travail ou qui le considère comme …"
+     },
+     {
+      "rank": 3,
+      "case_id": "63bfb6a85e2fbe7c90043b1b",
+      "title": "Cour de cassation · Deuxième chambre civile · 2023-01-12 · n° 21-16.804",
+      "solution": "Rejet",
+      "score": 0.016393,
+      "alias": "P8",
+      "passage_id": "63bfb6a85e2fbe7c90043b1b#expose-0",
+      "zone": "expose",
+      "excerpt": "Faits et procédure 1. Selon l'arrêt attaqué (Aix-en-Provence, 5 mars 2021) et les productions, Mme [W] a contesté devant un conseil de prud'hommes son licenciement par la société Kontron Modular Computers (la société). 2. La société a fait appel du jugement ayant retenu l'existence d'une cause réelle et sérieuse et …"
+     },
+     {
+      "rank": 4,
+      "case_id": "66eab96849e2d93736d98b15",
+      "title": "Cour de cassation · Chambre sociale · 2024-09-18 · n° 23-11.327",
+      "solution": "Cassation",
+      "score": 0.016129,
+      "alias": "P9",
+      "passage_id": "66eab96849e2d93736d98b15#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Mais sur le troisième moyen Enoncé du moyen 6. L'employeur fait grief à l'arrêt du 25 novembre 2022 de le condamner à payer une somme à titre de dommages-intérêts pour licenciement sans cause réelle et sérieuse, alors « que le salarié victime d'un licenciement nul et qui ne réclame pas sa réintégration a droit, …"
+     },
+     {
+      "rank": 5,
+      "case_id": "633d28bda3bbc43e2e4d4b6a",
+      "title": "Cour de cassation · Première chambre civile · 2022-10-05 · n° 21-15.386",
+      "solution": "Cassation",
+      "score": 0.016129,
+      "alias": "P10",
+      "passage_id": "633d28bda3bbc43e2e4d4b6a#expose-0",
+      "zone": "expose",
+      "excerpt": "Faits et procédure 1. Selon l'arrêt attaqué (Paris, 19 mars 2021), la société Entr'Ouvert a conçu un logiciel dénommé « Lasso » et permettant la mise en place d'un système d'authentification unique, qu'elle diffuse sous licence libre ou sous licence commerciale en contrepartie du paiement de redevances à son profit. …"
+     }
+    ]
+   },
+   "latency_ms": 37.6,
+   "at": "2026-10-24T09:14:03.162+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 7,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Résultats précédents insuffisants : requête reformulée (« évaluation automatisée système algorithmique licenciement salarié »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 3
+   },
+   "latency_ms": 14255.070374987554,
+   "at": "2026-10-24T09:14:17.419+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 8,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"évaluation automatisée système algorithmique licenciement salarié\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "évaluation automatisée système algorithmique licenciement salarié",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:14:17.423+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 9,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797",
+   "data": {
+    "query": "évaluation automatisée système algorithmique licenciement salarié",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "64085c8866b1bafb02f12088",
+      "title": "Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797",
+      "solution": "Cassation",
+      "score": 0.025074,
+      "alias": "P11",
+      "passage_id": "64085c8866b1bafb02f12088#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen du moyen, pris en sa seconde branche Enoncé du moyen 4. L'employeur fait grief à l'arrêt de le condamner à verser à la salariée diverses sommes à titre d'indemnité compensatrice de préavis, congés payés sur préavis, indemnité conventionnelle de licenciement, rappel de salaire sur mise à pied, congés payés …"
+     },
+     {
+      "rank": 2,
+      "case_id": "63e34cd4500dc805de37cda3",
+      "title": "Cour de cassation · Chambre sociale · 2023-02-08 · n° 21-16.805",
+      "solution": "Cassation",
+      "score": 0.023088,
+      "alias": "P12",
+      "passage_id": "63e34cd4500dc805de37cda3#motivations-1",
+      "zone": "motivations",
+      "excerpt": "8. Pour dire le licenciement dépourvu de cause réelle et sérieuse et condamner l'employeur à payer au salarié une somme à titre d'indemnité pour licenciement abusif, l'arrêt retient que ces dispositions, qui n'ont pas pour seul objet de déterminer l'indemnisation due au salarié malade, offrent aussi une véritable …"
+     },
+     {
+      "rank": 3,
+      "case_id": "620ca2d5c61f23729bcf61e5",
+      "title": "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-14.969",
+      "solution": "Cassation",
+      "score": 0.022657,
+      "alias": "P1",
+      "passage_id": "620ca2d5c61f23729bcf61e5#motivations-3",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article L. 1233-58, II, du code du travail, dans sa rédaction applicable au litige, en vigueur du 1er juillet 2013 au 1er juillet 2014 : 17. Il résulte de ce texte que la perte injustifiée de son emploi par le salarié licencié en l'absence de toute décision relative à la validation ou à …"
+     },
+     {
+      "rank": 4,
+      "case_id": "63982486a1b60505d4701ff3",
+      "title": "Cour de cassation · Chambre criminelle · 2022-12-13 · n° 22-81.851",
+      "solution": "Rejet",
+      "score": 0.016393,
+      "alias": "P13",
+      "passage_id": "63982486a1b60505d4701ff3#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 5. C'est à tort que les juges ont rejeté la demande de nullité de la consultation du système de lecture automatisé des plaques d'immatriculation de véhicules (LAPI) au motif que M. [H] n'avait pas présenté de demande d'acte tendant à voir verser aux débats les pièces justifiant de sa régularité. 6. …"
+     },
+     {
+      "rank": 5,
+      "case_id": "627b537f4d359c057dd01cf4",
+      "title": "Cour de cassation · Chambre sociale · 2022-05-11 · n° 21-14.490",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P14",
+      "passage_id": "627b537f4d359c057dd01cf4#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article 6 de la Déclaration des droits de l'homme et du citoyen de 1789, les articles L. 1235-3, L. 1235-3-1 et L. 1235-4 du code du travail, dans leur rédaction issue de l'ordonnance n° 2017-1387 du 22 septembre 2017, et l'article 10 de la Convention internationale du travail n° 158 …"
+     }
+    ]
+   },
+   "latency_ms": 35.7,
+   "at": "2026-10-24T09:14:17.459+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 10,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Résultats précédents insuffisants : requête reformulée (« notation automatique outil numérique évaluation salarié licenciement »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 4
+   },
+   "latency_ms": 14945.218874956481,
+   "at": "2026-10-24T09:14:32.406+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 11,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"notation automatique outil numérique évaluation salarié licenciement\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "notation automatique outil numérique évaluation salarié licenciement",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:14:32.410+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 12,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-10-19 · n° 21-15.533",
+   "data": {
+    "query": "notation automatique outil numérique évaluation salarié licenciement",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "634f93f3b5afe5adfff287fe",
+      "title": "Cour de cassation · Chambre sociale · 2022-10-19 · n° 21-15.533",
+      "solution": "Cassation",
+      "score": 0.027119,
+      "alias": "P15",
+      "passage_id": "634f93f3b5afe5adfff287fe#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Sur le moyen du pourvoi principal, pris en sa quatrième branche Enoncé du moyen 4. L'employeur fait grief à l'arrêt de dire que le licenciement était nul, de le condamner au paiement de 38 110 euros à ce titre, d'ordonner la remise à la salariée d'un bulletin de salaire, d'un certificat de travail et d'une …"
+     },
+     {
+      "rank": 2,
+      "case_id": "652f76a4b0532083189957f2",
+      "title": "Cour de cassation · Chambre sociale · 2023-10-18 · n° 22-18.678",
+      "solution": "Cassation",
+      "score": 0.022864,
+      "alias": "P16",
+      "passage_id": "652f76a4b0532083189957f2#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen du moyen Sur le moyen pris en sa première branche Enoncé du moyen 4. La société fait grief à l'arrêt de dire le licenciement de la salariée nul et de la condamner à lui verser diverses sommes au titre d'un rappel de salaire à la suite de la mise à pied conservatoire, de l'indemnité compensatrice de préavis et …"
+     },
+     {
+      "rank": 3,
+      "case_id": "6582bbc7747015f3f52007d1",
+      "title": "Cour de cassation · Chambre sociale · 2023-12-20 · n° 21-20.904",
+      "solution": "Cassation",
+      "score": 0.022462,
+      "alias": "P3",
+      "passage_id": "6582bbc7747015f3f52007d1#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Sur le second moyen du pourvoi principal Enoncé du moyen 5. La salariée fait grief à l'arrêt de juger légitime son licenciement pour faute grave par la société et de la débouter de ses demandes d'indemnité compensatrice de préavis, de congés payés afférents, d'indemnité de licenciement, de dommages-intérêts pour …"
+     },
+     {
+      "rank": 4,
+      "case_id": "63e34cd4500dc805de37cda3",
+      "title": "Cour de cassation · Chambre sociale · 2023-02-08 · n° 21-16.805",
+      "solution": "Cassation",
+      "score": 0.021666,
+      "alias": "P17",
+      "passage_id": "63e34cd4500dc805de37cda3#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen du moyen Enoncé du moyen 4. L'employeur fait grief à l'arrêt de le condamner à payer au salarié une somme à titre d'indemnité pour licenciement abusif et au remboursement aux organismes intéressés de tout ou partie des indemnités de chômage versées au salarié licencié, du jour de son licenciement au jour du …"
+     },
+     {
+      "rank": 5,
+      "case_id": "6437a1d49477fe04f5cc68d2",
+      "title": "Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925",
+      "solution": "Cassation",
+      "score": 0.016393,
+      "alias": "P18",
+      "passage_id": "6437a1d49477fe04f5cc68d2#moyens-1",
+      "zone": "moyens",
+      "excerpt": "L'évaluation de la compétence est formalisée à l'occasion de l'entretien annuel, tel que prévu à l'article 7'' ; que l'absence d'entretien annuel d'évaluation ou le retard dans la tenue de celui-ci ne peuvent être sanctionnés par l'attribution automatique, pour chaque année concernée, d'un pas de compétence ; qu'en …"
+     }
+    ]
+   },
+   "latency_ms": 35.6,
+   "at": "2026-10-24T09:14:32.446+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 13,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Résultats précédents insuffisants : requête reformulée (« système automatisé outil numérique évaluation salarié licenciement cause réelle sérieuse »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 5
+   },
+   "latency_ms": 17148.629874980543,
+   "at": "2026-10-24T09:14:49.597+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 14,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"système automatisé outil numérique évaluation salarié licenciement cause réelle sérieuse\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "système automatisé outil numérique évaluation salarié licenciement cause réelle sérieuse",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:14:49.601+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 15,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-12 · n° 23-13.522",
+   "data": {
+    "query": "système automatisé outil numérique évaluation salarié licenciement cause réelle sérieuse",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "66693a49532c0d0008221b27",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-12 · n° 23-13.522",
+      "solution": "Cassation",
+      "score": 0.02895,
+      "alias": "P19",
+      "passage_id": "66693a49532c0d0008221b27#motivations-1",
+      "zone": "motivations",
+      "excerpt": "9. Tel que suggéré par l'employeur, il est fait application des articles L. 411-3, alinéa 2 du code de l'organisation judiciaire et 627 du code de procédure civile. 10. L'intérêt d'une bonne administration de la justice justifie, en effet, que la Cour de cassation statue au fond. 11. L'employeur étant dispensé de …"
+     },
+     {
+      "rank": 2,
+      "case_id": "64085c8866b1bafb02f12088",
+      "title": "Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797",
+      "solution": "Cassation",
+      "score": 0.02837,
+      "alias": "P11",
+      "passage_id": "64085c8866b1bafb02f12088#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen du moyen, pris en sa seconde branche Enoncé du moyen 4. L'employeur fait grief à l'arrêt de le condamner à verser à la salariée diverses sommes à titre d'indemnité compensatrice de préavis, congés payés sur préavis, indemnité conventionnelle de licenciement, rappel de salaire sur mise à pied, congés payés …"
+     },
+     {
+      "rank": 3,
+      "case_id": "66eab95049e2d93736d98b05",
+      "title": "Cour de cassation · Chambre sociale · 2024-09-18 · n° 22-24.363",
+      "solution": "Cassation",
+      "score": 0.027746,
+      "alias": "P20",
+      "passage_id": "66eab95049e2d93736d98b05#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article L. 1232-6 du code du travail : 5. Selon ce texte, lorsque l'employeur décide de licencier un salarié, il lui notifie sa décision par lettre recommandée avec avis de réception. Cette lettre comporte l'énoncé du ou des motifs invoqués par l'employeur. Elle ne peut être expédiée moins de …"
+     },
+     {
+      "rank": 4,
+      "case_id": "6582bbc7747015f3f52007d1",
+      "title": "Cour de cassation · Chambre sociale · 2023-12-20 · n° 21-20.904",
+      "solution": "Cassation",
+      "score": 0.027149,
+      "alias": "P3",
+      "passage_id": "6582bbc7747015f3f52007d1#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Sur le second moyen du pourvoi principal Enoncé du moyen 5. La salariée fait grief à l'arrêt de juger légitime son licenciement pour faute grave par la société et de la débouter de ses demandes d'indemnité compensatrice de préavis, de congés payés afférents, d'indemnité de licenciement, de dommages-intérêts pour …"
+     },
+     {
+      "rank": 5,
+      "case_id": "66eab96849e2d93736d98b15",
+      "title": "Cour de cassation · Chambre sociale · 2024-09-18 · n° 23-11.327",
+      "solution": "Cassation",
+      "score": 0.026999,
+      "alias": "P9",
+      "passage_id": "66eab96849e2d93736d98b15#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Mais sur le troisième moyen Enoncé du moyen 6. L'employeur fait grief à l'arrêt du 25 novembre 2022 de le condamner à payer une somme à titre de dommages-intérêts pour licenciement sans cause réelle et sérieuse, alors « que le salarié victime d'un licenciement nul et qui ne réclame pas sa réintégration a droit, …"
+     }
+    ]
+   },
+   "latency_ms": 35.0,
+   "at": "2026-10-24T09:14:49.636+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 16,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Validation humaine demandée : prolonger le budget.",
+   "data": {
+    "kind": "extend_budget",
+    "question": "Limite de 5 itérations atteinte sans preuve suffisante. Autoriser 2 itérations de plus ?",
+    "details": {
+     "searches": 5,
+     "verifier_status": null
+    },
+    "requested_at": 1792833289.63956
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:14:49.639+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 17,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Décision humaine : refusée.",
+   "data": {
+    "kind": "extend_budget",
+    "decision": "reject"
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:14:49.654+00:00"
+  },
+  {
+   "run_id": "523decbef152",
+   "step": 18,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Abstention — le budget d'itérations est épuisé sans preuve suffisante.",
+   "data": {
+    "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : le budget d'itérations est épuisé sans preuve suffisante.",
+    "status": "abstained",
+    "verifier_status": null,
+    "sources": [],
+    "limits": [],
+    "stop_reason": "max_iterations",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-14.969",
+     "Cour de cassation · Chambre sociale · 2024-10-02 · n° 23-19.326",
+     "Cour de cassation · Chambre sociale · 2023-12-20 · n° 21-20.904",
+     "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-16.171",
+     "Cour de cassation · Chambre sociale · 2023-10-04 · n° 22-15.269",
+     "Cour de cassation · Chambre sociale · 2023-10-18 · n° 22-18.852",
+     "Cour de cassation · Chambre sociale · 2024-09-18 · n° 22-24.363",
+     "Cour de cassation · Deuxième chambre civile · 2023-01-12 · n° 21-16.804",
+     "Cour de cassation · Chambre sociale · 2024-09-18 · n° 23-11.327",
+     "Cour de cassation · Première chambre civile · 2022-10-05 · n° 21-15.386",
+     "Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797",
+     "Cour de cassation · Chambre sociale · 2023-02-08 · n° 21-16.805",
+     "Cour de cassation · Chambre criminelle · 2022-12-13 · n° 22-81.851",
+     "Cour de cassation · Chambre sociale · 2022-05-11 · n° 21-14.490",
+     "Cour de cassation · Chambre sociale · 2022-10-19 · n° 21-15.533",
+     "Cour de cassation · Chambre sociale · 2023-10-18 · n° 22-18.678",
+     "Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925",
+     "Cour de cassation · Chambre sociale · 2024-06-12 · n° 23-13.522"
+    ],
+    "errors": []
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T09:14:49.655+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : le budget d'itérations est épuisé sans preuve suffisante.",
+  "status": "abstained",
+  "verifier_status": null,
+  "sources": [],
+  "limits": [],
+  "stop_reason": "max_iterations",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-14.969",
+   "Cour de cassation · Chambre sociale · 2024-10-02 · n° 23-19.326",
+   "Cour de cassation · Chambre sociale · 2023-12-20 · n° 21-20.904",
+   "Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-16.171",
+   "Cour de cassation · Chambre sociale · 2023-10-04 · n° 22-15.269",
+   "Cour de cassation · Chambre sociale · 2023-10-18 · n° 22-18.852",
+   "Cour de cassation · Chambre sociale · 2024-09-18 · n° 22-24.363",
+   "Cour de cassation · Deuxième chambre civile · 2023-01-12 · n° 21-16.804",
+   "Cour de cassation · Chambre sociale · 2024-09-18 · n° 23-11.327",
+   "Cour de cassation · Première chambre civile · 2022-10-05 · n° 21-15.386",
+   "Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797",
+   "Cour de cassation · Chambre sociale · 2023-02-08 · n° 21-16.805",
+   "Cour de cassation · Chambre criminelle · 2022-12-13 · n° 22-81.851",
+   "Cour de cassation · Chambre sociale · 2022-05-11 · n° 21-14.490",
+   "Cour de cassation · Chambre sociale · 2022-10-19 · n° 21-15.533",
+   "Cour de cassation · Chambre sociale · 2023-10-18 · n° 22-18.678",
+   "Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925",
+   "Cour de cassation · Chambre sociale · 2024-06-12 · n° 23-13.522"
+  ],
+  "errors": []
+ },
+ "metrics": {
+  "llm_calls": 5,
+  "prompt_tokens": 28870,
+  "completion_tokens": 904,
+  "llm_latency_ms": 69330.17879287945,
+  "tool_calls": {
+   "search_cases": 5
+  },
+  "tool_latency_ms": 185.60000000000002,
+  "iterations": 5,
+  "searches": 5,
+  "errors": [],
+  "total_latency_ms": 69563.6,
+  "verifier_status": null,
+  "stop_reason": "max_iterations",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 69.6,
+ "hitl_answer": "reject"
+}

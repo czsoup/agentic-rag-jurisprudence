@@ -1,0 +1,93 @@
+{
+ "question": {
+  "id": "C3",
+  "title": "Indemnité spécifique de rupture conventionnelle",
+  "kind": "simple",
+  "question": "L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?",
+  "target_case": "659e41095537980008846f77",
+  "selection": "Chambre sociale, 10 janvier 2024, n° 22-19.165 (publié).",
+  "expected": "réponse directe"
+ },
+ "mode": "static",
+ "final": {
+  "answer": "Non, selon le passage P1, l'indemnité spécifique de rupture conventionnelle ne peut pas être d'un montant inférieur à celui de l'indemnité conventionnelle de licenciement lorsque celle-ci est supérieure à l'indemnité légale de licenciement [P1]. Cette règle découle de l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008 mentionné dans la décision [P1]. La Cour précise que cette obligation s'applique spécifiquement lorsque l'indemnité conventionnelle dépasse le montant légal [P1]. Par conséquent, une rupture conventionnelle ne peut offrir une indemnité inférieure à ce seuil conventionnel supérieur [P1]. Le texte juridique impose ainsi un plancher de protection financière pour le salarié lors d'une rupture conventionnelle [P1].",
+  "verifier_status": "sufficient",
+  "sources": [
+   {
+    "alias": "P1",
+    "passage_id": "659e41095537980008846f77#motivations-1",
+    "case_id": "659e41095537980008846f77",
+    "title": "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour\n\n 6. Selon l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008, l'indemnité spécifique de rupture conventionnelle prévue par l'article L. 1237-13 du code du travail ne peut pas être d'un montant inférieur à celui de l'indemnité conventionnelle de licenciement, lorsque celle-ci est supérieure à l'indemnité légale de licenciement.\n\n 7. L'article 14-3 de l'avenant n° 3 du 16 juin 1955 à la convention collective nationale des industries chimiques et connexes du 30 décembre 1952, relatif aux ingénieurs et cadres, prévoit que la base de calcul de l'indemnité de licenciement est la rémunération totale mensuelle gagnée par le cadre pendant le mois précédant le préavis de congédiement et qu'elle ne saurait être inférieure à la moyenne des rémunérations mensuelles des douze mois précédant le congédiement.\n\n 8. La cour d'appel a exactement décidé qu'en l'absence de licenciement et d'exécution de préavis, il convenait de prendre en compte le salaire du mois précédant la signature de la convention de rupture."
+   }
+  ],
+  "unverified": []
+ },
+ "metrics": {
+  "llm_calls": 2,
+  "prompt_tokens": 2057,
+  "completion_tokens": 185,
+  "llm_latency_ms": 33853.35104202386,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 0.0,
+  "iterations": 0,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 33898.1,
+  "verifier_status": "sufficient",
+  "stop_reason": null,
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 33.9,
+ "passages": [
+  {
+   "alias": "P1",
+   "passage_id": "659e41095537980008846f77#motivations-1",
+   "case_id": "659e41095537980008846f77",
+   "title": "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour\n\n 6. Selon l'avenant du 18 mai 2009 à l'accord national interprofessionnel du 11 janvier 2008, l'indemnité spécifique de rupture conventionnelle prévue par l'article L. 1237-13 du code du travail ne peut pas être d'un montant inférieur à celui de l'indemnité conventionnelle de licenciement, lorsque celle-ci est supérieure à l'indemnité légale de licenciement.\n\n 7. L'article 14-3 de l'avenant n° 3 du 16 juin 1955 à la convention collective nationale des industries chimiques et connexes du 30 décembre 1952, relatif aux ingénieurs et cadres, prévoit que la base de calcul de l'indemnité de licenciement est la rémunération totale mensuelle gagnée par le cadre pendant le mois précédant le préavis de congédiement et qu'elle ne saurait être inférieure à la moyenne des rémunérations mensuelles des douze mois précédant le congédiement.\n\n 8. La cour d'appel a exactement décidé qu'en l'absence de licenciement et d'exécution de préavis, il convenait de prendre en compte le salaire du mois précédant la signature de la convention de rupture."
+  },
+  {
+   "alias": "P2",
+   "passage_id": "659e41095537980008846f77#moyens-1",
+   "case_id": "659e41095537980008846f77",
+   "title": "Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Sur le premier moyen, pris en sa première branche\n\n Enoncé du moyen\n\n 5. L'employeur fait grief à l'arrêt de le condamner à payer au salarié une somme à titre de complément d'indemnité de rupture conventionnelle, alors « que la convention de rupture conclue en application des articles L. 1237-11 et suivants du code du travail fixe la date de la rupture du contrat qui ne peut \n intervenir avant le lendemain du jour de l'homologation ; que selon l'article 14-3 de l'avenant n° 3 à la convention collective des industries chimiques, la base de calcul de l'indemnité de licenciement est la rémunération totale mensuelle gagnée par le cadre pendant le mois précédant le préavis de licenciement ; qu'il en résulte qu'en cas de rupture conventionnelle, la base de calcul de l'indemnité conventionnelle de licenciement est la rémunération du mois précédant la date de la rupture fixée par la convention de rupture ; qu'en l'espèce, la société Trimet soutenait que la convention de rupture du contrat conclue le 12 octobre 2017 fixait au 19 novembre 2017 la rupture du contrat, de sorte que le mois précédant la rupture était le mois d'octobre 2017 et non celui de septembre 2017 ; qu'en se bornant à affirmer, pour retenir le salaire du mois de septembre 2017 comme base de calcul de l'indemnité de licenciement, qu' ''en l'absence de préavis de congédiement, les parties prennent en compte le salaire du mois précédant le congédiement sans préavis'' et que le salaire de référence retenu par l'employeur n'inclut pas l'intéressement et la participation versés en septembre 2017, cependant qu'elle avait constaté que la rupture avait pris effet le 19 novembre 2017, la cour d'appel a violé les articles 14-3 de l'avenant n° 3 de la convention collective des industries chimiques du 30 décembre 1952 et l'article L. 1237-13 du code du travail. »"
+  },
+  {
+   "alias": "P3",
+   "passage_id": "673d85b81d67c8becde12d8f#motivations-1",
+   "case_id": "673d85b81d67c8becde12d8f",
+   "title": "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-13.050",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "9. Aux termes de l'article 22.5, en tout état de cause, ces indemnités ne pourront être inférieures à celles prescrites en cas de rupture du contrat de travail par la législation en vigueur et ne pourront donc pas être inférieures à l'indemnité légale de licenciement. \n\n 10. Il résulte de l'article 22.5 que l'indemnité de départ à la retraite prévue par les articles 22.3 et 22.4 ne peut être inférieure à l'indemnité légale de licenciement, que ce départ procède d'une demande du salarié ou d'une demande de l'employeur. \n\n 11. Les griefs qui soutiennent le contraire ne sont donc pas fondés."
+  },
+  {
+   "alias": "P4",
+   "passage_id": "673d85681d67c8becde12d1b#motivations-1",
+   "case_id": "673d85681d67c8becde12d1b",
+   "title": "Cour de cassation · Chambre sociale · 2024-11-20 · n° 23-21.510",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "9. Aux termes de l'article 22.5, en tout état de cause, ces indemnités ne pourront être inférieures à celles prescrites en cas de rupture du contrat de travail par la législation en vigueur et ne pourront donc pas être inférieures à l'indemnité légale de licenciement.\n\n 10. Il résulte de ce dernier texte que l'indemnité de départ à la retraite prévue par les articles 22.3 et 22.4 ne peut être inférieure à l'indemnité légale de licenciement, que ce départ procède d'une demande du salarié ou d'une demande de l'employeur.\n\n 11. Pour rejeter la demande du salarié en paiement d'un solde d'indemnité de départ volontaire à la retraite, l'arrêt retient que l'avenant du 10 décembre 2013 a opéré une distinction entre les deux indemnités, aucun élément concret ne montrant que les partenaires sociaux entendaient augmenter significativement le montant de l'indemnité en cas de départ volontaire à la retraite et que la convention collective dans sa version du 19 avril 2022 a prévu la référence à l'indemnité légale de licenciement pour le départ à la retraite à la demande de l'employeur, pour en conclure que cette indemnité devait être calculée, comme l'a fait ce dernier, conformément aux modalités de l'article 22.3, sans référence à l'indemnité légale de licenciement.\n\n 12. En statuant ainsi, la cour d'appel a violé les textes susvisés."
+  },
+  {
+   "alias": "P5",
+   "passage_id": "65e81553a743ca0008c68c23#motivations-2",
+   "case_id": "65e81553a743ca0008c68c23",
+   "title": "Cour de cassation · Chambre sociale · 2024-03-06 · n° 22-19.879",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "L'arrêt en déduit que conformément aux stipulations contractuelles la rémunération de référence en France doit être retenue pour le calcul des diverses sommes dues au salarié au titre de la rupture.\n\n 10. En statuant ainsi, alors que l'indemnité compensatrice de préavis, l'indemnité conventionnelle de licenciement, les salaires dus au titre de l'allocation de congé de reclassement et les dommages-intérêts pour licenciement sans cause réelle et sérieuse devaient être calculés sur la base du salaire d'expatriation au Maroc, nonobstant les stipulations contractuelles et les dispositions de la convention collective applicable moins favorables que la règle légale, la cour d'appel a violé le texte susvisé.\n\n Portée et conséquences de la cassation\n\n 11. La cassation des chefs de dispositif condamnant la société au paiement d'une certaine somme à titre de dommages-intérêts pour licenciement sans cause réelle et sérieuse et déboutant le salarié de ses demandes de rappels d'indemnité compensatrice de préavis, d'indemnité conventionnelle de licenciement et de salaires au titre de l'allocation de congé de reclassement n'emporte pas celle du chef de dispositif de l'arrêt condamnant la société aux dépens justifié par d'autres condamnations prononcées à l'encontre de celle-ci non remises en cause."
+  }
+ ]
+}

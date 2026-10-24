@@ -1,0 +1,637 @@
+{
+ "question": {
+  "id": "C5",
+  "title": "Indemnité de congé payé d'un enseignant",
+  "kind": "multi-step",
+  "question": "Dans l'arrêt du 13 septembre 2023 sur l'indemnité de congé payé d'un enseignant rémunéré pour des corrections de copies, quelle cour d'appel avait été censurée et pourquoi ?",
+  "target_case": "65015d56ee1a2205e6581652",
+  "selection": "Chambre sociale, 13 septembre 2023, n° 22-10.529, cassation d'un arrêt de la cour d'appel d'Aix-en-Provence ; le motif est dans le sommaire, la juridiction dans l'introduction et l'exposé.",
+  "expected": "lecture de l'affaire nécessaire"
+ },
+ "mode": "single",
+ "session": "C5-single-1792852892",
+ "run_id": "78722aad858c",
+ "events": [
+  {
+   "run_id": "78722aad858c",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Aucune preuve collectée : recherche documentaire nécessaire (« 13 septembre 2023 indemnité congé payé enseignant corrections copies cour d'appel censurée »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 1
+   },
+   "latency_ms": 8538.771791034378,
+   "at": "2026-10-24T14:41:41.219+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 2,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"13 septembre 2023 indemnité congé payé enseignant corrections copies cour d'appel censurée\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "13 septembre 2023 indemnité congé payé enseignant corrections copies cour d'appel censurée",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:41:41.223+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 3,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "data": {
+    "query": "13 septembre 2023 indemnité congé payé enseignant corrections copies cour d'appel censurée",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "65015d56ee1a2205e6581652",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+      "solution": "Cassation",
+      "score": 0.032522,
+      "alias": "P1",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Mais sur le premier moyen du pourvoi n° B 22-11.106 Enoncé du moyen 6. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017, alors « que le congé annuel prévu à l'article L. 3141-3 du code du travail ouvre …"
+     },
+     {
+      "rank": 2,
+      "case_id": "6628a069b2cb67000826a369",
+      "title": "Cour de cassation · Chambre sociale · 2024-04-24 · n° 22-13.664",
+      "solution": "Cassation",
+      "score": 0.028665,
+      "alias": "P2",
+      "passage_id": "6628a069b2cb67000826a369#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen des moyens Sur le premier moyen Enoncé du moyen 5. Le salarié fait grief à l'arrêt de le débouter de sa demande en paiement d'un rappel de congés payés, alors : « 1° / que selon l'article 1er de l'avenant n° 292 du 14 janvier 2004 relatif aux emplois d'EPS et d'APS à la convention collective nationale des …"
+     },
+     {
+      "rank": 3,
+      "case_id": "62a1992cfa7283a9d4ab346e",
+      "title": "Cour de cassation · Chambre sociale · 2022-06-08 · n° 20-22.500",
+      "solution": "Cassation",
+      "score": 0.027973,
+      "alias": "P3",
+      "passage_id": "62a1992cfa7283a9d4ab346e#motivations-3",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article L. 1226-14 du code du travail : 12. Selon ce texte, l'indemnité compensatrice d'un montant égal à celui de l'indemnité compensatrice de préavis n'a pas la nature d'une indemnité de préavis et n'ouvre pas droit à congés payés. 13. La cour d'appel a alloué au salarié une somme …"
+     },
+     {
+      "rank": 4,
+      "case_id": "657957e8fa402b831859a662",
+      "title": "Cour de cassation · Chambre sociale · 2023-12-13 · n° 22-15.760",
+      "solution": "Cassation",
+      "score": 0.026585,
+      "alias": "P4",
+      "passage_id": "657957e8fa402b831859a662#motivations-3",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour Vu l'article L. 1226-14 du code du travail : 12. Selon ce texte, l'indemnité compensatrice d'un montant égal à celui de l'indemnité compensatrice de préavis n'a pas la nature d'une indemnité de préavis et n'ouvre pas droit à congés payés. 13. La cour d'appel a alloué au salarié une somme …"
+     },
+     {
+      "rank": 5,
+      "case_id": "6538b1647ffc2c8318edfd49",
+      "title": "Cour de cassation · Chambre sociale · 2023-10-25 · n° 21-18.286",
+      "solution": "Cassation",
+      "score": 0.024807,
+      "alias": "P5",
+      "passage_id": "6538b1647ffc2c8318edfd49#dispositif-0",
+      "zone": "dispositif",
+      "excerpt": "PAR CES MOTIFS, la Cour : CASSE ET ANNULE, mais seulement en ce qu'il dit n'y avoir lieu à indemnité de congés payés afférents à l'indemnité compensatrice de préavis, l'arrêt rendu le 11 mars 2021, entre les parties, par la cour d'appel de Lyon ; DIT n'y avoir lieu à renvoi ; Condamne la société Distribution Casino …"
+     }
+    ]
+   },
+   "latency_ms": 43.9,
+   "at": "2026-10-24T14:41:41.267+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 4,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Décision repérée (Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529) : lecture détaillée de ses passages.",
+   "data": {
+    "action": "read_case",
+    "iteration": 2
+   },
+   "latency_ms": 13569.000874995254,
+   "at": "2026-10-24T14:41:54.838+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 5,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "read_case({\"case_id\": \"65015d56ee1a2205e6581652\"})",
+   "data": {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "65015d56ee1a2205e6581652"
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:41:54.843+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 6,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "data": {
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "passages": [
+     {
+      "alias": "P6",
+      "passage_id": "65015d56ee1a2205e6581652#expose-0",
+      "zone": "expose",
+      "text": "Faits et procédure \n\n 2. Selon l'arrêt attaqué (Aix-en-Provence, 26 novembre 2021), Mme [G] a collaboré au sein de l'Institut des métiers du notariat d'[Localité 3] devenu l'Institut national des formations notariales (l'Institut). \n\n 3. La relation contractuelle a été rompue par lettre du 20 juin 2018.\n\n 4. S'estimant liée avec l'Institut par un contrat de travail, l'intéressée a saisi, le 28 septembre 2018, la juridiction prud'homale de diverses demandes à caractère salarial et indemnitaire."
+     },
+     {
+      "alias": "P7",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-0",
+      "zone": "moyens",
+      "text": "Examen des moyens \n\n Sur les trois moyens du pourvoi n° Z 22-10.529 et les quatrième à huitième moyens du pourvoi n° B 22-11.106"
+     },
+     {
+      "alias": "P8",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-0",
+      "zone": "motivations",
+      "text": "5. En application de l'article 1014, alinéa 2, du code de procédure civile, il n'y a pas lieu de statuer par une décision spécialement motivée sur les cinquième à huitième moyens du pourvoi n° B 22-11.106, qui sont irrecevables, et sur les trois moyens du pourvoi n° Z 22-10.529 et le quatrième moyen du pourvoi n° B 22-11.106 qui ne sont manifestement pas de nature à entraîner la cassation."
+     },
+     {
+      "alias": "P9",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-1",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 7. Selon ces textes, la rémunération à prendre en considération pour le calcul de l'indemnité de congé payé est la rémunération totale du salarié, incluant les primes et indemnités versées en complément du salaire si elles sont versées en contrepartie ou à l'occasion du travail.\n\n 8. Pour limiter à certaines sommes la condamnation de l'employeur au paiement de rappels d'indemnité de congé payé, l'arrêt retient que la correction de copies et « soutenances LP » ne doivent pas être intégrées dans le calcul de l'indemnité de congé payé.\n\n 9. En statuant ainsi, alors que la rémunération de la correction des copies et des « soutenances LP » est versée en contrepartie ou à l'occasion du travail, la cour d'appel a violé les textes susvisés."
+     },
+     {
+      "alias": "P10",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-2",
+      "zone": "motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 143-14, devenu L. 3245-1 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007, L. 3245-1 du code du travail, dans sa rédaction issue de la loi n° 2008-561 du 17 juin 2008, L. 3245-1 du code du travail dans sa rédaction issue de la loi n° 2013-501 du 14 juin 2013, 21-V de cette même loi, L. 223-11, devenu L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 11. Selon le premier de ces textes, l'action en paiement du salaire se prescrivait par cinq ans conformément à l'article 2277 du code civil.\n\n 12. Selon le deuxième, l'action en paiement ou en répétition du salaire se prescrivait par cinq ans conformément à l'article 2244 du code civil.\n\n 13. Aux termes du troisième, l'action en paiement ou en répétition du salaire se prescrit par trois ans à compter du jour où celui qui l'exerce a connu ou aurait dû connaître les faits lui permettant de l'exercer. La demande peut porter sur les sommes dues au titre des trois dernières années à compter de ce jour ou, lorsque le contrat de travail est rompu, sur les sommes dues au titre des trois années précédant la rupture du contrat.\n\n 14. Selon le quatrième, les dispositions de l'article L. 3245-1 du code du travail s'appliquent aux prescriptions en cours à compter du 16 juin 2013, sans que la durée totale de la prescription puisse excéder la durée prévue par la loi antérieure, soit cinq ans.\n\n 15. Selon la jurisprudence de la Cour de cassation le point de départ du délai de prescription de l'indemnité de congé payé, qui est de nature salariale, doit être fixé à l'expiration de la période légale ou conventionnelle au cours de laquelle les congés payés auraient pu être pris (Soc., 14 novembre 2013, n° 12-17.409, Bull. 2013, V, n° 271). \n\n 16."
+     },
+     {
+      "alias": "P11",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-3",
+      "zone": "motivations",
+      "text": "2013, V, n° 271). \n\n 16. Toutefois, le droit au congé annuel payé constitue un principe essentiel du droit social de l'Union (CJUE 6 novembre 2018, Stadt Wuppertal c/ Bauer, C 569/16 et Willmeroth c/ Broßonn, C-570/16, point 80). \n\n 17. La Cour de justice de l'Union européenne juge que la perte du droit au congé annuel payé à la fin d'une période de référence ou d'une période de report ne peut intervenir qu'à la condition que le travailleur concerné ait effectivement eu la possibilité d'exercer ce droit en temps utile. Elle ajoute qu'il ne saurait être admis, sous prétexte de garantir la sécurité juridique, que l'employeur puisse invoquer sa propre défaillance, à savoir avoir omis de mettre le travailleur en mesure d'exercer effectivement son droit au congé annuel payé, pour en tirer bénéfice dans le cadre du recours de ce travailleur au titre de ce même droit, en excipant de la prescription de ce dernier (CJUE 22 septembre 2022, LB c/ TO, C- 120/21, points 45 et 48).\n\n 18. Dès lors, la Cour de justice de l'Union européenne a dit pour droit que l'article 7 de la directive 2003/88/CE du Parlement européen et du Conseil, du 4 novembre 2003, concernant certains aspects de l'aménagement du temps de travail, et l'article 31, paragraphe 2, de la Charte des droits fondamentaux de l'Union européenne, doivent être interprétés en ce sens qu'ils s'opposent à une réglementation nationale en vertu de laquelle le droit au congé annuel payé acquis par un travailleur au titre d'une période de référence est prescrit à l'issue d'un délai de trois ans qui commence à courir à la fin de l'année au cours de laquelle ce droit est né, lorsque l'employeur n'a pas effectivement mis le travailleur en mesure d'exercer ce droit (même arrêt). \n\n 19."
+     },
+     {
+      "alias": "P12",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-4",
+      "zone": "motivations",
+      "text": "19. Par ailleurs, la Cour de cassation juge qu'il appartient à l'employeur de prendre les mesures propres à assurer au salarié la possibilité d'exercer effectivement son droit à congé, et, en cas de contestation, de justifier qu'il a accompli à cette fin les diligences qui lui incombaient légalement (Soc., 13 juin 2012, n° 11-10.929, Bull. V, n° 187 ; Soc. 21 septembre 2017, n° 16-18.898, Bull. V, n° 159).\n\n 20. Il y a donc lieu de juger désormais que, lorsque l'employeur oppose la fin de non-recevoir tirée de la prescription, le point de départ du délai de prescription de l'indemnité de congés payés doit être fixé à l'expiration de la période légale ou conventionnelle au cours de laquelle les congés payés auraient pu être pris dès lors que l'employeur justifie avoir accompli les diligences qui lui incombent légalement afin d'assurer au salarié la possibilité d'exercer effectivement son droit à congé. \n\n 21. Pour rejeter la demande en paiement d'indemnité de congé payé pour les périodes de référence 2005-2006 à 2014-2015, l'arrêt retient que l'action en paiement de l'indemnité de congé payé est soumise à la prescription triennale, applicable aux salaires et que, dès lors, la demande en paiement de la salariée n'est recevable que pour partie.\n\n 22. En statuant ainsi, sans constater que l'employeur justifiait avoir accompli les diligences qui lui incombent légalement afin d'assurer à la salariée la possibilité d'exercer effectivement son droit à congé, la cour d'appel a violé les textes susvisés."
+     },
+     {
+      "alias": "P13",
+      "passage_id": "65015d56ee1a2205e6581652#dispositif-0",
+      "zone": "dispositif",
+      "text": "PAR CES MOTIFS, et sans qu'il y ait lieu de statuer sur l'autre grief, la Cour :\n\n REJETTE le pourvoi n° Z 22-10.529 ;\n\n CASSE ET ANNULE, mais seulement en ce qu'il limite à 6 042,77 euros bruts, 7 088 euros bruts et 6 939,50 euros bruts la condamnation de l'Institut national des formations notariales au paiement de rappels d'indemnité de congé payé pour les années 2015/2016 à 2016/2018 et rejette les autres demandes au titre des indemnités de congé payé, l'arrêt rendu le 26 novembre 2021, entre les parties, par la cour d'appel d'Aix-en-Provence ;\n\n Remet, sur ces points, l'affaire et les parties dans l'état où elles se trouvaient avant cet arrêt et les renvoie devant la cour d'appel d'Aix-en-Provence autrement composée ;\n\n Condamne l'Institut national des formations notariales aux dépens ; \n\n En application de l'article 700 du code de procédure civile, rejette les demandes formées par l'Institut national des formations notariales et le condamne à payer à Mme [G] la somme de 3 000 euros ;\n\n Dit que sur les diligences du procureur général près la Cour de cassation, le présent arrêt sera transmis pour être transcrit en marge ou à la suite de l'arrêt partiellement cassé ;\n\n Ainsi fait et jugé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du treize septembre deux mille vingt-trois."
+     }
+    ]
+   },
+   "latency_ms": 1.0,
+   "at": "2026-10-24T14:41:54.844+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 7,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.",
+   "data": {
+    "action": "answer",
+    "iteration": 3
+   },
+   "latency_ms": 37994.051624962594,
+   "at": "2026-10-24T14:42:32.841+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 8,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves insufficient — 5/6 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).",
+   "data": {
+    "status": "insufficient",
+    "justification": "5/6 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).",
+    "unverified_claims": [
+     "La cour d'appel d'Aix-en-Provence a été censurée par la Cour de cassation dans son arrêt du 13 septembre 2023 [P13]."
+    ],
+    "claims": [
+     {
+      "text": "La cour d'appel d'Aix-en-Provence a été censurée par la Cour de cassation dans son arrêt du 13 septembre 2023 [P13].",
+      "citations": [
+       "P13"
+      ],
+      "verdict": "supports",
+      "rule_failures": [
+       "élément absent des passages cités : 13 septembre 2023"
+      ],
+      "reason": "Le passage P13 confirme que la Cour de cassation a cassé et annulé l'arrêt du 26 novembre 2021 rendu par la cour d'appel d'Aix-en-Provence dans son arrêt du 13 septembre 2023."
+     },
+     {
+      "text": "Elle avait limité à certaines sommes la condamnation de l'Institut national des formations notariales au paiement de rappels d'indemnité de congé payé pour les années 2015/2016 à 2016/2018 [P13].",
+      "citations": [
+       "P13"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P13 indique explicitement que l'arrêt annulé limitait la condamnation de l'Institut national des formations notariales à certaines sommes pour les années 2015/2016 à 2016/2018."
+     },
+     {
+      "text": "La cour d'appel avait retenu que la correction de copies et les soutenances LP ne devaient pas être intégrées dans le calcul de l'indemnité de congé payé [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P9 mentionne que la cour d'appel avait retenu que la correction de copies et les soutenances LP ne devaient pas être intégrées dans le calcul de l'indemnité de congé payé."
+     },
+     {
+      "text": "Or, selon la Cour de cassation, cette rémunération est versée en contrepartie ou à l'occasion du travail et doit donc être incluse dans le calcul [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P9 précise que la rémunération de la correction des copies est versée en contrepartie ou à l'occasion du travail et doit donc être incluse dans le calcul selon les textes cités."
+     },
+     {
+      "text": "La cour d'appel a ainsi violé les articles L. 3141-22 et L. 3141-24 du code du travail [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P9 conclut que la cour d'appel a violé les articles L. 3141-22 et L. 3141-24 du code du travail en excluant ces rémunérations."
+     },
+     {
+      "text": "La Cour de cassation a annulé l'arrêt en ce qu'il limitait la condamnation de l'employeur [P13] et renvoyé l'affaire devant la cour d'appel d'Aix-en-Provence autrement composée [P13].",
+      "citations": [
+       "P13"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P13 confirme que la Cour de cassation a annulé l'arrêt en ce qu'il limitait la condamnation et renvoyé l'affaire devant la cour d'appel d'Aix-en-Provence autrement composée."
+     }
+    ],
+    "next_action": "search_again",
+    "llm_judge_used": true
+   },
+   "latency_ms": 25947.2,
+   "at": "2026-10-24T14:42:58.793+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 9,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.",
+   "data": {
+    "action": "answer",
+    "iteration": 4
+   },
+   "latency_ms": 41231.911915994715,
+   "at": "2026-10-24T14:43:40.031+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 10,
+   "type": "CHECK",
+   "agent": "vérificateur",
+   "summary": "Preuves insufficient — 5/6 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).",
+   "data": {
+    "status": "insufficient",
+    "justification": "5/6 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).",
+    "unverified_claims": [
+     "La cour d'appel d'Aix-en-Provence a été censurée par la Cour de cassation dans son arrêt du 13 septembre 2023 [P13]."
+    ],
+    "claims": [
+     {
+      "text": "La cour d'appel d'Aix-en-Provence a été censurée par la Cour de cassation dans son arrêt du 13 septembre 2023 [P13].",
+      "citations": [
+       "P13"
+      ],
+      "verdict": "supports",
+      "rule_failures": [
+       "élément absent des passages cités : 13 septembre 2023"
+      ],
+      "reason": "Le passage P13 confirme que la Cour de cassation a cassé et annulé l'arrêt du 26 novembre 2021 rendu par la cour d'appel d'Aix-en-Provence dans son arrêt du 13 septembre 2023."
+     },
+     {
+      "text": "Elle avait limité à certaines sommes la condamnation de l'Institut national des formations notariales au paiement de rappels d'indemnité de congé payé pour les années 2015/2016 à 2016/2018 [P13].",
+      "citations": [
+       "P13"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P13 indique explicitement que l'arrêt annulé limitait la condamnation de l'Institut national des formations notariales à certaines sommes pour les années 2015/2016 à 2016/2018."
+     },
+     {
+      "text": "La cour d'appel avait retenu que la correction de copies et les soutenances LP ne devaient pas être intégrées dans le calcul de l'indemnité de congé payé [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P9 mentionne que la cour d'appel avait retenu que la correction de copies et les soutenances LP ne devaient pas être intégrées dans le calcul de l'indemnité de congé payé."
+     },
+     {
+      "text": "Or, selon la Cour de cassation, cette rémunération est versée en contrepartie ou à l'occasion du travail et doit donc être incluse dans le calcul [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P9 précise que la rémunération de la correction des copies est versée en contrepartie ou à l'occasion du travail et doit donc être incluse dans le calcul selon les textes cités."
+     },
+     {
+      "text": "La cour d'appel a ainsi violé les articles L. 3141-22 et L. 3141-24 du code du travail [P9].",
+      "citations": [
+       "P9"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P9 conclut que la cour d'appel a violé les articles L. 3141-22 et L. 3141-24 du code du travail en excluant ces rémunérations."
+     },
+     {
+      "text": "La Cour de cassation a annulé l'arrêt en ce qu'il limitait la condamnation de l'employeur [P13] et renvoyé l'affaire devant la cour d'appel d'Aix-en-Provence autrement composée [P13].",
+      "citations": [
+       "P13"
+      ],
+      "verdict": "supports",
+      "rule_failures": [],
+      "reason": "Le passage P13 confirme que la Cour de cassation a annulé l'arrêt en ce qu'il limitait la condamnation et renvoyé l'affaire devant la cour d'appel d'Aix-en-Provence autrement composée."
+     }
+    ],
+    "next_action": "search_again",
+    "llm_judge_used": true
+   },
+   "latency_ms": 21152.6,
+   "at": "2026-10-24T14:44:01.187+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 11,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Vérification insuffisante : nouvelle recherche reformulée (« 13 septembre 2023 enseignant corrections copies indemnité congé payé Aix-en-Provence cassation partielle »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 5
+   },
+   "latency_ms": 39153.19974999875,
+   "at": "2026-10-24T14:44:40.347+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 12,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"13 septembre 2023 enseignant corrections copies indemnité congé payé Aix-en-Provence cassation partielle\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "13 septembre 2023 enseignant corrections copies indemnité congé payé Aix-en-Provence cassation partielle",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:44:40.351+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 13,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "data": {
+    "query": "13 septembre 2023 enseignant corrections copies indemnité congé payé Aix-en-Provence cassation partielle",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "65015d56ee1a2205e6581652",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+      "solution": "Cassation",
+      "score": 0.032787,
+      "alias": "P1",
+      "passage_id": "65015d56ee1a2205e6581652#moyens-1",
+      "zone": "moyens",
+      "excerpt": "Mais sur le premier moyen du pourvoi n° B 22-11.106 Enoncé du moyen 6. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017, alors « que le congé annuel prévu à l'article L. 3141-3 du code du travail ouvre …"
+     },
+     {
+      "rank": 2,
+      "case_id": "63da118bb78bc005de6ccd1b",
+      "title": "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-10.546",
+      "solution": "Cassation",
+      "score": 0.028665,
+      "alias": "P14",
+      "passage_id": "63da118bb78bc005de6ccd1b#expose-0",
+      "zone": "expose",
+      "excerpt": "Faits et procédure 1. Selon l'arrêt attaqué (Aix-en-Provence, 19 novembre 2020), rendu après cassation (Soc., 26 juin 2019, pourvoi n° 17-31.111), M. [P], instituteur agréé depuis le 1er septembre 1998 exerçant dans un institut médico-éducatif, établissement d'enseignement privé géré par l'association pour la …"
+     },
+     {
+      "rank": 3,
+      "case_id": "665816e1e1d75d00084fd86f",
+      "title": "Cour de cassation · Troisième chambre civile · 2024-05-30 · n° 23-10.184",
+      "solution": "Cassation",
+      "score": 0.027912,
+      "alias": "P15",
+      "passage_id": "665816e1e1d75d00084fd86f#dispositif-0",
+      "zone": "dispositif",
+      "excerpt": "PAR CES MOTIFS, et sans qu'il y ait lieu de statuer sur l'autre grief, la Cour : CASSE ET ANNULE, sauf en ce qu'il rejette les inscriptions de faux déposées par Mme [S] et la société Gabi à l'encontre du congé délivré le 13 septembre 2018, de la sommation de déguerpir signifiée le 9 octobre 2018 et de l'assignation …"
+     },
+     {
+      "rank": 4,
+      "case_id": "6628a069b2cb67000826a369",
+      "title": "Cour de cassation · Chambre sociale · 2024-04-24 · n° 22-13.664",
+      "solution": "Cassation",
+      "score": 0.026999,
+      "alias": "P2",
+      "passage_id": "6628a069b2cb67000826a369#moyens-0",
+      "zone": "moyens",
+      "excerpt": "Examen des moyens Sur le premier moyen Enoncé du moyen 5. Le salarié fait grief à l'arrêt de le débouter de sa demande en paiement d'un rappel de congés payés, alors : « 1° / que selon l'article 1er de l'avenant n° 292 du 14 janvier 2004 relatif aux emplois d'EPS et d'APS à la convention collective nationale des …"
+     },
+     {
+      "rank": 5,
+      "case_id": "6538b1647ffc2c8318edfd49",
+      "title": "Cour de cassation · Chambre sociale · 2023-10-25 · n° 21-18.286",
+      "solution": "Cassation",
+      "score": 0.026154,
+      "alias": "P5",
+      "passage_id": "6538b1647ffc2c8318edfd49#dispositif-0",
+      "zone": "dispositif",
+      "excerpt": "PAR CES MOTIFS, la Cour : CASSE ET ANNULE, mais seulement en ce qu'il dit n'y avoir lieu à indemnité de congés payés afférents à l'indemnité compensatrice de préavis, l'arrêt rendu le 11 mars 2021, entre les parties, par la cour d'appel de Lyon ; DIT n'y avoir lieu à renvoi ; Condamne la société Distribution Casino …"
+     }
+    ]
+   },
+   "latency_ms": 44.4,
+   "at": "2026-10-24T14:44:40.396+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 14,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Validation humaine demandée : prolonger le budget.",
+   "data": {
+    "kind": "extend_budget",
+    "question": "Limite de 5 itérations atteinte sans preuve suffisante. Autoriser 2 itérations de plus ?",
+    "details": {
+     "searches": 2,
+     "verifier_status": "insufficient"
+    },
+    "requested_at": 1792853080.399681
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:44:40.399+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 15,
+   "type": "HUMAN",
+   "agent": "agent",
+   "summary": "Décision humaine : refusée.",
+   "data": {
+    "kind": "extend_budget",
+    "decision": "reject"
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:44:40.417+00:00"
+  },
+  {
+   "run_id": "78722aad858c",
+   "step": 16,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Réponse partielle — 2 passage(s) cité(s).",
+   "data": {
+    "answer": "Elle avait limité à certaines sommes la condamnation de l'Institut national des formations notariales au paiement de rappels d'indemnité de congé payé pour les années 2015/2016 à 2016/2018 [P13]. La cour d'appel avait retenu que la correction de copies et les soutenances LP ne devaient pas être intégrées dans le calcul de l'indemnité de congé payé [P9]. Or, selon la Cour de cassation, cette rémunération est versée en contrepartie ou à l'occasion du travail et doit donc être incluse dans le calcul [P9]. La cour d'appel a ainsi violé les articles L. 3141-22 et L. 3141-24 du code du travail [P9]. La Cour de cassation a annulé l'arrêt en ce qu'il limitait la condamnation de l'employeur [P13] et renvoyé l'affaire devant la cour d'appel d'Aix-en-Provence autrement composée [P13].",
+    "status": "partial",
+    "verifier_status": "insufficient",
+    "sources": [
+     {
+      "alias": "P13",
+      "passage_id": "65015d56ee1a2205e6581652#dispositif-0",
+      "case_id": "65015d56ee1a2205e6581652",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+      "zone": "dispositif",
+      "zone_label": "Dispositif",
+      "text": "PAR CES MOTIFS, et sans qu'il y ait lieu de statuer sur l'autre grief, la Cour :\n\n REJETTE le pourvoi n° Z 22-10.529 ;\n\n CASSE ET ANNULE, mais seulement en ce qu'il limite à 6 042,77 euros bruts, 7 088 euros bruts et 6 939,50 euros bruts la condamnation de l'Institut national des formations notariales au paiement de rappels d'indemnité de congé payé pour les années 2015/2016 à 2016/2018 et rejette les autres demandes au titre des indemnités de congé payé, l'arrêt rendu le 26 novembre 2021, entre les parties, par la cour d'appel d'Aix-en-Provence ;\n\n Remet, sur ces points, l'affaire et les parties dans l'état où elles se trouvaient avant cet arrêt et les renvoie devant la cour d'appel d'Aix-en-Provence autrement composée ;\n\n Condamne l'Institut national des formations notariales aux dépens ; \n\n En application de l'article 700 du code de procédure civile, rejette les demandes formées par l'Institut national des formations notariales et le condamne à payer à Mme [G] la somme de 3 000 euros ;\n\n Dit que sur les diligences du procureur général près la Cour de cassation, le présent arrêt sera transmis pour être transcrit en marge ou à la suite de l'arrêt partiellement cassé ;\n\n Ainsi fait et jugé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du treize septembre deux mille vingt-trois.",
+      "start": 16707,
+      "end": 18056,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/65015d56ee1a2205e6581652"
+     },
+     {
+      "alias": "P9",
+      "passage_id": "65015d56ee1a2205e6581652#motivations-1",
+      "case_id": "65015d56ee1a2205e6581652",
+      "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+      "zone": "motivations",
+      "zone_label": "Motivations",
+      "text": "Réponse de la Cour \n\n Vu les articles L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 7. Selon ces textes, la rémunération à prendre en considération pour le calcul de l'indemnité de congé payé est la rémunération totale du salarié, incluant les primes et indemnités versées en complément du salaire si elles sont versées en contrepartie ou à l'occasion du travail.\n\n 8. Pour limiter à certaines sommes la condamnation de l'employeur au paiement de rappels d'indemnité de congé payé, l'arrêt retient que la correction de copies et « soutenances LP » ne doivent pas être intégrées dans le calcul de l'indemnité de congé payé.\n\n 9. En statuant ainsi, alors que la rémunération de la correction des copies et des « soutenances LP » est versée en contrepartie ou à l'occasion du travail, la cour d'appel a violé les textes susvisés.",
+      "start": 4747,
+      "end": 5720,
+      "origin": "corpus",
+      "url": "https://www.courdecassation.fr/decision/65015d56ee1a2205e6581652"
+     }
+    ],
+    "limits": [
+     "Réponse partielle : seules les affirmations vérifiées sont conservées.",
+     "Non établi : La cour d'appel d'Aix-en-Provence a été censurée par la Cour de cassation dans son arrêt du 13 septembre 2023 [P13].",
+     "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+    ],
+    "stop_reason": "max_iterations",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+     "Cour de cassation · Chambre sociale · 2024-04-24 · n° 22-13.664",
+     "Cour de cassation · Chambre sociale · 2022-06-08 · n° 20-22.500",
+     "Cour de cassation · Chambre sociale · 2023-12-13 · n° 22-15.760",
+     "Cour de cassation · Chambre sociale · 2023-10-25 · n° 21-18.286",
+     "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-10.546",
+     "Cour de cassation · Troisième chambre civile · 2024-05-30 · n° 23-10.184"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T14:44:40.418+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Elle avait limité à certaines sommes la condamnation de l'Institut national des formations notariales au paiement de rappels d'indemnité de congé payé pour les années 2015/2016 à 2016/2018 [P13]. La cour d'appel avait retenu que la correction de copies et les soutenances LP ne devaient pas être intégrées dans le calcul de l'indemnité de congé payé [P9]. Or, selon la Cour de cassation, cette rémunération est versée en contrepartie ou à l'occasion du travail et doit donc être incluse dans le calcul [P9]. La cour d'appel a ainsi violé les articles L. 3141-22 et L. 3141-24 du code du travail [P9]. La Cour de cassation a annulé l'arrêt en ce qu'il limitait la condamnation de l'employeur [P13] et renvoyé l'affaire devant la cour d'appel d'Aix-en-Provence autrement composée [P13].",
+  "status": "partial",
+  "verifier_status": "insufficient",
+  "sources": [
+   {
+    "alias": "P13",
+    "passage_id": "65015d56ee1a2205e6581652#dispositif-0",
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "zone": "dispositif",
+    "zone_label": "Dispositif",
+    "text": "PAR CES MOTIFS, et sans qu'il y ait lieu de statuer sur l'autre grief, la Cour :\n\n REJETTE le pourvoi n° Z 22-10.529 ;\n\n CASSE ET ANNULE, mais seulement en ce qu'il limite à 6 042,77 euros bruts, 7 088 euros bruts et 6 939,50 euros bruts la condamnation de l'Institut national des formations notariales au paiement de rappels d'indemnité de congé payé pour les années 2015/2016 à 2016/2018 et rejette les autres demandes au titre des indemnités de congé payé, l'arrêt rendu le 26 novembre 2021, entre les parties, par la cour d'appel d'Aix-en-Provence ;\n\n Remet, sur ces points, l'affaire et les parties dans l'état où elles se trouvaient avant cet arrêt et les renvoie devant la cour d'appel d'Aix-en-Provence autrement composée ;\n\n Condamne l'Institut national des formations notariales aux dépens ; \n\n En application de l'article 700 du code de procédure civile, rejette les demandes formées par l'Institut national des formations notariales et le condamne à payer à Mme [G] la somme de 3 000 euros ;\n\n Dit que sur les diligences du procureur général près la Cour de cassation, le présent arrêt sera transmis pour être transcrit en marge ou à la suite de l'arrêt partiellement cassé ;\n\n Ainsi fait et jugé par la Cour de cassation, chambre sociale, et prononcé par le président en son audience publique du treize septembre deux mille vingt-trois.",
+    "start": 16707,
+    "end": 18056,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/65015d56ee1a2205e6581652"
+   },
+   {
+    "alias": "P9",
+    "passage_id": "65015d56ee1a2205e6581652#motivations-1",
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour \n\n Vu les articles L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 7. Selon ces textes, la rémunération à prendre en considération pour le calcul de l'indemnité de congé payé est la rémunération totale du salarié, incluant les primes et indemnités versées en complément du salaire si elles sont versées en contrepartie ou à l'occasion du travail.\n\n 8. Pour limiter à certaines sommes la condamnation de l'employeur au paiement de rappels d'indemnité de congé payé, l'arrêt retient que la correction de copies et « soutenances LP » ne doivent pas être intégrées dans le calcul de l'indemnité de congé payé.\n\n 9. En statuant ainsi, alors que la rémunération de la correction des copies et des « soutenances LP » est versée en contrepartie ou à l'occasion du travail, la cour d'appel a violé les textes susvisés.",
+    "start": 4747,
+    "end": 5720,
+    "origin": "corpus",
+    "url": "https://www.courdecassation.fr/decision/65015d56ee1a2205e6581652"
+   }
+  ],
+  "limits": [
+   "Réponse partielle : seules les affirmations vérifiées sont conservées.",
+   "Non établi : La cour d'appel d'Aix-en-Provence a été censurée par la Cour de cassation dans son arrêt du 13 septembre 2023 [P13].",
+   "Réponse produite par un modèle local à partir d'extraits : à confirmer sur la décision intégrale avant tout usage juridique."
+  ],
+  "stop_reason": "max_iterations",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "Cour de cassation · Chambre sociale · 2024-04-24 · n° 22-13.664",
+   "Cour de cassation · Chambre sociale · 2022-06-08 · n° 20-22.500",
+   "Cour de cassation · Chambre sociale · 2023-12-13 · n° 22-15.760",
+   "Cour de cassation · Chambre sociale · 2023-10-25 · n° 21-18.286",
+   "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-10.546",
+   "Cour de cassation · Troisième chambre civile · 2024-05-30 · n° 23-10.184"
+  ]
+ },
+ "metrics": {
+  "llm_calls": 7,
+  "prompt_tokens": 29602,
+  "completion_tokens": 3585,
+  "llm_latency_ms": 187580.9229569859,
+  "tool_calls": {
+   "search_cases": 2,
+   "read_case": 1
+  },
+  "tool_latency_ms": 89.3,
+  "iterations": 5,
+  "searches": 2,
+  "errors": [],
+  "total_latency_ms": 187738.6,
+  "verifier_status": "insufficient",
+  "stop_reason": "max_iterations",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 187.8,
+ "hitl_answer": "reject"
+}

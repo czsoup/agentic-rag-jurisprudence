@@ -1,0 +1,192 @@
+{
+ "question": {
+  "id": "C4",
+  "title": "Rupture annulée pour dol du salarié",
+  "kind": "multi-step",
+  "question": "Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?",
+  "target_case": "66728101f7ab5c00087309e1",
+  "selection": "= S2",
+  "expected": "lecture de l'affaire nécessaire"
+ },
+ "mode": "single",
+ "session": "C4-single-1792836155",
+ "run_id": "ac169ef566ae",
+ "events": [
+  {
+   "run_id": "ac169ef566ae",
+   "step": 1,
+   "type": "DECISION",
+   "agent": "agent",
+   "summary": "Aucune preuve collectée : recherche documentaire nécessaire (« rupture conventionnelle annulée vice consentement employeur reproche salarié »).",
+   "data": {
+    "action": "search_cases",
+    "iteration": 1
+   },
+   "latency_ms": 9711.979499959853,
+   "at": "2026-10-24T10:02:44.891+00:00"
+  },
+  {
+   "run_id": "ac169ef566ae",
+   "step": 2,
+   "type": "TOOL",
+   "agent": "agent",
+   "summary": "search_cases({\"query\": \"rupture conventionnelle annulée vice consentement employeur reproche salarié\", \"k\": 5})",
+   "data": {
+    "name": "search_cases",
+    "arguments": {
+     "query": "rupture conventionnelle annulée vice consentement employeur reproche salarié",
+     "k": 5
+    }
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T10:02:44.895+00:00"
+  },
+  {
+   "run_id": "ac169ef566ae",
+   "step": 3,
+   "type": "OBSERVATION",
+   "agent": "agent",
+   "summary": "5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "data": {
+    "query": "rupture conventionnelle annulée vice consentement employeur reproche salarié",
+    "results": [
+     {
+      "rank": 1,
+      "case_id": "66728101f7ab5c00087309e1",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+      "solution": "Rejet",
+      "score": 0.032266,
+      "alias": "P1",
+      "passage_id": "66728101f7ab5c00087309e1#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 4. Selon l'article 1137 du code civil, dans sa rédaction issue de la loi n° 2018-287 du 20 avril 2018, constitue un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie. 5. La cour d'appel a relevé que l'employeur …"
+     },
+     {
+      "rank": 2,
+      "case_id": "65f1500528057200093c3e89",
+      "title": "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+      "solution": "Rejet",
+      "score": 0.030622,
+      "alias": "P2",
+      "passage_id": "65f1500528057200093c3e89#motivations-1",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 5. L'article L. 1237-12 du code du travail n'instaure pas de délai entre, d'une part l'entretien au cours duquel les parties au contrat de travail conviennent de la rupture du contrat, d'autre part la signature de la convention de rupture prévue à l'article L. 1237-11 du code du travail. 6. La cour …"
+     },
+     {
+      "rank": 3,
+      "case_id": "66728100f7ab5c00087309df",
+      "title": "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143",
+      "solution": "Cassation",
+      "score": 0.028694,
+      "alias": "P3",
+      "passage_id": "66728100f7ab5c00087309df#motivations-0",
+      "zone": "motivations",
+      "excerpt": "Réponse de la Cour 7. Selon l'article L. 1237-12 du code du travail, les parties au contrat conviennent du principe d'une rupture conventionnelle lors d'un ou plusieurs entretiens. 8. Aux termes de l'article L. 1237-13 du même code, la convention de rupture définit les conditions de celle-ci, notamment le montant de …"
+     },
+     {
+      "rank": 4,
+      "case_id": "637dcb4414982305d4c204ca",
+      "title": "Cour de cassation · Chambre sociale · 2022-11-23 · n° 21-16.162",
+      "solution": "Rejet",
+      "score": 0.027273,
+      "alias": "P4",
+      "passage_id": "637dcb4414982305d4c204ca#motivations-2",
+      "zone": "motivations",
+      "excerpt": "11. Le moyen, qui soutient le contraire, n'est donc pas fondé en ses trois premières branches. 12. La cour d'appel ayant ensuite relevé que l'employeur avait informé la salariée légitimement et de manière licite, des conséquences légales d'un éventuel refus de la proposition de modification de son contrat de travail …"
+     },
+     {
+      "rank": 5,
+      "case_id": "65a788f0c53a550008791530",
+      "title": "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-22.564",
+      "solution": "Rejet",
+      "score": 0.02712,
+      "alias": "P5",
+      "passage_id": "65a788f0c53a550008791530#moyens-3",
+      "zone": "moyens",
+      "excerpt": "qu'en retenant que les démissions des salariés qui ''sont liées au contexte des négociations retardées du PSE et ( ) résultent des manquements de l'employeur quant aux négociations du PSE et aux négociations tardives de l'accord de suspension des contrats de travail'' ''apparaissent contraintes en raison de …"
+     }
+    ]
+   },
+   "latency_ms": 37.1,
+   "at": "2026-10-24T10:02:44.933+00:00"
+  },
+  {
+   "run_id": "ac169ef566ae",
+   "step": 4,
+   "type": "ERROR",
+   "agent": "agent",
+   "summary": "Appel au modèle impossible : Ollama n'a pas répondu à temps (/api/chat)",
+   "data": {
+    "error": "Ollama n'a pas répondu à temps (/api/chat)"
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T10:07:54.774+00:00"
+  },
+  {
+   "run_id": "ac169ef566ae",
+   "step": 5,
+   "type": "FINAL",
+   "agent": "agent",
+   "summary": "Abstention — une erreur non récupérable a interrompu la recherche.",
+   "data": {
+    "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : une erreur non récupérable a interrompu la recherche.",
+    "status": "error",
+    "verifier_status": null,
+    "sources": [],
+    "limits": [],
+    "stop_reason": "error",
+    "cases_consulted": [
+     "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+     "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+     "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143",
+     "Cour de cassation · Chambre sociale · 2022-11-23 · n° 21-16.162",
+     "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-22.564"
+    ],
+    "errors": [
+     "LLM : Ollama n'a pas répondu à temps (/api/chat)"
+    ]
+   },
+   "latency_ms": null,
+   "at": "2026-10-24T10:07:54.906+00:00"
+  }
+ ],
+ "final": {
+  "answer": "Je ne peux pas répondre de manière fiable à partir du corpus : une erreur non récupérable a interrompu la recherche.",
+  "status": "error",
+  "verifier_status": null,
+  "sources": [],
+  "limits": [],
+  "stop_reason": "error",
+  "cases_consulted": [
+   "Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817",
+   "Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551",
+   "Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143",
+   "Cour de cassation · Chambre sociale · 2022-11-23 · n° 21-16.162",
+   "Cour de cassation · Chambre sociale · 2024-01-17 · n° 22-22.564"
+  ],
+  "errors": [
+   "LLM : Ollama n'a pas répondu à temps (/api/chat)"
+  ]
+ },
+ "metrics": {
+  "llm_calls": 1,
+  "prompt_tokens": 916,
+  "completion_tokens": 154,
+  "llm_latency_ms": 9711.979499959853,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 37.1,
+  "iterations": 1,
+  "searches": 1,
+  "errors": [
+   "LLM : Ollama n'a pas répondu à temps (/api/chat)"
+  ],
+  "total_latency_ms": 319728.2,
+  "verifier_status": null,
+  "stop_reason": "error",
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 29.5,
+ "hitl_answer": null
+}

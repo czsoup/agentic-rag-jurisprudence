@@ -1,0 +1,26 @@
+| question | type | mode | statut | vérification | arrêt | passages cités | appels LLM | appels outils | recherches | itérations | tokens | latence (s) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| C1 | simple | static | answered | insufficient | — | 3 | 2 | 1 | 1 | 0 | 2265 | 27.5 |
+| C1 | simple | single | partial | insufficient | max_iterations | 1 | 7 | 3 | 2 | 5 | 20075 | 102.7 |
+| C1 | simple | multi | answered | sufficient | answered | 1 | 6 | 1 | 1 | 2 | 9327 | 64.7 |
+| C2 | simple | static | answered | sufficient | — | 3 | 2 | 1 | 1 | 0 | 2563 | 42.0 |
+| C2 | simple | single | answered | sufficient | answered | 2 | 3 | 1 | 1 | 2 | 7326 | 57.9 |
+| C2 | simple | multi | partial | insufficient | max_iterations | 2 | 16 | 5 | 2 | 5 | 41169 | 286.5 |
+| C3 | simple | static | answered | sufficient | — | 1 | 2 | 1 | 1 | 0 | 2242 | 34.0 |
+| C3 | simple | single | partial | insufficient | max_iterations | 1 | 7 | 3 | 2 | 5 | 23943 | 122.4 |
+| C3 | simple | multi | partial | insufficient | max_iterations | 1 | 16 | 6 | 4 | 5 | 36734 | 267.9 |
+| C4 | multi-step | static | answered | insufficient | — | 4 | 2 | 1 | 1 | 0 | 1726 | 32.5 |
+| C4 | multi-step | single | answered | sufficient | answered | 3 | 6 | 2 | 1 | 4 | 19033 | 105.3 |
+| C4 | multi-step | multi | answered | sufficient | answered | 3 | 7 | 2 | 1 | 2 | 18054 | 82.8 |
+| C5 | multi-step | static | answered | insufficient | — | 2 | 2 | 1 | 1 | 0 | 2340 | 34.1 |
+| C5 | multi-step | single | partial | insufficient | max_iterations | 2 | 7 | 3 | 2 | 5 | 33187 | 187.7 |
+| C5 | multi-step | multi | partial | insufficient | max_iterations | 2 | 17 | 6 | 2 | 5 | 49412 | 253.4 |
+| C6 | insufficient-reformulate | static | answered | insufficient | — | 0 | 1 | 1 | 1 | 0 | 2883 | 11.4 |
+| C6 | insufficient-reformulate | single | abstained | contradictory | human_rejected | 0 | 3 | 1 | 1 | 2 | 6470 | 64.1 |
+| C6 | insufficient-reformulate | multi | partial | insufficient | max_iterations | 2 | 18 | 10 | 8 | 5 | 44928 | 262.0 |
+| C7 | insufficient-absent | static | answered | insufficient | — | 5 | 2 | 1 | 1 | 0 | 2592 | 25.8 |
+| C7 | insufficient-absent | single | abstained | None | max_iterations | 0 | 5 | 5 | 5 | 5 | 29774 | 69.0 |
+| C7 | insufficient-absent | multi | abstained | insufficient | max_iterations | 0 | 17 | 7 | 6 | 5 | 48642 | 208.1 |
+| C8 | simple | static | answered | sufficient | — | 3 | 2 | 1 | 1 | 0 | 2468 | 30.9 |
+| C8 | simple | single | answered | sufficient | answered | 2 | 6 | 2 | 1 | 4 | 22696 | 120.5 |
+| C8 | simple | multi | answered | sufficient | answered | 1 | 7 | 3 | 1 | 2 | 21202 | 105.6 |

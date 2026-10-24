@@ -1,0 +1,104 @@
+{
+ "question": {
+  "id": "C5",
+  "title": "Indemnité de congé payé d'un enseignant",
+  "kind": "multi-step",
+  "question": "Dans l'arrêt du 13 septembre 2023 sur l'indemnité de congé payé d'un enseignant rémunéré pour des corrections de copies, quelle cour d'appel avait été censurée et pourquoi ?",
+  "target_case": "65015d56ee1a2205e6581652",
+  "selection": "Chambre sociale, 13 septembre 2023, n° 22-10.529, cassation d'un arrêt de la cour d'appel d'Aix-en-Provence ; le motif est dans le sommaire, la juridiction dans l'introduction et l'exposé.",
+  "expected": "lecture de l'affaire nécessaire"
+ },
+ "mode": "static",
+ "final": {
+  "answer": "La Cour de cassation a censuré la cour d'appel qui avait limité la condamnation de l'employeur en excluant les corrections de copies et soutenances du calcul de l'indemnité de congé payé [P1]. Cette décision est fondée sur le fait que ces rémunérations sont versées en contrepartie ou à l'occasion du travail, contrairement à ce que retenait la cour d'appel [P1]. La salariée soutenait dans ses moyens que ces tâches occasionnelles constituaient un travail effectif justifiant leur intégration dans le calcul de l'indemnité [P2]. En statuant ainsi, la Cour a violé les articles L. 3141-22 et L. 3141-24 du code du travail qui imposent de prendre en compte la rémunération totale incluant ces primes [P1]. La cour d'appel avait donc erronément estimé que ces éléments ne devaient pas être intégrés alors qu'ils correspondaient à un salaire brut supplémentaire mentionné dans les bulletins de salaire [P2].",
+  "verifier_status": "insufficient",
+  "sources": [
+   {
+    "alias": "P1",
+    "passage_id": "65015d56ee1a2205e6581652#motivations-1",
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "Réponse de la Cour \n\n Vu les articles L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 7. Selon ces textes, la rémunération à prendre en considération pour le calcul de l'indemnité de congé payé est la rémunération totale du salarié, incluant les primes et indemnités versées en complément du salaire si elles sont versées en contrepartie ou à l'occasion du travail.\n\n 8. Pour limiter à certaines sommes la condamnation de l'employeur au paiement de rappels d'indemnité de congé payé, l'arrêt retient que la correction de copies et « soutenances LP » ne doivent pas être intégrées dans le calcul de l'indemnité de congé payé.\n\n 9. En statuant ainsi, alors que la rémunération de la correction des copies et des « soutenances LP » est versée en contrepartie ou à l'occasion du travail, la cour d'appel a violé les textes susvisés."
+   },
+   {
+    "alias": "P2",
+    "passage_id": "65015d56ee1a2205e6581652#moyens-1",
+    "case_id": "65015d56ee1a2205e6581652",
+    "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+    "zone": "moyens",
+    "zone_label": "Moyens",
+    "text": "Mais sur le premier moyen du pourvoi n° B 22-11.106 \n\n Enoncé du moyen \n\n 6. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017, alors « que le congé annuel prévu à l'article L. 3141-3 du code du travail ouvre droit à une indemnité égale au dixième de la rémunération brute totale perçue par le salarié au cours de la période de référence et, pour la détermination de la rémunération brute totale, il est tenu compte de l'indemnité de congé de l'année précédente ; que les corrections des copies d'examen, des mémoires et des rapports de stage des étudiants de la licence professionnelle et leur soutenance constituent des tâches occasionnelles nécessitant, pour l'enseignant désigné, un travail effectif accompli sur un temps de travail supplémentaire qui a pour contrepartie un salaire brut supplémentaire, mentionnée dans les bulletins de salaire des mois concernés, en sus du salaire brut de base auquel il s'additionne pour le calcul du salaire brut mensuel ; qu'en retenant que les corrections de copies et \"soutenances LP\" ne devaient pas être intégrées dans le calcul de l'indemnité de congés payés, cependant que ces tâches occasionnelles rétribuaient un travail effectif accompli sur un temps de travail supplémentaire justifiant qu'elles soient intégrées dans le calcul de l'indemnité de congés payés, la cour d'appel a violé l'article L. 3141-24 du code du travail. »"
+   }
+  ],
+  "unverified": [
+   "La salariée soutenait dans ses moyens que ces tâches occasionnelles constituaient un travail effectif justifiant leur intégration dans le calcul de l'indemnité [P2]."
+  ]
+ },
+ "metrics": {
+  "llm_calls": 2,
+  "prompt_tokens": 2106,
+  "completion_tokens": 234,
+  "llm_latency_ms": 34006.9655830157,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 0.0,
+  "iterations": 0,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 34061.5,
+  "verifier_status": "insufficient",
+  "stop_reason": null,
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 34.1,
+ "passages": [
+  {
+   "alias": "P1",
+   "passage_id": "65015d56ee1a2205e6581652#motivations-1",
+   "case_id": "65015d56ee1a2205e6581652",
+   "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour \n\n Vu les articles L. 3141-22 du code du travail, dans sa rédaction issue de l'ordonnance n° 2007-329 du 12 mars 2007 et L. 3141-24 du même code, dans sa rédaction issue de la loi n° 2016-1088 du 8 août 2016 :\n\n 7. Selon ces textes, la rémunération à prendre en considération pour le calcul de l'indemnité de congé payé est la rémunération totale du salarié, incluant les primes et indemnités versées en complément du salaire si elles sont versées en contrepartie ou à l'occasion du travail.\n\n 8. Pour limiter à certaines sommes la condamnation de l'employeur au paiement de rappels d'indemnité de congé payé, l'arrêt retient que la correction de copies et « soutenances LP » ne doivent pas être intégrées dans le calcul de l'indemnité de congé payé.\n\n 9. En statuant ainsi, alors que la rémunération de la correction des copies et des « soutenances LP » est versée en contrepartie ou à l'occasion du travail, la cour d'appel a violé les textes susvisés."
+  },
+  {
+   "alias": "P2",
+   "passage_id": "65015d56ee1a2205e6581652#moyens-1",
+   "case_id": "65015d56ee1a2205e6581652",
+   "title": "Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Mais sur le premier moyen du pourvoi n° B 22-11.106 \n\n Enoncé du moyen \n\n 6. La salariée fait grief à l'arrêt de limiter à une certaine somme la condamnation de l'employeur au titre des congés payés pour les périodes 2015-2016 et 2016-2017, alors « que le congé annuel prévu à l'article L. 3141-3 du code du travail ouvre droit à une indemnité égale au dixième de la rémunération brute totale perçue par le salarié au cours de la période de référence et, pour la détermination de la rémunération brute totale, il est tenu compte de l'indemnité de congé de l'année précédente ; que les corrections des copies d'examen, des mémoires et des rapports de stage des étudiants de la licence professionnelle et leur soutenance constituent des tâches occasionnelles nécessitant, pour l'enseignant désigné, un travail effectif accompli sur un temps de travail supplémentaire qui a pour contrepartie un salaire brut supplémentaire, mentionnée dans les bulletins de salaire des mois concernés, en sus du salaire brut de base auquel il s'additionne pour le calcul du salaire brut mensuel ; qu'en retenant que les corrections de copies et \"soutenances LP\" ne devaient pas être intégrées dans le calcul de l'indemnité de congés payés, cependant que ces tâches occasionnelles rétribuaient un travail effectif accompli sur un temps de travail supplémentaire justifiant qu'elles soient intégrées dans le calcul de l'indemnité de congés payés, la cour d'appel a violé l'article L. 3141-24 du code du travail. »"
+  },
+  {
+   "alias": "P3",
+   "passage_id": "66d804d88c253fd3db1c2cf7#motivations-1",
+   "case_id": "66d804d88c253fd3db1c2cf7",
+   "title": "Cour de cassation · Chambre sociale · 2024-09-04 · n° 22-21.233",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour \n\n 5. Selon l'article L. 3141-24, II, du code du travail, l'indemnité de congé payé prévue au I dudit article ne peut être inférieure au montant de la rémunération qui aurait été perçue pendant la période de congé si le salarié avait continué à travailler. Cette rémunération, sous réserve du respect des dispositions légales, est calculée en fonction du salaire dû pour la période précédant le congé et de la durée du travail effectif de l'établissement.\n\n 6. Procédant au calcul de la rémunération due au salarié lors de la prise du congé payé, la cour d'appel a retenu que seul le salaire brut de base devait être pris en compte sur la base de vingt-six jours ouvrables, sans tenir compte des heures supplémentaires, jours fériés et dimanches travaillés du mois précédent, pour retirer de la rémunération les salaires au titre des absences prises, avant d'ajouter l'indemnité de congé payé due pour cette même période. \n\n 7. En l'état de ces énonciations, la cour d'appel, qui a calculé l'indemnité de congé payé compte tenu des journées qui auraient été effectivement travaillées au cours de cette période, a fait l'exacte application de l'article L. 3141-24 du code du travail.\n\n 8. Le moyen n'est donc pas fondé."
+  },
+  {
+   "alias": "P4",
+   "passage_id": "62a1992cfa7283a9d4ab346e#motivations-3",
+   "case_id": "62a1992cfa7283a9d4ab346e",
+   "title": "Cour de cassation · Chambre sociale · 2022-06-08 · n° 20-22.500",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour \n\n Vu l'article L. 1226-14 du code du travail :\n\n 12. Selon ce texte, l'indemnité compensatrice d'un montant égal à celui de l'indemnité compensatrice de préavis n'a pas la nature d'une indemnité de préavis et n'ouvre pas droit à congés payés.\n\n 13. La cour d'appel a alloué au salarié une somme correspondant à l'indemnité de préavis et une somme au titre des congés payés afférents.\n\n 14. En statuant ainsi, elle a violé le texte susvisé.\n\n Portée et conséquences de la cassation\n\n 15. La cassation prononcée sur les deuxième et troisième moyens n'emporte pas cassation des chefs de dispositif de l'arrêt condamnant l'employeur aux dépens ainsi qu'au paiement d'une somme au titre de l'article 700 du code de procédure civile, justifiés par d'autres condamnations prononcées à l'encontre de celui-ci et non remises en cause."
+  },
+  {
+   "alias": "P5",
+   "passage_id": "6566e2e918106f8318ba9e8e#moyens-3",
+   "case_id": "6566e2e918106f8318ba9e8e",
+   "title": "Cour de cassation · Chambre sociale · 2023-11-29 · n° 22-10.494",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "qu'en jugeant qu'\"alors que les congés payés ne sont pas de cinq semaines mais de douze semaines, la clause ci-avant reproduite prévoyant simplement l'inclusion de l'indemnité compensatrice de congés payés au taux horaire, sans détermination du taux horaire hors congés payés, ne répond pas aux exigences requises et sera déclarée inopposable à Mme [O]\", bien que la clause litigieuse n'ait jamais empêché Madame [U] de prendre effectivement les congés qui lui étaient dus pendant les trois années concernées, bien que ces congés payés effectivement pris par Madame [U] aient été supérieurs aux congés payés imposés par la loi, bien qu'il n'ait jamais été contesté que la somme de 1 800 euros mensuelle aboutissait à un montant de rémunération supérieur aux minimas exigés par la loi et par la convention collective du personnel des cabinets médicaux et bien que la fixité de la rémunération de 1 800 euros mensuels, y compris pendant les périodes de congés de Madame [U], n'ait jamais laissé le moindre doute possible à cette dernière sur la part correspondant à ses congés payés, de sorte que cette clause était transparente et compréhensible, la cour d'appel a violé les articles L. 3141-22 et L. 3141-26 du code du travail, dans leur rédaction antérieure à la loi n° 2016-1088 du 8 août 2016, interprétés à la lumière de l'article 7 de la directive 2003/88/CE du Parlement européen et du Conseil du 4 novembre 2003. »"
+  }
+ ]
+}

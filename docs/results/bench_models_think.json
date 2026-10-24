@@ -1,0 +1,194 @@
+[
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "1. chercher d'abord",
+  "run": 0,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 8.0,
+  "completion_tokens": 149,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "1. chercher d'abord",
+  "run": 1,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave Cour de cassation')",
+  "latency_s": 6.6,
+  "completion_tokens": 150,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave Cour de cassation",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "1. chercher d'abord",
+  "run": 2,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 6.5,
+  "completion_tokens": 149,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 0,
+  "ok": true,
+  "detail": "read_case(664451ddb94eb60008b3d1fd)",
+  "latency_s": 4.6,
+  "completion_tokens": 64,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "664451ddb94eb60008b3d1fd",
+     "focus": "dates absence et licenciement"
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 1,
+  "ok": true,
+  "detail": "read_case(664451ddb94eb60008b3d1fd)",
+  "latency_s": 2.8,
+  "completion_tokens": 63,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "664451ddb94eb60008b3d1fd",
+     "focus": "dates absence licenciement"
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 2,
+  "ok": true,
+  "detail": "read_case(664451ddb94eb60008b3d1fd)",
+  "latency_s": 2.8,
+  "completion_tokens": 64,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "read_case",
+    "arguments": {
+     "case_id": "664451ddb94eb60008b3d1fd",
+     "focus": "dates absence et licenciement"
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 0,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 4.6,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 1,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.6,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 2,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.5,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 0,
+  "ok": true,
+  "detail": "abstention",
+  "latency_s": 4.0,
+  "completion_tokens": 57,
+  "content": "Le corpus local ne contient aucune décision de la Cour de cassation traitant spécifiquement de la brevetabilité des logiciels d'intelligence artificielle ni même des logiciels en général. La jurisprudence sur ce point n'est donc pas disponible dans les décisions consultables.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 1,
+  "ok": true,
+  "detail": "abstention",
+  "latency_s": 2.3,
+  "completion_tokens": 53,
+  "content": "Le corpus ne contient aucune décision de la Cour de cassation traitant de la brevetabilité des logiciels d'intelligence artificielle ni même des logiciels en général. La jurisprudence sur ce point n'est donc pas disponible dans les décisions consultables.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": true,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 2,
+  "ok": true,
+  "detail": "abstention",
+  "latency_s": 2.6,
+  "completion_tokens": 60,
+  "content": "Le corpus local ne contient aucune décision de la Cour de cassation traitant spécifiquement de la brevetabilité des logiciels d'intelligence artificielle ni même de la brevetabilité générale des logiciels. La jurisprudence sur ce point n'est donc pas disponible dans les décisions consultables.",
+  "tool_calls": []
+ }
+]

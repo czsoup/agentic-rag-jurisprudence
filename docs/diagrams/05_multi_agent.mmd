@@ -1,0 +1,19 @@
+%% Variante multi-agents — application/agent/multi.py (MultiAgentGraph.builder)
+flowchart TD
+    START((START)) --> start["start"]
+    start --> sup{"superviseur<br/>LLM, sortie JSON<br/>+ garde-fous déterministes"}
+    sup -- "researcher (brief)" --> res["chercheur<br/>≤ 3 tours d'outils, contexte isolé<br/>renvoie un compte rendu"]
+    res --> sup
+    sup -- "write" --> wr["synthèse (superviseur)<br/>sur le dossier partagé"]
+    wr --> ver["vérificateur<br/>EvidenceVerifier"]
+    ver -- "sufficient" --> fin["finalize"]
+    ver -- "insufficient : rapport" --> sup
+    ver -- "contradictory" --> hum["human_gate"]
+    sup -- "stop" --> abs["abstain"]
+    sup -- "budget atteint" --> bud["budget_gate"] --> hum
+    bud --> fin & abs
+    hum -- "approuvé" --> sup & fin
+    hum -- "refusé / expiré" --> abs
+    fin --> END((END))
+    abs --> END
+    REG[("registre de preuves + historique des requêtes<br/>partagés : pas de recherche refaite")] -.- res & wr & ver

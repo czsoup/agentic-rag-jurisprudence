@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+*.egg-info
+.venv
+
+# Configuration locale (jamais de secret versionné)
+.env
+
+# Caches d'outils
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Données reconstructibles : corpus téléchargé, index, base des runs, exports
+# (voir README : `make index` les reconstruit à l'identique)
+data/
+
+
+# Système
+.DS_Store

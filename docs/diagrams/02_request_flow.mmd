@@ -1,0 +1,38 @@
+%% Flux d'une requête agentique (POST /api/v1/runs), tel qu'implémenté
+sequenceDiagram
+    autonumber
+    actor U as Utilisatrice
+    participant UI as UI Streamlit
+    participant API as API FastAPI
+    participant R as AgentRunner
+    participant G as Graphe LangGraph
+    participant T as ToolExecutor
+    participant IX as Index hybride
+    participant LLM as Ollama qwen3.5:9b
+
+    U->>UI: question (+ affaire sélectionnée)
+    UI->>API: POST /api/v1/runs {session_id, question, mode}
+    API->>R: run(session_id, …)
+    R->>G: astream(entrée, thread_id=session, stream_mode="custom")
+    G->>LLM: decide : prompt système + outils (schémas JSON)
+    LLM-->>G: appel proposé search_cases(query, k)
+    G-->>UI: DECISION · TOOL (ligne NDJSON, en direct)
+    G->>T: exécuter (liste blanche + validation pydantic)
+    T->>IX: BM25 + dense → RRF
+    IX-->>T: passages classés
+    T-->>G: observation (alias citables P1…Pn)
+    G-->>UI: OBSERVATION
+    G->>LLM: decide : réponse candidate citée [Pn]
+    G->>G: verify : règles R1-R3
+    G->>LLM: juge (JSON contraint) : supports / contradicts / not_enough_info + pertinence
+    G-->>UI: CHECK (statut, affirmations non établies)
+    alt preuves suffisantes
+        G-->>UI: FINAL : réponse + passages + provenance
+    else insuffisantes et budget restant
+        G->>LLM: decide (avec le retour du vérificateur)
+    else budget épuisé
+        G-->>UI: HUMAN : prolonger ? (interrupt, run suspendu)
+        U->>UI: Confirmer / Refuser
+        UI->>API: POST /sessions/{id}/resume {decision}
+    end
+    R->>API: métriques du run (SQLite)

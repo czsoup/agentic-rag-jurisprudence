@@ -1,0 +1,132 @@
+{
+ "question": {
+  "id": "C7",
+  "title": "Hors corpus (IA)",
+  "kind": "insufficient-absent",
+  "question": "Un employeur peut-il licencier un salarié sur la seule base d'une évaluation produite par un algorithme d'intelligence artificielle ?",
+  "target_case": null,
+  "selection": "= S3b",
+  "expected": "abstention"
+ },
+ "mode": "static",
+ "final": {
+  "answer": "Les passages fournis ne permettent pas de répondre. Aucun texte ne mentionne l'utilisation d'algorithmes d'intelligence artificielle ou d'évaluations automatisées comme motif de licenciement. Les décisions analysées portent uniquement sur des motifs tels que l'insuffisance professionnelle, la maladie, le harcèlement moral ou les difficultés économiques de l'entreprise [P1][P2][P3][P4][P5].",
+  "verifier_status": "insufficient",
+  "sources": [
+   {
+    "alias": "P1",
+    "passage_id": "63e34cd4500dc805de37cda3#motivations-1",
+    "case_id": "63e34cd4500dc805de37cda3",
+    "title": "Cour de cassation · Chambre sociale · 2023-02-08 · n° 21-16.805",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "8. Pour dire le licenciement dépourvu de cause réelle et sérieuse et condamner l'employeur à payer au salarié une somme à titre d'indemnité pour licenciement abusif, l'arrêt retient que ces dispositions, qui n'ont pas pour seul objet de déterminer l'indemnisation due au salarié malade, offrent aussi une véritable garantie d'emploi en réservant la possibilité de licencier aux seuls cas justifiés par un motif économique (si licenciement collectif), ou par la suppression du poste occupé par le salarié malade, ou encore par la nécessité de procéder au remplacement du salarié absent à l'expiration de la durée d'indemnisation à plein tarif, qu'il est constant que le salarié a été licencié non pour l'un des trois motifs visés par la convention collective, ni même pour un motif disciplinaire ou pour inaptitude physique, mais pour insuffisance professionnelle, et que le licenciement prononcé en violation d'une garantie conventionnelle d'emploi est abusif.\n\n 9. En statuant ainsi, la cour d'appel a violé le texte susvisé."
+   },
+   {
+    "alias": "P2",
+    "passage_id": "63da1185b78bc005de6ccd13#moyens-2",
+    "case_id": "63da1185b78bc005de6ccd13",
+    "title": "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+    "zone": "moyens",
+    "zone_label": "Moyens",
+    "text": "1455-6 du code du travail, ensemble les articles L. 1132-3-3 et L. 1132-4 du code du travail ;\n\n 2°/ qu'en retenant, pour débouter la salariée de sa demande tendant à ce que son licenciement soit annulé comme résultant de son statut de lanceur d'alerte, que l'appréciation de la cause réelle et sérieuse de son licenciement relevait de la compétence exclusive des juges du fond, la cour d'appel, qui l'a privée d'une protection effective contre les discriminations, a violé les articles 6§1, 10 et 14 de la Convention européenne de sauvegarde des droits de l'homme et des libertés fondamentales, ensemble l'article R. 1455-6 du code du travail ;\n\n 3°/ qu'en application de l'article L. 1132-3-3 du code du travail, en cas de litige relatif à un salarié qui a lancé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dès lors que la personne présente des éléments de fait qui permettent de présumer qu'elle a signalé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 précitée, il incombe à la partie défenderesse, au vu de ces éléments, de prouver que sa décision est justifiée par des éléments objectifs étrangers à la déclaration de l'intéressé ; qu'en l'espèce, en affirmant que ''si le conseil de prud'hommes ne pouvait s'appuyer exclusivement sur les pièces produites par la salariée pour exclure l'existence d'un lien manifeste entre la qualité de lanceur d'alerte et le licenciement, la cour, sur la base des éléments objectifs produits par l'employeur, aboutit à la même conclusion'', après avoir pourtant affirmé que l'examen de la cause réelle et sérieuse du licenciement relevait des juges du fond et s'être bornée à examiner les mesures de représailles antérieures au licenciement, la cour d'appel, qui n'a pas tiré les conséquences légales de ses propres constatations, a derechef violé les articles L. 1132-3-3 du code du travail et R."
+   },
+   {
+    "alias": "P3",
+    "passage_id": "643f8694ad85da04f53a3953#motivations-2",
+    "case_id": "643f8694ad85da04f53a3953",
+    "title": "Cour de cassation · Chambre sociale · 2023-04-19 · n° 21-21.053",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "11. Par ailleurs, la Cour de cassation juge qu'il résulte des articles L. 1121-1 du code du travail et 10, § 1, de la Convention de sauvegarde des droits de l'homme et des libertés fondamentales que sauf abus, le salarié jouit, dans l'entreprise et en dehors de celle-ci, de sa liberté d'expression, à laquelle seules des restrictions justifiées par la nature de la tâche à accomplir et proportionnées au but recherché peuvent être apportées et que le licenciement prononcé par l'employeur pour un motif lié à l'exercice non abusif par le salarié de sa liberté d'expression est nul (Soc., 16 février 2022, pourvoi n° 19-17.871, publié).\n\n 12. Dès lors, au regard, d'une part de la faculté pour l'employeur d'invoquer devant le juge, sans qu'il soit tenu d'en avoir fait mention au préalable dans la lettre de licenciement, la mauvaise foi du salarié licencié pour avoir dénoncé des faits de harcèlement moral, d'autre part de la protection conférée au salarié licencié pour un motif lié à l'exercice non abusif de sa liberté d'expression, dont le licenciement est nul pour ce seul motif à l'instar du licenciement du salarié licencié pour avoir relaté, de bonne foi, des agissements de harcèlement, il y a lieu désormais de juger que le salarié qui dénonce des faits de harcèlement moral ne peut être licencié pour ce motif, peu important qu'il n'ait pas qualifié lesdits faits de harcèlement moral lors de leur dénonciation, sauf mauvaise foi, laquelle ne peut résulter que de la connaissance par le salarié de la fausseté des faits qu'il dénonce.\n\n 13."
+   },
+   {
+    "alias": "P4",
+    "passage_id": "63e34cd4500dc805de37cda3#moyens-0",
+    "case_id": "63e34cd4500dc805de37cda3",
+    "title": "Cour de cassation · Chambre sociale · 2023-02-08 · n° 21-16.805",
+    "zone": "moyens",
+    "zone_label": "Moyens",
+    "text": "Examen du moyen\n\n Enoncé du moyen\n\n 4. L'employeur fait grief à l'arrêt de le condamner à payer au salarié une somme à titre d'indemnité pour licenciement abusif et au remboursement aux organismes intéressés de tout ou partie des indemnités de chômage versées au salarié licencié, du jour de son licenciement au jour du jugement prononcé, dans la limite de trois mois d'indemnités de chômage, alors « que l'article 16 de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 n'interdit pas à l'employeur de licencier le salarié, dont le contrat de travail est suspendu pour cause de maladie non professionnelle, pour un motif tiré de son insuffisance professionnelle ; qu'en affirmant en l'espèce que ce texte offrait ''une véritable garantie d'emploi en réservant la possibilité de licencier [un salarié absent pour cause de maladie] aux seuls cas justifiés par un motif économique (si licenciement collectif), ou par la suppression du poste occupé par le salarié malade, ou encore par la nécessité de procéder au remplacement du salarié absent à l'expiration de la durée d'indemnisation à plein tarif'' pour en déduire que le licenciement de M. [H], prononcé pour insuffisance professionnelle alors qu'il était en congé maladie depuis le jour de l'entretien préalable, était sans cause réelle et sérieuse, la cour d'appel a violé l'article 16 de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972. »"
+   },
+   {
+    "alias": "P5",
+    "passage_id": "63903d7f0f8a5205d45d7d6b#moyens-1",
+    "case_id": "63903d7f0f8a5205d45d7d6b",
+    "title": "Cour de cassation · Chambre sociale · 2022-12-07 · n° 21-10.781",
+    "zone": "moyens",
+    "zone_label": "Moyens",
+    "text": "2°/ que constitue un licenciement pour motif économique le licenciement d'un salarié résultant d'une suppression de son emploi consécutive à une réorganisation de l'entreprise nécessaire à la sauvegarde de sa compétitivité ; qu'en l'espèce, la société Eyrolles faisait valoir, dans ses écritures reprises oralement à l'audience, que le tableau de bord de l'office démontrait la chute des chiffres de l'entreprise (baisse des produits et résultats d'exploitation) tandis que les charges d'exploitation avaient augmenté ; que ce tableau de bord de l'office notarial constituait un document officiel établi à destination de la commission de contrôle du notariat ; qu'en énonçant, pour retenir le caractère sans cause réelle et sérieuse du licenciement, que la réalité et l'étendue des difficultés économiques de l'entreprise ne pouvaient se déduire de la seule production d'un tableau de bord établi par l'employeur et non visé par l'expert-comptable sans rechercher, ainsi qu'il le lui était demandé, si le tableau de bord avait un caractère officiel, la cour d'appel a privé sa décision de base légale au regard de l'article L. 1233-3 du code du travail, dans sa rédaction applicable au litige issue de la loi n° 2008-596 du 25 juin 2008 ;\n\n 3°/ que si chaque partie est tenue d'apporter son concours aux mesures d'instruction, sauf au juge à tirer toute conséquence d'une abstention ou d'un refus, ce n'est que lorsque le juge a, à la requête d'une des parties, enjoint l'autre partie à produire un élément de preuve qu'il peut tirer toutes les conséquences d'une abstention ou d'un refus de production ; qu'en l'espèce, pour juger que le licenciement de Mme [X] était sans cause réelle et sérieuse, la cour d'appel a reproché à la société Eyrolles de s'être abstenue de ''produire aux débats ses bilans et ses pièces comptables, conformément à la demande qui lui en a été faite par la salariée'' ;"
+   }
+  ],
+  "unverified": [
+   "Aucun texte ne mentionne l'utilisation d'algorithmes d'intelligence artificielle ou d'évaluations automatisées comme motif de licenciement.",
+   "Les décisions analysées portent uniquement sur des motifs tels que l'insuffisance professionnelle, la maladie, le harcèlement moral ou les difficultés économiques de l'entreprise [P1][P2][P3][P4][P5]."
+  ]
+ },
+ "metrics": {
+  "llm_calls": 2,
+  "prompt_tokens": 2502,
+  "completion_tokens": 90,
+  "llm_latency_ms": 25709.648668009322,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 0.0,
+  "iterations": 0,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 25768.1,
+  "verifier_status": "insufficient",
+  "stop_reason": null,
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 25.8,
+ "passages": [
+  {
+   "alias": "P1",
+   "passage_id": "63e34cd4500dc805de37cda3#motivations-1",
+   "case_id": "63e34cd4500dc805de37cda3",
+   "title": "Cour de cassation · Chambre sociale · 2023-02-08 · n° 21-16.805",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "8. Pour dire le licenciement dépourvu de cause réelle et sérieuse et condamner l'employeur à payer au salarié une somme à titre d'indemnité pour licenciement abusif, l'arrêt retient que ces dispositions, qui n'ont pas pour seul objet de déterminer l'indemnisation due au salarié malade, offrent aussi une véritable garantie d'emploi en réservant la possibilité de licencier aux seuls cas justifiés par un motif économique (si licenciement collectif), ou par la suppression du poste occupé par le salarié malade, ou encore par la nécessité de procéder au remplacement du salarié absent à l'expiration de la durée d'indemnisation à plein tarif, qu'il est constant que le salarié a été licencié non pour l'un des trois motifs visés par la convention collective, ni même pour un motif disciplinaire ou pour inaptitude physique, mais pour insuffisance professionnelle, et que le licenciement prononcé en violation d'une garantie conventionnelle d'emploi est abusif.\n\n 9. En statuant ainsi, la cour d'appel a violé le texte susvisé."
+  },
+  {
+   "alias": "P2",
+   "passage_id": "63da1185b78bc005de6ccd13#moyens-2",
+   "case_id": "63da1185b78bc005de6ccd13",
+   "title": "Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "1455-6 du code du travail, ensemble les articles L. 1132-3-3 et L. 1132-4 du code du travail ;\n\n 2°/ qu'en retenant, pour débouter la salariée de sa demande tendant à ce que son licenciement soit annulé comme résultant de son statut de lanceur d'alerte, que l'appréciation de la cause réelle et sérieuse de son licenciement relevait de la compétence exclusive des juges du fond, la cour d'appel, qui l'a privée d'une protection effective contre les discriminations, a violé les articles 6§1, 10 et 14 de la Convention européenne de sauvegarde des droits de l'homme et des libertés fondamentales, ensemble l'article R. 1455-6 du code du travail ;\n\n 3°/ qu'en application de l'article L. 1132-3-3 du code du travail, en cas de litige relatif à un salarié qui a lancé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dès lors que la personne présente des éléments de fait qui permettent de présumer qu'elle a signalé une alerte dans le respect des articles 6 et 8 de la loi n° 2016-1691 du 9 décembre 2016 précitée, il incombe à la partie défenderesse, au vu de ces éléments, de prouver que sa décision est justifiée par des éléments objectifs étrangers à la déclaration de l'intéressé ; qu'en l'espèce, en affirmant que ''si le conseil de prud'hommes ne pouvait s'appuyer exclusivement sur les pièces produites par la salariée pour exclure l'existence d'un lien manifeste entre la qualité de lanceur d'alerte et le licenciement, la cour, sur la base des éléments objectifs produits par l'employeur, aboutit à la même conclusion'', après avoir pourtant affirmé que l'examen de la cause réelle et sérieuse du licenciement relevait des juges du fond et s'être bornée à examiner les mesures de représailles antérieures au licenciement, la cour d'appel, qui n'a pas tiré les conséquences légales de ses propres constatations, a derechef violé les articles L. 1132-3-3 du code du travail et R."
+  },
+  {
+   "alias": "P3",
+   "passage_id": "643f8694ad85da04f53a3953#motivations-2",
+   "case_id": "643f8694ad85da04f53a3953",
+   "title": "Cour de cassation · Chambre sociale · 2023-04-19 · n° 21-21.053",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "11. Par ailleurs, la Cour de cassation juge qu'il résulte des articles L. 1121-1 du code du travail et 10, § 1, de la Convention de sauvegarde des droits de l'homme et des libertés fondamentales que sauf abus, le salarié jouit, dans l'entreprise et en dehors de celle-ci, de sa liberté d'expression, à laquelle seules des restrictions justifiées par la nature de la tâche à accomplir et proportionnées au but recherché peuvent être apportées et que le licenciement prononcé par l'employeur pour un motif lié à l'exercice non abusif par le salarié de sa liberté d'expression est nul (Soc., 16 février 2022, pourvoi n° 19-17.871, publié).\n\n 12. Dès lors, au regard, d'une part de la faculté pour l'employeur d'invoquer devant le juge, sans qu'il soit tenu d'en avoir fait mention au préalable dans la lettre de licenciement, la mauvaise foi du salarié licencié pour avoir dénoncé des faits de harcèlement moral, d'autre part de la protection conférée au salarié licencié pour un motif lié à l'exercice non abusif de sa liberté d'expression, dont le licenciement est nul pour ce seul motif à l'instar du licenciement du salarié licencié pour avoir relaté, de bonne foi, des agissements de harcèlement, il y a lieu désormais de juger que le salarié qui dénonce des faits de harcèlement moral ne peut être licencié pour ce motif, peu important qu'il n'ait pas qualifié lesdits faits de harcèlement moral lors de leur dénonciation, sauf mauvaise foi, laquelle ne peut résulter que de la connaissance par le salarié de la fausseté des faits qu'il dénonce.\n\n 13."
+  },
+  {
+   "alias": "P4",
+   "passage_id": "63e34cd4500dc805de37cda3#moyens-0",
+   "case_id": "63e34cd4500dc805de37cda3",
+   "title": "Cour de cassation · Chambre sociale · 2023-02-08 · n° 21-16.805",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Examen du moyen\n\n Enoncé du moyen\n\n 4. L'employeur fait grief à l'arrêt de le condamner à payer au salarié une somme à titre d'indemnité pour licenciement abusif et au remboursement aux organismes intéressés de tout ou partie des indemnités de chômage versées au salarié licencié, du jour de son licenciement au jour du jugement prononcé, dans la limite de trois mois d'indemnités de chômage, alors « que l'article 16 de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 n'interdit pas à l'employeur de licencier le salarié, dont le contrat de travail est suspendu pour cause de maladie non professionnelle, pour un motif tiré de son insuffisance professionnelle ; qu'en affirmant en l'espèce que ce texte offrait ''une véritable garantie d'emploi en réservant la possibilité de licencier [un salarié absent pour cause de maladie] aux seuls cas justifiés par un motif économique (si licenciement collectif), ou par la suppression du poste occupé par le salarié malade, ou encore par la nécessité de procéder au remplacement du salarié absent à l'expiration de la durée d'indemnisation à plein tarif'' pour en déduire que le licenciement de M. [H], prononcé pour insuffisance professionnelle alors qu'il était en congé maladie depuis le jour de l'entretien préalable, était sans cause réelle et sérieuse, la cour d'appel a violé l'article 16 de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972. »"
+  },
+  {
+   "alias": "P5",
+   "passage_id": "63903d7f0f8a5205d45d7d6b#moyens-1",
+   "case_id": "63903d7f0f8a5205d45d7d6b",
+   "title": "Cour de cassation · Chambre sociale · 2022-12-07 · n° 21-10.781",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "2°/ que constitue un licenciement pour motif économique le licenciement d'un salarié résultant d'une suppression de son emploi consécutive à une réorganisation de l'entreprise nécessaire à la sauvegarde de sa compétitivité ; qu'en l'espèce, la société Eyrolles faisait valoir, dans ses écritures reprises oralement à l'audience, que le tableau de bord de l'office démontrait la chute des chiffres de l'entreprise (baisse des produits et résultats d'exploitation) tandis que les charges d'exploitation avaient augmenté ; que ce tableau de bord de l'office notarial constituait un document officiel établi à destination de la commission de contrôle du notariat ; qu'en énonçant, pour retenir le caractère sans cause réelle et sérieuse du licenciement, que la réalité et l'étendue des difficultés économiques de l'entreprise ne pouvaient se déduire de la seule production d'un tableau de bord établi par l'employeur et non visé par l'expert-comptable sans rechercher, ainsi qu'il le lui était demandé, si le tableau de bord avait un caractère officiel, la cour d'appel a privé sa décision de base légale au regard de l'article L. 1233-3 du code du travail, dans sa rédaction applicable au litige issue de la loi n° 2008-596 du 25 juin 2008 ;\n\n 3°/ que si chaque partie est tenue d'apporter son concours aux mesures d'instruction, sauf au juge à tirer toute conséquence d'une abstention ou d'un refus, ce n'est que lorsque le juge a, à la requête d'une des parties, enjoint l'autre partie à produire un élément de preuve qu'il peut tirer toutes les conséquences d'une abstention ou d'un refus de production ; qu'en l'espèce, pour juger que le licenciement de Mme [X] était sans cause réelle et sérieuse, la cour d'appel a reproché à la société Eyrolles de s'être abstenue de ''produire aux débats ses bilans et ses pièces comptables, conformément à la demande qui lui en a été faite par la salariée'' ;"
+  }
+ ]
+}

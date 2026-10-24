@@ -1,0 +1,139 @@
+
+== C1 · static · Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?
+   ⇒ {'question': 'C1', 'type': 'simple', 'mode': 'static', 'statut': 'answered', 'vérification': 'insufficient', 'arrêt': '—', 'passages cités': 3, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2265, 'latence (s)': 27.9}
+
+== C1 · single · Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« rupture conventionnelle délai minimum entretien préalable signature »).
+   02 TOOL        [agent] search_cases({"query": "rupture conventionnelle délai minimum entretien préalable signature", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551
+   04 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   05 CHECK       [vérificateur] Preuves insufficient — 3/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).
+   06 DECISION    [agent] Décision repérée (Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551) : lecture détaillée de ses passages.
+   07 TOOL        [agent] read_case({"case_id": "65f1500528057200093c3e89"})
+   08 OBSERVATION [agent] 6 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551
+   09 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   10 CHECK       [vérificateur] Preuves insufficient — 2/3 affirmation(s) soutenue(s) ; 1 non établie(s) par le juge.
+   11 DECISION    [agent] Vérification insuffisante : nouvelle recherche reformulée (« rupture conventionnelle délai de rétractation signature même jour entretien »).
+   12 TOOL        [agent] search_cases({"query": "rupture conventionnelle délai de rétractation signature même jour entretien", "k": 5})
+   13 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143
+   14 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   15 HUMAN       [agent] Décision humaine : refusée.
+   16 FINAL       [agent] Réponse partielle — 1 passage(s) cité(s).
+   ⇒ {'question': 'C1', 'type': 'simple', 'mode': 'single', 'statut': 'partial', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 1, 'appels LLM': 7, 'appels outils': 3, 'recherches': 2, 'itérations': 5, 'tokens': 20076, 'latence (s)': 100.3}
+
+== C1 · multi · Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pour répondre à la question sur le délai minimal.
+   02 DECISION    [chercheur] Recherche dans le corpus (« rupture conventionnelle délai entretien préalable signature »).
+   03 TOOL        [agent] search_cases({"query": "rupture conventionnelle délai entretien préalable signature", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551
+   05 OBSERVATION [chercheur] Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : case_id=65f1500528057200093c3e89 [P1] et case_id=66728100f7ab5c00087309df
+   06 DECISION    [superviseur] Délégation au chercheur — Le passage [P1] mentionne une absence de délai mais semble incomplet dans le résumé fourni ; il faut confirmer cette jurispr
+   07 DECISION    [chercheur] Recherche dans le corpus (« rupture conventionnelle délai minimal entretien préalable signature article L. 1237-12 »).
+   08 TOOL        [agent] search_cases({"query": "rupture conventionnelle délai minimal entretien préalable signature article L. 1237-12", "k": 5})
+   09 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551
+   10 OBSERVATION [chercheur] Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : 65f1500528057200093c3e89 [P1], 66728100f7ab5c00087309df [P2].
+   11 DECISION    [superviseur] Rédaction de la synthèse — La décision P1 répond directement à la question en précisant l'absence de délai légal.
+   12 DECISION    [superviseur] Synthèse rédigée à partir de 5 passage(s) : soumise au vérificateur.
+   13 CHECK       [vérificateur] Preuves sufficient — 2 affirmation(s), toutes soutenues par les passages cités.
+   14 FINAL       [agent] Réponse vérifiée — 1 passage(s) cité(s).
+   ⇒ {'question': 'C1', 'type': 'simple', 'mode': 'multi', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': 'answered', 'passages cités': 1, 'appels LLM': 9, 'appels outils': 2, 'recherches': 2, 'itérations': 3, 'tokens': 14508, 'latence (s)': 114.5}
+
+== C2 · static · Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?
+   ⇒ {'question': 'C2', 'type': 'simple', 'mode': 'static', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': '—', 'passages cités': 3, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2563, 'latence (s)': 42.6}
+
+== C2 · single · Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« licenciement nul réintégration congés payés période éviction »).
+   02 TOOL        [agent] search_cases({"query": "licenciement nul réintégration congés payés période éviction", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   04 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   05 CHECK       [vérificateur] Preuves sufficient — 4 affirmation(s), toutes soutenues par les passages cités.
+   06 FINAL       [agent] Réponse vérifiée — 2 passage(s) cité(s).
+   ⇒ {'question': 'C2', 'type': 'simple', 'mode': 'single', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': 'answered', 'passages cités': 2, 'appels LLM': 3, 'appels outils': 1, 'recherches': 1, 'itérations': 2, 'tokens': 7326, 'latence (s)': 58.0}
+
+== C2 · multi · Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pertinents dans la base de données.
+   02 DECISION    [chercheur] Recherche dans le corpus (« congés payés période éviction licenciement nul réintégration assimilation temps de travail effectif »).
+   03 TOOL        [agent] search_cases({"query": "congés payés période éviction licenciement nul réintégration assimilation temps de travail effectif", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008
+   05 OBSERVATION [chercheur] Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : case_id=63fefc07002ac605de15b29e [P1] et case_id=65015d56ee1a2205e6581652
+   06 DECISION    [superviseur] Délégation au chercheur — Le dossier actuel ne contient pas encore de passage explicite confirmant ou infirmant le droit aux congés payés pour la péri
+   07 DECISION    [chercheur] Recherche dans le corpus (« licenciement nul réintégration temps éviction congés payés assimilation temps de travail »).
+   08 TOOL        [agent] search_cases({"query": "licenciement nul réintégration temps éviction congés payés assimilation temps de travail", "k": 5})
+   09 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008
+   10 OBSERVATION [chercheur] Compte rendu du chercheur : 6 passage(s) au dossier. Les décisions P1 [P9] et P2 [P23] contiennent la réponse : le salarié peut prétendre à ses droits
+   11 DECISION    [superviseur] Délégation au chercheur — Le dossier actuel contient des extraits de motivations et de moyens sans réponse directe à la question posée sur les congés 
+   12 DECISION    [chercheur] Recherche dans le corpus (« licenciement nul réintégration congés payés période éviction assimilation temps de travail »).
+   13 TOOL        [agent] search_cases({"query": "licenciement nul réintégration congés payés période éviction assimilation temps de travail", "k": 5})
+   14 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   15 OBSERVATION [chercheur] Compte rendu du chercheur : 7 passage(s) au dossier. Décisions pertinentes : 63fefc07002ac605de15b29e [P1] et 65015d56ee1a2205e6581652 [P2]. Ces passa
+   16 DECISION    [superviseur] Délégation au chercheur — Le dossier contient des indices partiels mais nécessite une lecture précise des motifs pour confirmer l'assimilation du temp
+   17 DECISION    [chercheur] Recherche dans le corpus (« licenciement nul réintégration congés payés période éviction »).
+   18 TOOL        [agent] search_cases({"query": "licenciement nul réintégration congés payés période éviction", "k": 5})
+   19 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   20 DECISION    [chercheur] Lecture détaillée de la décision 63fefc07002ac605de15b29e.
+   21 DECISION    [chercheur] Lecture détaillée de la décision 6718920bd8ceca1cd7018c8e.
+   22 TOOL        [agent] read_case({"case_id": "63fefc07002ac605de15b29e", "focus": "congés payés période éviction"})
+   23 OBSERVATION [agent] 7 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008
+   24 TOOL        [agent] read_case({"case_id": "6718920bd8ceca1cd7018c8e", "focus": "temps de travail effectif assimilation droits congés"})
+   25 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-10-23 · n° 23-16.479
+   26 OBSERVATION [chercheur] Compte rendu du chercheur : 20 passage(s) au dossier. Décisions pertinentes : case_id=63fefc07002ac605de15b29e (alias [P1]) et case_id=6718920bd8ceca1
+   27 DECISION    [superviseur] Délégation au chercheur — Le dossier actuel contient des arrêts sur l'indemnité d'éviction et les congés payés, mais ne fournit pas encore la réponse 
+   28 DECISION    [chercheur] Recherche dans le corpus (« congés payés période éviction licenciement nul réintégration assimilation temps de travail »).
+   29 TOOL        [agent] search_cases({"query": "congés payés période éviction licenciement nul réintégration assimilation temps de travail", "k": 5})
+   30 ERROR       [agent] search_cases : requête répétée — non exécutée
+   31 DECISION    [chercheur] Recherche dans le corpus (« licenciement nul réintégration congés payés période éviction non assimilable »).
+   32 TOOL        [agent] search_cases({"query": "licenciement nul réintégration congés payés période éviction non assimilable", "k": 5})
+   33 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   34 OBSERVATION [chercheur] Compte rendu du chercheur : 21 passage(s) au dossier. Décisions pertinentes : case_id=65015d56ee1a2205e6581652 [P2] et case_id=63fefc07002ac605de15b29
+   35 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   36 HUMAN       [agent] Décision humaine : refusée.
+   37 FINAL       [agent] Abstention — le budget d'itérations est épuisé sans preuve suffisante.
+   ⇒ {'question': 'C2', 'type': 'simple', 'mode': 'multi', 'statut': 'abstained', 'vérification': None, 'arrêt': 'max_iterations', 'passages cités': 0, 'appels LLM': 17, 'appels outils': 8, 'recherches': 5, 'itérations': 5, 'tokens': 37859, 'latence (s)': 284.5}
+
+== C3 · static · L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?
+   ⇒ {'question': 'C3', 'type': 'simple', 'mode': 'static', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': '—', 'passages cités': 1, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2242, 'latence (s)': 33.9}
+
+== C3 · single · L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« indemnité rupture conventionnelle inférieure indemnité licenciement conventionnelle »).
+   02 TOOL        [agent] search_cases({"query": "indemnité rupture conventionnelle inférieure indemnité licenciement conventionnelle", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   04 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   05 CHECK       [vérificateur] Preuves insufficient — 2/4 affirmation(s) soutenue(s) ; 2 en échec sur les règles (citation absente, inventée ou incomplète).
+   06 DECISION    [agent] Décision repérée (Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165) : lecture détaillée de ses passages.
+   07 TOOL        [agent] read_case({"case_id": "659e41095537980008846f77", "focus": "indemnité rupture conventionnelle indemnité licenciement"})
+   08 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   09 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   10 CHECK       [vérificateur] Preuves insufficient — 2/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète) ; 1 non établie(s) par le
+   11 ERROR       [agent] Appel au modèle impossible : Ollama n'a pas répondu à temps (/api/chat)
+   12 FINAL       [agent] Abstention — une erreur non récupérable a interrompu la recherche.
+   ⇒ {'question': 'C3', 'type': 'simple', 'mode': 'single', 'statut': 'error', 'vérification': 'insufficient', 'arrêt': 'error', 'passages cités': 0, 'appels LLM': 6, 'appels outils': 2, 'recherches': 1, 'itérations': 4, 'tokens': 17449, 'latence (s)': 1073.5}
+
+== C3 · multi · L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques prouvant la relation entre ces deux indemnités.
+   02 DECISION    [chercheur] Recherche dans le corpus (« rupture conventionnelle indemnité spécifique L1237-5 inférieure indemnité licenciement conventionnel »).
+   03 TOOL        [agent] search_cases({"query": "rupture conventionnelle indemnité spécifique L1237-5 inférieure indemnité licenciement conventionnel", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   05 ERROR       [chercheur] Chercheur : appel au modèle impossible (Ollama n'a pas répondu à temps (/api/chat)).
+   06 FINAL       [agent] Abstention — une erreur non récupérable a interrompu la recherche.
+   ⇒ {'question': 'C3', 'type': 'simple', 'mode': 'multi', 'statut': 'error', 'vérification': None, 'arrêt': 'error', 'passages cités': 0, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 1, 'tokens': 1328, 'latence (s)': 1041.9}
+
+== C4 · static · Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?
+   ⇒ {'question': 'C4', 'type': 'multi-step', 'mode': 'static', 'statut': 'answered', 'vérification': 'insufficient', 'arrêt': '—', 'passages cités': 4, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 1726, 'latence (s)': 33.5}
+
+== C4 · single · Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« rupture conventionnelle annulée vice consentement employeur reproche salarié »).
+   02 TOOL        [agent] search_cases({"query": "rupture conventionnelle annulée vice consentement employeur reproche salarié", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817
+   04 ERROR       [agent] Appel au modèle impossible : Ollama n'a pas répondu à temps (/api/chat)
+   05 FINAL       [agent] Abstention — une erreur non récupérable a interrompu la recherche.
+   ⇒ {'question': 'C4', 'type': 'multi-step', 'mode': 'single', 'statut': 'error', 'vérification': None, 'arrêt': 'error', 'passages cités': 0, 'appels LLM': 1, 'appels outils': 1, 'recherches': 1, 'itérations': 1, 'tokens': 1070, 'latence (s)': 319.7}
+
+== C4 · multi · Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver les éléments factuels et juridiques demandés dans le corpus.
+   02 DECISION    [chercheur] Recherche dans le corpus (« rupture conventionnelle annulée vice du consentement employeur dolosité mensonge reproche salarié cour d'appel effets null
+   03 TOOL        [agent] search_cases({"query": "rupture conventionnelle annulée vice du consentement employeur dolosité mensonge reproche salarié cour d'appel effets nullité"
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817
+   05 ERROR       [chercheur] Chercheur : appel au modèle impossible (Ollama n'a pas répondu à temps (/api/chat)).
+   06 FINAL       [agent] Abstention — une erreur non récupérable a interrompu la recherche.

@@ -1,0 +1,335 @@
+[
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 0,
+  "ok": false,
+  "detail": "attendu search_cases, obtenu texte",
+  "latency_s": 5.4,
+  "completion_tokens": 93,
+  "content": "La Cour de cassation a statué que l'abandon de poste ne constitue pas en soi une faute grave justifiant un licenciement [P1]. Elle précise que cette absence doit être caractérisée par une volonté manifeste de rompre le contrat de travail, distincte d'une simple absence sans justification [P2]. Le juge examine donc les circonstances spécifiques pour déterminer si l'abandon est volontaire et suffisamment grave [P3].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 1,
+  "ok": false,
+  "detail": "attendu search_cases, obtenu texte",
+  "latency_s": 6.6,
+  "completion_tokens": 153,
+  "content": "La Cour de cassation a statué que l'abandon de poste ne constitue pas en soi une faute grave justifiant un licenciement [P1]. Elle précise qu'il faut examiner si le salarié a effectivement abandonné son poste sans motif légitime et pendant une durée significative [P2]. Dans certains cas, la Cour a considéré que l'abandon de poste pouvait être caractérisé comme une faute grave si les circonstances étaient graves et répétées [P3]. Cependant, elle rappelle que le licenciement doit toujours respecter la procédure légale et être proportionné à la faute commise [P4]. La décision ne précise pas toujours la durée exacte requise pour qualifier l'abandon de poste de faute grave [P5].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 2,
+  "ok": false,
+  "detail": "attendu search_cases, obtenu texte",
+  "latency_s": 6.5,
+  "completion_tokens": 149,
+  "content": "La Cour de cassation a jugé que l'abandon de poste ne constitue pas en soi une faute grave justifiant un licenciement [P1]. Elle précise que cette absence doit être caractérisée par une volonté manifeste de rompre le contrat de travail, et non simplement par une absence prolongée sans justification [P2]. Dans certaines décisions, la Cour examine si l'employeur a respecté ses obligations d'information et de dialogue avant de prononcer le licenciement pour abandon de poste [P3]. La jurisprudence distingue également les cas où l'absence est due à des raisons légitimes, comme une maladie ou un accident, qui excluent la qualification de faute grave [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 0,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 4.3,
+  "completion_tokens": 51,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement dans l'extrait fourni [P1]. La lecture complète de la décision est nécessaire pour obtenir ces informations.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 1,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 2.3,
+  "completion_tokens": 53,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement dans l'extrait fourni [P1]. La lecture complète de cette décision est nécessaire pour obtenir ces informations factuelles.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 2,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 2.3,
+  "completion_tokens": 51,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement dans l'extrait fourni [P1]. La lecture complète de la décision est nécessaire pour obtenir ces informations.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 0,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 4.3,
+  "completion_tokens": 55,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 1,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.4,
+  "completion_tokens": 55,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 2,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.4,
+  "completion_tokens": 55,
+  "content": "Le salarié a été licencié pour faute grave le 2 avril 2019 [P3]. La Cour casse et annule l'arrêt rendu le 12 mai 2022 par la cour d'appel de Lyon [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 0,
+  "ok": false,
+  "detail": "abstention",
+  "latency_s": 3.9,
+  "completion_tokens": 55,
+  "content": "Le corpus ne contient aucune décision de la Cour de cassation traitant de la brevetabilité des logiciels d'intelligence artificielle ni des programmes d'ordinateur en général. La jurisprudence sur ce sujet spécifique n'est donc pas disponible dans les textes consultés.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 1,
+  "ok": false,
+  "detail": "abstention",
+  "latency_s": 2.2,
+  "completion_tokens": 51,
+  "content": "Le corpus ne contient aucune décision de la Cour de cassation traitant de la brevetabilité des logiciels d'intelligence artificielle ni des logiciels en général. La jurisprudence sur ce sujet spécifique n'est donc pas disponible dans les décisions consultées.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3.5:9b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 2,
+  "ok": false,
+  "detail": "abstention",
+  "latency_s": 2.4,
+  "completion_tokens": 55,
+  "content": "Le corpus ne contient aucune décision de la Cour de cassation traitant de la brevetabilité des logiciels d'intelligence artificielle ou des programmes d'ordinateur en général. La jurisprudence sur ce sujet spécifique n'est donc pas disponible dans les textes consultés.",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 0,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 2.9,
+  "completion_tokens": 35,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 1,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 1.4,
+  "completion_tokens": 35,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "1. chercher d'abord",
+  "run": 2,
+  "ok": true,
+  "detail": "search_cases('abandon de poste licenciement faute grave')",
+  "latency_s": 1.4,
+  "completion_tokens": 35,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "abandon de poste licenciement faute grave",
+     "k": 5
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 0,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 2.0,
+  "completion_tokens": 34,
+  "content": "La décision du 15 mai 2024 ne précise pas les dates d'absence et de licenciement du salarié [P1].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 1,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 1.6,
+  "completion_tokens": 38,
+  "content": "La décision de la chambre sociale du 15 mai 2024 ne précise pas les dates d'absence et de licenciement du salarié [P1].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "2. lire l'affaire pertinente",
+  "run": 2,
+  "ok": false,
+  "detail": "attendu read_case, obtenu texte",
+  "latency_s": 1.4,
+  "completion_tokens": 34,
+  "content": "La décision du 15 mai 2024 ne précise pas les dates d'absence et de licenciement du salarié [P1].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 0,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.9,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié le 2 avril 2019 [P3]. La Cour de cassation a annulé l'arrêt de la cour d'appel de Lyon rendu le 12 mai 2022 [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 1,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.3,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié le 2 avril 2019 [P3]. La Cour de cassation a annulé l'arrêt de la cour d'appel de Lyon rendu le 12 mai 2022 [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "3. répondre (preuves suffisantes)",
+  "run": 2,
+  "ok": true,
+  "detail": "citations ['P3', 'P4'] ; texte",
+  "latency_s": 2.3,
+  "completion_tokens": 57,
+  "content": "Le salarié a été licencié le 2 avril 2019 [P3]. La Cour de cassation a annulé l'arrêt de la cour d'appel de Lyon rendu le 12 mai 2022 [P4].",
+  "tool_calls": []
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 0,
+  "ok": true,
+  "detail": "nouvelle recherche 'logiciel brevetabilité invention'",
+  "latency_s": 1.3,
+  "completion_tokens": 24,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "logiciel brevetabilité invention"
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 1,
+  "ok": true,
+  "detail": "nouvelle recherche 'logiciel brevetabilité invention'",
+  "latency_s": 1.0,
+  "completion_tokens": 24,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "logiciel brevetabilité invention"
+    }
+   }
+  ]
+ },
+ {
+  "model": "qwen3:8b",
+  "think": false,
+  "probe": "4. s'abstenir ou reformuler (rien trouvé)",
+  "run": 2,
+  "ok": true,
+  "detail": "nouvelle recherche 'logiciel brevetabilité invention'",
+  "latency_s": 1.0,
+  "completion_tokens": 24,
+  "content": "",
+  "tool_calls": [
+   {
+    "name": "search_cases",
+    "arguments": {
+     "query": "logiciel brevetabilité invention"
+    }
+   }
+  ]
+ }
+]

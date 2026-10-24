@@ -1,0 +1,392 @@
+
+== C1 · static · Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?
+   ⇒ {'question': 'C1', 'type': 'simple', 'mode': 'static', 'statut': 'answered', 'vérification': 'insufficient', 'arrêt': '—', 'passages cités': 3, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2265, 'latence (s)': 27.5}
+
+== C1 · single · Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« rupture conventionnelle délai minimum entretien préalable signature »).
+   02 TOOL        [agent] search_cases({"query": "rupture conventionnelle délai minimum entretien préalable signature", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551
+   04 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   05 CHECK       [vérificateur] Preuves insufficient — 3/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).
+   06 DECISION    [agent] Décision repérée (Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551) : lecture détaillée de ses passages.
+   07 TOOL        [agent] read_case({"case_id": "65f1500528057200093c3e89"})
+   08 OBSERVATION [agent] 6 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551
+   09 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   10 CHECK       [vérificateur] Preuves insufficient — 2/3 affirmation(s) soutenue(s) ; 1 non établie(s) par le juge.
+   11 DECISION    [agent] Vérification insuffisante : nouvelle recherche reformulée (« rupture conventionnelle délai rétractation signature même jour entretien »).
+   12 TOOL        [agent] search_cases({"query": "rupture conventionnelle délai rétractation signature même jour entretien", "k": 5})
+   13 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143
+   14 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   15 HUMAN       [agent] Décision humaine : refusée.
+   16 FINAL       [agent] Réponse partielle — 1 passage(s) cité(s).
+   ⇒ {'question': 'C1', 'type': 'simple', 'mode': 'single', 'statut': 'partial', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 1, 'appels LLM': 7, 'appels outils': 3, 'recherches': 2, 'itérations': 5, 'tokens': 20075, 'latence (s)': 102.7}
+
+== C1 · multi · Faut-il respecter un délai minimal entre l'entretien préalable et la signature d'une rupture conventionnelle ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pour répondre à la question sur le délai minimal.
+   02 DECISION    [chercheur] Recherche dans le corpus (« rupture conventionnelle délai entretien préalable signature »).
+   03 TOOL        [agent] search_cases({"query": "rupture conventionnelle délai entretien préalable signature", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-03-13 · n° 22-10.551
+   05 OBSERVATION [chercheur] Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : case_id=65f1500528057200093c3e89 [P1] et case_id=66728100f7ab5c00087309df
+   06 DECISION    [superviseur] Rédaction de la synthèse — La décision P1 répond directement à la question en indiquant l'absence de délai obligatoire.
+   07 DECISION    [superviseur] Synthèse rédigée à partir de 5 passage(s) : soumise au vérificateur.
+   08 CHECK       [vérificateur] Preuves sufficient — 2 affirmation(s), toutes soutenues par les passages cités.
+   09 FINAL       [agent] Réponse vérifiée — 1 passage(s) cité(s).
+   ⇒ {'question': 'C1', 'type': 'simple', 'mode': 'multi', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': 'answered', 'passages cités': 1, 'appels LLM': 6, 'appels outils': 1, 'recherches': 1, 'itérations': 2, 'tokens': 9327, 'latence (s)': 64.7}
+
+== C2 · static · Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?
+   ⇒ {'question': 'C2', 'type': 'simple', 'mode': 'static', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': '—', 'passages cités': 3, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2563, 'latence (s)': 42.0}
+
+== C2 · single · Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« licenciement nul réintégration congés payés période éviction »).
+   02 TOOL        [agent] search_cases({"query": "licenciement nul réintégration congés payés période éviction", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   04 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   05 CHECK       [vérificateur] Preuves sufficient — 4 affirmation(s), toutes soutenues par les passages cités.
+   06 FINAL       [agent] Réponse vérifiée — 2 passage(s) cité(s).
+   ⇒ {'question': 'C2', 'type': 'simple', 'mode': 'single', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': 'answered', 'passages cités': 2, 'appels LLM': 3, 'appels outils': 1, 'recherches': 1, 'itérations': 2, 'tokens': 7326, 'latence (s)': 57.9}
+
+== C2 · multi · Un salarié dont le licenciement nul a été suivi d'une réintégration a-t-il droit à des congés payés pour la période d'éviction ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pertinents dans la base de données.
+   02 DECISION    [chercheur] Recherche dans le corpus (« congés payés période éviction licenciement nul réintégration assimilation temps de travail effectif »).
+   03 TOOL        [agent] search_cases({"query": "congés payés période éviction licenciement nul réintégration assimilation temps de travail effectif", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-03-01 · n° 21-16.008
+   05 OBSERVATION [chercheur] Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : case_id=63fefc07002ac605de15b29e [P1] et case_id=65015d56ee1a2205e6581652
+   06 DECISION    [superviseur] Rédaction de la synthèse — Les décisions P1 et P2 confirment que le salarié peut prétendre à ses droits à congés payés au titre de la période d'évicti
+   07 DECISION    [superviseur] Synthèse rédigée à partir de 5 passage(s) : soumise au vérificateur.
+   08 CHECK       [vérificateur] Preuves insufficient — 3/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).
+   09 DECISION    [superviseur] Délégation au chercheur — Le dernier contrôle indique qu'une affirmation n'est pas prouvée (citation absente ou incomplète) ; il manque donc la preuve
+   10 DECISION    [chercheur] Recherche dans le corpus (« licenciement nul réintégration congés payés période éviction Chambre sociale 2023 »).
+   11 TOOL        [agent] search_cases({"query": "licenciement nul réintégration congés payés période éviction Chambre sociale 2023", "k": 5})
+   12 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   13 DECISION    [chercheur] Lecture détaillée de la décision 65015d56ee1a2205e6581652.
+   14 TOOL        [agent] read_case({"case_id": "65015d56ee1a2205e6581652", "focus": "congés payés période éviction"})
+   15 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   16 OBSERVATION [chercheur] Compte rendu du chercheur : 14 passage(s) au dossier. Décisions pertinentes (case_id) : 65015d56ee1a2205e6581652, 63fefc07002ac605de15b29e. Alias des 
+   17 DECISION    [superviseur] Délégation au chercheur — Le dernier contrôle a relevé une affirmation non établie concernant le maintien du droit aux congés payés ; il manque la cit
+   18 DECISION    [chercheur] Lecture détaillée de la décision 65015d56ee1a2205e6581652.
+   19 TOOL        [agent] read_case({"case_id": "65015d56ee1a2205e6581652", "focus": "congés payés période d'éviction"})
+   20 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   21 OBSERVATION [chercheur] Compte rendu du chercheur : 14 passage(s) au dossier. Décision n° 22-10.529 (case_id 65015d56ee1a2205e6581652) : la Cour de cassation statue en faveur
+   22 DECISION    [superviseur] Délégation au chercheur — Le contrôle a révélé une erreur sur les articles du code du travail cités pour fonder la décision ; il faut retrouver la cit
+   23 DECISION    [chercheur] Lecture détaillée de la décision 65015d56ee1a2205e6581652.
+   24 TOOL        [agent] read_case({"case_id": "65015d56ee1a2205e6581652", "focus": "congés payés période d'éviction"})
+   25 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   26 OBSERVATION [chercheur] Compte rendu du chercheur : 14 passage(s) au dossier.
+   27 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   28 HUMAN       [agent] Décision humaine : refusée.
+   29 FINAL       [agent] Réponse partielle — 2 passage(s) cité(s).
+   ⇒ {'question': 'C2', 'type': 'simple', 'mode': 'multi', 'statut': 'partial', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 2, 'appels LLM': 16, 'appels outils': 5, 'recherches': 2, 'itérations': 5, 'tokens': 41169, 'latence (s)': 286.5}
+
+== C3 · static · L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?
+   ⇒ {'question': 'C3', 'type': 'simple', 'mode': 'static', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': '—', 'passages cités': 1, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2242, 'latence (s)': 34.0}
+
+== C3 · single · L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« indemnité rupture conventionnelle inférieure indemnité licenciement conventionnelle »).
+   02 TOOL        [agent] search_cases({"query": "indemnité rupture conventionnelle inférieure indemnité licenciement conventionnelle", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   04 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   05 CHECK       [vérificateur] Preuves insufficient — 2/4 affirmation(s) soutenue(s) ; 2 en échec sur les règles (citation absente, inventée ou incomplète).
+   06 DECISION    [agent] Décision repérée (Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165) : lecture détaillée de ses passages.
+   07 TOOL        [agent] read_case({"case_id": "659e41095537980008846f77", "focus": "indemnité rupture conventionnelle indemnité licenciement"})
+   08 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   09 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   10 CHECK       [vérificateur] Preuves insufficient — 2/4 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète) ; 1 non établie(s) par le
+   11 DECISION    [agent] Vérification insuffisante : nouvelle recherche reformulée (« indemnité rupture conventionnelle inférieure indemnité licenciement article L. 1237-13 »)
+   12 TOOL        [agent] search_cases({"query": "indemnité rupture conventionnelle inférieure indemnité licenciement article L. 1237-13", "k": 5})
+   13 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   14 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   15 HUMAN       [agent] Décision humaine : refusée.
+   16 FINAL       [agent] Réponse partielle — 1 passage(s) cité(s).
+   ⇒ {'question': 'C3', 'type': 'simple', 'mode': 'single', 'statut': 'partial', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 1, 'appels LLM': 7, 'appels outils': 3, 'recherches': 2, 'itérations': 5, 'tokens': 23943, 'latence (s)': 122.4}
+
+== C3 · multi · L'indemnité spécifique de rupture conventionnelle peut-elle être inférieure à l'indemnité conventionnelle de licenciement ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques prouvant la relation entre ces deux indemnités.
+   02 DECISION    [chercheur] Recherche dans le corpus (« rupture conventionnelle indemnité spécifique L1237-5 inférieure indemnité licenciement conventionnel »).
+   03 TOOL        [agent] search_cases({"query": "rupture conventionnelle indemnité spécifique L1237-5 inférieure indemnité licenciement conventionnel", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   05 OBSERVATION [chercheur] Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : 659e41095537980008846f77 [P1], 66728100f7ab5c00087309df [P5].
+   06 DECISION    [superviseur] Rédaction de la synthèse — Les extraits P1 et P5 confirment que l'indemnité spécifique de rupture conventionnelle ne peut pas être inférieure à l'inde
+   07 DECISION    [superviseur] Synthèse rédigée à partir de 5 passage(s) : soumise au vérificateur.
+   08 CHECK       [vérificateur] Preuves insufficient — 1/4 affirmation(s) soutenue(s) ; 2 en échec sur les règles (citation absente, inventée ou incomplète) ; 1 non établie(s) par le
+   09 DECISION    [superviseur] Délégation au chercheur — Il manque une preuve concernant les indemnités de départ à la retraite (articles 22.3 et 22.4) mentionnée dans le dernier co
+   10 DECISION    [chercheur] Recherche dans le corpus (« indemnité spécifique rupture conventionnelle inférieure indemnité conventionnelle licenciement »).
+   11 TOOL        [agent] search_cases({"query": "indemnité spécifique rupture conventionnelle inférieure indemnité conventionnelle licenciement", "k": 5})
+   12 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   13 OBSERVATION [chercheur] Compte rendu du chercheur : 6 passage(s) au dossier. Décisions pertinentes : case_id=659e41095537980008846f77 [P1]. L'indemnité spécifique de rupture 
+   14 DECISION    [superviseur] Délégation au chercheur — Le dossier actuel manque de preuves directes sur le fond du droit (article L. 1237-13) et nécessite des décisions confirmant
+   15 DECISION    [chercheur] Recherche dans le corpus (« article L. 1237-13 code du travail indemnité spécifique rupture conventionnelle inférieure à l'indemnité conventionnelle d
+   16 TOOL        [agent] search_cases({"query": "article L. 1237-13 code du travail indemnité spécifique rupture conventionnelle inférieure à l'indemnité conventionnelle de li
+   17 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   18 DECISION    [chercheur] Lecture détaillée de la décision 659e41095537980008846f77.
+   19 DECISION    [chercheur] Lecture détaillée de la décision 66728100f7ab5c00087309df.
+   20 TOOL        [agent] read_case({"case_id": "659e41095537980008846f77", "focus": "article L. 1237-13 indemnité spécifique rupture conventionnelle inférieure à l'indemnité c
+   21 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   22 TOOL        [agent] read_case({"case_id": "66728100f7ab5c00087309df", "focus": "article L. 1237-13 indemnité spécifique rupture conventionnelle inférieure à l'indemnité c
+   23 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-06-19 · n° 22-23.143
+   24 OBSERVATION [chercheur] Compte rendu du chercheur : 21 passage(s) au dossier. Décisions pertinentes (case_id) : 659e41095537980008846f77 [P1], 66728100f7ab5c00087309df [P5].
+   25 DECISION    [superviseur] Délégation au chercheur — Le dossier actuel ne permet pas de répondre définitivement car les passages existants confirment la règle d'infériorité inte
+   26 DECISION    [chercheur] Recherche dans le corpus (« indemnité rupture conventionnelle inférieure indemnité conventionnelle licenciement seuil L. 1237-13 C. trav. »).
+   27 TOOL        [agent] search_cases({"query": "indemnité rupture conventionnelle inférieure indemnité conventionnelle licenciement seuil L. 1237-13 C. trav.", "k": 5})
+   28 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-01-10 · n° 22-19.165
+   29 OBSERVATION [chercheur] Compte rendu du chercheur : 21 passage(s) au dossier. Décisions pertinentes : 659e41095537980008846f77 [P1], 66728100f7ab5c00087309df [P5]. La Cour de
+   30 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   31 HUMAN       [agent] Décision humaine : refusée.
+   32 FINAL       [agent] Réponse partielle — 1 passage(s) cité(s).
+   ⇒ {'question': 'C3', 'type': 'simple', 'mode': 'multi', 'statut': 'partial', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 1, 'appels LLM': 16, 'appels outils': 6, 'recherches': 4, 'itérations': 5, 'tokens': 36734, 'latence (s)': 267.9}
+
+== C4 · static · Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?
+   ⇒ {'question': 'C4', 'type': 'multi-step', 'mode': 'static', 'statut': 'answered', 'vérification': 'insufficient', 'arrêt': '—', 'passages cités': 4, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 1726, 'latence (s)': 32.5}
+
+== C4 · single · Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« rupture conventionnelle annulée vice consentement employeur reproche salarié »).
+   02 TOOL        [agent] search_cases({"query": "rupture conventionnelle annulée vice consentement employeur reproche salarié", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817
+   04 DECISION    [agent] Décision repérée (Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817) : lecture détaillée de ses passages.
+   05 TOOL        [agent] read_case({"case_id": "66728101f7ab5c00087309e1", "focus": "rupture conventionnelle vice consentement reproche salarié cour d'appel effets"})
+   06 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817
+   07 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   08 CHECK       [vérificateur] Preuves insufficient — 2/3 affirmation(s) soutenue(s) ; 1 non établie(s) par le juge.
+   09 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   10 CHECK       [vérificateur] Preuves sufficient — 3 affirmation(s), toutes soutenues par les passages cités.
+   11 FINAL       [agent] Réponse vérifiée — 3 passage(s) cité(s).
+   ⇒ {'question': 'C4', 'type': 'multi-step', 'mode': 'single', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': 'answered', 'passages cités': 3, 'appels LLM': 6, 'appels outils': 2, 'recherches': 1, 'itérations': 4, 'tokens': 19033, 'latence (s)': 105.3}
+
+== C4 · multi · Dans l'affaire où une rupture conventionnelle a été annulée pour un vice du consentement de l'employeur, que reprochait-on au salarié, quelle cour d'appel avait statué, et quels effets la Cour de cassation attache-t-elle à la rupture ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver les éléments factuels et juridiques demandés dans le corpus.
+   02 DECISION    [chercheur] Recherche dans le corpus (« rupture conventionnelle annulée vice du consentement employeur dolosité mensonge reproche salarié cour d'appel effets null
+   03 TOOL        [agent] search_cases({"query": "rupture conventionnelle annulée vice du consentement employeur dolosité mensonge reproche salarié cour d'appel effets nullité"
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817
+   05 DECISION    [chercheur] Lecture détaillée de la décision 66728101f7ab5c00087309e1.
+   06 TOOL        [agent] read_case({"case_id": "66728101f7ab5c00087309e1", "focus": "vice du consentement, reproche salarié, cour d'appel, effets rupture"})
+   07 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-06-19 · n° 23-10.817
+   08 OBSERVATION [chercheur] Compte rendu du chercheur : 12 passage(s) au dossier. Décision pertinente : case_id=66728101f7ab5c00087309e1 (arrêt de la Cour de cassation du 19/06/2
+   09 DECISION    [superviseur] Rédaction de la synthèse — Les passages [P1], [P7] et [P11] répondent intégralement aux trois sous-questions de l'affaire.
+   10 DECISION    [superviseur] Synthèse rédigée à partir de 10 passage(s) : soumise au vérificateur.
+   11 CHECK       [vérificateur] Preuves sufficient — 3 affirmation(s), toutes soutenues par les passages cités.
+   12 FINAL       [agent] Réponse vérifiée — 3 passage(s) cité(s).
+   ⇒ {'question': 'C4', 'type': 'multi-step', 'mode': 'multi', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': 'answered', 'passages cités': 3, 'appels LLM': 7, 'appels outils': 2, 'recherches': 1, 'itérations': 2, 'tokens': 18054, 'latence (s)': 82.8}
+
+== C5 · static · Dans l'arrêt du 13 septembre 2023 sur l'indemnité de congé payé d'un enseignant rémunéré pour des corrections de copies, quelle cour d'appel avait été censurée et pourquoi ?
+   ⇒ {'question': 'C5', 'type': 'multi-step', 'mode': 'static', 'statut': 'answered', 'vérification': 'insufficient', 'arrêt': '—', 'passages cités': 2, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2340, 'latence (s)': 34.1}
+
+== C5 · single · Dans l'arrêt du 13 septembre 2023 sur l'indemnité de congé payé d'un enseignant rémunéré pour des corrections de copies, quelle cour d'appel avait été censurée et pourquoi ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« 13 septembre 2023 indemnité congé payé enseignant corrections copies cour d'appel censu
+   02 TOOL        [agent] search_cases({"query": "13 septembre 2023 indemnité congé payé enseignant corrections copies cour d'appel censurée", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   04 DECISION    [agent] Décision repérée (Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529) : lecture détaillée de ses passages.
+   05 TOOL        [agent] read_case({"case_id": "65015d56ee1a2205e6581652"})
+   06 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   07 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   08 CHECK       [vérificateur] Preuves insufficient — 5/6 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).
+   09 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   10 CHECK       [vérificateur] Preuves insufficient — 5/6 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).
+   11 DECISION    [agent] Vérification insuffisante : nouvelle recherche reformulée (« 13 septembre 2023 enseignant corrections copies indemnité congé payé Aix-en-Provence cass
+   12 TOOL        [agent] search_cases({"query": "13 septembre 2023 enseignant corrections copies indemnité congé payé Aix-en-Provence cassation partielle", "k": 5})
+   13 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   14 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   15 HUMAN       [agent] Décision humaine : refusée.
+   16 FINAL       [agent] Réponse partielle — 2 passage(s) cité(s).
+   ⇒ {'question': 'C5', 'type': 'multi-step', 'mode': 'single', 'statut': 'partial', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 2, 'appels LLM': 7, 'appels outils': 3, 'recherches': 2, 'itérations': 5, 'tokens': 33187, 'latence (s)': 187.7}
+
+== C5 · multi · Dans l'arrêt du 13 septembre 2023 sur l'indemnité de congé payé d'un enseignant rémunéré pour des corrections de copies, quelle cour d'appel avait été censurée et pourquoi ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver les preuves dans le corpus.
+   02 DECISION    [chercheur] Recherche dans le corpus (« arrêt 13 septembre 2023 indemnité congé payé enseignant corrections copies »).
+   03 TOOL        [agent] search_cases({"query": "arrêt 13 septembre 2023 indemnité congé payé enseignant corrections copies", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   05 DECISION    [chercheur] Lecture détaillée de la décision 65015d56ee1a2205e6581652.
+   06 TOOL        [agent] read_case({"case_id": "65015d56ee1a2205e6581652"})
+   07 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   08 OBSERVATION [chercheur] Compte rendu du chercheur : 13 passage(s) au dossier. Décision pertinente : case_id=65015d56ee1a2205e6581652 (alias [P9], [P13]). La cour d'appel d'Ai
+   09 DECISION    [superviseur] Rédaction de la synthèse — La Cour d'appel d'Aix-en-Provence a été censurée car elle avait exclu du calcul de l'indemnité de congé payé les rémunérati
+   10 DECISION    [superviseur] Synthèse rédigée à partir de 10 passage(s) : soumise au vérificateur.
+   11 CHECK       [vérificateur] Preuves insufficient — 4/5 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète).
+   12 DECISION    [superviseur] Délégation au chercheur — Le chercheur doit trouver la citation textuelle confirmant que la cour d'appel d'Aix-en-Provence a été censurée pour avoir e
+   13 DECISION    [chercheur] Recherche dans le corpus (« 13 septembre 2023 indemnité de congé payé enseignant corrections de copies cour d'appel censurée »).
+   14 TOOL        [agent] search_cases({"query": "13 septembre 2023 indemnité de congé payé enseignant corrections de copies cour d'appel censurée", "k": 5})
+   15 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   16 DECISION    [chercheur] Lecture détaillée de la décision 65015d56ee1a2205e6581652.
+   17 TOOL        [agent] read_case({"case_id": "65015d56ee1a2205e6581652", "focus": "motifs de la censure et nom de la cour d'appel"})
+   18 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   19 OBSERVATION [chercheur] Compte rendu du chercheur : 18 passage(s) au dossier. Décision pertinente : case_id=65015d56ee1a2205e6581652 (alias [P9] et [P13]). La cour d'appel d'
+   20 DECISION    [superviseur] Délégation au chercheur — Le dossier manque du nom exact de la cour d'appel censurée et de la citation juridique complète justifiant cette censure con
+   21 DECISION    [chercheur] Lecture détaillée de la décision 65015d56ee1a2205e6581652.
+   22 TOOL        [agent] read_case({"case_id": "65015d56ee1a2205e6581652", "focus": "censure cour d'appel motif"})
+   23 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   24 OBSERVATION [chercheur] Compte rendu du chercheur : 18 passage(s) au dossier. Décision pertinente : case_id=65015d56ee1a2205e6581652 (Cour de cassation, Chambre sociale, 13 s
+   25 DECISION    [superviseur] Délégation au chercheur — Le dossier contient des indices sur le motif (rémunération corrections de copies non intégrée) mais manque de la mention exp
+   26 DECISION    [chercheur] Lecture détaillée de la décision 65015d56ee1a2205e6581652.
+   27 TOOL        [agent] read_case({"case_id": "65015d56ee1a2205e6581652"})
+   28 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-09-13 · n° 22-10.529
+   29 OBSERVATION [chercheur] Compte rendu du chercheur : 18 passage(s) au dossier. Décision pertinente : case_id=65015d56ee1a2205e6581652, alias [P9] qui mentionne la cour d'appel
+   30 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   31 HUMAN       [agent] Décision humaine : refusée.
+   32 FINAL       [agent] Réponse partielle — 2 passage(s) cité(s).
+   ⇒ {'question': 'C5', 'type': 'multi-step', 'mode': 'multi', 'statut': 'partial', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 2, 'appels LLM': 17, 'appels outils': 6, 'recherches': 2, 'itérations': 5, 'tokens': 49412, 'latence (s)': 253.4}
+
+== C6 · static · Après mon départ négocié avec mon patron, il veut m'interdire de travailler chez un concurrent alors qu'il ne m'a rien dit avant la fin de mon contrat : en a-t-il le droit ?
+   ⇒ {'question': 'C6', 'type': 'insufficient-reformulate', 'mode': 'static', 'statut': 'answered', 'vérification': 'insufficient', 'arrêt': '—', 'passages cités': 0, 'appels LLM': 1, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2883, 'latence (s)': 11.4}
+
+== C6 · single · Après mon départ négocié avec mon patron, il veut m'interdire de travailler chez un concurrent alors qu'il ne m'a rien dit avant la fin de mon contrat : en a-t-il le droit ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« clause de non-concurrence contrepartie financière information préalable départ négocié 
+   02 TOOL        [agent] search_cases({"query": "clause de non-concurrence contrepartie financière information préalable départ négocié", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755
+   04 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   05 CHECK       [vérificateur] Preuves contradictory — 1 affirmation(s) contredite(s) par les passages cités.
+   06 HUMAN       [vérificateur] Validation humaine demandée : sources contradictoires.
+   → validation humaine demandée (publish_contradictory) : réponse du script = reject
+   07 HUMAN       [agent] Décision humaine : refusée.
+   08 FINAL       [agent] Abstention — la diffusion a été refusée par l'utilisateur.
+   ⇒ {'question': 'C6', 'type': 'insufficient-reformulate', 'mode': 'single', 'statut': 'abstained', 'vérification': 'contradictory', 'arrêt': 'human_rejected', 'passages cités': 0, 'appels LLM': 3, 'appels outils': 1, 'recherches': 1, 'itérations': 2, 'tokens': 6470, 'latence (s)': 64.1}
+
+== C6 · multi · Après mon départ négocié avec mon patron, il veut m'interdire de travailler chez un concurrent alors qu'il ne m'a rien dit avant la fin de mon contrat : en a-t-il le droit ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pour évaluer la validité d'une clause d'interdiction de concur
+   02 DECISION    [chercheur] Recherche dans le corpus (« clause non-concurrence départ négocié absence notification préalable fin contrat validité clause imposée rétroactivement »
+   03 TOOL        [agent] search_cases({"query": "clause non-concurrence départ négocié absence notification préalable fin contrat validité clause imposée rétroactivement", "k"
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452
+   05 OBSERVATION [chercheur] Compte rendu du chercheur : 5 passage(s) au dossier. Décisions pertinentes : case_id=61f0f2387743e3330ccf075f [P2] et case_id=6684e95fa0de54ff609f7aab
+   06 DECISION    [superviseur] Rédaction de la synthèse — Les extraits P1 et P2 apportent les éléments juridiques pour déterminer que l'employeur n'a pas le droit d'imposer la claus
+   07 DECISION    [superviseur] Synthèse rédigée à partir de 5 passage(s) : soumise au vérificateur.
+   08 CHECK       [vérificateur] Preuves insufficient — 2/5 affirmation(s) soutenue(s) ; 1 en échec sur les règles (citation absente, inventée ou incomplète) ; 2 non établie(s) par le
+   09 DECISION    [superviseur] Délégation au chercheur — Le dossier actuel manque d'un passage explicite confirmant que l'imposition de la clause après le départ (sans notification 
+   10 DECISION    [chercheur] Recherche dans le corpus (« clause de non-concurrence notification avant fin contrat départ négocié inopposable notification postérieure absence contr
+   11 TOOL        [agent] search_cases({"query": "clause de non-concurrence notification avant fin contrat départ négocié inopposable notification postérieure absence contrepar
+   12 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755
+   13 DECISION    [chercheur] Lecture détaillée de la décision 61f0f2387743e3330ccf075f.
+   14 TOOL        [agent] read_case({"case_id": "61f0f2387743e3330ccf075f", "focus": "notification clause de non-concurrence avant fin contrat notification postérieure inopposa
+   15 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755
+   16 DECISION    [chercheur] Lecture détaillée de la décision 64117335f6c989fb024356a7.
+   17 TOOL        [agent] read_case({"case_id": "64117335f6c989fb024356a7", "focus": "absence contrepartie financière nullité clause de non-concurrence"})
+   18 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-03-15 · n° 21-16.057
+   19 OBSERVATION [chercheur] Compte rendu du chercheur : 20 passage(s) au dossier.
+   20 DECISION    [superviseur] Délégation au chercheur — Le dernier contrôle indique que deux affirmations ne sont pas établies par le juge dans le dossier actuel ; il manque des ex
+   21 DECISION    [chercheur] Recherche dans le corpus (« clause de non-concurrence rupture conventionnelle notification préalable fin contrat validité inopposabilité nullité »).
+   22 TOOL        [agent] search_cases({"query": "clause de non-concurrence rupture conventionnelle notification préalable fin contrat validité inopposabilité nullité", "k": 5}
+   23 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452
+   24 DECISION    [chercheur] Recherche dans le corpus (« clause de non-concurrence rupture conventionnelle notification avant fin contrat absence notification nullité inopposabili
+   25 TOOL        [agent] search_cases({"query": "clause de non-concurrence rupture conventionnelle notification avant fin contrat absence notification nullité inopposabilité L
+   26 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452
+   27 DECISION    [chercheur] Recherche dans le corpus (« clause non-concurrence rupture conventionnelle notification avant fin contrat absence notification nullité inopposabilité 
+   28 TOOL        [agent] search_cases({"query": "clause non-concurrence rupture conventionnelle notification avant fin contrat absence notification nullité inopposabilité L. 1
+   29 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452
+   30 OBSERVATION [chercheur] Compte rendu du chercheur : 22 passage(s) au dossier.
+   31 DECISION    [superviseur] Délégation au chercheur — Le dernier contrôle indique que les affirmations sur l'absence de notification avant la fin du contrat ne sont pas encore pr
+   32 DECISION    [chercheur] Recherche dans le corpus (« clause de non-concurrence notification avant fin contrat L. 112-6 Code du travail »).
+   33 TOOL        [agent] search_cases({"query": "clause de non-concurrence notification avant fin contrat L. 112-6 Code du travail", "k": 5})
+   34 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452
+   35 DECISION    [chercheur] Recherche dans le corpus (« article L. 112-6 Code du travail notification clause non-concurrence avant fin contrat »).
+   36 TOOL        [agent] search_cases({"query": "article L. 112-6 Code du travail notification clause non-concurrence avant fin contrat", "k": 5})
+   37 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452
+   38 DECISION    [chercheur] Recherche dans le corpus (« article L. 112-6 Code du travail notification clause non-concurrence avant rupture contrat »).
+   39 TOOL        [agent] search_cases({"query": "article L. 112-6 Code du travail notification clause non-concurrence avant rupture contrat", "k": 5})
+   40 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452
+   41 OBSERVATION [chercheur] Compte rendu du chercheur : 25 passage(s) au dossier.
+   42 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   43 HUMAN       [agent] Décision humaine : refusée.
+   44 FINAL       [agent] Réponse partielle — 2 passage(s) cité(s).
+   ⇒ {'question': 'C6', 'type': 'insufficient-reformulate', 'mode': 'multi', 'statut': 'partial', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 2, 'appels LLM': 18, 'appels outils': 10, 'recherches': 8, 'itérations': 5, 'tokens': 44928, 'latence (s)': 262.0}
+
+== C7 · static · Un employeur peut-il licencier un salarié sur la seule base d'une évaluation produite par un algorithme d'intelligence artificielle ?
+   ⇒ {'question': 'C7', 'type': 'insufficient-absent', 'mode': 'static', 'statut': 'answered', 'vérification': 'insufficient', 'arrêt': '—', 'passages cités': 5, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2592, 'latence (s)': 25.8}
+
+== C7 · single · Un employeur peut-il licencier un salarié sur la seule base d'une évaluation produite par un algorithme d'intelligence artificielle ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« licenciement intelligence artificielle algorithme évaluation salarié »).
+   02 TOOL        [agent] search_cases({"query": "licenciement intelligence artificielle algorithme évaluation salarié", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-14.969
+   04 DECISION    [agent] Résultats précédents insuffisants : requête reformulée (« intelligence artificielle algorithme licenciement cause réelle sérieuse »).
+   05 TOOL        [agent] search_cases({"query": "intelligence artificielle algorithme licenciement cause réelle sérieuse", "k": 5})
+   06 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-10-18 · n° 22-18.852
+   07 DECISION    [agent] Résultats précédents insuffisants : requête reformulée (« évaluation automatisée système algorithmique licenciement salarié »).
+   08 TOOL        [agent] search_cases({"query": "évaluation automatisée système algorithmique licenciement salarié", "k": 5})
+   09 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-03-08 · n° 21-20.797
+   10 DECISION    [agent] Résultats précédents insuffisants : requête reformulée (« notation automatique outil numérique évaluation salarié licenciement »).
+   11 TOOL        [agent] search_cases({"query": "notation automatique outil numérique évaluation salarié licenciement", "k": 5})
+   12 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-10-19 · n° 21-15.533
+   13 DECISION    [agent] Résultats précédents insuffisants : requête reformulée (« système automatisé outil numérique évaluation salarié licenciement cause réelle sérieuse »).
+   14 TOOL        [agent] search_cases({"query": "système automatisé outil numérique évaluation salarié licenciement cause réelle sérieuse", "k": 5})
+   15 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2024-06-12 · n° 23-13.522
+   16 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   17 HUMAN       [agent] Décision humaine : refusée.
+   18 FINAL       [agent] Abstention — le budget d'itérations est épuisé sans preuve suffisante.
+   ⇒ {'question': 'C7', 'type': 'insufficient-absent', 'mode': 'single', 'statut': 'abstained', 'vérification': None, 'arrêt': 'max_iterations', 'passages cités': 0, 'appels LLM': 5, 'appels outils': 5, 'recherches': 5, 'itérations': 5, 'tokens': 29774, 'latence (s)': 69.0}
+
+== C7 · multi · Un employeur peut-il licencier un salarié sur la seule base d'une évaluation produite par un algorithme d'intelligence artificielle ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des preuves juridiques pour répondre à la question.
+   02 DECISION    [chercheur] Recherche dans le corpus (« licenciement algorithme intelligence artificielle évaluation automatique »).
+   03 TOOL        [agent] search_cases({"query": "licenciement algorithme intelligence artificielle évaluation automatique", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-04-13 · n° 21-19.925
+   05 DECISION    [chercheur] Recherche dans le corpus (« licenciement IA algorithme décision automatisée transparence preuve causalité »).
+   06 TOOL        [agent] search_cases({"query": "licenciement IA algorithme décision automatisée transparence preuve causalité", "k": 5})
+   07 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271
+   08 OBSERVATION [chercheur] Compte rendu du chercheur : 10 passage(s) au dossier. Aucune décision de la Cour de cassation ou de juridictions inférieures citées dans le corpus ne 
+   09 DECISION    [superviseur] Rédaction de la synthèse — dossier constitué : la suffisance des preuves est soumise au vérificateur
+   10 DECISION    [superviseur] Synthèse rédigée à partir de 10 passage(s) : soumise au vérificateur.
+   11 CHECK       [vérificateur] Preuves insufficient — 0/2 affirmation(s) soutenue(s) ; 2 en échec sur les règles (citation absente, inventée ou incomplète).
+   12 DECISION    [superviseur] Délégation au chercheur — Le corpus actuel ne contient aucune décision traitant explicitement du licenciement basé sur une évaluation par IA ; il faut
+   13 DECISION    [chercheur] Recherche dans le corpus (« intelligence artificielle algorithme automatique licenciement évaluation décision »).
+   14 TOOL        [agent] search_cases({"query": "intelligence artificielle algorithme automatique licenciement évaluation décision", "k": 5})
+   15 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-09-21 · n° 19-12.568
+   16 OBSERVATION [chercheur] Compte rendu du chercheur : 13 passage(s) au dossier. Aucune décision de la Cour de cassation (Chambre sociale) ne contient les mots-clés 'intelligenc
+   17 DECISION    [superviseur] Délégation au chercheur — Le corpus actuel ne contient aucune décision traitant explicitement du lien entre IA/algorithme et licenciement ; il faut él
+   18 DECISION    [chercheur] Recherche dans le corpus (« intelligence artificielle algorithme licenciement évaluation décision automatisée transparence »).
+   19 TOOL        [agent] search_cases({"query": "intelligence artificielle algorithme licenciement évaluation décision automatisée transparence", "k": 5})
+   20 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271
+   21 DECISION    [chercheur] Recherche dans le corpus (« licenciement algorithme évaluation performance salarié »).
+   22 TOOL        [agent] search_cases({"query": "licenciement algorithme évaluation performance salarié", "k": 5})
+   23 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-02-16 · n° 20-16.171
+   24 OBSERVATION [chercheur] Compte rendu du chercheur : 21 passage(s) au dossier. Aucune décision de la Chambre sociale de la Cour de cassation postérieure à 2018 ne contient les
+   25 DECISION    [superviseur] Délégation au chercheur — Le chercheur doit élargir sa recherche au-delà des résultats négatifs actuels pour confirmer l'absence totale de jurispruden
+   26 DECISION    [chercheur] Recherche dans le corpus (« intelligence artificielle algorithme licenciement évaluation transparence »).
+   27 TOOL        [agent] search_cases({"query": "intelligence artificielle algorithme licenciement évaluation transparence", "k": 5})
+   28 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271
+   29 DECISION    [chercheur] Lecture détaillée de la décision 63da1185b78bc005de6ccd13.
+   30 TOOL        [agent] read_case({"case_id": "63da1185b78bc005de6ccd13"})
+   31 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2023-02-01 · n° 21-24.271
+   32 OBSERVATION [chercheur] Compte rendu du chercheur : 32 passage(s) au dossier. Aucune décision pertinente n'a été trouvée dans le corpus local postérieure à 2018 traitant spéc
+   33 HUMAN       [agent] Validation humaine demandée : prolonger le budget.
+   → validation humaine demandée (extend_budget) : réponse du script = reject
+   34 HUMAN       [agent] Décision humaine : refusée.
+   35 FINAL       [agent] Abstention — le budget d'itérations est épuisé sans preuve suffisante.
+   ⇒ {'question': 'C7', 'type': 'insufficient-absent', 'mode': 'multi', 'statut': 'abstained', 'vérification': 'insufficient', 'arrêt': 'max_iterations', 'passages cités': 0, 'appels LLM': 17, 'appels outils': 7, 'recherches': 6, 'itérations': 5, 'tokens': 48642, 'latence (s)': 208.1}
+
+== C8 · static · En cas de rupture conventionnelle, jusqu'à quand l'employeur peut-il renoncer à la clause de non-concurrence ?
+   ⇒ {'question': 'C8', 'type': 'simple', 'mode': 'static', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': '—', 'passages cités': 3, 'appels LLM': 2, 'appels outils': 1, 'recherches': 1, 'itérations': 0, 'tokens': 2468, 'latence (s)': 30.9}
+
+== C8 · single · En cas de rupture conventionnelle, jusqu'à quand l'employeur peut-il renoncer à la clause de non-concurrence ?
+   01 DECISION    [agent] Aucune preuve collectée : recherche documentaire nécessaire (« rupture conventionnelle clause non-concurrence renonciation délai employeur »).
+   02 TOOL        [agent] search_cases({"query": "rupture conventionnelle clause non-concurrence renonciation délai employeur", "k": 5})
+   03 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755
+   04 DECISION    [agent] Décision repérée (Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755) : lecture détaillée de ses passages.
+   05 TOOL        [agent] read_case({"case_id": "61f0f2387743e3330ccf075f", "focus": "délai de renonciation clause non-concurrence rupture conventionnelle"})
+   06 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755
+   07 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   08 CHECK       [vérificateur] Preuves insufficient — 2/4 affirmation(s) soutenue(s) ; 2 non établie(s) par le juge.
+   09 DECISION    [agent] Passages jugés suffisants par l'agent : réponse candidate soumise au vérificateur.
+   10 CHECK       [vérificateur] Preuves sufficient — 3 affirmation(s), toutes soutenues par les passages cités.
+   11 FINAL       [agent] Réponse vérifiée — 2 passage(s) cité(s).
+   ⇒ {'question': 'C8', 'type': 'simple', 'mode': 'single', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': 'answered', 'passages cités': 2, 'appels LLM': 6, 'appels outils': 2, 'recherches': 1, 'itérations': 4, 'tokens': 22696, 'latence (s)': 120.5}
+
+== C8 · multi · En cas de rupture conventionnelle, jusqu'à quand l'employeur peut-il renoncer à la clause de non-concurrence ?
+   01 DECISION    [superviseur] Délégation au chercheur — Le dossier est vide ; il faut trouver des passages juridiques pour répondre.
+   02 DECISION    [chercheur] Recherche dans le corpus (« rupture conventionnelle clause non-concurrence renonciation délai postérieur validité »).
+   03 TOOL        [agent] search_cases({"query": "rupture conventionnelle clause non-concurrence renonciation délai postérieur validité", "k": 5})
+   04 OBSERVATION [agent] 5 décision(s) ; meilleure : Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755
+   05 DECISION    [chercheur] Lecture détaillée de la décision 61f0f2387743e3330ccf075f.
+   06 DECISION    [chercheur] Lecture détaillée de la décision 6684e95fa0de54ff609f7aab.
+   07 TOOL        [agent] read_case({"case_id": "61f0f2387743e3330ccf075f", "focus": "renonciation clause non-concurrence délai rupture conventionnelle"})
+   08 OBSERVATION [agent] 8 passage(s) lus dans Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755
+   09 TOOL        [agent] read_case({"case_id": "6684e95fa0de54ff609f7aab", "focus": "renonciation clause non-concurrence délai rupture conventionnelle"})
+   10 OBSERVATION [agent] 7 passage(s) lus dans Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452
+   11 OBSERVATION [chercheur] Compte rendu du chercheur : 18 passage(s) au dossier. Décisions pertinentes : case_id=61f0f2387743e3330ccf075f [P9, P1] et case_id=6684e95fa0de54ff609
+   12 DECISION    [superviseur] Rédaction de la synthèse — Les décisions analysées établissent que le délai de renonciation s'étend jusqu'au jour où le salarié quitte l'entreprise, i
+   13 DECISION    [superviseur] Synthèse rédigée à partir de 10 passage(s) : soumise au vérificateur.
+   14 CHECK       [vérificateur] Preuves sufficient — 4 affirmation(s), toutes soutenues par les passages cités.
+   15 FINAL       [agent] Réponse vérifiée — 1 passage(s) cité(s).
+   ⇒ {'question': 'C8', 'type': 'simple', 'mode': 'multi', 'statut': 'answered', 'vérification': 'sufficient', 'arrêt': 'answered', 'passages cités': 1, 'appels LLM': 7, 'appels outils': 3, 'recherches': 1, 'itérations': 2, 'tokens': 21202, 'latence (s)': 105.6}

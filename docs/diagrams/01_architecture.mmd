@@ -1,0 +1,47 @@
+%% Architecture générale — clean architecture + 3 services (code : services/api, services/ui)
+flowchart LR
+    U([Utilisateur]) --> UI
+
+    subgraph S1["Service UI · Streamlit (services/ui)"]
+        UI["Pages : Recherche & lecture · Agent · Observabilité · Système<br/>api.py : client HTTP + lecture NDJSON"]
+    end
+
+    subgraph S2["Service API · FastAPI (services/api)"]
+        direction TB
+        IF["interfaces/http<br/>routes, validation pydantic, flux NDJSON"]
+        subgraph APP["application (dépend seulement des ports)"]
+            RAG["rag.py<br/>RAG statique + résumé"]
+            AG["agent/graph.py · multi.py<br/>boucle LangGraph"]
+            TO["agent/tools.py<br/>search_cases · read_case<br/>liste blanche + validation"]
+            VE["agent/verifier.py<br/>règles + LLM juge"]
+            RU["agent/runner.py<br/>runs, HITL, mémoire"]
+            PO{{"ports.py<br/>LLMPort · EmbedderPort · RetrieverPort<br/>CaseRepository · RunStore"}}
+        end
+        subgraph INF["infrastructure (adapters)"]
+            OL["ollama.py<br/>chat + tools · /api/embed"]
+            IX["indexes.py<br/>BM25 (bm25s) · dense (numpy) · RRF"]
+            CS["case_store.py<br/>SQLite décisions + passages"]
+            RS["run_store.py<br/>SQLite runs, événements, validations"]
+            CK[("checkpoints.db<br/>AsyncSqliteSaver : mémoire de session")]
+        end
+        DOM["domain<br/>Case · Passage · TraceEvent · VerifierReport"]
+        IF --> RU --> AG
+        IF --> RAG
+        AG --> TO & VE
+        TO & VE & RAG --> PO
+        PO -. implémenté par .-> OL & IX & CS & RS
+        RU --> CK
+    end
+
+    subgraph S3["Service LLM · Ollama natif (GPU Metal)"]
+        M1["qwen3.5:9b<br/>décision, rédaction, juge"]
+        M2["qwen3-embedding:0.6b<br/>embeddings"]
+    end
+
+    subgraph JOB["Job d'indexation hors ligne (jurirag-build)"]
+        HF[("HF · antoinejeannot/jurisprudence<br/>révision figée, Etalab 2.0")] --> SEL["sélection · normalisation<br/>découpage par zone"] --> BLD["BM25 + embeddings<br/>manifest.json"]
+    end
+
+    UI -- "HTTP / NDJSON" --> IF
+    OL --> M1 & M2
+    BLD --> IX & CS

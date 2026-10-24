@@ -1,0 +1,111 @@
+{
+ "question": {
+  "id": "C8",
+  "title": "Renonciation à la non-concurrence (termes juridiques)",
+  "kind": "simple",
+  "question": "En cas de rupture conventionnelle, jusqu'à quand l'employeur peut-il renoncer à la clause de non-concurrence ?",
+  "target_case": "61f0f2387743e3330ccf075f",
+  "selection": "Même arrêt que C6, formulé en termes juridiques : isole l'effet de la formulation.",
+  "expected": "réponse directe"
+ },
+ "mode": "static",
+ "final": {
+  "answer": "En cas de rupture conventionnelle, l'employeur doit renoncer à la clause de non-concurrence au plus tard à la date de rupture fixée par la convention [P2]. Cette règle s'applique même si le contrat prévoit un délai de prévenance différent ou des modalités formelles contraires [P5]. La Cour de cassation considère que ce délai part de la date de la rupture et non de celle où l'employeur envoie sa notification [P5]. En conséquence, toute renonciation effectuée après cette date est considérée comme tardive [P3]. Cette décision vise à éviter que le salarié ne soit laissé dans l'incertitude quant à sa liberté de travailler [P2].",
+  "verifier_status": "sufficient",
+  "sources": [
+   {
+    "alias": "P2",
+    "passage_id": "61f0f2387743e3330ccf075f#motivations-1",
+    "case_id": "61f0f2387743e3330ccf075f",
+    "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "(Soc., 13 mars 2013, pourvoi n° 11-21.150, Bull. 2013, V, n° 72). Elle en déduit que l'employeur qui dispense le salarié de l'exécution de son préavis doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 21 janvier 2015, pourvoi n° 13-24.471, Bull. 2015, V, n° 3). Elle décide de même qu'en cas de rupture du contrat de travail résultant de l'adhésion du salarié au contrat de sécurisation professionnelle, l'employeur doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 2 mars 2017, pourvoi n° 15-15.405).\n\n 9. Ces solutions se justifient par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler.\n\n 10. Il en résulte qu'en matière de rupture conventionnelle, l'employeur, s'il entend renoncer à l'exécution de la clause de non-concurrence, doit le faire au plus tard à la date de rupture fixée par la convention, nonobstant toutes stipulations ou dispositions contraires.\n\n 11. Pour limiter à une certaine somme la contrepartie financière de la clause de non-concurrence allouée à la salariée, l'arrêt retient que la convention de rupture n'a pas réglé le sort de la clause de non-concurrence, de sorte que celle-ci demeurait applicable pendant une durée d'une année à compter de la rupture du contrat de travail intervenue le 5 mai 2015, que toutefois lorsque la salariée a demandé à l'employeur le versement de la contrepartie financière prévue au contrat de travail, au motif qu'elle ne l'avait pas déliée expressément de la clause, la société lui a répondu le 11 septembre 2015 qu'elle avait été relevée de son obligation de non-concurrence à son égard depuis son départ."
+   },
+   {
+    "alias": "P3",
+    "passage_id": "61f0f2387743e3330ccf075f#motivations-2",
+    "case_id": "61f0f2387743e3330ccf075f",
+    "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "L'arrêt ajoute que dès lors, peu important que les délais stipulés au contrat pour la dénonciation de la clause par l'employeur n'aient pas été respectés, puisqu'il n'y a pas eu en l'occurrence de préavis, ni de licenciement, mais accord sur le principe et la date de la rupture, il est établi qu'à compter du 11 septembre 2015, la salariée a été informée de la volonté de l'employeur de renoncer au bénéfice de cette clause. L'arrêt en déduit que dans ces conditions, celle-ci n'est fondée à solliciter la contrepartie financière de son obligation de respecter la clause de non-concurrence que pour la période du 5 mai au 11 septembre 2015.\n\n 12. En statuant ainsi, alors qu'elle avait constaté que la date de rupture fixée par les parties dans la convention de rupture était le 5 mai 2015, ce dont il résultait que la renonciation par l'employeur au bénéfice de la clause de non-concurrence intervenue le 11 septembre 2015 était tardive, la cour d'appel a violé les textes susvisés."
+   },
+   {
+    "alias": "P5",
+    "passage_id": "61f0f2387743e3330ccf075f#motivations-0",
+    "case_id": "61f0f2387743e3330ccf075f",
+    "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+    "zone": "motivations",
+    "zone_label": "Motivations",
+    "text": "5. En application de l'article 1014, alinéa 2, du code de procédure civile, il n'y a pas lieu de statuer par une décision spécialement motivée sur ce moyen qui n'est manifestement pas de nature à entraîner la cassation.\n\n Mais sur le moyen relevé d'office\n\n 6. Après avis donné aux parties, conformément à l'article 1015 du code de procédure civile, il est fait application de l'article 620, alinéa 2, du même code.\n\n Vu l'article L. 1237-13 du code du travail et l'article 1134 du code civil dans sa rédaction antérieure à l'ordonnance n° 2016-131 du 10 février 2016 :\n\n 7. La Cour de cassation juge qu'aux termes de l'article L. 1237-13 du code du travail, la convention de rupture conclue entre un employeur et un salarié fixe la date de rupture du contrat de travail, qui ne peut intervenir avant le lendemain du jour de l'homologation par l'autorité administrative. Elle en a déduit que le délai de quinze jours au plus tard suivant la première présentation de la notification de la rupture dont dispose contractuellement l'employeur pour dispenser le salarié de l'exécution de l'obligation de non-concurrence a pour point de départ la date de la rupture fixée par la convention de rupture. (Soc., 29 janvier 2014, pourvoi n° 12-22.116, Bull. 2014, V, n° 35).\n\n 8. Elle décide également qu'en cas de rupture du contrat de travail avec dispense d'exécution du préavis par le salarié, la date à partir de laquelle celui-ci est tenu de respecter l'obligation de non-concurrence, la date d'exigibilité de la contrepartie financière de la clause de non-concurrence et la date à compter de laquelle doit être déterminée la période de référence pour le calcul de cette indemnité sont celles du départ effectif de l'entreprise, nonobstant stipulations ou dispositions contraires. (Soc., 13 mars 2013, pourvoi n° 11-21.150, Bull. 2013, V, n° 72)."
+   }
+  ],
+  "unverified": []
+ },
+ "metrics": {
+  "llm_calls": 2,
+  "prompt_tokens": 2317,
+  "completion_tokens": 151,
+  "llm_latency_ms": 30893.639708985575,
+  "tool_calls": {
+   "search_cases": 1
+  },
+  "tool_latency_ms": 0.0,
+  "iterations": 0,
+  "searches": 1,
+  "errors": [],
+  "total_latency_ms": 30941.3,
+  "verifier_status": "sufficient",
+  "stop_reason": null,
+  "cost": "non applicable (modèle local)"
+ },
+ "wall_s": 31.0,
+ "passages": [
+  {
+   "alias": "P1",
+   "passage_id": "6684e95fa0de54ff609f7aab#motivations-1",
+   "case_id": "6684e95fa0de54ff609f7aab",
+   "title": "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "Réponse de la Cour\n\n 8. La cour d'appel, qui a constaté que la clause de non-concurrence prévoyait la possibilité pour l'employeur de renoncer à cette clause par lettre recommandée avec avis de réception dans un délai de quinze jours maximum après la notification de la rupture du contrat de travail, et que celui-ci y avait renoncé par l'envoi d'un courriel, a exactement retenu que l'employeur n'avait pas valablement renoncé à la clause de non-concurrence.\n\n 9. Le moyen n'est donc pas fondé."
+  },
+  {
+   "alias": "P2",
+   "passage_id": "61f0f2387743e3330ccf075f#motivations-1",
+   "case_id": "61f0f2387743e3330ccf075f",
+   "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "(Soc., 13 mars 2013, pourvoi n° 11-21.150, Bull. 2013, V, n° 72). Elle en déduit que l'employeur qui dispense le salarié de l'exécution de son préavis doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 21 janvier 2015, pourvoi n° 13-24.471, Bull. 2015, V, n° 3). Elle décide de même qu'en cas de rupture du contrat de travail résultant de l'adhésion du salarié au contrat de sécurisation professionnelle, l'employeur doit, s'il entend renoncer à l'exécution de la clause de non-concurrence, le faire au plus tard à la date du départ effectif de l'intéressé de l'entreprise, nonobstant stipulations ou dispositions contraires (Soc., 2 mars 2017, pourvoi n° 15-15.405).\n\n 9. Ces solutions se justifient par le fait que le salarié ne peut être laissé dans l'incertitude quant à l'étendue de sa liberté de travailler.\n\n 10. Il en résulte qu'en matière de rupture conventionnelle, l'employeur, s'il entend renoncer à l'exécution de la clause de non-concurrence, doit le faire au plus tard à la date de rupture fixée par la convention, nonobstant toutes stipulations ou dispositions contraires.\n\n 11. Pour limiter à une certaine somme la contrepartie financière de la clause de non-concurrence allouée à la salariée, l'arrêt retient que la convention de rupture n'a pas réglé le sort de la clause de non-concurrence, de sorte que celle-ci demeurait applicable pendant une durée d'une année à compter de la rupture du contrat de travail intervenue le 5 mai 2015, que toutefois lorsque la salariée a demandé à l'employeur le versement de la contrepartie financière prévue au contrat de travail, au motif qu'elle ne l'avait pas déliée expressément de la clause, la société lui a répondu le 11 septembre 2015 qu'elle avait été relevée de son obligation de non-concurrence à son égard depuis son départ."
+  },
+  {
+   "alias": "P3",
+   "passage_id": "61f0f2387743e3330ccf075f#motivations-2",
+   "case_id": "61f0f2387743e3330ccf075f",
+   "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "L'arrêt ajoute que dès lors, peu important que les délais stipulés au contrat pour la dénonciation de la clause par l'employeur n'aient pas été respectés, puisqu'il n'y a pas eu en l'occurrence de préavis, ni de licenciement, mais accord sur le principe et la date de la rupture, il est établi qu'à compter du 11 septembre 2015, la salariée a été informée de la volonté de l'employeur de renoncer au bénéfice de cette clause. L'arrêt en déduit que dans ces conditions, celle-ci n'est fondée à solliciter la contrepartie financière de son obligation de respecter la clause de non-concurrence que pour la période du 5 mai au 11 septembre 2015.\n\n 12. En statuant ainsi, alors qu'elle avait constaté que la date de rupture fixée par les parties dans la convention de rupture était le 5 mai 2015, ce dont il résultait que la renonciation par l'employeur au bénéfice de la clause de non-concurrence intervenue le 11 septembre 2015 était tardive, la cour d'appel a violé les textes susvisés."
+  },
+  {
+   "alias": "P4",
+   "passage_id": "6684e95fa0de54ff609f7aab#moyens-1",
+   "case_id": "6684e95fa0de54ff609f7aab",
+   "title": "Cour de cassation · Chambre sociale · 2024-07-03 · n° 22-17.452",
+   "zone": "moyens",
+   "zone_label": "Moyens",
+   "text": "Sur le second moyen\n\n Énoncé du moyen\n\n 7. L'employeur fait grief à l'arrêt de dire le licenciement non fondé sur une cause réelle et sérieuse et de le condamner à payer au salarié une somme à titre de contrepartie financière de la clause de non-concurrence, outre congés payés, alors « que la renonciation de l'employeur à la mise en uvre de la clause de non-concurrence doit être claire et non équivoque ; que les modalités contractuelles de renonciation n'en conditionnent la validité qu'au regard du délai de prévenance qui y est mentionné et non des modalités formelles de cette renonciation, dont le salarié peut être informé par tout moyen ; que la cour d'appel a constaté que le contrat de travail prévoyait la possibilité pour la société de renoncer à la clause de non-concurrence ''sous réserve de vous en avoir notifié l'intention par lettre recommandée avec avis de réception dans un délai de 15 jours maximum après la notification de la rupture du contrat de travail'' et qu'il résultait des éléments produits que l'employeur avait renoncé à cette clause par courriels des 4 et 6 août 2015 ; qu'en considérant que la renonciation effectuée par courriels ne pouvait suppléer la formalité de la lettre recommandée, sans constater que le non-respect de cette formalité avait causé un grief au salarié dûment informé par voie de courriel que la Holding Financière Belland avait levé la clause de non-concurrence, la cour d'appel a violé l'article L. 1221-1 du code du travail. »"
+  },
+  {
+   "alias": "P5",
+   "passage_id": "61f0f2387743e3330ccf075f#motivations-0",
+   "case_id": "61f0f2387743e3330ccf075f",
+   "title": "Cour de cassation · Chambre sociale · 2022-01-26 · n° 20-15.755",
+   "zone": "motivations",
+   "zone_label": "Motivations",
+   "text": "5. En application de l'article 1014, alinéa 2, du code de procédure civile, il n'y a pas lieu de statuer par une décision spécialement motivée sur ce moyen qui n'est manifestement pas de nature à entraîner la cassation.\n\n Mais sur le moyen relevé d'office\n\n 6. Après avis donné aux parties, conformément à l'article 1015 du code de procédure civile, il est fait application de l'article 620, alinéa 2, du même code.\n\n Vu l'article L. 1237-13 du code du travail et l'article 1134 du code civil dans sa rédaction antérieure à l'ordonnance n° 2016-131 du 10 février 2016 :\n\n 7. La Cour de cassation juge qu'aux termes de l'article L. 1237-13 du code du travail, la convention de rupture conclue entre un employeur et un salarié fixe la date de rupture du contrat de travail, qui ne peut intervenir avant le lendemain du jour de l'homologation par l'autorité administrative. Elle en a déduit que le délai de quinze jours au plus tard suivant la première présentation de la notification de la rupture dont dispose contractuellement l'employeur pour dispenser le salarié de l'exécution de l'obligation de non-concurrence a pour point de départ la date de la rupture fixée par la convention de rupture. (Soc., 29 janvier 2014, pourvoi n° 12-22.116, Bull. 2014, V, n° 35).\n\n 8. Elle décide également qu'en cas de rupture du contrat de travail avec dispense d'exécution du préavis par le salarié, la date à partir de laquelle celui-ci est tenu de respecter l'obligation de non-concurrence, la date d'exigibilité de la contrepartie financière de la clause de non-concurrence et la date à compter de laquelle doit être déterminée la période de référence pour le calcul de cette indemnité sont celles du départ effectif de l'entreprise, nonobstant stipulations ou dispositions contraires. (Soc., 13 mars 2013, pourvoi n° 11-21.150, Bull. 2013, V, n° 72)."
+  }
+ ]
+}

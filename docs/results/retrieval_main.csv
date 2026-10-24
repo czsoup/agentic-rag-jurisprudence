@@ -1,0 +1,10 @@
+méthode,requêtes,n,Hit@1,Hit@5,Hit@10,MRR@10,latence moy. (ms),index,embed_model,cases
+bm25,sommaire,150,0.847,0.967,0.987,0.904,1.8,main,qwen3-embedding:0.6b,3954
+bm25,thèmes,150,0.36,0.633,0.713,0.477,1.2,main,qwen3-embedding:0.6b,3954
+bm25,question,150,0.76,0.933,0.953,0.837,0.7,main,qwen3-embedding:0.6b,3954
+dense,sommaire,150,0.593,0.78,0.82,0.672,41.8,main,qwen3-embedding:0.6b,3954
+dense,thèmes,150,0.4,0.653,0.687,0.491,30.6,main,qwen3-embedding:0.6b,3954
+dense,question,150,0.767,0.94,0.953,0.84,30.9,main,qwen3-embedding:0.6b,3954
+hybrid,sommaire,150,0.713,0.913,0.953,0.797,33.4,main,qwen3-embedding:0.6b,3954
+hybrid,thèmes,150,0.4,0.673,0.767,0.509,31.6,main,qwen3-embedding:0.6b,3954
+hybrid,question,150,0.78,0.953,0.973,0.86,32.7,main,qwen3-embedding:0.6b,3954
