@@ -37,8 +37,8 @@ Les tests unitaires et d'intégration (`make test`, 81 tests) utilisent un LLM s
 | Scénario 1 — RAG simple | Vérifié | — | `docs/traces/S1_single_essai1.md` (1 recherche, 3 appels) et `S1_single.md` (variance, réponse partielle) | — |
 | Scénario 2 — multi-étapes | Vérifié | — | `docs/traces/S2_single.md` | — |
 | Scénario 3 — information insuffisante | Vérifié | — | `docs/traces/S3b_single.md` (5 reformulations, limite, HITL, abstention) ; `S3a_single.md` | — |
-| Comparaison avec le RAG statique | Vérifié | `scripts/run_scenarios.py --set comparison` | `docs/results/comparison.md` (24 runs) ; rapport §16 | Répétitions (pass^k) : amélioration possible |
-| Documentation : README, schéma, 3 traces, analyse | Vérifié | `README.md`, `docs/diagrams/`, `docs/traces/`, `report/rapport.md` | Rapport §14, §16, §18 | Captures d'écran (§13) |
+| Comparaison avec le RAG statique | Vérifié | `scripts/run_scenarios.py --set comparison` | `docs/results/comparison.md` (24 runs) ; rapport §15 | Répétitions (pass^k) : amélioration possible |
+| Documentation : README, schéma, 3 traces, analyse | Vérifié | `README.md`, `docs/diagrams/`, `docs/traces/`, `report/rapport.md` | Rapport §13, §16, §17 | Captures d'écran (§13) |
 
 ## Extensions
 
