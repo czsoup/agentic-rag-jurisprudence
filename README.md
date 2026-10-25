@@ -130,7 +130,7 @@ agentic-rag-jurisprudence/
 ├── services/ui/src/jurirag_ui/ Streamlit : pages, thème « Greffe », client API
 ├── scripts/                    banc d'essai des modèles, scénarios et comparaison
 ├── docs/                       analyse, décisions, index des fonctions, validation, schémas, traces, résultats
-├── report/                     rapport (md / pdf) et figures
+├── report/                     rapport (pdf) et figures
 ├── .streamlit/config.toml      thème
 ├── Makefile · pyproject.toml · uv.lock · .env.example
 ```

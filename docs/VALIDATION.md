@@ -14,9 +14,9 @@ Les tests unitaires et d'intégration (`make test`, 81 tests) utilisent un LLM s
 |---|---|---|---|---|
 | Charger les décisions, périmètre, métadonnées | Vérifié | `infrastructure/corpus.py`, `index_builder.py` | `data/index/main/manifest.json` (3 954 décisions, rejets comptés) | — |
 | Découpage | Vérifié | `application/chunking.py` | `unit/test_chunking.py` (5) | — |
-| Retrieval lexical, dense, hybride | Vérifié | `infrastructure/indexes.py` | `docs/results/retrieval_dev.md` ; `integration/test_ollama_live.py` | Réévaluer sur l'index principal (`make eval`) |
+| Retrieval lexical, dense, hybride | Vérifié | `infrastructure/indexes.py` | `docs/results/retrieval_dev.md` ; `docs/results/retrieval_main.md` (index principal, 150 arrêts × 3 formes de requête) ; `integration/test_ollama_live.py` | — |
 | Recherche par mots-clés ou en langage naturel, affichage | Vérifié | `routers/cases.py`, `ui/pages/search.py` | AppTest de l'UI (DEC-019) ; `GET /api/v1/cases/search` | — |
-| Résumé faits / procédure / décision | Implémenté | `application/rag.py` (`summarize`) | Appelé depuis l'UI ; pas encore de trace enregistrée | Capturer un résumé réel (figure 4) |
+| Résumé faits / procédure / décision | Vérifié | `application/rag.py` (`summarize`), `scripts/record_summary.py` | `docs/traces/R1_resume.md` : résumé réel de l'arrêt n° 22-10.551, citations toutes valides ; relecture humaine : 5 affirmations exactes sur 7, 2 détails mal ou non sourcés | Soumettre le résumé au vérificateur (amélioration) |
 | Question-réponse fondée, passages affichés | Vérifié | `application/rag.py` (`ask`), onglet *Questions* | Runs « static » de `docs/traces/comparison_v1_interrompue/` | — |
 | Ne pas inventer | Vérifié | `agent/verifier.py` | `unit/test_verifier.py` (17) ; contradiction interceptée en S3a | — |
 
@@ -38,13 +38,13 @@ Les tests unitaires et d'intégration (`make test`, 81 tests) utilisent un LLM s
 | Scénario 2 — multi-étapes | Vérifié | — | `docs/traces/S2_single.md` | — |
 | Scénario 3 — information insuffisante | Vérifié | — | `docs/traces/S3b_single.md` (5 reformulations, limite, HITL, abstention) ; `S3a_single.md` | — |
 | Comparaison avec le RAG statique | Vérifié | `scripts/run_scenarios.py --set comparison` | `docs/results/comparison.md` (24 runs) ; rapport §15 | Répétitions (pass^k) : amélioration possible |
-| Documentation : README, schéma, 3 traces, analyse | Vérifié | `README.md`, `docs/diagrams/`, `docs/traces/`, `report/rapport.md` | Rapport §13, §16, §17 | Captures d'écran (§13) |
+| Documentation : README, schéma, 3 traces, analyse | Vérifié | `README.md`, `docs/diagrams/`, `docs/traces/`, `report/rapport.pdf` | Rapport §13, §15, §17 | — |
 
 ## Extensions
 
 | Exigence | Statut | Fichiers | Test / preuve | Reste à faire |
 |---|---|---|---|---|
-| Mémoire | Vérifié (logique) | `AgentGraph.start`, `AgentRunner`, checkpointer SQLite | `test_memory_keeps_the_case_between_questions`, `test_selecting_another_case_purges_memory` | Démonstration réelle (vidéo, séquence 8) |
+| Mémoire | Vérifié | `AgentGraph.start`, `AgentRunner`, checkpointer SQLite | `test_memory_keeps_the_case_between_questions`, `test_selecting_another_case_purges_memory` ; run réel depuis la page Agent : la question de suivi part avec l'affaire n° 23-10.817 en mémoire et la lit sans nouvelle recherche | — |
 | Multi-agents | Vérifié | `agent/multi.py` (v2, DEC-023) | `unit/test_multi_agent.py` (5) ; v1 et v2 mesurées (`comparison.md`) | — |
 | Human-in-the-loop | Vérifié | `human_gate`, `interrupt`, export | `test_budget_extension_requires_human_approval`, tests d'export ; événements `HUMAN` dans S1, S3a, S3b | — |
 | Observabilité | Vérifié | `run_store.py`, `RunMetrics`, `/api/v1/metrics`, page *Observabilité* | `test_run_streams_ndjson_events_then_final_status` ; `data/app.db` | — |
