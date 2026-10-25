@@ -13,7 +13,7 @@ UI Streamlit ──HTTP / NDJSON──▶ API FastAPI ──▶ Ollama (natif, G
        jurirag-build (job hors ligne) : corpus → passages → BM25 + embeddings
 ```
 
-Rapport : [`report/rapport.md`](report/rapport.md) · décisions : [`docs/DECISIONS.md`](docs/DECISIONS.md) · schémas : [`docs/diagrams/`](docs/diagrams/) · traces des scénarios : [`docs/traces/`](docs/traces/).
+Rapport : [`report/rapport.pdf`](report/rapport.pdf) · décisions : [`docs/DECISIONS.md`](docs/DECISIONS.md) · schémas : [`docs/diagrams/`](docs/diagrams/) · traces des scénarios : [`docs/traces/`](docs/traces/).
 
 ## Fonctionnalités
 
