@@ -60,9 +60,8 @@ Un juge en panne ou une sortie invalide ne valident jamais rien.
 
 ## Prérequis
 
-- macOS ou Linux, **32 Go de mémoire recommandés**. Développé et testé sur Apple M5 / 32 Go.
-- [uv](https://docs.astral.sh/uv/) (Python 3.12 est installé automatiquement).
-- [Ollama](https://ollama.com/) ≥ 0.30, **lancé en natif** : sous macOS, Docker n'a pas accès au GPU.
+- [uv](https://docs.astral.sh/uv/) 
+- [Ollama](https://ollama.com/) ≥ 0.30
 - Environ 12 Go de disque : modèles 7,3 Go, parquet 1,7 Go, index.
 
 ## Installation et lancement
