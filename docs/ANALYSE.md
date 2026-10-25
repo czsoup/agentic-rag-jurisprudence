@@ -174,4 +174,4 @@ Colonnes utiles : `id`, `jurisdiction`, `chamber`, `formation`, `type`, `decisio
 | H | Mémoire, multi-agents, human-in-the-loop, observabilité |
 | I | Trois scénarios sur le corpus réel, traces, comparaison statique / agent |
 | J | Décisions, schémas, rapport, README |
-| K | Revue finale, matrice de validation, scénario vidéo |
+| K | Revue finale, matrice de validation |
